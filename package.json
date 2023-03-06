@@ -1,0 +1,39 @@
+{
+  "name": "@arianrhodsandlot/eslint-config",
+  "version": "0.1.0",
+  "description": "ESLint Config for arianrhodsandlot's projects.",
+  "module": "index.js",
+  "type": "module",
+  "keywords": ["eslint", "eslint-config"],
+  "author": "arianrhodsandlot",
+  "license": "MIT",
+  "files": ["src", "index.js"],
+  "devDependencies": {
+    "@types/eslint": "8.21.1",
+    "eslint": "8.35.0",
+    "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "@eslint/js": "8.35.0",
+    "@typescript-eslint/eslint-plugin": "5.54.0",
+    "@typescript-eslint/parser": "5.54.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-config-standard-with-typescript": "34.0.0",
+    "eslint-plugin-etc": "2.0.2",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-n": "15.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-security": "1.7.1",
+    "eslint-plugin-sonarjs": "0.18.0",
+    "eslint-plugin-unicorn": "46.0.0",
+    "get-tsconfig": "4.4.0",
+    "globals": "13.20.0",
+    "lodash": "4.17.21",
+    "prettier": "2.8.4"
+  }
+}

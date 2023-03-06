@@ -1,0 +1,38 @@
+/** @type { import('eslint').Linter.RulesRecord } */
+export const typescriptRules = {
+  '@typescript-eslint/array-type': 'error',
+  '@typescript-eslint/comma-dangle': [
+    'error',
+    {
+      arrays: 'always-multiline',
+      enums: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'never',
+      generics: 'always-multiline',
+      imports: 'always-multiline',
+      objects: 'always-multiline',
+      tuples: 'always-multiline',
+    },
+  ],
+  '@typescript-eslint/consistent-generic-constructors': 'error',
+  '@typescript-eslint/consistent-type-assertions': 'error',
+  '@typescript-eslint/explicit-function-return-type': 'off',
+  '@typescript-eslint/explicit-module-boundary-types': 'off',
+  '@typescript-eslint/member-delimiter-style': [
+    'error',
+    { multiline: { delimiter: 'none' }, singleline: { delimiter: 'semi', requireLast: false } },
+  ],
+  '@typescript-eslint/member-ordering': ['error'],
+  '@typescript-eslint/no-explicit-any': 'off',
+  '@typescript-eslint/no-floating-promises': 'off',
+  '@typescript-eslint/no-shadow': 'error',
+  '@typescript-eslint/prefer-for-of': 'error',
+  '@typescript-eslint/prefer-includes': 'off',
+  '@typescript-eslint/prefer-string-starts-ends-with': 'off',
+  '@typescript-eslint/restrict-plus-operands': 'off',
+  '@typescript-eslint/restrict-template-expressions': 'off',
+  '@typescript-eslint/space-before-function-paren': 'off',
+  '@typescript-eslint/strict-boolean-expressions': 'off',
+  '@typescript-eslint/unbound-method': 'off',
+  '@typescript-eslint/unified-signatures': 'error',
+}
