@@ -24,7 +24,7 @@ To use this package, ESLint should be configured by an file named `eslint.config
   ```
 
 + Use the more powerful function `createConfig`
-  + `createConfig` is a smart function that can dected should TS rules be enabled or which libraries related plugins/rules should be + added:
+  + `createConfig` is a smart function that can dected should TS rules be enabled or which libraries-related plugins/rules should be + added:
     ```js
     import { createConfig } from '@arianrhodsandlot/eslint-config'
 
@@ -97,7 +97,7 @@ To use this package, ESLint should be configured by an file named `eslint.config
     })
     ```
 
-  + Library related plugins/rules can be enabled by `libraries`:
+  + Libraries-related plugins/rules can be explictly enabled or disabled by `libraries`:
     ```js
     import { createConfig } from '@arianrhodsandlot/eslint-config'
 

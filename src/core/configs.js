@@ -18,6 +18,8 @@ import _ from 'lodash'
 import { jsFiles, tsFiles } from '../common.js'
 import { overrides, overridesWithTypeChecking } from '../overrides/index.js'
 
+const tsconfig = getTsconfig()
+
 /** @type { import('eslint').Linter.RulesRecord } */
 const pluginRules = {
   ...eslintPluginImport.configs.recommended.rules,
@@ -73,6 +75,14 @@ const baseConfig = {
     ...sharedConfigRules,
     ...overrides,
   },
+
+  settings: {
+    'import/resolver': {
+      typescript: Boolean(tsconfig),
+      node: true,
+    },
+    'import/extensions': [...jsFiles, ...tsFiles, '.json'],
+  },
 }
 
 /** @type { import('eslint').Linter.RulesRecord } */
@@ -106,7 +116,7 @@ export const configForTsWithTypeChecking = {
     ...baseConfig.languageOptions,
     parserOptions: {
       ...baseConfig.languageOptions.parserOptions,
-      project: getTsconfig()?.path,
+      project: tsconfig?.path,
     },
   },
   rules: {
