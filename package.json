@@ -2,6 +2,7 @@
   "name": "@arianrhodsandlot/eslint-config",
   "version": "0.1.0",
   "description": "ESLint Config for arianrhodsandlot's projects.",
+  "main": "index.js",
   "module": "index.js",
   "type": "module",
   "keywords": ["eslint", "eslint-config"],

@@ -1,7 +1,6 @@
 import { getTsconfig } from 'get-tsconfig'
 import _ from 'lodash'
 import { configForJs, configForTsWithTypeChecking, configForTsWithoutTypeChecking } from './core/configs.js'
-import { configForReact } from './libraries/react.js'
 
 function createBaseConfig(options) {
   const configForJs_ = _.isFunction(options.overrides?.js)
@@ -26,19 +25,29 @@ function createBaseConfig(options) {
   return [configForJs_, configForTs]
 }
 
-export function createConfig(options) {
+async function isPackageAvailable(packageName) {
+  try {
+    await import(packageName)
+    return true
+  } catch {
+    return false
+  }
+}
+
+export async function createConfig(options) {
   options = _.defaultsDeep(options, {
     overrides: undefined,
     typeChecking: Boolean(getTsconfig()?.path),
     append: [],
     libraries: {
-      react: true,
+      react: false,
     },
   })
 
   const config = createBaseConfig(options)
 
-  if (options.libraries.react) {
+  if (options.libraries.react || (await isPackageAvailable('react'))) {
+    const { configForReact } = await import('./libraries/react.js')
     config.push(configForReact)
   }
 
