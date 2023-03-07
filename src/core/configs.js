@@ -4,6 +4,7 @@ import tsParser from '@typescript-eslint/parser'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintConfigStandard from 'eslint-config-standard'
 import eslintConfigStandardWithTypescript from 'eslint-config-standard-with-typescript'
+import eslintPluginEslintComments from 'eslint-plugin-eslint-comments'
 import eslintPluginEtc from 'eslint-plugin-etc'
 import eslintPluginImport from 'eslint-plugin-import'
 import eslintPluginMarkdown from 'eslint-plugin-markdown'
@@ -21,13 +22,29 @@ import { overrides, overridesWithTypeChecking } from '../overrides/index.js'
 
 const tsconfig = getTsconfig()
 
+const plugins = {
+  '@typescript-eslint': eslintPluginTypescript,
+  'eslint-comments': eslintPluginEslintComments,
+  etc: eslintPluginEtc,
+  import: eslintPluginImport,
+  n: eslintPluginN,
+  prettier: eslintPluginPrettier,
+  promise: eslintPluginPromise,
+  security: eslintPluginSecurity,
+  sonarjs: eslintPluginSonarjs,
+  unicorn: eslintPluginUnicorn,
+}
+
 /** @type { import('eslint').Linter.RulesRecord } */
 const pluginRules = {
+  ...eslintPluginEslintComments.configs.recommended.rules,
   ...eslintPluginImport.configs.recommended.rules,
   ...eslintPluginPromise.configs.recommended.rules,
   ...eslintPluginSonarjs.configs.recommended.rules,
   ...eslintPluginTypescript.configs.recommended.rules,
   ...eslintPluginUnicorn.configs.recommended.rules,
+
+  // this should be put at the last line since it turns off some other rules
   ...eslintPluginPrettier.configs.recommended.rules,
 }
 
@@ -58,17 +75,7 @@ const baseConfig = {
     reportUnusedDisableDirectives: true,
   },
 
-  plugins: {
-    '@typescript-eslint': eslintPluginTypescript,
-    etc: eslintPluginEtc,
-    import: eslintPluginImport,
-    n: eslintPluginN,
-    prettier: eslintPluginPrettier,
-    promise: eslintPluginPromise,
-    security: eslintPluginSecurity,
-    sonarjs: eslintPluginSonarjs,
-    unicorn: eslintPluginUnicorn,
-  },
+  plugins,
 
   rules: {
     ...js.configs.recommended.rules,

@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add support for markdown files
+- Add `eslint-plugin-eslint-comments`
 
 ### Fixed
 - Fix auto detection of libraries
