@@ -18,4 +18,10 @@ export const configForReact = {
     ...eslintPluginReact.configs.recommended.rules,
     ...eslintPluginReactHooks.configs.recommended.rules,
   },
+
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 }
