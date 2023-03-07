@@ -52,7 +52,7 @@ To use this package, ESLint should be configured by an file named `eslint.config
   + Extends or overrides config:
     ```js
     import { createConfig } from '@arianrhodsandlot/eslint-config'
-
+    console.log(1)
     export default createConfig({
       overrides: {
         js: {

@@ -6,6 +6,7 @@ import eslintConfigStandard from 'eslint-config-standard'
 import eslintConfigStandardWithTypescript from 'eslint-config-standard-with-typescript'
 import eslintPluginEtc from 'eslint-plugin-etc'
 import eslintPluginImport from 'eslint-plugin-import'
+import eslintPluginMarkdown from 'eslint-plugin-markdown'
 import eslintPluginN from 'eslint-plugin-n'
 import eslintPluginPrettier from 'eslint-plugin-prettier'
 import eslintPluginPromise from 'eslint-plugin-promise'
@@ -130,4 +131,24 @@ export const configForTsWithTypeChecking = {
 export const configForTsWithoutTypeChecking = {
   ...configForJs,
   files: tsFiles,
+}
+
+/** @type { import('eslint').Linter.FlatConfig } */
+export const configForMarkdown = {
+  ...eslintPluginMarkdown.configs.recommended.overrides[0],
+  plugins: { markdown: eslintPluginMarkdown },
+}
+
+/** @type { import('eslint').Linter.FlatConfig } */
+export const configForJsInMarkdown = {
+  files: eslintPluginMarkdown.configs.recommended.overrides[1].files,
+  rules: {
+    ...eslintPluginMarkdown.configs.recommended.overrides[1].rules,
+    'no-console': 'off',
+
+    '@typescript-eslint/no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+
+    'import/no-unresolved': 'off',
+  },
 }

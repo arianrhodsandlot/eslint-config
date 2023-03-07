@@ -1,6 +1,12 @@
 import { getTsconfig } from 'get-tsconfig'
 import _ from 'lodash'
-import { configForJs, configForTsWithTypeChecking, configForTsWithoutTypeChecking } from './core/configs.js'
+import {
+  configForJs,
+  configForJsInMarkdown,
+  configForMarkdown,
+  configForTsWithTypeChecking,
+  configForTsWithoutTypeChecking,
+} from './core/configs.js'
 
 function createBaseConfig(options) {
   const configForJs_ = _.isFunction(options.overrides?.js)
@@ -22,7 +28,7 @@ function createBaseConfig(options) {
     ? options.overrides?.ts(configForTs)
     : { ...configForTs, ...options.overrides?.ts }
 
-  return [configForJs_, configForTs]
+  return [configForJs_, configForTs, configForMarkdown, configForJsInMarkdown]
 }
 
 async function isPackageAvailable(packageName) {
