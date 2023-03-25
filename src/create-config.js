@@ -40,6 +40,17 @@ async function isPackageAvailable(packageName) {
   }
 }
 
+/**
+ * @param {object} [options]
+ * @param {object} [options.overrides]
+ * @param {object | function} [options.overrides.js] overrides rules for js files
+ * @param {object | function} [options.overrides.ts] overrides rules for ts files
+ * @param {boolean} [options.typeChecking] Should type checking rules be enabled
+ * @param {import('eslint').Linter.FlatConfig | import('eslint').Linter.FlatConfig[]} [options.append] append custom flat configs to default
+ * @param {object} [options.libraries] Libraries related config
+ * @param {boolean} [options.libraries.react] Should react related plugins and rules be enabled
+ * @return {object}
+ */
 export async function createConfig(options) {
   options = _.defaultsDeep(options, {
     overrides: undefined,
