@@ -16,6 +16,7 @@ export const configForReact = {
   rules: {
     ...eslintPluginJjsxA11y.configs.recommended.rules,
     ...eslintPluginReact.configs.recommended.rules,
+    ...eslintPluginReact.configs['jsx-runtime'].rules,
     ...eslintPluginReactHooks.configs.recommended.rules,
   },
 

@@ -18,9 +18,9 @@ function createBaseConfig(options) {
     enableTypeChecking = false
   }
   let configForTs = enableTypeChecking ? configForTsWithTypeChecking : configForTsWithoutTypeChecking
-  if (enableTypeChecking && options.typeChecking?.parserOptions) {
+  if (enableTypeChecking && options.typeChecking?.parserOptions && configForTs.languageOptions) {
     configForTs.languageOptions.parserOptions = {
-      ...configForTs.languageOptions.parserOptions,
+      ...configForTs?.languageOptions?.parserOptions,
       ...options.typeChecking?.parserOptions,
     }
   }
@@ -49,7 +49,7 @@ async function isPackageAvailable(packageName) {
  * @param {import('eslint').Linter.FlatConfig | import('eslint').Linter.FlatConfig[]} [options.append] append custom flat configs to default
  * @param {object} [options.libraries] Libraries related config
  * @param {boolean} [options.libraries.react] Should react related plugins and rules be enabled
- * @return {object}
+ * @return {Promise<object>}
  */
 export async function createConfig(options) {
   options = _.defaultsDeep(options, {
@@ -63,13 +63,13 @@ export async function createConfig(options) {
 
   const config = createBaseConfig(options)
 
-  if (options.libraries.react || (await isPackageAvailable('react'))) {
+  if (options?.libraries?.react || (await isPackageAvailable('react'))) {
     const { configForReact } = await import('./libraries/react.js')
     config.push(configForReact)
   }
 
-  if (options.append) {
-    config.push(..._.castArray(options.append))
+  if (options?.append) {
+    config.push(..._.castArray(options?.append))
   }
 
   return config
