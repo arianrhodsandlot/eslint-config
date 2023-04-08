@@ -51,7 +51,7 @@ const pluginRules = {
 /** @type { import('eslint').Linter.RulesRecord } */
 const sharedConfigRules = {
   ...eslintConfigStandard.rules,
-  ...eslintConfigStandardWithTypescript.overrides[0].rules,
+  ...eslintConfigStandardWithTypescript.overrides?.[0].rules,
   ...eslintConfigPrettier.rules,
 }
 
@@ -101,7 +101,7 @@ const typeCheckingRules = {
 
 /** @type { import('eslint').Linter.RulesRecord } */
 const tsPluginWithTypeCheckingOffRules = _(eslintPluginTypescript.rules)
-  .pickBy(({ meta }) => meta.docs.requiresTypeChecking)
+  .pickBy(({ meta }) => meta.docs?.requiresTypeChecking)
   .mapKeys((rule, name) => `@typescript-eslint/${name}`)
   .mapValues(() => 'off')
   .value()
@@ -123,7 +123,7 @@ export const configForTsWithTypeChecking = {
   languageOptions: {
     ...baseConfig.languageOptions,
     parserOptions: {
-      ...baseConfig.languageOptions.parserOptions,
+      ...baseConfig.languageOptions?.parserOptions,
       project: tsconfig?.path,
     },
   },
@@ -140,17 +140,25 @@ export const configForTsWithoutTypeChecking = {
   files: tsFiles,
 }
 
+export const configForTests = {
+  files: ['{test|tests}/**/*.{js|ts|jsx|tsx}'],
+  rules: {
+    'no-empty-pattern': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+  },
+}
+
 /** @type { import('eslint').Linter.FlatConfig } */
 export const configForMarkdown = {
-  ...eslintPluginMarkdown.configs.recommended.overrides[0],
+  ...eslintPluginMarkdown.configs.recommended.overrides?.[0],
   plugins: { markdown: eslintPluginMarkdown },
 }
 
 /** @type { import('eslint').Linter.FlatConfig } */
 export const configForJsInMarkdown = {
-  files: eslintPluginMarkdown.configs.recommended.overrides[1].files,
+  files: eslintPluginMarkdown.configs.recommended.overrides?.[1].files,
   rules: {
-    ...eslintPluginMarkdown.configs.recommended.overrides[1].rules,
+    ...eslintPluginMarkdown.configs.recommended.overrides?.[1].rules,
     'no-console': 'off',
 
     '@typescript-eslint/no-unused-expressions': 'off',

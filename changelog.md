@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Disable `etc/prefer-interface`
 
+### Added
+- Turn off certain rules for test files
+
 ## [0.3.1] - 2023-03-30
 ### Fixed
 - Upgrade dependencies

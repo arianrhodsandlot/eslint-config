@@ -4,6 +4,7 @@ import {
   configForJs,
   configForJsInMarkdown,
   configForMarkdown,
+  configForTests,
   configForTsWithTypeChecking,
   configForTsWithoutTypeChecking,
 } from './core/configs.js'
@@ -28,7 +29,7 @@ function createBaseConfig(options) {
     ? options.overrides?.ts(configForTs)
     : { ...configForTs, ...options.overrides?.ts }
 
-  return [configForJs_, configForTs, configForMarkdown, configForJsInMarkdown]
+  return [configForJs_, configForTs, configForTests, configForMarkdown, configForJsInMarkdown]
 }
 
 async function isPackageAvailable(packageName) {
