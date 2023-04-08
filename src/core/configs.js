@@ -5,7 +5,6 @@ import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintConfigStandard from 'eslint-config-standard'
 import eslintConfigStandardWithTypescript from 'eslint-config-standard-with-typescript'
 import eslintPluginEslintComments from 'eslint-plugin-eslint-comments'
-import eslintPluginEtc from 'eslint-plugin-etc'
 import eslintPluginImport from 'eslint-plugin-import'
 import eslintPluginMarkdown from 'eslint-plugin-markdown'
 import eslintPluginN from 'eslint-plugin-n'
@@ -25,7 +24,6 @@ const tsconfig = getTsconfig()
 const plugins = {
   '@typescript-eslint': eslintPluginTypescript,
   'eslint-comments': eslintPluginEslintComments,
-  etc: eslintPluginEtc,
   import: eslintPluginImport,
   n: eslintPluginN,
   prettier: eslintPluginPrettier,
@@ -96,7 +94,6 @@ const baseConfig = {
 /** @type { import('eslint').Linter.RulesRecord } */
 const typeCheckingRules = {
   ...eslintPluginTypescript.configs['recommended-requiring-type-checking'].rules,
-  ...eslintPluginEtc.configs.recommended.rules,
 }
 
 /** @type { import('eslint').Linter.RulesRecord } */

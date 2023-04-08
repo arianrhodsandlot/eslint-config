@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Turn off certain rules for test files
+- Add type declarations
+
+### Changed
+- Remove eslint-plugin-etc since it seems not maintained
 
 ## [0.3.1] - 2023-03-30
 ### Fixed

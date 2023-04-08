@@ -1,0 +1,24 @@
+import { type Linter } from 'eslint'
+
+export const config: Linter.FlatConfig[]
+export const configWithTypeChecking: Linter.FlatConfig[]
+export function createConfig(options: {
+  overrides?: {
+    /** overrides rules for js files */
+    js?: Linter.FlatConfig | ((...args: unknown[]) => Linter.FlatConfig)
+    /** overrides rules for ts files */
+    ts?: Linter.FlatConfig | ((...args: unknown[]) => Linter.FlatConfig)
+  }
+  /** Should type checking rules be enabled */
+  typeChecking?: boolean
+  /** append custom flat configs to default */
+  append?: Linter.FlatConfig[]
+  /** Libraries related config */
+  libraries?: {
+    /** Should react related plugins and rules be enabled */
+    react?: boolean
+  }
+}): Promise<Linter.FlatConfig[]>
+export const configForJs: Linter.FlatConfig
+export const configForTsWithTypeChecking: Linter.FlatConfig
+export const configForTsWithoutTypeChecking: Linter.FlatConfig
