@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.4.0] - 2023-04-08
+## [0.4.1] - 2023-04-08
 ### Fixed
 - Disable `etc/prefer-interface`
 
