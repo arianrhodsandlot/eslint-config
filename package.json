@@ -1,6 +1,6 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "ESLint Config for arianrhodsandlot's projects.",
   "main": "index.js",
   "module": "index.js",
@@ -13,8 +13,9 @@
   "author": "arianrhodsandlot",
   "license": "MIT",
   "files": [
-    "src",
-    "index.js"
+    "index.d.ts",
+    "index.js",
+    "src"
   ],
   "devDependencies": {
     "@types/eslint": "8.37.0",
