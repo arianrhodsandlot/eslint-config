@@ -1,6 +1,6 @@
 # ESLint Config
 
-ESLint Config for arianrhodsandlot's projects.
+ESLint Config for [arianrhodsandlot](https://github.com/arianrhodsandlot)'s projects.
 
 ## Usage
 To use this package, ESLint should be configured by an file named `eslint.config.js`, since we are using ESLint's [flat config](https://eslint.org/docs/latest/use/configure/configuration-files-new).
@@ -24,7 +24,7 @@ To use this package, ESLint should be configured by an file named `eslint.config
   ```
 
 + Use the more powerful function `createConfig`
-  + `createConfig` is a smart function that can dected should TS rules be enabled or which libraries-related plugins/rules should be + added:
+  + `createConfig` is a smart function that can detect should TS rules be enabled or which libraries-related plugins/rules should be + added:
     ```js
     import { createConfig } from '@arianrhodsandlot/eslint-config'
 
@@ -49,7 +49,7 @@ To use this package, ESLint should be configured by an file named `eslint.config
     })
     ```
 
-  + Extends or overrides config:
+  + Extend or override config:
     ```js
     import { createConfig } from '@arianrhodsandlot/eslint-config'
 

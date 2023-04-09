@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.2] - 2023-04-08
+### Fixed
+- Fix tests files glob
+
 ## [0.4.1] - 2023-04-08
 ### Fixed
 - Disable `etc/prefer-interface`
@@ -43,10 +47,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - First release!
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.4.0...HEAD
-[0.3.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.3.1...v0.4.0
-[0.3.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.3.0...v0.3.1
-[0.3.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.1...v0.2.0
-[0.1.1]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.0...v0.1.1
+[unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.4.2...HEAD
+[0.4.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.4.1...v0.4.2
+[0.4.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.3.1...v0.4.1
+[0.3.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.1.1...v0.2.0
+[0.1.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/arianrhodsandlot/eslint-config/releases/tag/v0.1.0

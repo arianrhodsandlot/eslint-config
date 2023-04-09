@@ -138,7 +138,7 @@ export const configForTsWithoutTypeChecking = {
 }
 
 export const configForTests = {
-  files: ['{test|tests}/**/*.{js|ts|jsx|tsx}'],
+  files: ['test?(s)/**/*.{js,ts}?(x)'],
   rules: {
     'no-empty-pattern': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
