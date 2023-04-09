@@ -17,6 +17,7 @@ import { getTsconfig } from 'get-tsconfig'
 import globals from 'globals'
 import _ from 'lodash'
 import { jsFiles, tsFiles } from '../common.js'
+import { getGitIgnores } from '../lib/utils.js'
 import { overrides, overridesWithTypeChecking } from '../overrides/index.js'
 
 const tsconfig = getTsconfig()
@@ -89,6 +90,8 @@ const baseConfig = {
     },
     'import/extensions': [...jsFiles, ...tsFiles, '.json'],
   },
+
+  ignores: getGitIgnores(),
 }
 
 /** @type { import('eslint').Linter.RulesRecord } */
