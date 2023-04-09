@@ -35,9 +35,7 @@ To use this package, ESLint should be configured by an file named `eslint.config
     ```js
     import { createConfig } from '@arianrhodsandlot/eslint-config'
 
-    export default createConfig({
-      typeChecking: false,
-    })
+    export default createConfig({ typeChecking: false })
     ```
 
   + Pass an object to `typeChecking`, which can be used to specify your own TypeScript `parserOptions`:
@@ -47,6 +45,13 @@ To use this package, ESLint should be configured by an file named `eslint.config
     export default createConfig({
       typeChecking: { parserOptions: { project: './tsconfig.lint.json' } },
     })
+    ```
+
+  + Do not ignore files listed in `.gitignore`
+    ```js
+    import { createConfig } from '@arianrhodsandlot/eslint-config'
+
+    export default createConfig({ useGitignore: false })
     ```
 
   + Extend or override config:

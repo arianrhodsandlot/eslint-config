@@ -1,6 +1,6 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "ESLint Config for arianrhodsandlot's projects.",
   "main": "index.js",
   "module": "index.js",

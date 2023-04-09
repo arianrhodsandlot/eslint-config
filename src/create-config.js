@@ -7,12 +7,14 @@ import {
   configForTests,
   configForTsWithTypeChecking,
   configForTsWithoutTypeChecking,
+  configGlobalIgnore,
 } from './core/configs.js'
+import { mergeWithConcat } from './lib/utils.js'
 
 function createBaseConfig(options) {
   const configForJs_ = _.isFunction(options.overrides?.js)
     ? options.overrides?.js(configForJs)
-    : { ...configForJs, ...options.overrides?.js }
+    : mergeWithConcat(configForJs, options.overrides?.js)
 
   let enableTypeChecking = Boolean(getTsconfig()?.path)
   if (options && 'typeChecking' in options && !options.typeChecking) {
@@ -27,9 +29,9 @@ function createBaseConfig(options) {
   }
   configForTs = _.isFunction(options.overrides?.ts)
     ? options.overrides?.ts(configForTs)
-    : { ...configForTs, ...options.overrides?.ts }
+    : mergeWithConcat(configForTs, options.overrides?.ts)
 
-  return [configForJs_, configForTs, configForTests, configForMarkdown, configForJsInMarkdown]
+  return [configGlobalIgnore, configForJs_, configForTs, configForTests, configForMarkdown, configForJsInMarkdown]
 }
 
 async function isPackageAvailable(packageName) {
@@ -47,6 +49,7 @@ async function isPackageAvailable(packageName) {
  * @param {object | function} [options.overrides.js] overrides rules for js files
  * @param {object | function} [options.overrides.ts] overrides rules for ts files
  * @param {boolean} [options.typeChecking] Should type checking rules be enabled
+ * @param {boolean} [options.useGitignore] Should ignore gitignore files
  * @param {import('eslint').Linter.FlatConfig | import('eslint').Linter.FlatConfig[]} [options.append] append custom flat configs to default
  * @param {object} [options.libraries] Libraries related config
  * @param {boolean} [options.libraries.react] Should react related plugins and rules be enabled
@@ -57,6 +60,7 @@ export async function createConfig(options) {
     overrides: undefined,
     typeChecking: Boolean(getTsconfig()?.path),
     append: [],
+    useGitignore: true,
     libraries: {
       react: false,
     },

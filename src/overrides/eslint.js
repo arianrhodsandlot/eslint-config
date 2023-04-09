@@ -1,4 +1,4 @@
-import { isProduction } from '../common.js'
+import { isProduction } from '../lib/common.js'
 
 /** @type { import('eslint').Linter.RulesRecord } */
 export const eslintRules = {
