@@ -52,7 +52,8 @@ async function isPackageAvailable(packageName) {
  * @param {boolean} [options.useGitignore] Should ignore gitignore files
  * @param {import('eslint').Linter.FlatConfig | import('eslint').Linter.FlatConfig[]} [options.append] append custom flat configs to default
  * @param {object} [options.libraries] Libraries related config
- * @param {boolean} [options.libraries.react] Should react related plugins and rules be enabled
+ * @param {boolean} [options.libraries.react] Should React related plugins and rules be enabled
+ * @param {boolean} [options.libraries.next] Should Next.js related plugins and rules be enabled
  * @return {Promise<object>}
  */
 export async function createConfig(options) {
@@ -71,6 +72,11 @@ export async function createConfig(options) {
   if (options?.libraries?.react || (await isPackageAvailable('react'))) {
     const { configForReact } = await import('./libraries/react.js')
     config.push(configForReact)
+  }
+
+  if (options?.libraries?.next || (await isPackageAvailable('next'))) {
+    const { configForNext } = await import('./libraries/next.js')
+    config.push(configForNext)
   }
 
   if (options?.append) {
