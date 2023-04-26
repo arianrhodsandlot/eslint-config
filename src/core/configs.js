@@ -19,6 +19,7 @@ import _ from 'lodash'
 import { jsFiles, tsFiles } from '../lib/common.js'
 import { getGitIgnores } from '../lib/utils.js'
 import { overrides, overridesWithTypeChecking } from '../overrides/index.js'
+import { jsOverridesRules } from '../overrides/js.js'
 
 const tsconfig = getTsconfig()
 
@@ -111,6 +112,7 @@ export const configForJs = {
   rules: {
     ...baseConfig.rules,
     ...tsPluginWithTypeCheckingOffRules,
+    ...jsOverridesRules,
   },
 }
 

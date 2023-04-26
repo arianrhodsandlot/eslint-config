@@ -9,9 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add support for Next.js
 - Add support for Tailwind CSS
+- Add support for CommonJS projects
 
 ### Fixed
 - Turn off unicorn/no-useless-undefined's `checkArguments` option
+- Turn off @typescript-eslint/no-var-requires for js files
+- Turn off unicorn/no-null
 
 ## [0.5.0] - 2023-04-09
 ### Added
