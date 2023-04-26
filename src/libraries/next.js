@@ -2,7 +2,7 @@ import eslintPluginNext from '@next/eslint-plugin-next'
 import { jsxFiles, tsxFiles } from '../lib/common.js'
 
 /** @type { import('eslint').Linter.FlatConfig } */
-export const configForReact = {
+export const configForNext = {
   files: [...jsxFiles, ...tsxFiles],
 
   plugins: {
@@ -12,11 +12,5 @@ export const configForReact = {
   rules: {
     ...eslintPluginNext.configs.recommended.rules,
     ...eslintPluginNext.configs['core-web-vitals'].rules,
-  },
-
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
 }
