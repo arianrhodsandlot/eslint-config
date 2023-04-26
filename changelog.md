@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1] - 2023-04-26
+### Fixed
+- Turn off unicorn/prefer-module for js files
+
 ## [0.6.0] - 2023-04-26
 ### Added
 - Add support for Next.js
