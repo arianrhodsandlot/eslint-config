@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add support for Next.js
+- Add support for Tailwind CSS
 
 ### Fixed
 - Turn off unicorn/no-useless-undefined's `checkArguments` option
