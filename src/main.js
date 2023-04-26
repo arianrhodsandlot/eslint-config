@@ -3,9 +3,9 @@ import {
   configForTsWithTypeChecking,
   configForTsWithoutTypeChecking,
   configGlobalIgnore,
-} from './src/core/configs.js'
+} from './core/configs.js'
 
 export const config = [configGlobalIgnore, configForJs, configForTsWithoutTypeChecking]
 export const configWithTypeChecking = [configGlobalIgnore, configForJs, configForTsWithTypeChecking]
-export { createConfig } from './src/create-config.js'
+export { createConfig } from './create-config.js'
 export { configForJs, configForTsWithTypeChecking, configForTsWithoutTypeChecking }

@@ -1,11 +1,10 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
-  "version": "0.5.0",
+  "version": "0.6.0-alpha.2",
   "description": "ESLint Config for arianrhodsandlot's projects.",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "dist/cjs/eslint-config.js",
+  "module": "dist/es/eslint-config.js",
   "types": "index.d.ts",
-  "type": "module",
   "keywords": [
     "eslint",
     "eslint-config"
@@ -14,12 +13,15 @@
   "license": "MIT",
   "files": [
     "index.d.ts",
-    "index.js",
-    "src"
+    "dist"
   ],
+  "scripts": {
+    "build": "rm -rf dist && rollup -c rollup.config.mjs"
+  },
   "devDependencies": {
     "@types/eslint": "8.37.0",
     "eslint": "8.39.0",
+    "rollup": "^3.21.0",
     "typescript": "5.0.4"
   },
   "dependencies": {
