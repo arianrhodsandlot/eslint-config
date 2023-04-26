@@ -1,5 +1,7 @@
 # ESLint Config
 
+![npm](https://img.shields.io/npm/v/@arianrhodsandlot/eslint-config)
+
 ESLint Config for [arianrhodsandlot](https://github.com/arianrhodsandlot)'s projects.
 
 ## Usage
