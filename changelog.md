@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - Allow empty functions for 'private-constructors', 'protected-constructors', 'decoratedFunctions', 'overrideMethods'
+- Turn off @typescript-eslint/no-shadow
 
 ## [0.6.1] - 2023-04-26
 ### Fixed

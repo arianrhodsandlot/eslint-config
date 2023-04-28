@@ -23,9 +23,13 @@ export const typescriptRules = {
     { multiline: { delimiter: 'none' }, singleline: { delimiter: 'semi', requireLast: false } },
   ],
   '@typescript-eslint/member-ordering': ['error'],
+  '@typescript-eslint/no-empty-function': [
+    'error',
+    { allow: ['private-constructors', 'protected-constructors', 'decoratedFunctions', 'overrideMethods'] },
+  ],
   '@typescript-eslint/no-explicit-any': 'off',
   '@typescript-eslint/no-floating-promises': 'off',
-  '@typescript-eslint/no-shadow': 'error',
+  '@typescript-eslint/no-shadow': 'off',
   '@typescript-eslint/prefer-for-of': 'error',
   '@typescript-eslint/prefer-includes': 'off',
   '@typescript-eslint/prefer-string-starts-ends-with': 'off',
@@ -35,8 +39,4 @@ export const typescriptRules = {
   '@typescript-eslint/strict-boolean-expressions': 'off',
   '@typescript-eslint/unbound-method': 'off',
   '@typescript-eslint/unified-signatures': 'error',
-  '@typescript-eslint/no-empty-function': [
-    'error',
-    { allow: ['private-constructors', 'protected-constructors', 'decoratedFunctions', 'overrideMethods'] },
-  ],
 }
