@@ -35,4 +35,8 @@ export const typescriptRules = {
   '@typescript-eslint/strict-boolean-expressions': 'off',
   '@typescript-eslint/unbound-method': 'off',
   '@typescript-eslint/unified-signatures': 'error',
+  '@typescript-eslint/no-empty-function': [
+    'error',
+    { allow: ['private-constructors', 'protected-constructors', 'decoratedFunctions', 'overrideMethods'] },
+  ],
 }
