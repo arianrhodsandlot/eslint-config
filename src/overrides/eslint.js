@@ -25,7 +25,7 @@ export const eslintRules = {
     'error',
     { allowShortCircuit: true, allowTaggedTemplates: true, allowTernary: true, enforceForJSX: true },
   ],
-  'no-use-before-define': ['error', { functions: false }],
+  'no-use-before-define': 'off',
   'no-var': 'error',
   'object-shorthand': 'error',
   'padded-blocks': ['error', { blocks: 'never', classes: 'never', switches: 'never' }],

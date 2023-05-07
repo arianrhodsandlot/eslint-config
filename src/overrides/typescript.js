@@ -30,6 +30,7 @@ export const typescriptRules = {
   '@typescript-eslint/no-explicit-any': 'off',
   '@typescript-eslint/no-floating-promises': 'off',
   '@typescript-eslint/no-shadow': 'off',
+  '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
   '@typescript-eslint/prefer-for-of': 'error',
   '@typescript-eslint/prefer-includes': 'off',
   '@typescript-eslint/prefer-string-starts-ends-with': 'off',
