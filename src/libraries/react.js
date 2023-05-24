@@ -2,6 +2,7 @@ import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y'
 import eslintPluginReact from 'eslint-plugin-react'
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
 import { jsxFiles, tsxFiles } from '../lib/common.js'
+import { reactRules } from '../overrides/index.js'
 
 /** @type { import('eslint').Linter.FlatConfig } */
 export const configForReact = {
@@ -18,6 +19,7 @@ export const configForReact = {
     ...eslintPluginReact.configs.recommended.rules,
     ...eslintPluginReact.configs['jsx-runtime'].rules,
     ...eslintPluginReactHooks.configs.recommended.rules,
+    ...reactRules,
   },
 
   settings: {

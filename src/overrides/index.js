@@ -6,6 +6,8 @@ import { sonarjsRules } from './sonarjs.js'
 import { typescriptRules } from './typescript.js'
 import { unicornRules } from './unicorn.js'
 
+export { reactRules } from './react'
+
 /** @type { import('eslint').Linter.RulesRecord } */
 export const overrides = {
   ...eslintRules,
