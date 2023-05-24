@@ -2,7 +2,7 @@ import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y'
 import eslintPluginReact from 'eslint-plugin-react'
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
 import { jsxFiles, tsxFiles } from '../lib/common.js'
-import { reactRules } from '../overrides/index.js'
+import { reactRules } from '../overrides/react.js'
 
 /** @type { import('eslint').Linter.FlatConfig } */
 export const configForReact = {
