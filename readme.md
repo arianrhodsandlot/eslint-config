@@ -2,7 +2,7 @@
 
 ![npm](https://img.shields.io/npm/v/@arianrhodsandlot/eslint-config)
 
-ESLint Config for [arianrhodsandlot](https://github.com/arianrhodsandlot)'s projects.
+An opinionated ESLint Config for [arianrhodsandlot](https://github.com/arianrhodsandlot)'s projects.
 
 ## Usage
 To use this package, ESLint should be configured by an file named `eslint.config.js`, since we are using ESLint's [flat config](https://eslint.org/docs/latest/use/configure/configuration-files-new).
