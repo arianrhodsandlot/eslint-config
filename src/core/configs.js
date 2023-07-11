@@ -42,6 +42,7 @@ const pluginRules = {
   ...eslintPluginPromise.configs.recommended.rules,
   ...eslintPluginSonarjs.configs.recommended.rules,
   ...eslintPluginTypescript.configs.recommended.rules,
+  ...eslintPluginTypescript.configs.stylistic.rules,
   ...eslintPluginUnicorn.configs.recommended.rules,
 
   // this should be put at the last line since it turns off some other rules
@@ -95,7 +96,8 @@ const baseConfig = {
 
 /** @type { import('eslint').Linter.RulesRecord } */
 const typeCheckingRules = {
-  ...eslintPluginTypescript.configs['recommended-requiring-type-checking'].rules,
+  ...eslintPluginTypescript.configs['recommended-type-checked'].rules,
+  ...eslintPluginTypescript.configs['stylistic-type-checked'].rules,
 }
 
 /** @type { import('eslint').Linter.RulesRecord } */
