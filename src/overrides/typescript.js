@@ -1,19 +1,7 @@
 /** @type { import('eslint').Linter.RulesRecord } */
 export const typescriptRules = {
   '@typescript-eslint/array-type': 'error',
-  '@typescript-eslint/comma-dangle': [
-    'error',
-    {
-      arrays: 'always-multiline',
-      enums: 'always-multiline',
-      exports: 'always-multiline',
-      functions: 'never',
-      generics: 'always-multiline',
-      imports: 'always-multiline',
-      objects: 'always-multiline',
-      tuples: 'always-multiline',
-    },
-  ],
+  '@typescript-eslint/comma-dangle': 'off',
   '@typescript-eslint/consistent-generic-constructors': 'error',
   '@typescript-eslint/consistent-type-assertions': 'error',
   '@typescript-eslint/explicit-function-return-type': 'off',
