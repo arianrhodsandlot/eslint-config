@@ -1,6 +1,6 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "ESLint Config for arianrhodsandlot's projects.",
   "main": "dist/cjs/eslint-config.js",
   "module": "dist/es/eslint-config.js",
