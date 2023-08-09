@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
+- Disable type checking rules by default
 - Upgrade dependencies
 
 ## [0.7.3] - 2023-07-03

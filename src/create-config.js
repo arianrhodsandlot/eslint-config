@@ -16,10 +16,7 @@ function createBaseConfig(options) {
     ? options.overrides?.js(configForJs)
     : mergeWithConcat(configForJs, options.overrides?.js)
 
-  let enableTypeChecking = Boolean(getTsconfig()?.path)
-  if (options && 'typeChecking' in options && !options.typeChecking) {
-    enableTypeChecking = false
-  }
+  let enableTypeChecking = Boolean(options?.typeChecking)
   let configForTs = enableTypeChecking ? configForTsWithTypeChecking : configForTsWithoutTypeChecking
   if (enableTypeChecking && options.typeChecking?.parserOptions && configForTs.languageOptions) {
     configForTs.languageOptions.parserOptions = {
@@ -59,7 +56,7 @@ async function isPackageAvailable(packageName) {
 export async function createConfig(options) {
   options = _.defaultsDeep(options, {
     overrides: undefined,
-    typeChecking: Boolean(getTsconfig()?.path),
+    typeChecking: false,
     append: [],
     useGitignore: true,
     libraries: {
