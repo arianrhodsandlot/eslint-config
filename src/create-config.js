@@ -1,4 +1,3 @@
-import { getTsconfig } from 'get-tsconfig'
 import _ from 'lodash'
 import {
   configForJs,
