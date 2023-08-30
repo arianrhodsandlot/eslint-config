@@ -1,8 +1,8 @@
 import { type Linter } from 'eslint'
 
-export const config: Linter.FlatConfig[]
-export const configWithTypeChecking: Linter.FlatConfig[]
-export function createConfig(options: {
+export const config: Promise<Linter.FlatConfig[]>
+export const configWithTypeChecking: Promise<Linter.FlatConfig[]>
+export function createConfig(options?: {
   overrides?: {
     /** overrides rules for js files */
     js?: Linter.FlatConfig | ((...args: unknown[]) => Linter.FlatConfig)

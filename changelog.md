@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.2] - 2023-08-30
+### Fixed
+- Fix type decleration for `createConfig`
+- Use `createConfig` to create default config under the hood
+
 ## [0.8.1] - 2023-08-27
 ### Changed
 - Upgrade dependencies
