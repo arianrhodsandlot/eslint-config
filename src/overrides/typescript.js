@@ -1,9 +1,8 @@
 /** @type { import('eslint').Linter.RulesRecord } */
 export const typescriptRules = {
-  '@typescript-eslint/array-type': 'error',
   '@typescript-eslint/comma-dangle': 'off',
-  '@typescript-eslint/consistent-generic-constructors': 'error',
-  '@typescript-eslint/consistent-type-assertions': 'error',
+  '@typescript-eslint/consistent-type-exports': 'error',
+  '@typescript-eslint/consistent-type-imports': 'error',
   '@typescript-eslint/explicit-function-return-type': 'off',
   '@typescript-eslint/explicit-module-boundary-types': 'off',
   '@typescript-eslint/member-delimiter-style': [
@@ -19,7 +18,6 @@ export const typescriptRules = {
   '@typescript-eslint/no-floating-promises': 'off',
   '@typescript-eslint/no-shadow': 'off',
   '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
-  '@typescript-eslint/prefer-for-of': 'error',
   '@typescript-eslint/prefer-includes': 'off',
   '@typescript-eslint/prefer-string-starts-ends-with': 'off',
   '@typescript-eslint/restrict-plus-operands': 'off',
