@@ -21,14 +21,14 @@
   "devDependencies": {
     "@types/eslint": "8.44.3",
     "eslint": "8.50.0",
-    "rollup": "3.29.3",
+    "rollup": "4.0.1",
     "typescript": "5.2.2"
   },
   "dependencies": {
     "@eslint/js": "8.50.0",
-    "@next/eslint-plugin-next": "13.5.3",
-    "@typescript-eslint/eslint-plugin": "6.7.3",
-    "@typescript-eslint/parser": "6.7.3",
+    "@next/eslint-plugin-next": "13.5.4",
+    "@typescript-eslint/eslint-plugin": "6.7.4",
+    "@typescript-eslint/parser": "6.7.4",
     "eslint-config-prettier": "9.0.0",
     "eslint-config-standard": "17.1.0",
     "eslint-config-standard-with-typescript": "39.1.0",
@@ -46,10 +46,10 @@
     "eslint-plugin-sonarjs": "0.21.0",
     "eslint-plugin-unicorn": "48.0.1",
     "get-tsconfig": "4.7.2",
-    "globals": "13.22.0",
+    "globals": "13.23.0",
     "lodash": "4.17.21",
     "prettier": "3.0.3",
-    "prettier-plugin-tailwindcss": "0.5.4"
+    "prettier-plugin-tailwindcss": "0.5.5"
   },
   "peerDependencies": {
     "eslint": "*"
