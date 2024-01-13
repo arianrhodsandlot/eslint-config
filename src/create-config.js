@@ -15,7 +15,7 @@ function createBaseConfig(options) {
     ? options.overrides?.js(configForJs)
     : mergeWithConcat(configForJs, options.overrides?.js)
 
-  let enableTypeChecking = Boolean(options?.typeChecking)
+  const enableTypeChecking = Boolean(options?.typeChecking)
   let configForTs = enableTypeChecking ? configForTsWithTypeChecking : configForTsWithoutTypeChecking
   if (enableTypeChecking && options.typeChecking?.parserOptions && configForTs.languageOptions) {
     configForTs.languageOptions.parserOptions = {
