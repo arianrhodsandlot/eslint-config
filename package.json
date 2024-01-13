@@ -1,6 +1,6 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "A set of predefined ESLint config.",
   "main": "dist/cjs/eslint-config.js",
   "module": "dist/es/eslint-config.js",
