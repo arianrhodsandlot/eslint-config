@@ -1,5 +1,7 @@
-/** @type { import('prettier').Config } */
-const prettierConfig = {
+import type { Linter } from 'eslint'
+import type { Config } from 'prettier'
+
+const prettierConfig: Config = {
   printWidth: 120,
   semi: false,
   singleQuote: true,
@@ -7,7 +9,6 @@ const prettierConfig = {
   plugins: ['prettier-plugin-tailwindcss'],
 }
 
-/** @type { import('eslint').Linter.RulesRecord } */
-export const prettierRules = {
+export const prettierRules: Linter.RulesRecord = {
   'prettier/prettier': ['error', prettierConfig],
 }

@@ -1,17 +1,25 @@
 import js from '@eslint/js'
 import eslintPluginTypescript from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
+import type { Linter } from 'eslint'
 import eslintConfigPrettier from 'eslint-config-prettier'
+// @ts-expect-error
 import eslintConfigStandard from 'eslint-config-standard'
 import eslintConfigStandardWithTypescript from 'eslint-config-standard-with-typescript'
+// @ts-expect-error
 import eslintPluginEslintComments from 'eslint-plugin-eslint-comments'
+// @ts-expect-error
 import eslintPluginImport from 'eslint-plugin-import'
 import eslintPluginMarkdown from 'eslint-plugin-markdown'
+// @ts-expect-error
 import eslintPluginN from 'eslint-plugin-n'
 import eslintPluginPrettier from 'eslint-plugin-prettier'
+// @ts-expect-error
 import eslintPluginPromise from 'eslint-plugin-promise'
+// @ts-expect-error
 import eslintPluginSecurity from 'eslint-plugin-security'
 import eslintPluginSonarjs from 'eslint-plugin-sonarjs'
+// @ts-expect-error
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import { getTsconfig } from 'get-tsconfig'
 import globals from 'globals'
@@ -23,7 +31,8 @@ import { jsOverridesRules } from '../overrides/js.js'
 
 const tsconfig = getTsconfig()
 
-const plugins = {
+const plugins: Linter.FlatConfig['plugins'] = {
+  // @ts-expect-error
   '@typescript-eslint': eslintPluginTypescript,
   'eslint-comments': eslintPluginEslintComments,
   import: eslintPluginImport,
@@ -35,8 +44,7 @@ const plugins = {
   unicorn: eslintPluginUnicorn,
 }
 
-/** @type { import('eslint').Linter.RulesRecord } */
-const pluginRules = {
+const pluginRules: Linter.RulesRecord = {
   ...eslintPluginEslintComments.configs.recommended.rules,
   ...eslintPluginImport.configs.recommended.rules,
   ...eslintPluginPromise.configs.recommended.rules,
@@ -46,21 +54,21 @@ const pluginRules = {
   ...eslintPluginUnicorn.configs.recommended.rules,
 
   // this should be put at the last line since it turns off some other rules
-  ...eslintPluginPrettier.configs.recommended.rules,
+  ...(eslintPluginPrettier.configs?.recommended as Linter.FlatConfig).rules,
 }
 
-/** @type { import('eslint').Linter.RulesRecord } */
-const sharedConfigRules = {
+const sharedConfigRules: Linter.RulesRecord = {
   ...eslintConfigStandard.rules,
   ...eslintConfigStandardWithTypescript.overrides?.[0].rules,
   ...eslintConfigPrettier.rules,
 }
 
-/** @type { import('eslint').Linter.FlatConfig } */
-const baseConfig = {
+const baseConfig: Linter.FlatConfig = {
   languageOptions: {
+    // @ts-expect-error
     parser: tsParser,
     parserOptions: {
+      // @ts-expect-error
       ecmaFeatures: true,
     },
     globals: {
@@ -94,21 +102,20 @@ const baseConfig = {
   },
 }
 
-/** @type { import('eslint').Linter.RulesRecord } */
-const typeCheckingRules = {
+// @ts-expect-error
+const typeCheckingRules: Linter.RulesRecord = {
   ...eslintPluginTypescript.configs['recommended-type-checked'].rules,
   ...eslintPluginTypescript.configs['stylistic-type-checked'].rules,
 }
 
-/** @type { import('eslint').Linter.RulesRecord } */
-const tsPluginWithTypeCheckingOffRules = _(eslintPluginTypescript.rules)
+// @ts-expect-error
+const tsPluginWithTypeCheckingOffRules: Linter.RulesRecord = _(eslintPluginTypescript.rules)
   .pickBy(({ meta }) => meta.docs?.requiresTypeChecking)
   .mapKeys((rule, name) => `@typescript-eslint/${name}`)
   .mapValues(() => 'off')
   .value()
 
-/** @type { import('eslint').Linter.FlatConfig } */
-export const configForJs = {
+export const configForJs: Linter.FlatConfig = {
   ...baseConfig,
   files: jsFiles,
   rules: {
@@ -118,8 +125,7 @@ export const configForJs = {
   },
 }
 
-/** @type { import('eslint').Linter.FlatConfig } */
-export const configForTsWithTypeChecking = {
+export const configForTsWithTypeChecking: Linter.FlatConfig = {
   ...baseConfig,
   files: tsFiles,
   languageOptions: {
@@ -136,13 +142,12 @@ export const configForTsWithTypeChecking = {
   },
 }
 
-/** @type { import('eslint').Linter.FlatConfig } */
-export const configForTsWithoutTypeChecking = {
+export const configForTsWithoutTypeChecking: Linter.FlatConfig = {
   ...configForJs,
   files: tsFiles,
 }
 
-export const configForTests = {
+export const configForTests: Linter.FlatConfig = {
   files: ['test?(s)/**/*.{js,ts}?(x)'],
   rules: {
     'no-empty-pattern': 'off',
@@ -150,17 +155,17 @@ export const configForTests = {
   },
 }
 
-/** @type { import('eslint').Linter.FlatConfig } */
-export const configForMarkdown = {
-  ...eslintPluginMarkdown.configs.recommended.overrides?.[0],
+// @ts-expect-error unknown type for the markdown plugin
+const [markdownOverride, jsInMarkdownOverride] = eslintPluginMarkdown.configs.recommended.overrides
+export const configForMarkdown: Linter.FlatConfig = {
+  ...markdownOverride,
   plugins: { markdown: eslintPluginMarkdown },
 }
 
-/** @type { import('eslint').Linter.FlatConfig } */
-export const configForJsInMarkdown = {
-  files: eslintPluginMarkdown.configs.recommended.overrides?.[1].files,
+export const configForJsInMarkdown: Linter.FlatConfig = {
+  files: jsInMarkdownOverride.files,
   rules: {
-    ...eslintPluginMarkdown.configs.recommended.overrides?.[1].rules,
+    ...jsInMarkdownOverride.rules,
     'no-console': 'off',
 
     '@typescript-eslint/no-unused-expressions': 'off',
@@ -170,5 +175,4 @@ export const configForJsInMarkdown = {
   },
 }
 
-/** @type { import('eslint').Linter.FlatConfig } */
-export const configGlobalIgnore = { ignores: getGitIgnores() }
+export const configGlobalIgnore: Linter.FlatConfig = { ignores: getGitIgnores() }

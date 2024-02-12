@@ -1,8 +1,9 @@
+// @ts-expect-error
 import eslintPluginNext from '@next/eslint-plugin-next'
+import type { Linter } from 'eslint'
 import { jsxFiles, tsxFiles } from '../lib/common.js'
 
-/** @type { import('eslint').Linter.FlatConfig } */
-export const configForNext = {
+export const configForNext: Linter.FlatConfig = {
   files: [...jsxFiles, ...tsxFiles],
 
   plugins: {

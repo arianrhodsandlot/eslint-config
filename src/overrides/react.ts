@@ -1,5 +1,6 @@
-/** @type { import('eslint').Linter.RulesRecord } */
-export const reactRules = {
+import type { Linter } from 'eslint'
+
+export const reactRules: Linter.RulesRecord = {
   'react/function-component-definition': [
     'error',
     { namedComponents: 'function-declaration', unnamedComponents: 'function-expression' },

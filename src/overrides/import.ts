@@ -1,5 +1,6 @@
-/** @type { import('eslint').Linter.RulesRecord } */
-export const importRules = {
+import type { Linter } from 'eslint'
+
+export const importRules: Linter.RulesRecord = {
   'import/newline-after-import': 'error',
   'import/no-dynamic-require': 'error',
   'import/no-absolute-path': 'error',

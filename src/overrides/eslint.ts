@@ -1,7 +1,7 @@
+import type { Linter } from 'eslint'
 import { isProduction } from '../lib/common.js'
 
-/** @type { import('eslint').Linter.RulesRecord } */
-export const eslintRules = {
+export const eslintRules: Linter.RulesRecord = {
   'array-bracket-newline': ['error', 'consistent'],
   complexity: ['error'],
   curly: 'error',

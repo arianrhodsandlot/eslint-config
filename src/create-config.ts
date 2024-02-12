@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import _ from 'lodash'
 import {
   configForJs,
@@ -10,16 +11,18 @@ import {
 } from './core/configs.js'
 import { mergeWithConcat } from './lib/utils.js'
 
-function createBaseConfig(options) {
-  const configForJs_ = _.isFunction(options.overrides?.js)
+function createBaseConfig(options: CreateConfigOptions) {
+  const configForJs_: Linter.FlatConfig = _.isFunction(options.overrides?.js)
     ? options.overrides?.js(configForJs)
     : mergeWithConcat(configForJs, options.overrides?.js)
 
   const enableTypeChecking = Boolean(options?.typeChecking)
-  let configForTs = enableTypeChecking ? configForTsWithTypeChecking : configForTsWithoutTypeChecking
+  let configForTs: Linter.FlatConfig = enableTypeChecking ? configForTsWithTypeChecking : configForTsWithoutTypeChecking
+  // @ts-expect-error
   if (enableTypeChecking && options.typeChecking?.parserOptions && configForTs.languageOptions) {
     configForTs.languageOptions.parserOptions = {
       ...configForTs?.languageOptions?.parserOptions,
+      // @ts-expect-error
       ...options.typeChecking?.parserOptions,
     }
   }
@@ -30,7 +33,7 @@ function createBaseConfig(options) {
   return [configGlobalIgnore, configForJs_, configForTs, configForTests, configForMarkdown, configForJsInMarkdown]
 }
 
-async function isPackageAvailable(packageName) {
+async function isPackageAvailable(packageName: string) {
   try {
     await import(packageName)
     return true
@@ -39,21 +42,35 @@ async function isPackageAvailable(packageName) {
   }
 }
 
-/**
- * @param {object} [options]
- * @param {object} [options.overrides]
- * @param {object | function} [options.overrides.js] overrides rules for js files
- * @param {object | function} [options.overrides.ts] overrides rules for ts files
- * @param {boolean} [options.typeChecking] Should type checking rules be enabled
- * @param {boolean} [options.useGitignore] Should ignore gitignore files
- * @param {import('eslint').Linter.FlatConfig | import('eslint').Linter.FlatConfig[]} [options.append] append custom flat configs to default
- * @param {object} [options.libraries] Libraries related config
- * @param {boolean} [options.libraries.react] Should React related plugins and rules be enabled
- * @param {boolean} [options.libraries.next] Should Next.js related plugins and rules be enabled
- * @return {Promise<object>}
- */
-export async function createConfig(options) {
-  options = _.defaultsDeep(options, {
+interface CreateConfigOptions {
+  overrides?: {
+    /** overrides rules for js files */
+    js?: Linter.FlatConfig | ((...args: unknown[]) => Linter.FlatConfig)
+    /** overrides rules for ts files */
+    ts?: Linter.FlatConfig | ((...args: unknown[]) => Linter.FlatConfig)
+  }
+  /**
+   * Should type checking rules be enabled, defaults to true if there is a tsconfig.json file
+   * */
+  typeChecking: boolean | { parserOptions: any }
+  /**
+   * Should ignore gitignore files
+   * @default true
+   * */
+  useGitignore: boolean
+  /** Libraries related config */
+  libraries?: {
+    /** Should React related plugins and rules be enabled */
+    react?: boolean
+    /** Should Next related plugins and rules be enabled */
+    next?: boolean
+  }
+  /** append custom flat configs to default */
+  append: Linter.FlatConfig | Linter.FlatConfig[]
+}
+
+export async function createConfig(createConfigOptions?: CreateConfigOptions) {
+  const options: CreateConfigOptions = _.defaultsDeep(createConfigOptions, {
     overrides: undefined,
     typeChecking: false,
     append: [],

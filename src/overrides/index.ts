@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import { eslintRules } from './eslint.js'
 import { importRules } from './import.js'
 import { prettierRules } from './prettier.js'
@@ -6,8 +7,7 @@ import { sonarjsRules } from './sonarjs.js'
 import { typescriptRules } from './typescript.js'
 import { unicornRules } from './unicorn.js'
 
-/** @type { import('eslint').Linter.RulesRecord } */
-export const overrides = {
+export const overrides: Linter.RulesRecord = {
   ...eslintRules,
   ...importRules,
   ...prettierRules,
@@ -17,6 +17,6 @@ export const overrides = {
   ...unicornRules,
 }
 
-export const overridesWithTypeChecking = {
+export const overridesWithTypeChecking: Linter.RulesRecord = {
   ...overrides,
 }

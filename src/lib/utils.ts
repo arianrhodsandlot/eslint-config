@@ -3,7 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import _ from 'lodash'
 
-let gitIgnores
+let gitIgnores: string[]
 export function getGitIgnores() {
   if (gitIgnores) {
     return gitIgnores
@@ -19,7 +19,7 @@ export function getGitIgnores() {
   return gitIgnores
 }
 
-export function mergeWithConcat(object, source) {
+export function mergeWithConcat(object: any, source: any) {
   _.mergeWith(object, source, (objValue, srcValue) => {
     if (_.isArray(objValue)) {
       return [...objValue, ..._.castArray(srcValue)]
