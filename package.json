@@ -18,7 +18,8 @@
     "build": "conc npm:build:*",
     "build:types": "tsc",
     "build:esm": "swc src -d dist/esm --strip-leading-paths",
-    "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd -C module.importInterop=node"
+    "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd -C module.importInterop=node",
+    "test": "tsx --test --no-deprecation"
   },
   "devDependencies": {
     "@arianrhodsandlot/eslint-config": "0.8.5",
@@ -33,6 +34,7 @@
     "@types/node": "20.11.20",
     "concurrently": "8.2.2",
     "eslint": "8.57.0",
+    "tsx": "4.7.1",
     "typescript": "5.3.3"
   },
   "dependencies": {
