@@ -24,16 +24,17 @@
   "devDependencies": {
     "@arianrhodsandlot/eslint-config": "0.8.5",
     "@swc/cli": "0.3.10",
-    "@swc/core": "1.4.6",
+    "@swc/core": "1.4.8",
     "@tsconfig/node-lts": "20.1.1",
     "@types/eslint": "8.56.5",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint-plugin-markdown": "2.0.2",
     "@types/eslint__js": "8.42.3",
-    "@types/lodash": "4.14.202",
-    "@types/node": "20.11.25",
+    "@types/lodash": "4.17.0",
+    "@types/node": "20.11.27",
     "concurrently": "8.2.2",
     "eslint": "8.57.0",
+    "eslint-flat-config-viewer": "^0.1.11",
     "tsx": "4.7.1",
     "typescript": "5.4.2"
   },
@@ -61,7 +62,7 @@
     "lodash": "^4.17.21",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.12",
-    "typescript-eslint": "^7.1.1"
+    "typescript-eslint": "^7.2.0"
   },
   "peerDependencies": {
     "eslint": "*"

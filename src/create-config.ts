@@ -2,12 +2,11 @@ import type { Linter } from 'eslint'
 import _ from 'lodash'
 import {
   configForJs,
-  configForJsInMarkdown,
-  configForMarkdown,
   configForTests,
   configForTsWithTypeChecking,
   configForTsWithoutTypeChecking,
   configGlobalIgnore,
+  configsForMarkdown,
 } from './core/configs.js'
 import { mergeWithConcat } from './lib/utils.js'
 
@@ -30,7 +29,7 @@ function createBaseConfig(options: CreateConfigOptions) {
     ? options.overrides?.ts(configForTs)
     : mergeWithConcat(configForTs, options.overrides?.ts)
 
-  return [configGlobalIgnore, configForJs_, configForTs, configForTests, configForMarkdown, configForJsInMarkdown]
+  return [configGlobalIgnore, configForJs_, configForTs, configForTests, ...configsForMarkdown]
 }
 
 async function isPackageAvailable(packageName: string) {

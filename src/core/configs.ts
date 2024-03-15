@@ -167,17 +167,10 @@ export const configForTests: FlatConfig = {
   },
 }
 
-// @ts-expect-error unknown type for the markdown plugin
-const [markdownOverride, jsInMarkdownOverride] = eslintPluginMarkdown.configs.recommended.overrides
-export const configForMarkdown: FlatConfig = {
-  ...markdownOverride,
-  plugins: { markdown: eslintPluginMarkdown },
-}
-
-export const configForJsInMarkdown: FlatConfig = {
-  files: jsInMarkdownOverride.files,
+export const configsForMarkdown = eslintPluginMarkdown.configs.recommended as FlatConfig[]
+configsForMarkdown.push({
+  files: ['**/*.md/*.js'],
   rules: {
-    ...jsInMarkdownOverride.rules,
     'no-console': 'off',
 
     '@typescript-eslint/no-unused-expressions': 'off',
@@ -185,6 +178,6 @@ export const configForJsInMarkdown: FlatConfig = {
 
     'import/no-unresolved': 'off',
   },
-}
+})
 
 export const configGlobalIgnore: FlatConfig = { ignores: getGitIgnores() }
