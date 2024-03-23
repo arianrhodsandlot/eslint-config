@@ -1,8 +1,12 @@
 const { createConfig: createNormalConfig } = require('@arianrhodsandlot/eslint-config')
-// @ts-expect-error debug package
-const { createConfig: createDebugConfig } = require('./dist/umd')
 
-const isDebug = !false
+let createDebugConfig
+try {
+  // @ts-expect-error debug package
+  createDebugConfig = require('./dist/umd').createConfig
+} catch {}
+
+const isDebug = false
 const createConfig = isDebug ? createDebugConfig : createNormalConfig
 
 module.exports = createConfig({
