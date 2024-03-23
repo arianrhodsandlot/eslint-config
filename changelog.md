@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.0] - 2024-01-13
+### Changed
+- Migrate to TypeScript and SWC
+
 ## [0.8.5] - 2024-01-13
 ### Changed
 - Upgrade dependencies
