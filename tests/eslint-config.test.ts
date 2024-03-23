@@ -34,7 +34,6 @@ describe('ESLint config', async () => {
     deepEqual(messages, sidebarNavMessages)
   })
 
-  // fix me: md files are ignored for some unknown reasons.
   test('md file', async () => {
     const file = join(inputsDir, 'typescript-cheatsheets-react.md')
     const [{ messages }] = await eslint.lintFiles(file)

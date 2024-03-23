@@ -7,7 +7,8 @@ A set of predefined ESLint config.
 ## Features
 + Integrated with following ESLint plugins/configs, and configurations recommended by them:
   + For best practices:
-    + [eslint-config-standard](https://github.com/standard/eslint-config-standard) and [eslint-config-standard-with-typescript](https://github.com/standard/eslint-config-standard-with-typescript)
+    + [eslint-config-standard](https://github.com/standard/eslint-config-standard)
+    + [eslint-config-love](https://github.com/mightyiam/eslint-config-love)
     + [eslint-plugin-eslint-comments](https://github.com/eslint-community/eslint-plugin-eslint-comments)
     + [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
     + [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)

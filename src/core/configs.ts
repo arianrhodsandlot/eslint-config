@@ -1,8 +1,8 @@
 import js from '@eslint/js'
 import type { Linter } from 'eslint'
+import eslintConfigLove from 'eslint-config-love'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintConfigStandard from 'eslint-config-standard'
-import eslintConfigStandardWithTypescript from 'eslint-config-standard-with-typescript'
 import eslintPluginEslintComments from 'eslint-plugin-eslint-comments'
 import eslintPluginImport from 'eslint-plugin-import'
 import eslintPluginMarkdown from 'eslint-plugin-markdown'
@@ -65,10 +65,9 @@ const pluginRules: Linter.RulesRecord = {
   ...(eslintPluginPrettier.configs?.recommended as FlatConfig).rules,
 }
 
-// @ts-expect-error
 const sharedConfigRules: FlatConfigRules = {
   ...eslintConfigStandard.rules,
-  ...eslintConfigStandardWithTypescript.overrides?.[0].rules,
+  ...eslintConfigLove.rules,
   ...eslintConfigPrettier.rules,
 }
 
