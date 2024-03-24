@@ -5,6 +5,15 @@
   "main": "dist/umd/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
+  "type": "module",
+  "exports": {
+    "default": "./dist/umd/index.js",
+    "node": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/umd/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "keywords": [
     "eslint",
     "eslint-config"
