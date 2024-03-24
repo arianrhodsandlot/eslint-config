@@ -1,4 +1,3 @@
-// @ts-expect-error
-const { config } = require('../../dist/umd')
+import { config } from '../../dist/esm/index.js'
 
-module.exports = config
+export default config

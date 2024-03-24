@@ -1,6 +1,7 @@
 import type { Linter } from 'eslint'
 
 export const typescriptRules: Linter.RulesRecord = {
+  '@typescript-eslint/array-type': ['error', { default: 'array' }],
   '@typescript-eslint/comma-dangle': 'off',
   '@typescript-eslint/consistent-type-exports': 'error',
   '@typescript-eslint/consistent-type-imports': 'error',

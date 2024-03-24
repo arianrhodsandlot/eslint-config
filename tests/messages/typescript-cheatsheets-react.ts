@@ -1,4 +1,4 @@
-/* eslint-disable sonarjs/no-duplicate-string,max-lines */
+/* eslint-disable max-lines,sonarjs/no-duplicate-string */
 export const typescriptCheatsheetsReactMessages = [
   {
     ruleId: '@typescript-eslint/consistent-type-definitions',
@@ -1496,18 +1496,6 @@ export const typescriptCheatsheetsReactMessages = [
     endLine: 1087,
     endColumn: 5,
     fix: { range: [46_330, 46_331], text: '' },
-  },
-  {
-    ruleId: '@typescript-eslint/array-type',
-    severity: 2,
-    message: "Array type using 'T[]' is forbidden for non-simple types. Use 'Array<T>' instead.",
-    line: 1089,
-    column: 11,
-    nodeType: 'TSArrayType',
-    messageId: 'errorStringGenericSimple',
-    endLine: 1092,
-    endColumn: 6,
-    fix: { range: [46_378, 46_420], text: 'Array<{\n    id: string;\n    title: string;\n  }>' },
   },
   {
     ruleId: '@typescript-eslint/member-delimiter-style',
@@ -3815,18 +3803,6 @@ export const typescriptCheatsheetsReactMessages = [
     endColumn: 18,
   },
   {
-    ruleId: '@typescript-eslint/array-type',
-    severity: 2,
-    message: "Array type using 'T[]' is forbidden for non-simple types. Use 'Array<T>' instead.",
-    line: 2164,
-    column: 22,
-    nodeType: 'TSArrayType',
-    messageId: 'errorStringGenericSimple',
-    endLine: 2164,
-    endColumn: 54,
-    fix: { range: [90_886, 90_918], text: 'Array<{ suit: string; card: number }>' },
-  },
-  {
     ruleId: '@typescript-eslint/consistent-type-definitions',
     severity: 2,
     message: 'Use an `interface` instead of a `type`.',
@@ -3851,18 +3827,6 @@ export const typescriptCheatsheetsReactMessages = [
     messageId: 'unusedVar',
     endLine: 2175,
     endColumn: 14,
-  },
-  {
-    ruleId: '@typescript-eslint/array-type',
-    severity: 2,
-    message: "Array type using 'T[]' is forbidden for non-simple types. Use 'Array<T>' instead.",
-    line: 2176,
-    column: 7,
-    nodeType: 'TSArrayType',
-    messageId: 'errorStringGenericSimple',
-    endLine: 2176,
-    endColumn: 39,
-    fix: { range: [91_428, 91_460], text: 'Array<{ suit: string; card: number }>' },
   },
   {
     ruleId: '@typescript-eslint/member-delimiter-style',
@@ -4878,4 +4842,4 @@ export const typescriptCheatsheetsReactMessages = [
     fix: { range: [115_263, 115_269], text: "'warn'" },
   },
 ]
-/* eslint-enable sonarjs/no-duplicate-string,max-lines */
+/* eslint-enable max-lines,sonarjs/no-duplicate-string */

@@ -1,6 +1,6 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 export const sidebarNavMessages = [
   {
-    // eslint-disable-next-line sonarjs/no-duplicate-string
     ruleId: 'prettier/prettier',
     severity: 2,
     message: 'Replace `"use·client"` with `\'use·client\'`',
@@ -545,3 +545,4 @@ export const sidebarNavMessages = [
     fix: { range: [2511, 2511], text: ',' },
   },
 ]
+/* eslint-enable sonarjs/no-duplicate-string */
