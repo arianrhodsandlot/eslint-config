@@ -29,7 +29,7 @@
     "test": "tsx --test --no-deprecation"
   },
   "devDependencies": {
-    "@arianrhodsandlot/eslint-config": "0.9.0",
+    "@arianrhodsandlot/eslint-config": "0.8.5",
     "@swc/cli": "0.3.10",
     "@swc/core": "1.4.8",
     "@tsconfig/node-lts": "20.1.2",
