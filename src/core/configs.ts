@@ -33,6 +33,7 @@ const plugins: FlatConfigPlugins = {
   prettier: eslintPluginPrettier,
   promise: eslintPluginPromise,
   security: eslintPluginSecurity,
+  // @ts-expect-error
   sonarjs: eslintPluginSonarjs,
   unicorn: eslintPluginUnicorn,
 }
@@ -52,6 +53,7 @@ const eslintPluginTypescriptStylisticTypeCheckedRules = tseslint.configs.stylist
   .reduce((acc, { rules }) => ({ ...acc, ...rules }), {}).rules
 /* eslint-enable unicorn/no-array-reduce */
 
+// @ts-expect-error
 const pluginRules: Linter.RulesRecord = {
   ...eslintPluginEslintComments.configs?.recommended.rules,
   ...eslintPluginImport.configs?.recommended.rules,
