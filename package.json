@@ -26,7 +26,7 @@
     "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd -C module.importInterop=node --out-file-extension=cjs",
     "build": "conc npm:build:*",
     "lint": "eslint src",
-    "test": "tsx --test --no-deprecation"
+    "test": "tsx --test tests/*.test.ts"
   },
   "devDependencies": {
     "eslint-config": "npm:@arianrhodsandlot/eslint-config@0.9.1",
