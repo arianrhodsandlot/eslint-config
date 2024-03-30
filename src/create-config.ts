@@ -51,12 +51,12 @@ interface CreateConfigOptions {
   /**
    * Should type checking rules be enabled, defaults to true if there is a tsconfig.json file
    * */
-  typeChecking: boolean | { parserOptions: any }
+  typeChecking?: boolean | { parserOptions: any }
   /**
    * Should ignore gitignore files
    * @default true
    * */
-  useGitignore: boolean
+  useGitignore?: boolean
   /** Libraries related config */
   libraries?: {
     /** Should React related plugins and rules be enabled */
@@ -65,7 +65,7 @@ interface CreateConfigOptions {
     next?: boolean
   }
   /** append custom flat configs to default */
-  append: Linter.FlatConfig | Linter.FlatConfig[]
+  append?: Linter.FlatConfig | Linter.FlatConfig[]
 }
 
 export async function createConfig(createConfigOptions?: CreateConfigOptions) {
