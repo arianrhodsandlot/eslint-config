@@ -1,15 +1,12 @@
 import type { Linter } from 'eslint'
-// @ts-expect-error
 import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y'
-// @ts-expect-error
 import eslintPluginReact from 'eslint-plugin-react'
-// @ts-expect-error
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
-import { jsFiles, tsFiles } from '../lib/common.js'
+import { jsxFiles, tsxFiles } from '../lib/common.js'
 import { reactRules } from '../overrides/react.js'
 
 export const configForReact: Linter.FlatConfig = {
-  files: [...jsFiles, ...tsFiles],
+  files: [...jsxFiles, ...tsxFiles],
 
   plugins: {
     'jsx-a11y': eslintPluginJsxA11y,

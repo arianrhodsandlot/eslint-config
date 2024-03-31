@@ -3,7 +3,10 @@ import type { Linter } from 'eslint'
 export const reactRules: Linter.RulesRecord = {
   'react/function-component-definition': [
     'error',
-    { namedComponents: 'function-declaration', unnamedComponents: 'function-expression' },
+    {
+      namedComponents: 'function-declaration',
+      unnamedComponents: 'function-expression',
+    },
   ],
   'react/hook-use-state': ['error', { allowDestructuredState: true }],
   'react/jsx-boolean-value': 'error',

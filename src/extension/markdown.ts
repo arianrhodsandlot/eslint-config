@@ -4,13 +4,12 @@ import { eslintPluginMarkdown } from '../lib/plugins.js'
 
 const configsForMarkdown = tseslint.config(...eslintPluginMarkdown.configs.recommended, {
   files: ['**/*.md/*.js'],
-  // @ts-expect-error
-  name: 'markdown-js-custom',
   rules: {
     '@typescript-eslint/no-unused-expressions': 'off',
 
     '@typescript-eslint/no-unused-vars': 'off',
     'import/no-unresolved': 'off',
+    'n/no-missing-import': 'off',
 
     'no-console': 'off',
   },

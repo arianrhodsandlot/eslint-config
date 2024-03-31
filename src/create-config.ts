@@ -16,11 +16,9 @@ function createBaseConfig(options: CreateConfigOptions) {
   if (enableTypeChecking) {
     const [configForTs] = configForTsWithTypeChecking
 
-    // @ts-expect-error
-    if (options.typeChecking?.parserOptions && configForTs.languageOptions) {
+    if (typeof options.typeChecking === 'object' && options.typeChecking.parserOptions && configForTs.languageOptions) {
       configForTs.languageOptions.parserOptions = {
         ...configForTs?.languageOptions?.parserOptions,
-        // @ts-expect-error
         ...options.typeChecking?.parserOptions,
       }
     }
@@ -75,15 +73,15 @@ function extendConfig(config: ReturnType<typeof createBaseConfig>, options?: Cre
   }
 }
 
-export async function createConfig(createConfigOptions?: CreateConfigOptions) {
+export function createConfig(createConfigOptions?: CreateConfigOptions) {
   const options: CreateConfigOptions = _.defaultsDeep(createConfigOptions, {
     append: [],
     markdown: true,
-    next: await isPackageAvailable('next'),
-    perfectionist: false,
+    next: isPackageAvailable('next'),
+    perfectionist: true,
     prepend: [],
-    prettier: await isPackageAvailable('prettier'),
-    react: await isPackageAvailable('react'),
+    prettier: isPackageAvailable('prettier'),
+    react: isPackageAvailable('react'),
     typeChecking: false,
   })
 

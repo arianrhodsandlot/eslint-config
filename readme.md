@@ -7,8 +7,6 @@ A set of predefined ESLint config.
 ## Features
 + Integrated with following ESLint plugins/configs, and configurations recommended by them:
   + For best practices:
-    + [eslint-config-standard](https://github.com/standard/eslint-config-standard)
-    + [eslint-config-love](https://github.com/mightyiam/eslint-config-love)
     + [eslint-plugin-eslint-comments](https://github.com/eslint-community/eslint-plugin-eslint-comments)
     + [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
     + [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)
@@ -17,7 +15,7 @@ A set of predefined ESLint config.
     + [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs/)
     + [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
   + For Styling:
-    + [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+    + [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
   + Languages related:
     + [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint)
     + [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
@@ -34,25 +32,11 @@ To use this package, ESLint should be configured by an file named `eslint.config
 
 + Basic usage:
   ```js
-  export { config as default } from '@arianrhodsandlot/eslint-config'
+  export { default } from '@arianrhodsandlot/eslint-config'
   ```
 + Advanced usage:
   <details>
     <summary>Expand / Collapse</summary>
-
-    + For TypeScript heavy usage:
-      ```js
-      export { configWithTypeChecking as default } from '@arianrhodsandlot/eslint-config'
-      ```
-
-    + Compose predefined configs, by your own hands, or even modify them:
-      ```js
-      import { configForJs, configForTsWithTypeChecking } from '@arianrhodsandlot/eslint-config'
-
-      configForJs.languageOptions.global.CUSTOM_GLOBAL_VARIABLE = true
-
-      export default [configForJs, configForTsWithTypeChecking, { /** other custome config */ }]
-      ```
 
     + Use the more powerful function `createConfig`
       + `createConfig` is a smart function that can detect should TS rules be enabled or which libraries-related plugins/rules should be + added:
@@ -62,11 +46,11 @@ To use this package, ESLint should be configured by an file named `eslint.config
         export default createConfig()
         ```
 
-      + Type checking can be explicitly disabled:
+      + Type checking can be explicitly enabled (it's slow!):
         ```js
         import { createConfig } from '@arianrhodsandlot/eslint-config'
 
-        export default createConfig({ typeChecking: false })
+        export default createConfig({ typeChecking: true })
         ```
 
       + Pass an object to `typeChecking`, which can be used to specify your own TypeScript `parserOptions`:
@@ -85,39 +69,6 @@ To use this package, ESLint should be configured by an file named `eslint.config
         export default createConfig({ useGitignore: false })
         ```
 
-      + Extend or override config:
-        ```js
-        import { createConfig } from '@arianrhodsandlot/eslint-config'
-
-        export default createConfig({
-          overrides: {
-            js: {
-              rules: {
-                'no-var': 'off'
-              },
-            },
-          },
-        })
-        ```
-
-      + Overriding can also be done by a function:
-        ```js
-        import { createConfig } from '@arianrhodsandlot/eslint-config'
-
-        export default createConfig({
-          overrides: {
-            ts(config) {
-              return {
-                ...config,
-                languageOptions: {
-                  parser: otherTsParser,
-                },
-              }
-            },
-          },
-        })
-        ```
-
       + Since flat config is actually an array, we can append more config items to it:
         ```js
         import { createConfig } from '@arianrhodsandlot/eslint-config'
@@ -129,18 +80,22 @@ To use this package, ESLint should be configured by an file named `eslint.config
               html: eslintHtmlPlugin,
             },
             rules: eslintHtmlPlugin.configs.recommended.rules,
-          }
+          },
+          prepend: {
+            ignore: ['build/**/*']
+          },
         })
         ```
 
-      + Libraries-related plugins/rules can be explictly enabled or disabled by `libraries`:
+      + Additional plugins/rules can be explictly enabled or disabled:
         ```js
         import { createConfig } from '@arianrhodsandlot/eslint-config'
 
         export default createConfig({
-          libraries: {
-            react: true,
-          },
+          markdown: false,
+          next: true,
+          prettier: false,
+          react: true,
         })
         ```
   </details>

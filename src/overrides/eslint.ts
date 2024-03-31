@@ -61,11 +61,6 @@ export const eslintRules: Linter.RulesRecord = {
   'no-unmodified-loop-condition': 'error',
   'no-unneeded-ternary': ['error', { defaultAssignment: false }],
   'no-unreachable-loop': 'error',
-  'no-unused-expressions': [
-    'error',
-    { allowShortCircuit: true, allowTaggedTemplates: true, allowTernary: true, enforceForJSX: true },
-  ],
-  'no-unused-vars': ['error', { args: 'none', caughtErrors: 'none', ignoreRestSiblings: true, vars: 'all' }],
   'no-use-before-define': 'off',
   'no-useless-call': 'error',
   'no-useless-computed-key': 'error',
@@ -82,7 +77,10 @@ export const eslintRules: Linter.RulesRecord = {
   'prefer-const': ['error', { destructuring: 'all' }],
   'prefer-destructuring': [
     'error',
-    { AssignmentExpression: { array: false, object: false }, VariableDeclarator: { array: false, object: true } },
+    {
+      AssignmentExpression: { array: false, object: false },
+      VariableDeclarator: { array: false, object: true },
+    },
     { enforceForRenamedProperties: false },
   ],
   'prefer-exponentiation-operator': 'error',

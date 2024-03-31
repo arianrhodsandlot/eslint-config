@@ -31,7 +31,7 @@ const plugins = {
   unicorn: eslintPluginUnicorn,
 }
 
-/* eslint-disable unicorn/no-array-reduce */
+/* eslint-disable unicorn/no-array-reduce, @typescript-eslint/consistent-type-assertions */
 const eslintPluginTypescriptRecommendedRules = tseslint.configs.recommended
   .filter(({ rules }) => rules)
   .reduce((acc, { rules }) => ({ ...acc, ...rules }) as FlatConfigRules, {} as FlatConfigRules)
@@ -44,7 +44,7 @@ const eslintPluginTypescriptRecommendedTypeCheckedRules = tseslint.configs.recom
 const eslintPluginTypescriptStylisticTypeCheckedRules = tseslint.configs.stylisticTypeChecked
   .filter(({ rules }) => rules)
   .reduce((acc, { rules }) => ({ ...acc, ...rules }) as FlatConfigRules, {} as FlatConfigRules)
-/* eslint-enable unicorn/no-array-reduce */
+/* eslint-enable unicorn/no-array-reduce, @typescript-eslint/consistent-type-assertions */
 
 const pluginRules: Linter.RulesRecord = {
   ...eslintPluginEslintComments.configs?.recommended.rules,
@@ -103,8 +103,6 @@ export const globalConfig = tseslint.config({
   linterOptions: {
     reportUnusedDisableDirectives: true,
   },
-  // @ts-expect-error
-  name: 'global-config',
 }) as FlatConfigs
 
 export const configForJsAndTs = tseslint.config(
@@ -120,7 +118,7 @@ export const configForJsAndTs = tseslint.config(
     rules: {
       ...jsOverridesRules,
     },
-  }
+  },
 ) as FlatConfigs
 
 export const configForTsWithTypeChecking = tseslint.config({
@@ -142,8 +140,6 @@ export const configForTsWithTypeChecking = tseslint.config({
 
 export const configForTests = tseslint.config({
   files: ['test?(s)/**/*.{js,ts}?(x)'],
-  // @ts-expect-error
-  name: 'test',
   rules: {
     '@typescript-eslint/no-non-null-assertion': 'off',
     'no-empty-pattern': 'off',

@@ -16,12 +16,12 @@ export const configForPerfectionist: Linter.FlatConfig = {
       'error',
       {
         groups: [
-          'type',
-          ['builtin', 'external'],
-          'internal-type',
-          'internal',
-          ['parent-type', 'sibling-type', 'index-type'],
-          ['parent', 'sibling', 'index'],
+          'builtin',
+          'external',
+          ['internal-type', 'internal'],
+          ['parent-type', 'parent'],
+          ['sibling-type', 'sibling'],
+          ['index-type', 'index'],
           'object',
           'unknown',
         ],

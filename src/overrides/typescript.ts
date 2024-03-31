@@ -70,9 +70,20 @@ export const typescriptRules: Linter.RulesRecord = {
       ignoreOverrideMethods: true,
     },
   ],
+  '@typescript-eslint/consistent-type-assertions': [
+    'error',
+    {
+      assertionStyle: 'as',
+      objectLiteralTypeAssertions: 'allow-as-parameter',
+    },
+  ],
   '@typescript-eslint/consistent-type-imports': [
     'error',
-    { disallowTypeAnnotations: true, fixStyle: 'inline-type-imports', prefer: 'type-imports' },
+    {
+      disallowTypeAnnotations: true,
+      fixStyle: 'inline-type-imports',
+      prefer: 'type-imports',
+    },
   ],
   '@typescript-eslint/default-param-last': 'error',
   '@typescript-eslint/explicit-function-return-type': 'off',
@@ -84,7 +95,9 @@ export const typescriptRules: Linter.RulesRecord = {
   '@typescript-eslint/no-dynamic-delete': 'error',
   '@typescript-eslint/no-empty-function': [
     'error',
-    { allow: ['private-constructors', 'protected-constructors', 'decoratedFunctions', 'overrideMethods'] },
+    {
+      allow: ['private-constructors', 'protected-constructors', 'decoratedFunctions', 'overrideMethods'],
+    },
   ],
   '@typescript-eslint/no-explicit-any': 'off',
   '@typescript-eslint/no-extra-non-null-assertion': 'error',
@@ -107,7 +120,12 @@ export const typescriptRules: Linter.RulesRecord = {
   ],
   '@typescript-eslint/no-unused-vars': [
     'error',
-    { args: 'none', caughtErrors: 'none', ignoreRestSiblings: true, vars: 'all' },
+    {
+      args: 'none',
+      caughtErrors: 'none',
+      ignoreRestSiblings: true,
+      vars: 'all',
+    },
   ],
   '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
   '@typescript-eslint/no-useless-constructor': 'error',
