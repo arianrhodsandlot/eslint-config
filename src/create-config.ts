@@ -1,95 +1,93 @@
 import type { Linter } from 'eslint'
 import _ from 'lodash'
-import {
-  configForJs,
-  configForTests,
-  configForTsWithTypeChecking,
-  configForTsWithoutTypeChecking,
-  configGlobalIgnore,
-  configsForMarkdown,
-} from './core/configs.js'
-import { mergeWithConcat } from './lib/utils.js'
+import tseslint from 'typescript-eslint'
+import { configForJsAndTs, configForTests, configForTsWithTypeChecking, globalConfig } from './core/configs.js'
+import { configsForMarkdown } from './extension/markdown.js'
+import { configForNext } from './extension/next.js'
+import { configForPrettier } from './extension/prettier.js'
+import { configForReact } from './extension/react.js'
+import { isPackageAvailable } from './lib/utils.js'
 
 function createBaseConfig(options: CreateConfigOptions) {
-  const configForJs_: Linter.FlatConfig = _.isFunction(options.overrides?.js)
-    ? options.overrides?.js(configForJs)
-    : mergeWithConcat(configForJs, options.overrides?.js)
+  const baseConfig = tseslint.config(...globalConfig, ...configForJsAndTs)
 
   const enableTypeChecking = Boolean(options?.typeChecking)
-  let configForTs: Linter.FlatConfig = enableTypeChecking ? configForTsWithTypeChecking : configForTsWithoutTypeChecking
-  // @ts-expect-error
-  if (enableTypeChecking && options.typeChecking?.parserOptions && configForTs.languageOptions) {
-    configForTs.languageOptions.parserOptions = {
-      ...configForTs?.languageOptions?.parserOptions,
-      // @ts-expect-error
-      ...options.typeChecking?.parserOptions,
-    }
-  }
-  configForTs = _.isFunction(options.overrides?.ts)
-    ? options.overrides?.ts(configForTs)
-    : mergeWithConcat(configForTs, options.overrides?.ts)
+  if (enableTypeChecking) {
+    let [configForTs] = configForTsWithTypeChecking
 
-  return [configGlobalIgnore, configForJs_, configForTs, configForTests, ...configsForMarkdown]
+    // @ts-expect-error
+    if (options.typeChecking?.parserOptions && configForTs.languageOptions) {
+      configForTs.languageOptions.parserOptions = {
+        ...configForTs?.languageOptions?.parserOptions,
+        // @ts-expect-error
+        ...options.typeChecking?.parserOptions,
+      }
+    }
+
+    baseConfig.push(configForTs)
+  }
+
+  baseConfig.push(...configForTests)
+
+  return baseConfig
 }
 
-async function isPackageAvailable(packageName: string) {
-  try {
-    await import(packageName)
-    return true
-  } catch {
-    return false
-  }
+interface ConfigExtension {
+  /** Should React related plugins and rules be enabled */
+  react?: boolean
+  /** Should Next related plugins and rules be enabled */
+  next?: boolean
+  prettier?: boolean
+  markdown?: boolean
 }
 
 interface CreateConfigOptions {
-  overrides?: {
-    /** overrides rules for js files */
-    js?: Linter.FlatConfig | ((...args: unknown[]) => Linter.FlatConfig)
-    /** overrides rules for ts files */
-    ts?: Linter.FlatConfig | ((...args: unknown[]) => Linter.FlatConfig)
-  }
   /**
    * Should type checking rules be enabled, defaults to true if there is a tsconfig.json file
    * */
   typeChecking?: boolean | { parserOptions: any }
-  /**
-   * Should ignore gitignore files
-   * @default true
-   * */
-  useGitignore?: boolean
-  /** Libraries related config */
-  libraries?: {
-    /** Should React related plugins and rules be enabled */
-    react?: boolean
-    /** Should Next related plugins and rules be enabled */
-    next?: boolean
-  }
+
+  /** Extended config */
+  extension?: ConfigExtension
+
   /** append custom flat configs to default */
   append?: Linter.FlatConfig | Linter.FlatConfig[]
 }
 
+function addExtensionsToConfig(config: ReturnType<typeof createBaseConfig>, extension?: ConfigExtension) {
+  if (!extension) {
+    return
+  }
+
+  if (extension.react) {
+    config.push(configForReact)
+  }
+  if (extension.next) {
+    config.push(configForNext)
+  }
+  if (extension.markdown) {
+    config.push(...configsForMarkdown)
+  }
+  if (extension.prettier) {
+    config.push(configForPrettier)
+  }
+}
+
 export async function createConfig(createConfigOptions?: CreateConfigOptions) {
   const options: CreateConfigOptions = _.defaultsDeep(createConfigOptions, {
-    overrides: undefined,
     typeChecking: false,
     append: [],
-    useGitignore: true,
-    libraries: {
-      react: false,
+    extension: {
+      react: await isPackageAvailable('react'),
+      next: await isPackageAvailable('next'),
+      prettier: await isPackageAvailable('prettier'),
+      markdown: true,
     },
   })
 
   const config = createBaseConfig(options)
 
-  if (options?.libraries?.react || (await isPackageAvailable('react'))) {
-    const { configForReact } = await import('./libraries/react.js')
-    config.push(configForReact)
-  }
-
-  if (options?.libraries?.next || (await isPackageAvailable('next'))) {
-    const { configForNext } = await import('./libraries/next.js')
-    config.push(configForNext)
-  }
+  addExtensionsToConfig(config, options?.extension)
 
   if (options?.append) {
     config.push(..._.castArray(options?.append))

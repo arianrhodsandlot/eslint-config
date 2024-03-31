@@ -27,3 +27,12 @@ export function mergeWithConcat(object: any, source: any) {
   })
   return object
 }
+
+export async function isPackageAvailable(packageName: string) {
+  try {
+    await import(packageName)
+    return true
+  } catch {
+    return false
+  }
+}

@@ -1,6 +1,10 @@
-import { createConfig } from 'eslint-config'
+import { createConfig } from './dist/esm/index.js'
 
 export default createConfig({
+  extention: {
+    react: true,
+    next: true,
+  },
   append: [
     {
       rules: {
