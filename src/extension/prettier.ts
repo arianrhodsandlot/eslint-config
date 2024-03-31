@@ -1,10 +1,11 @@
 import type { Linter } from 'eslint'
+import eslintConfigPrettier from 'eslint-config-prettier'
 import { jsFiles, tsFiles } from '../lib/common.js'
 import { eslintPluginPrettier } from '../lib/plugins.js'
-import { isPackageAvailable } from '../lib/utils.js'
+import { getPackageVersion } from '../lib/utils.js'
 
 const plugins = []
-if (isPackageAvailable('prettier-plugin-tailwindcss')) {
+if (getPackageVersion('prettier-plugin-tailwindcss')) {
   plugins.push('prettier-plugin-tailwindcss')
 }
 
@@ -25,5 +26,6 @@ export const configForPrettier: Linter.FlatConfig = {
 
   rules: {
     'prettier/prettier': ['error', prettierConfig],
+    ...eslintConfigPrettier.rules,
   },
 }

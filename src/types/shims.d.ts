@@ -129,3 +129,14 @@ declare module 'eslint-plugin-react-hooks' {
   declare const plugin: Plugin
   export = plugin
 }
+
+declare module 'eslint-plugin-vue' {
+  import type { ESLint, Linter } from 'eslint'
+
+  interface Plugin extends ESLint.Plugin {
+    configs: Record<string, Linter.FlatConfig>
+    rules: NonNullable<ESLint.Plugin['rules']>
+  }
+  declare const plugin: Plugin
+  export = plugin
+}

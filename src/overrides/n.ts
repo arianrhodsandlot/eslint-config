@@ -3,6 +3,7 @@ import type { Linter } from 'eslint'
 export const nRules: Linter.RulesRecord = {
   'n/handle-callback-err': ['error', '^error$'],
   'n/no-callback-literal': 'error',
+  'n/no-missing-import': 'off',
   'n/no-new-require': 'error',
   'n/no-path-concat': 'error',
   'n/prefer-global/buffer': ['error', 'never'],

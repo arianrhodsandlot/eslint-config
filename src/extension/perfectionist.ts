@@ -29,5 +29,6 @@ export const configForPerfectionist: Linter.FlatConfig = {
         'newlines-between': 'never',
       },
     ],
+    'perfectionist/sort-vue-attributes': 'off',
   },
 }

@@ -7,7 +7,8 @@ import { configForNext } from './extension/next.js'
 import { configForPerfectionist } from './extension/perfectionist.js'
 import { configForPrettier } from './extension/prettier.js'
 import { configForReact } from './extension/react.js'
-import { isPackageAvailable } from './lib/utils.js'
+import { configsForVue } from './extension/vue.js'
+import { getPackageVersion } from './lib/utils.js'
 
 function createBaseConfig(options: CreateConfigOptions) {
   const baseConfig = tseslint.config(...globalConfig, ...configForJsAndTs) as Linter.FlatConfig[]
@@ -44,11 +45,12 @@ interface CreateConfigOptions {
   prettier?: boolean
   /** Should React related plugins and rules be enabled */
   react?: boolean
-
   /**
    * Should type checking rules be enabled, defaults to true if there is a tsconfig.json file
    * */
   typeChecking?: { parserOptions: any } | boolean
+  /** Should Vue related plugins and rules be enabled */
+  vue?: boolean
 }
 
 function extendConfig(config: ReturnType<typeof createBaseConfig>, options?: CreateConfigOptions) {
@@ -61,6 +63,9 @@ function extendConfig(config: ReturnType<typeof createBaseConfig>, options?: Cre
   }
   if (options.next) {
     config.push(configForNext)
+  }
+  if (options.vue) {
+    config.push(...configsForVue)
   }
   if (options.markdown) {
     config.push(...configsForMarkdown)
@@ -77,12 +82,13 @@ export function createConfig(createConfigOptions?: CreateConfigOptions) {
   const options: CreateConfigOptions = _.defaultsDeep(createConfigOptions, {
     append: [],
     markdown: true,
-    next: isPackageAvailable('next'),
+    next: getPackageVersion('next'),
     perfectionist: true,
     prepend: [],
-    prettier: isPackageAvailable('prettier'),
-    react: isPackageAvailable('react'),
+    prettier: getPackageVersion('prettier'),
+    react: getPackageVersion('react'),
     typeChecking: false,
+    vue: getPackageVersion('vue'),
   })
 
   const config = createBaseConfig(options)

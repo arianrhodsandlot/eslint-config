@@ -31,13 +31,13 @@ export function mergeWithConcat(object: any, source: any) {
 }
 
 const packageJsons = [...findSync(process.cwd())]
-export function isPackageAvailable(packageName: string) {
+export function getPackageVersion(packageName: string) {
   for (const packageJson of packageJsons) {
     try {
       const packageInfo = JSON.parse(fs.readFileSync(packageJson, 'utf8'))
-      const found = packageName in packageInfo.dependencies || packageName in packageInfo.devDependencies
-      if (found) {
-        return true
+      const version = packageInfo.dependencies[packageName] || packageInfo.devDependencies[packageName]
+      if (version) {
+        return version
       }
     } catch {}
   }

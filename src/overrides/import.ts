@@ -13,7 +13,7 @@ export const importRules: Linter.RulesRecord = {
   'import/no-named-as-default': 'off',
   'import/no-named-as-default-member': 'off',
   'import/no-named-default': 'error',
-  'import/no-unresolved': 'error',
+  'import/no-unresolved': 'off',
   'import/no-webpack-loader-syntax': 'error',
   'import/order': [
     'error',
