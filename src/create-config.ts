@@ -4,16 +4,17 @@ import tseslint from 'typescript-eslint'
 import { configForJsAndTs, configForTests, configForTsWithTypeChecking, globalConfig } from './core/configs.js'
 import { configsForMarkdown } from './extension/markdown.js'
 import { configForNext } from './extension/next.js'
+import { configForPerfectionist } from './extension/perfectionist.js'
 import { configForPrettier } from './extension/prettier.js'
 import { configForReact } from './extension/react.js'
 import { isPackageAvailable } from './lib/utils.js'
 
 function createBaseConfig(options: CreateConfigOptions) {
-  const baseConfig = tseslint.config(...globalConfig, ...configForJsAndTs)
+  const baseConfig = tseslint.config(...globalConfig, ...configForJsAndTs) as Linter.FlatConfig[]
 
   const enableTypeChecking = Boolean(options?.typeChecking)
   if (enableTypeChecking) {
-    let [configForTs] = configForTsWithTypeChecking
+    const [configForTs] = configForTsWithTypeChecking
 
     // @ts-expect-error
     if (options.typeChecking?.parserOptions && configForTs.languageOptions) {
@@ -32,63 +33,67 @@ function createBaseConfig(options: CreateConfigOptions) {
   return baseConfig
 }
 
-interface ConfigExtension {
-  /** Should React related plugins and rules be enabled */
-  react?: boolean
+interface CreateConfigOptions {
+  /** append custom flat configs to default */
+  append?: Linter.FlatConfig | Linter.FlatConfig[]
+  markdown?: boolean
+
   /** Should Next related plugins and rules be enabled */
   next?: boolean
+  perfectionist?: boolean
+  /** prepend custom flat configs to default */
+  prepend?: Linter.FlatConfig | Linter.FlatConfig[]
   prettier?: boolean
-  markdown?: boolean
-}
+  /** Should React related plugins and rules be enabled */
+  react?: boolean
 
-interface CreateConfigOptions {
   /**
    * Should type checking rules be enabled, defaults to true if there is a tsconfig.json file
    * */
-  typeChecking?: boolean | { parserOptions: any }
-
-  /** Extended config */
-  extension?: ConfigExtension
-
-  /** append custom flat configs to default */
-  append?: Linter.FlatConfig | Linter.FlatConfig[]
+  typeChecking?: { parserOptions: any } | boolean
 }
 
-function addExtensionsToConfig(config: ReturnType<typeof createBaseConfig>, extension?: ConfigExtension) {
-  if (!extension) {
+function extendConfig(config: ReturnType<typeof createBaseConfig>, options?: CreateConfigOptions) {
+  if (!options) {
     return
   }
 
-  if (extension.react) {
+  if (options.react) {
     config.push(configForReact)
   }
-  if (extension.next) {
+  if (options.next) {
     config.push(configForNext)
   }
-  if (extension.markdown) {
+  if (options.markdown) {
     config.push(...configsForMarkdown)
   }
-  if (extension.prettier) {
+  if (options.prettier) {
     config.push(configForPrettier)
+  }
+  if (options.perfectionist) {
+    config.push(configForPerfectionist)
   }
 }
 
 export async function createConfig(createConfigOptions?: CreateConfigOptions) {
   const options: CreateConfigOptions = _.defaultsDeep(createConfigOptions, {
-    typeChecking: false,
     append: [],
-    extension: {
-      react: await isPackageAvailable('react'),
-      next: await isPackageAvailable('next'),
-      prettier: await isPackageAvailable('prettier'),
-      markdown: true,
-    },
+    markdown: true,
+    next: await isPackageAvailable('next'),
+    perfectionist: false,
+    prepend: [],
+    prettier: await isPackageAvailable('prettier'),
+    react: await isPackageAvailable('react'),
+    typeChecking: false,
   })
 
   const config = createBaseConfig(options)
 
-  addExtensionsToConfig(config, options?.extension)
+  extendConfig(config, options)
 
+  if (options?.prepend) {
+    config.unshift(..._.castArray(options?.prepend))
+  }
   if (options?.append) {
     config.push(..._.castArray(options?.append))
   }

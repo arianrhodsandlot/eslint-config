@@ -16,7 +16,7 @@ import {
 import { getGitIgnores } from '../lib/utils.js'
 import { overrides, overridesWithTypeChecking } from '../overrides/index.js'
 import { jsOverridesRules } from '../overrides/js.js'
-import type { FlatConfigRules } from '../types/config.js'
+import type { FlatConfigRules, FlatConfigs } from '../types/config.js'
 
 const tsconfig = getTsconfig()
 
@@ -49,30 +49,30 @@ const eslintPluginTypescriptStylisticTypeCheckedRules = tseslint.configs.stylist
 const pluginRules: Linter.RulesRecord = {
   ...eslintPluginEslintComments.configs?.recommended.rules,
   ...eslintPluginImport.configs?.recommended.rules,
+  ...eslintPluginN.configs['flat/recommended'].rules,
   ...eslintPluginPromise.configs?.recommended.rules,
   ...eslintPluginSonarjs.configs?.recommended.rules,
   ...eslintPluginTypescriptRecommendedRules,
   ...eslintPluginTypescriptStylisticRules,
-  ...tseslint.configs.disableTypeChecked.rules,
   ...eslintPluginUnicorn.configs?.recommended.rules,
-  ...eslintPluginN.configs['flat/recommended'].rules,
+  ...tseslint.configs.disableTypeChecked.rules,
 }
 
 const baseConfig = {
   languageOptions: {
-    parser: tseslint.parser,
-    parserOptions: {
-      ecmaFeatures: {
-        globalReturn: true,
-        jsx: true,
-      },
-    },
     globals: {
       ...globals.browser,
       ...globals.builtin,
       ...globals.commonjs,
       ...globals.node,
       ...globals.serviceworker,
+    },
+    parser: tseslint.parser,
+    parserOptions: {
+      ecmaFeatures: {
+        globalReturn: true,
+        jsx: true,
+      },
     },
   },
 
@@ -85,11 +85,11 @@ const baseConfig = {
   },
 
   settings: {
-    'import/resolver': {
-      typescript: Boolean(tsconfig),
-      node: true,
-    },
     'import/extensions': [...jsFiles, ...tsFiles, '.json'],
+    'import/resolver': {
+      node: true,
+      typescript: Boolean(tsconfig),
+    },
   },
 }
 
@@ -99,13 +99,13 @@ const typeCheckingRules = {
 }
 
 export const globalConfig = tseslint.config({
-  // @ts-expect-error
-  name: 'global-config',
   ignores: getGitIgnores(),
   linterOptions: {
     reportUnusedDisableDirectives: true,
   },
-})
+  // @ts-expect-error
+  name: 'global-config',
+}) as FlatConfigs
 
 export const configForJsAndTs = tseslint.config(
   {
@@ -120,8 +120,8 @@ export const configForJsAndTs = tseslint.config(
     rules: {
       ...jsOverridesRules,
     },
-  },
-)
+  }
+) as FlatConfigs
 
 export const configForTsWithTypeChecking = tseslint.config({
   ...baseConfig,
@@ -138,14 +138,14 @@ export const configForTsWithTypeChecking = tseslint.config({
     ...typeCheckingRules,
     ...overridesWithTypeChecking,
   },
-})
+}) as FlatConfigs
 
 export const configForTests = tseslint.config({
+  files: ['test?(s)/**/*.{js,ts}?(x)'],
   // @ts-expect-error
   name: 'test',
-  files: ['test?(s)/**/*.{js,ts}?(x)'],
   rules: {
-    'no-empty-pattern': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
+    'no-empty-pattern': 'off',
   },
-})
+}) as FlatConfigs

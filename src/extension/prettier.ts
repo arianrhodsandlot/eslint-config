@@ -1,18 +1,17 @@
 import type { Linter } from 'eslint'
-import type { Config } from 'prettier'
-import { jsxFiles, tsxFiles } from '../lib/common.js'
+import { jsFiles, tsFiles } from '../lib/common.js'
 import { eslintPluginPrettier } from '../lib/plugins.js'
 
-const prettierConfig: Config = {
+const prettierConfig = {
+  jsSingleQuote: true,
+  plugins: ['prettier-plugin-tailwindcss'],
   printWidth: 120,
   semi: false,
   singleQuote: true,
-  jsxSingleQuote: true,
-  plugins: ['prettier-plugin-tailwindcss'],
 }
 
 export const configForPrettier: Linter.FlatConfig = {
-  files: [...jsxFiles, ...tsxFiles],
+  files: [...jsFiles, ...tsFiles],
 
   plugins: {
     prettier: eslintPluginPrettier,

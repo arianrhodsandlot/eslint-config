@@ -10,11 +10,11 @@ import { unicornRules } from './unicorn.js'
 export const overrides: Linter.RulesRecord = {
   ...eslintRules,
   ...importRules,
+  ...nRules,
   ...promiseRules,
   ...sonarjsRules,
   ...typescriptRules,
   ...unicornRules,
-  ...nRules,
 }
 
 export const overridesWithTypeChecking: Linter.RulesRecord = {
