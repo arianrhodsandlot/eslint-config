@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint'
 import eslintConfigPrettier from 'eslint-config-prettier'
-import { jsFiles, tsFiles } from '../lib/common.js'
+import { jsFiles, tsFiles, vueFiles } from '../lib/common.js'
 import { eslintPluginPrettier } from '../lib/plugins.js'
 import { getPackageVersion } from '../lib/utils.js'
 
@@ -18,7 +18,7 @@ const prettierConfig = {
 }
 
 export const configForPrettier: Linter.FlatConfig = {
-  files: [...jsFiles, ...tsFiles],
+  files: [...jsFiles, ...tsFiles, ...vueFiles],
 
   plugins: {
     prettier: eslintPluginPrettier,

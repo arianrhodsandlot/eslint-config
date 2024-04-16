@@ -1,9 +1,9 @@
 import type { Linter } from 'eslint'
-import { jsFiles, tsFiles } from '../lib/common.js'
+import { jsFiles, tsFiles, vueFiles } from '../lib/common.js'
 import { eslintPluginPerfectionist } from '../lib/plugins.js'
 
 export const configForPerfectionist: Linter.FlatConfig = {
-  files: [...jsFiles, ...tsFiles],
+  files: [...jsFiles, ...tsFiles, ...vueFiles],
 
   plugins: {
     perfectionist: eslintPluginPerfectionist,

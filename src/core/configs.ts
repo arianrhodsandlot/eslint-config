@@ -1,9 +1,7 @@
-import js from '@eslint/js'
-import type { Linter } from 'eslint'
 import { getTsconfig } from 'get-tsconfig'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
-import { jsFiles, tsFiles } from '../lib/common.js'
+import { jsFiles, parserOptions, rules, tsFiles, vueFiles } from '../lib/common.js'
 import {
   eslintPluginEslintComments,
   eslintPluginImport,
@@ -14,7 +12,7 @@ import {
   eslintPluginUnicorn,
 } from '../lib/plugins.js'
 import { getGitIgnores } from '../lib/utils.js'
-import { overrides, overridesWithTypeChecking } from '../overrides/index.js'
+import { overridesWithTypeChecking } from '../overrides/index.js'
 import { jsOverridesRules } from '../overrides/js.js'
 import type { FlatConfigRules, FlatConfigs } from '../types/config.js'
 
@@ -32,12 +30,6 @@ const plugins = {
 }
 
 /* eslint-disable unicorn/no-array-reduce, @typescript-eslint/consistent-type-assertions */
-const eslintPluginTypescriptRecommendedRules = tseslint.configs.recommended
-  .filter(({ rules }) => rules)
-  .reduce((acc, { rules }) => ({ ...acc, ...rules }) as FlatConfigRules, {} as FlatConfigRules)
-const eslintPluginTypescriptStylisticRules = tseslint.configs.stylistic
-  .filter(({ rules }) => rules)
-  .reduce((acc, { rules }) => ({ ...acc, ...rules }) as FlatConfigRules, {} as FlatConfigRules)
 const eslintPluginTypescriptRecommendedTypeCheckedRules = tseslint.configs.recommendedTypeChecked
   .filter(({ rules }) => rules)
   .reduce((acc, { rules }) => ({ ...acc, ...rules }) as FlatConfigRules, {} as FlatConfigRules)
@@ -45,18 +37,6 @@ const eslintPluginTypescriptStylisticTypeCheckedRules = tseslint.configs.stylist
   .filter(({ rules }) => rules)
   .reduce((acc, { rules }) => ({ ...acc, ...rules }) as FlatConfigRules, {} as FlatConfigRules)
 /* eslint-enable unicorn/no-array-reduce, @typescript-eslint/consistent-type-assertions */
-
-const pluginRules: Linter.RulesRecord = {
-  ...eslintPluginEslintComments.configs?.recommended.rules,
-  ...eslintPluginImport.configs?.recommended.rules,
-  ...eslintPluginN.configs['flat/recommended'].rules,
-  ...eslintPluginPromise.configs?.recommended.rules,
-  ...eslintPluginSonarjs.configs?.recommended.rules,
-  ...eslintPluginTypescriptRecommendedRules,
-  ...eslintPluginTypescriptStylisticRules,
-  ...eslintPluginUnicorn.configs?.recommended.rules,
-  ...tseslint.configs.disableTypeChecked.rules,
-}
 
 const baseConfig = {
   languageOptions: {
@@ -68,24 +48,12 @@ const baseConfig = {
       ...globals.serviceworker,
     },
     parser: tseslint.parser,
-    parserOptions: {
-      ecmaFeatures: {
-        globalReturn: true,
-        jsx: true,
-      },
-    },
+    parserOptions,
   },
-
   plugins,
-
-  rules: {
-    ...js.configs.recommended.rules,
-    ...pluginRules,
-    ...overrides,
-  },
-
+  rules,
   settings: {
-    'import/extensions': [...jsFiles, ...tsFiles, '.json'],
+    'import/extensions': [...jsFiles, ...tsFiles, ...vueFiles, '.json'],
     'import/resolver': {
       node: true,
       typescript: Boolean(tsconfig),
@@ -108,7 +76,7 @@ export const globalConfig = tseslint.config({
 export const configForJsAndTs = tseslint.config(
   {
     ...baseConfig,
-    files: [...jsFiles, ...tsFiles],
+    files: [...jsFiles, ...tsFiles, ...vueFiles],
     rules: {
       ...baseConfig.rules,
     },

@@ -70,21 +70,8 @@ export const typescriptRules: Linter.RulesRecord = {
       ignoreOverrideMethods: true,
     },
   ],
-  '@typescript-eslint/consistent-type-assertions': [
-    'error',
-    {
-      assertionStyle: 'as',
-      objectLiteralTypeAssertions: 'allow-as-parameter',
-    },
-  ],
-  '@typescript-eslint/consistent-type-imports': [
-    'error',
-    {
-      disallowTypeAnnotations: true,
-      fixStyle: 'inline-type-imports',
-      prefer: 'type-imports',
-    },
-  ],
+  '@typescript-eslint/consistent-type-assertions': 'off',
+  '@typescript-eslint/consistent-type-imports': 'off',
   '@typescript-eslint/default-param-last': 'error',
   '@typescript-eslint/explicit-function-return-type': 'off',
   '@typescript-eslint/explicit-module-boundary-types': 'off',
