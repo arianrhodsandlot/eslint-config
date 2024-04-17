@@ -1,7 +1,7 @@
-import type { Linter } from 'eslint'
-import { isProduction } from '../lib/common.js'
+import { isProduction } from '../../../lib/utils.js'
+import type { FlatConfigRules } from '../../../types/eslint.js'
 
-export const eslintRules: Linter.RulesRecord = {
+export const eslintRules: FlatConfigRules = {
   'accessor-pairs': ['error', { enforceForClassMembers: true, setWithoutGet: true }],
   'array-callback-return': ['error', { allowImplicit: false, checkForEach: false }],
   'arrow-body-style': 'off',
@@ -25,7 +25,7 @@ export const eslintRules: Linter.RulesRecord = {
   'no-dupe-class-members': 'off',
   'no-else-return': ['error', { allowElseIf: false }],
   'no-empty': ['error', { allowEmptyCatch: true }],
-  'no-eval': 'error',
+  'no-eval': 'off',
   'no-extend-native': 'error',
   'no-extra-bind': 'error',
   'no-extra-semi': 'off',

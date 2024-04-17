@@ -4,6 +4,9 @@ import path from 'node:path'
 import process from 'node:process'
 import _ from 'lodash'
 import { findSync } from 'new-find-package-json'
+import type { CreateConfigOptions } from '../types/config.js'
+
+export const isProduction = process.env.NODE_ENV === 'production'
 
 let gitIgnores: string[]
 export function getGitIgnores() {
@@ -41,5 +44,38 @@ export function getPackageVersion(packageName: string) {
       }
     } catch {}
   }
-  return false
+}
+
+export function isPackageInstalled(packageName: string) {
+  return Boolean(getPackageVersion(packageName))
+}
+
+const vueVersion = getMajorVersion(getPackageVersion('vue'))
+
+function getMajorVersion(version: string) {
+  let major = ''
+  for (const char of version) {
+    if (Number.parseInt(char, 10)) {
+      major += char
+    } else if (major) {
+      return Number.parseInt(major, 10)
+    }
+  }
+  return Number.parseInt(major, 10)
+}
+
+export const isLegacyVue = vueVersion === 2
+
+interface Context {
+  options: CreateConfigOptions
+}
+
+const context: Context = { options: {} }
+
+export function setContext({ options }: Context) {
+  context.options = options
+}
+
+export function getContext() {
+  return context
 }

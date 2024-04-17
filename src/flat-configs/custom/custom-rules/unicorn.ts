@@ -1,6 +1,6 @@
-import type { Linter } from 'eslint'
+import type { FlatConfigRules } from '../../../types/eslint.js'
 
-export const unicornRules: Linter.RulesRecord = {
+export const unicornRules: FlatConfigRules = {
   'unicorn/no-null': 'off',
   'unicorn/no-useless-undefined': ['error', { checkArguments: false }],
   'unicorn/prefer-export-from': ['error', { ignoreUsedVariables: true }],

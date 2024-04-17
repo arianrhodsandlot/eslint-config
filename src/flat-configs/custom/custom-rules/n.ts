@@ -1,6 +1,6 @@
-import type { Linter } from 'eslint'
+import type { FlatConfigRules } from '../../../types/eslint.js'
 
-export const nRules: Linter.RulesRecord = {
+export const nRules: FlatConfigRules = {
   'n/handle-callback-err': ['error', '^error$'],
   'n/no-callback-literal': 'error',
   'n/no-missing-import': 'off',

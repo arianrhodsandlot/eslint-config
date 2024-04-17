@@ -1,6 +1,6 @@
-import type { Linter } from 'eslint'
+import type { FlatConfigRules } from '../../../types/eslint.js'
 
-export const reactRules: Linter.RulesRecord = {
+export const reactRules: FlatConfigRules = {
   'react/function-component-definition': [
     'error',
     {

@@ -110,6 +110,7 @@ export const typescriptRules: Linter.RulesRecord = {
     {
       args: 'none',
       caughtErrors: 'none',
+      destructuredArrayIgnorePattern: '^_',
       ignoreRestSiblings: true,
       vars: 'all',
     },

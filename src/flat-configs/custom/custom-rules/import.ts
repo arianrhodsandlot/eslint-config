@@ -1,6 +1,6 @@
-import type { Linter } from 'eslint'
+import type { FlatConfigRules } from '../../../types/eslint.js'
 
-export const importRules: Linter.RulesRecord = {
+export const importRules: FlatConfigRules = {
   // temporarily disabled since eslint-import-plugin does not support flat config
   // see https://github.com/import-js/eslint-plugin-import/pull/2714
   'import/default': 'off',
