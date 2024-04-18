@@ -10,6 +10,7 @@ import * as eslintPluginPrettierModule from 'eslint-plugin-prettier'
 import * as eslintPluginPromiseModule from 'eslint-plugin-promise'
 import * as eslintPluginReactModule from 'eslint-plugin-react'
 import * as eslintPluginReactHooksModule from 'eslint-plugin-react-hooks'
+import * as eslintPluginReactRefreshModule from 'eslint-plugin-react-refresh'
 import * as eslintPluginSecurityModule from 'eslint-plugin-security'
 import * as eslintPluginSonarjsModule from 'eslint-plugin-sonarjs'
 import * as eslintPluginTsdocModule from 'eslint-plugin-tsdoc'
@@ -46,3 +47,4 @@ export const eslintPluginUnicorn = interopESLintPlugin(eslintPluginUnicornModule
 export const eslintPluginVue = interopESLintPlugin(eslintPluginVueModule)
 export const eslintPluginVueScopedCSS = interopESLintPlugin(eslintPluginVueScopedCSSModule)
 export const eslintPluginVuejsAccessibility = interopESLintPlugin(eslintPluginVuejsAccessibilityModule)
+export const eslintPluginReactRefresh = interopESLintPlugin(eslintPluginReactRefreshModule)

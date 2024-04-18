@@ -75,6 +75,17 @@ declare module 'eslint-plugin-promise' {
   export = plugin
 }
 
+declare module 'eslint-plugin-react' {
+  import type { ESLint, Linter } from 'eslint'
+
+  interface Plugin extends ESLint.Plugin {
+    configs: Record<string, Linter.FlatConfig | Linter.FlatConfig[]>
+    rules: NonNullable<ESLint.Plugin['rules']>
+  }
+  declare const plugin: Plugin
+  export = plugin
+}
+
 declare module 'eslint-plugin-react-hooks' {
   import type { ESLint, Linter } from 'eslint'
 
@@ -86,7 +97,7 @@ declare module 'eslint-plugin-react-hooks' {
   export = plugin
 }
 
-declare module 'eslint-plugin-react' {
+declare module 'eslint-plugin-react-refresh' {
   import type { ESLint, Linter } from 'eslint'
 
   interface Plugin extends ESLint.Plugin {
