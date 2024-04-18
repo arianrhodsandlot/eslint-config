@@ -46,8 +46,13 @@ export function getPackageVersion(packageName: string) {
   }
 }
 
+const memo: Record<string, boolean> = {}
 export function isPackageInstalled(packageName: string) {
-  return Boolean(getPackageVersion(packageName))
+  if (packageName in memo) {
+    return memo[packageName]
+  }
+  memo[packageName] = Boolean(getPackageVersion(packageName))
+  return memo[packageName]
 }
 
 const vueVersion = getMajorVersion(getPackageVersion('vue'))

@@ -3,6 +3,7 @@ import type { FlatConfigs } from '../../types/eslint.js'
 import { baseConfigs } from './base.js'
 import { eslintCommentsConfigs } from './eslint-comments.js'
 import { importConfigs } from './import.js'
+import { jsdocConfigs } from './jsdoc.js'
 import { markdownConfigs } from './markdown.js'
 import { nConfigs } from './n.js'
 import { nextConfigs } from './next.js'
@@ -12,53 +13,39 @@ import { promiseConfigs } from './promise.js'
 import { reactConfigs } from './react.js'
 import { securityConfigs } from './security.js'
 import { sonarjsConfigs } from './sonarjs.js'
+import { tsdocConfigs } from './tsdoc.js'
 import { typescriptConfigs } from './typescript.js'
 import { unicornConfigs } from './unicorn.js'
 import { vueConfigs } from './vue.js'
+
+const optionalConfigsMap = {
+  eslintComments: eslintCommentsConfigs,
+  import: importConfigs,
+  jsdoc: jsdocConfigs,
+  markdown: markdownConfigs,
+  n: nConfigs,
+  next: nextConfigs,
+  perfectionist: perfectionistConfigs,
+  promise: promiseConfigs,
+  react: reactConfigs,
+  security: securityConfigs,
+  sonarjs: sonarjsConfigs,
+  tsdoc: tsdocConfigs,
+  typescript: typescriptConfigs,
+  unicorn: unicornConfigs,
+  vue: vueConfigs,
+}
 
 export function getRecommendedFlatConfigs() {
   const recommendedFlatConfigs: FlatConfigs = [...baseConfigs]
 
   const { options } = getContext()
 
-  if (options.eslintComments) {
-    recommendedFlatConfigs.push(...eslintCommentsConfigs)
-  }
-  if (options.import) {
-    recommendedFlatConfigs.push(...importConfigs)
-  }
-  if (options.markdown) {
-    recommendedFlatConfigs.push(...markdownConfigs)
-  }
-  if (options.n) {
-    recommendedFlatConfigs.push(...nConfigs)
-  }
-  if (options.next) {
-    recommendedFlatConfigs.push(...nextConfigs)
-  }
-  if (options.perfectionist) {
-    recommendedFlatConfigs.push(...perfectionistConfigs)
-  }
-  if (options.promise) {
-    recommendedFlatConfigs.push(...promiseConfigs)
-  }
-  if (options.react) {
-    recommendedFlatConfigs.push(...reactConfigs)
-  }
-  if (options.security) {
-    recommendedFlatConfigs.push(...securityConfigs)
-  }
-  if (options.sonarjs) {
-    recommendedFlatConfigs.push(...sonarjsConfigs)
-  }
-  if (options.typescript) {
-    recommendedFlatConfigs.push(...typescriptConfigs)
-  }
-  if (options.unicorn) {
-    recommendedFlatConfigs.push(...unicornConfigs)
-  }
-  if (options.vue) {
-    recommendedFlatConfigs.push(...vueConfigs)
+  for (const key in optionalConfigsMap) {
+    const optionalConfigsName = key as keyof typeof optionalConfigsMap
+    if (options[optionalConfigsName]) {
+      recommendedFlatConfigs.push(...optionalConfigsMap[optionalConfigsName])
+    }
   }
 
   if (options.prettier) {

@@ -1,6 +1,7 @@
 import * as eslintPluginNextModule from '@next/eslint-plugin-next'
 import * as eslintPluginEslintCommentsModule from 'eslint-plugin-eslint-comments'
 import * as eslintPluginImportModule from 'eslint-plugin-import'
+import * as eslintPluginJsdocModule from 'eslint-plugin-jsdoc'
 import * as eslintPluginJsxA11yModule from 'eslint-plugin-jsx-a11y'
 import * as eslintPluginMarkdownModule from 'eslint-plugin-markdown'
 import * as eslintPluginNModule from 'eslint-plugin-n'
@@ -11,6 +12,7 @@ import * as eslintPluginReactModule from 'eslint-plugin-react'
 import * as eslintPluginReactHooksModule from 'eslint-plugin-react-hooks'
 import * as eslintPluginSecurityModule from 'eslint-plugin-security'
 import * as eslintPluginSonarjsModule from 'eslint-plugin-sonarjs'
+import * as eslintPluginTsdocModule from 'eslint-plugin-tsdoc'
 import * as eslintPluginUnicornModule from 'eslint-plugin-unicorn'
 import * as eslintPluginVueModule from 'eslint-plugin-vue'
 import * as eslintPluginVuejsAccessibilityModule from 'eslint-plugin-vuejs-accessibility'
@@ -25,6 +27,7 @@ function interopESLintPlugin(mod: any) {
 
 export const eslintPluginEslintComments = interopESLintPlugin(eslintPluginEslintCommentsModule)
 export const eslintPluginImport = interopESLintPlugin(eslintPluginImportModule)
+export const eslintPluginJsdoc = interopESLintPlugin(eslintPluginJsdocModule)
 export const eslintPluginJsxA11y = interopESLintPlugin(eslintPluginJsxA11yModule)
 export const eslintPluginMarkdown = interopESLintPlugin(eslintPluginMarkdownModule)
 export const eslintPluginN = interopESLintPlugin(eslintPluginNModule)
@@ -36,6 +39,7 @@ export const eslintPluginReact = interopESLintPlugin(eslintPluginReactModule)
 export const eslintPluginReactHooks = interopESLintPlugin(eslintPluginReactHooksModule)
 export const eslintPluginSecurity = interopESLintPlugin(eslintPluginSecurityModule)
 export const eslintPluginSonarjs = interopESLintPlugin(eslintPluginSonarjsModule)
+export const eslintPluginTsdoc = interopESLintPlugin(eslintPluginTsdocModule)
 export const eslintPluginTypescript = interopESLintPlugin(tseslint.plugin)
 export const eslintPluginUnicorn = interopESLintPlugin(eslintPluginUnicornModule)
 export const eslintPluginVue = interopESLintPlugin(eslintPluginVueModule)

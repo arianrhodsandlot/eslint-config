@@ -5,6 +5,7 @@ export interface CreateConfigOptions {
   append?: FlatConfig | FlatConfigs
   eslintComments?: boolean
   import?: boolean
+  jsdoc?: boolean
   markdown?: boolean
   n?: boolean
   /** Should Next related plugins and rules be enabled */
@@ -19,6 +20,7 @@ export interface CreateConfigOptions {
   rules?: FlatConfigRules
   security?: boolean
   sonarjs?: boolean
+  tsdoc?: boolean
   typescript?: boolean
   unicorn?: boolean
   /** Should Vue related plugins and rules be enabled */

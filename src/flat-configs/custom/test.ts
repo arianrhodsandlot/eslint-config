@@ -1,9 +1,16 @@
+import { jsOrTsExtensionGlob } from '../../lib/constants.js'
 import { getContext } from '../../lib/utils.js'
 import type { FlatConfigRules, FlatConfigs } from '../../types/eslint.js'
 
 export function getTestConfigs() {
   const { options } = getContext()
-  const files = ['test?(s)/**/*.{js,ts}?(x)', '__test?(s)__/**/*.{js,ts}?(x)', '*.{spec,test}.{js,ts}?(x)']
+
+  const files = [
+    `test?(s)/**/*.${jsOrTsExtensionGlob}`,
+    `__test?(s)__/**/*.${jsOrTsExtensionGlob}`,
+    `*.{spec,test}.${jsOrTsExtensionGlob}`,
+  ]
+
   const rules: FlatConfigRules = {
     'no-empty-pattern': 'off',
   }

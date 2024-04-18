@@ -8,6 +8,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
   append: [],
   eslintComments: true,
   import: true,
+  jsdoc: true,
   markdown: true,
   n: true,
   next: isPackageInstalled('next'),
@@ -19,7 +20,8 @@ const defaultOptions: Required<CreateConfigOptions> = {
   rules: {},
   security: true,
   sonarjs: true,
-  typescript: true,
+  tsdoc: isPackageInstalled('typescript'),
+  typescript: isPackageInstalled('typescript'),
   unicorn: true,
   vue: isPackageInstalled('vue'),
 }
