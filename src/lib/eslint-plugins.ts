@@ -11,6 +11,7 @@ import * as eslintPluginPromiseModule from 'eslint-plugin-promise'
 import * as eslintPluginReactModule from 'eslint-plugin-react'
 import * as eslintPluginReactHooksModule from 'eslint-plugin-react-hooks'
 import * as eslintPluginReactRefreshModule from 'eslint-plugin-react-refresh'
+import * as eslintPluginRegexpModule from 'eslint-plugin-regexp'
 import * as eslintPluginSecurityModule from 'eslint-plugin-security'
 import * as eslintPluginSonarjsModule from 'eslint-plugin-sonarjs'
 import * as eslintPluginTsdocModule from 'eslint-plugin-tsdoc'
@@ -39,12 +40,13 @@ export const eslintPluginPrettier = interopESLintPlugin(eslintPluginPrettierModu
 export const eslintPluginPromise = interopESLintPlugin(eslintPluginPromiseModule)
 export const eslintPluginReact = interopESLintPlugin(eslintPluginReactModule)
 export const eslintPluginReactHooks = interopESLintPlugin(eslintPluginReactHooksModule)
+export const eslintPluginReactRefresh = interopESLintPlugin(eslintPluginReactRefreshModule)
+export const eslintPluginRegexp = interopESLintPlugin(eslintPluginRegexpModule)
 export const eslintPluginSecurity = interopESLintPlugin(eslintPluginSecurityModule)
 export const eslintPluginSonarjs = interopESLintPlugin(eslintPluginSonarjsModule)
 export const eslintPluginTsdoc = interopESLintPlugin(eslintPluginTsdocModule)
 export const eslintPluginTypescript = interopESLintPlugin(tseslint.plugin)
 export const eslintPluginUnicorn = interopESLintPlugin(eslintPluginUnicornModule)
 export const eslintPluginVue = interopESLintPlugin(eslintPluginVueModule)
-export const eslintPluginVueScopedCSS = interopESLintPlugin(eslintPluginVueScopedCSSModule)
 export const eslintPluginVuejsAccessibility = interopESLintPlugin(eslintPluginVuejsAccessibilityModule)
-export const eslintPluginReactRefresh = interopESLintPlugin(eslintPluginReactRefreshModule)
+export const eslintPluginVueScopedCSS = interopESLintPlugin(eslintPluginVueScopedCSSModule)

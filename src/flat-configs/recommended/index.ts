@@ -11,6 +11,7 @@ import { perfectionistConfigs } from './perfectionist.js'
 import { getPrettierConfigs } from './prettier.js'
 import { promiseConfigs } from './promise.js'
 import { reactConfigs } from './react.js'
+import { regexpConfigs } from './regexp.js'
 import { securityConfigs } from './security.js'
 import { sonarjsConfigs } from './sonarjs.js'
 import { tsdocConfigs } from './tsdoc.js'
@@ -28,6 +29,7 @@ const optionalConfigsMap = {
   perfectionist: perfectionistConfigs,
   promise: promiseConfigs,
   react: reactConfigs,
+  regexp: regexpConfigs,
   security: securityConfigs,
   sonarjs: sonarjsConfigs,
   tsdoc: tsdocConfigs,

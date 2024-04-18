@@ -17,6 +17,7 @@ export interface CreateConfigOptions {
   promise?: boolean
   /** Should React related plugins and rules be enabled */
   react?: boolean
+  regexp?: boolean
   rules?: FlatConfigRules
   security?: boolean
   sonarjs?: boolean

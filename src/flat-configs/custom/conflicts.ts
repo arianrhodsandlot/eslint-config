@@ -23,5 +23,12 @@ export function getConflictConfigs() {
     }
   }
 
+  if (options.unicorn && options.regexp) {
+    Object.assign(rules, {
+      'regexp/match-any': 'off',
+      'regexp/strict': 'off',
+    })
+  }
+
   return [{ rules }]
 }

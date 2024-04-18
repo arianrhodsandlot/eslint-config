@@ -17,6 +17,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
   prettier: isPackageInstalled('prettier'),
   promise: true,
   react: isPackageInstalled('react'),
+  regexp: true,
   rules: {},
   security: true,
   sonarjs: true,
