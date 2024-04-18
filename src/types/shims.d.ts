@@ -2,7 +2,7 @@ declare module '@next/eslint-plugin-next' {
   import type { ESLint, Linter } from 'eslint'
 
   interface Plugin extends ESLint.Plugin {
-    configs: { recommended: Linter.FlatConfig, 'core-web-vitals': Linter.FlatConfig }
+    configs: { 'core-web-vitals': Linter.FlatConfig; recommended: Linter.FlatConfig }
     rules: NonNullable<ESLint.Plugin['rules']>
   }
   declare const plugin: Plugin
@@ -140,4 +140,3 @@ declare module 'eslint-plugin-vuejs-accessibility' {
   declare const plugin: Plugin
   export = plugin
 }
-

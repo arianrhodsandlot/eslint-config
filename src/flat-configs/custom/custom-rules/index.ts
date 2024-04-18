@@ -3,6 +3,7 @@ import type { FlatConfigRules } from '../../../types/eslint.js'
 import { eslintRules } from './eslint.js'
 import { importRules } from './import.js'
 import { nRules } from './n.js'
+import { nonCompatibleRules } from './non-compatible.js'
 import { promiseRules } from './promise.js'
 import { reactRules } from './react.js'
 import { securityRules } from './security.js'
@@ -43,6 +44,8 @@ export function getCustomRulesConfigs() {
   if (options.vue) {
     Object.assign(customRules, vueRules)
   }
+
+  Object.assign(customRules, nonCompatibleRules)
 
   return [{ rules: customRules }]
 }
