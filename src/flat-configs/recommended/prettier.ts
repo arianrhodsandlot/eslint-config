@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { cwd } from 'node:process'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import { Config } from 'prettier'
 import { getContext, getPackageVersion } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
@@ -10,7 +11,8 @@ if (getPackageVersion('prettier-plugin-tailwindcss')) {
   plugins.push('prettier-plugin-tailwindcss')
 }
 
-const defaultPrettierConfig = {
+const defaultPrettierConfig: Config = {
+  htmlWhitespaceSensitivity: 'ignore',
   jsSingleQuote: true,
   plugins,
   printWidth: 120,
