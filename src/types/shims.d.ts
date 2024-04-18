@@ -140,3 +140,14 @@ declare module 'eslint-plugin-vuejs-accessibility' {
   declare const plugin: Plugin
   export = plugin
 }
+
+declare module 'eslint-plugin-vue-scoped-css' {
+  import type { ESLint, Linter } from 'eslint'
+
+  interface Plugin extends ESLint.Plugin {
+    configs: Record<string, Linter.FlatConfig | Linter.FlatConfig[]>
+    rules: NonNullable<ESLint.Plugin['rules']>
+  }
+  declare const plugin: Plugin
+  export = plugin
+}

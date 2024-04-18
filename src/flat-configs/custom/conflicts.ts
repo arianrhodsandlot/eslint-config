@@ -6,6 +6,10 @@ export function getConflictConfigs() {
   const rules: FlatConfigRules = {}
 
   if (options.perfectionist) {
+    Object.assign(rules, {
+      'sort-imports': 'off',
+    })
+
     if (options.import) {
       Object.assign(rules, {
         'perfectionist/sort-imports': 'off',

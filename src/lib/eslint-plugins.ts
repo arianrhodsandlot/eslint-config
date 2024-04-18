@@ -15,6 +15,7 @@ import * as eslintPluginSonarjsModule from 'eslint-plugin-sonarjs'
 import * as eslintPluginTsdocModule from 'eslint-plugin-tsdoc'
 import * as eslintPluginUnicornModule from 'eslint-plugin-unicorn'
 import * as eslintPluginVueModule from 'eslint-plugin-vue'
+import * as eslintPluginVueScopedCSSModule from 'eslint-plugin-vue-scoped-css'
 import * as eslintPluginVuejsAccessibilityModule from 'eslint-plugin-vuejs-accessibility'
 import tseslint from 'typescript-eslint'
 
@@ -43,4 +44,5 @@ export const eslintPluginTsdoc = interopESLintPlugin(eslintPluginTsdocModule)
 export const eslintPluginTypescript = interopESLintPlugin(tseslint.plugin)
 export const eslintPluginUnicorn = interopESLintPlugin(eslintPluginUnicornModule)
 export const eslintPluginVue = interopESLintPlugin(eslintPluginVueModule)
+export const eslintPluginVueScopedCSS = interopESLintPlugin(eslintPluginVueScopedCSSModule)
 export const eslintPluginVuejsAccessibility = interopESLintPlugin(eslintPluginVuejsAccessibilityModule)
