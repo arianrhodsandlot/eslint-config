@@ -22,10 +22,10 @@ function isRootDirectory(directory: string) {
   return directory === path.resolve(directory, '..')
 }
 
-function lookupFile(filename: string) {
+function lookupFile(fileName: string) {
   let directory = cwd()
   while (true) {
-    const filepath = path.join(directory, filename)
+    const filepath = path.join(directory, fileName)
     try {
       return readFileSync(filepath, 'utf8')
     } catch {}
@@ -37,8 +37,18 @@ function lookupFile(filename: string) {
   }
 }
 
+function lookupFiles(...fileNames: string[]) {
+  for (const fileName of fileNames) {
+    const content = lookupFile(fileName)
+    if (content) {
+      return content
+    }
+  }
+}
+
+const prettierConfigFileNames = ['.prettierrc.js', '.prettierrc.json', '.prettierrc.json5']
 function readPrettierConfig() {
-  const content = lookupFile('.prettierrc.js')
+  const content = lookupFiles(...prettierConfigFileNames)
   if (content) {
     const result = content.match(/{([\S\s]*?)}/)
     if (result) {
