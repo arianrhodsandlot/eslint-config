@@ -103,7 +103,7 @@ export const vueRules: FlatConfigRules = {
   'vue/require-v-for-key': 'off',
   'vue/v-for-delimiter-style': 'error',
   'vue/v-on-event-hyphenation': 'error',
-  'vue/v-on-handler-style': ['error', ['method', 'inline']],
+  'vue/v-on-handler-style': ['error', 'inline'],
   'vue/valid-define-options': 'error',
   ...(isLegacyVue ? vueLegacyRules : vueModernRules),
 }
