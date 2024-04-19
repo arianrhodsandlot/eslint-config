@@ -1,0 +1,2590 @@
+[
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 192,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 192,
+    "endColumn": 14,
+    "fix": {
+      "range": [
+        11583,
+        11622
+      ],
+      "text": "interface AppProps {\n  message: string;\n}"
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 197,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 197,
+    "endColumn": 60
+  },
+  {
+    "ruleId": "no-redeclare",
+    "severity": 2,
+    "message": "'App' is already defined.",
+    "line": 200,
+    "column": 7,
+    "nodeType": "Identifier",
+    "messageId": "redeclared",
+    "endLine": 200,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "@typescript-eslint/no-redeclare",
+    "severity": 2,
+    "message": "'App' is already defined.",
+    "line": 200,
+    "column": 7,
+    "nodeType": "Identifier",
+    "messageId": "redeclared",
+    "endLine": 200,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 200,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 200,
+    "endColumn": 79
+  },
+  {
+    "ruleId": "no-redeclare",
+    "severity": 2,
+    "message": "'App' is already defined.",
+    "line": 203,
+    "column": 7,
+    "nodeType": "Identifier",
+    "messageId": "redeclared",
+    "endLine": 203,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "@typescript-eslint/no-redeclare",
+    "severity": 2,
+    "message": "'App' is already defined.",
+    "line": 203,
+    "column": 7,
+    "nodeType": "Identifier",
+    "messageId": "redeclared",
+    "endLine": 203,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 203,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 203,
+    "endColumn": 71
+  },
+  {
+    "ruleId": "no-redeclare",
+    "severity": 2,
+    "message": "'App' is already defined.",
+    "line": 207,
+    "column": 7,
+    "nodeType": "Identifier",
+    "messageId": "redeclared",
+    "endLine": 207,
+    "endColumn": 56
+  },
+  {
+    "ruleId": "@typescript-eslint/no-redeclare",
+    "severity": 2,
+    "message": "'App' is already defined.",
+    "line": 207,
+    "column": 7,
+    "nodeType": "Identifier",
+    "messageId": "redeclared",
+    "endLine": 207,
+    "endColumn": 56
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 207,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 209,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 221,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 223,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 240,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 243,
+    "endColumn": 42
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: ')' expected.",
+    "line": 264,
+    "column": 12,
+    "nodeType": null
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"null\" to come before \"User\"",
+    "line": 314,
+    "column": 41,
+    "nodeType": "TSNullKeyword",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 314,
+    "endColumn": 45,
+    "fix": {
+      "range": [
+        16937,
+        16948
+      ],
+      "text": "null | User"
+    }
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: Expression expected.",
+    "line": 341,
+    "column": 6,
+    "nodeType": null
+  },
+  {
+    "ruleId": "@typescript-eslint/ban-types",
+    "severity": 2,
+    "message": "Don't use `Function` as a type. The `Function` type accepts any function-like value.\nIt provides no type safety when calling the function, which can be a common source of bugs.\nIt also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.\nIf you are expecting the function to accept certain arguments, you should explicitly define the function shape.",
+    "line": 362,
+    "column": 32,
+    "nodeType": "Identifier",
+    "messageId": "bannedTypeMessage",
+    "endLine": 362,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "@typescript-eslint/no-empty-function",
+    "severity": 2,
+    "message": "Unexpected empty arrow function.",
+    "line": 369,
+    "column": 20,
+    "nodeType": "ArrowFunctionExpression",
+    "messageId": "unexpected",
+    "endLine": 369,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "@typescript-eslint/no-empty-function",
+    "severity": 2,
+    "message": "Unexpected empty arrow function.",
+    "line": 371,
+    "column": 25,
+    "nodeType": "ArrowFunctionExpression",
+    "messageId": "unexpected",
+    "endLine": 371,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"payload\" to come before \"type\"",
+    "line": 384,
+    "column": 26,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 384,
+    "endColumn": 41,
+    "fix": {
+      "range": [
+        18864,
+        18898
+      ],
+      "text": "payload: number; type: \"increment\""
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"{ type: \"decrement\"; payload: string }\" to come before \"{ type: \"increment\"; payload: number }\"",
+    "line": 385,
+    "column": 5,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 385,
+    "endColumn": 43,
+    "fix": {
+      "range": [
+        18862,
+        18943
+      ],
+      "text": "{ type: \"decrement\"; payload: string }\n  | { type: \"increment\"; payload: number }"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"payload\" to come before \"type\"",
+    "line": 385,
+    "column": 26,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 385,
+    "endColumn": 41,
+    "fix": {
+      "range": [
+        18907,
+        18941
+      ],
+      "text": "payload: string; type: \"decrement\""
+    }
+  },
+  {
+    "ruleId": "unicorn/error-message",
+    "severity": 2,
+    "message": "Pass a message to the `Error` constructor.",
+    "line": 394,
+    "column": 13,
+    "nodeType": "NewExpression",
+    "messageId": "missing-message",
+    "endLine": 394,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"payload\" to come before \"type\"",
+    "line": 403,
+    "column": 60,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 403,
+    "endColumn": 72,
+    "fix": {
+      "range": [
+        19412,
+        19443
+      ],
+      "text": "payload: \"5\", type: \"decrement\""
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"payload\" to come before \"type\"",
+    "line": 406,
+    "column": 60,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 406,
+    "endColumn": 70,
+    "fix": {
+      "range": [
+        19515,
+        19544
+      ],
+      "text": "payload: 5, type: \"increment\""
+    }
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: '(' expected.",
+    "line": 427,
+    "column": 23,
+    "nodeType": null
+  },
+  {
+    "ruleId": "curly",
+    "severity": 2,
+    "message": "Expected { after 'if' condition.",
+    "line": 490,
+    "column": 26,
+    "nodeType": "IfStatement",
+    "messageId": "missingCurlyAfterCondition",
+    "endLine": 490,
+    "endColumn": 64,
+    "fix": {
+      "range": [
+        23291,
+        23329
+      ],
+      "text": "{throw Error(\"divRef is not assigned\");}"
+    }
+  },
+  {
+    "ruleId": "unicorn/throw-new-error",
+    "severity": 2,
+    "message": "Use `new` when throwing an error.",
+    "line": 490,
+    "column": 32,
+    "nodeType": "CallExpression",
+    "messageId": "throw-new-error",
+    "endLine": 490,
+    "endColumn": 63,
+    "fix": {
+      "range": [
+        23297,
+        23297
+      ],
+      "text": "new "
+    }
+  },
+  {
+    "ruleId": "unicorn/new-for-builtins",
+    "severity": 2,
+    "message": "Use `new Error()` instead of `Error()`.",
+    "line": 490,
+    "column": 32,
+    "nodeType": "CallExpression",
+    "messageId": "enforce",
+    "endLine": 490,
+    "endColumn": 63,
+    "fix": {
+      "range": [
+        23297,
+        23297
+      ],
+      "text": "new "
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/no-non-null-assertion",
+    "severity": 2,
+    "message": "Forbidden non-null assertion.",
+    "line": 504,
+    "column": 39,
+    "nodeType": "TSNonNullExpression",
+    "messageId": "noNonNull",
+    "endLine": 504,
+    "endColumn": 44
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: Expression expected.",
+    "line": 531,
+    "column": 41,
+    "nodeType": null
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 553,
+    "column": 13,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 553,
+    "endColumn": 28,
+    "fix": {
+      "range": [
+        27580,
+        27628
+      ],
+      "text": "interface CountdownHandle {\n  start: () => void;\n}"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 557,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 557,
+    "endColumn": 20,
+    "fix": {
+      "range": [
+        27630,
+        27655
+      ],
+      "text": "interface CountdownProps {}"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/ban-types",
+    "severity": 2,
+    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
+    "line": 557,
+    "column": 23,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "bannedTypeMessage",
+    "endLine": 557,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 603,
+    "column": 9,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 606,
+    "endColumn": 4
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 625,
+    "column": 9,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 628,
+    "endColumn": 4
+  },
+  {
+    "ruleId": "@typescript-eslint/no-empty-function",
+    "severity": 2,
+    "message": "Unexpected empty arrow function.",
+    "line": 645,
+    "column": 38,
+    "nodeType": "ArrowFunctionExpression",
+    "messageId": "unexpected",
+    "endLine": 645,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "@typescript-eslint/no-empty-function",
+    "severity": 2,
+    "message": "Unexpected empty arrow function.",
+    "line": 651,
+    "column": 38,
+    "nodeType": "ArrowFunctionExpression",
+    "messageId": "unexpected",
+    "endLine": 651,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 684,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 684,
+    "endColumn": 13,
+    "fix": {
+      "range": [
+        31755,
+        31827
+      ],
+      "text": "interface MyProps {\n  // using `interface` is also ok\n  message: string;\n}"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 688,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 688,
+    "endColumn": 13,
+    "fix": {
+      "range": [
+        31828,
+        31877
+      ],
+      "text": "interface MyState {\n  count: number; // like this\n}"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 727,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 727,
+    "endColumn": 13,
+    "fix": {
+      "range": [
+        33610,
+        33657
+      ],
+      "text": "interface MyProps {\n  readonly message: string;\n}"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 730,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 730,
+    "endColumn": 13,
+    "fix": {
+      "range": [
+        33658,
+        33703
+      ],
+      "text": "interface MyState {\n  readonly count: number;\n}"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-classes",
+    "severity": 2,
+    "message": "Expected \"increment\" to come before \"render\"",
+    "line": 751,
+    "column": 3,
+    "nodeType": "PropertyDefinition",
+    "messageId": "unexpectedClassesOrder",
+    "endLine": 756,
+    "endColumn": 5,
+    "fix": {
+      "range": [
+        34091,
+        34384
+      ],
+      "text": "increment = (amt: number) => {\n    // like this\n    this.setState((state) => ({\n      count: state.count + amt,\n    }));\n  };\n  state = { count: 0 };\n  render() {\n    return (\n      <div onClick={() => this.increment(1)}>\n        {this.props.message} {this.state.count}\n      </div>\n    );\n  }"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"null\" to come before \"Partial<State>\"",
+    "line": 799,
+    "column": 23,
+    "nodeType": "TSNullKeyword",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 799,
+    "endColumn": 27,
+    "fix": {
+      "range": [
+        36502,
+        36523
+      ],
+      "text": "null | Partial<State>"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/no-empty-function",
+    "severity": 2,
+    "message": "Unexpected empty static method 'getDerivedStateFromProps'.",
+    "line": 812,
+    "column": 49,
+    "nodeType": "FunctionExpression",
+    "messageId": "unexpected",
+    "endLine": 812,
+    "endColumn": 51
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"derivedState\" to come before \"savedPropA\"",
+    "line": 830,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 830,
+    "endColumn": 30,
+    "fix": {
+      "range": [
+        37114,
+        37193
+      ],
+      "text": "derivedState: props.propA,\n    savedPropA: props.propA, // save for memoization"
+    }
+  },
+  {
+    "ruleId": "curly",
+    "severity": 2,
+    "message": "Expected { after 'if' condition.",
+    "line": 842,
+    "column": 49,
+    "nodeType": "IfStatement",
+    "messageId": "missingCurlyAfterCondition",
+    "endLine": 842,
+    "endColumn": 61,
+    "fix": {
+      "range": [
+        37515,
+        37527
+      ],
+      "text": "{return null;}"
+    }
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: Expression expected.",
+    "line": 868,
+    "column": 43,
+    "nodeType": null
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 874,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 874,
+    "endColumn": 16,
+    "fix": {
+      "range": [
+        39012,
+        39050
+      ],
+      "text": "interface GreetProps {\n  age?: number;\n}"
+    }
+  },
+  {
+    "ruleId": "prefer-const",
+    "severity": 2,
+    "message": "'el' is never reassigned. Use 'const' instead.",
+    "line": 885,
+    "column": 5,
+    "nodeType": "Identifier",
+    "messageId": "useConst",
+    "endLine": 885,
+    "endColumn": 7,
+    "fix": {
+      "range": [
+        39171,
+        39198
+      ],
+      "text": "const el = <Greet age={3} />;"
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 904,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 906,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "perfectionist/sort-intersection-types",
+    "severity": 2,
+    "message": "Expected \"{ age: number;\n}\" to come before \"typeof Greet.defaultProps\"",
+    "line": 915,
+    "column": 47,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "unexpectedIntersectionTypesOrder",
+    "endLine": 917,
+    "endColumn": 2,
+    "fix": {
+      "range": [
+        40523,
+        40569
+      ],
+      "text": "{\n  age: number;\n} & typeof Greet.defaultProps"
+    }
+  },
+  {
+    "ruleId": "prefer-const",
+    "severity": 2,
+    "message": "'el' is never reassigned. Use 'const' instead.",
+    "line": 927,
+    "column": 5,
+    "nodeType": "Identifier",
+    "messageId": "useConst",
+    "endLine": 927,
+    "endColumn": 7,
+    "fix": {
+      "range": [
+        40722,
+        40749
+      ],
+      "text": "const el = <Greet age={3} />;"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 939,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 939,
+    "endColumn": 16,
+    "fix": {
+      "range": [
+        41547,
+        41584
+      ],
+      "text": "interface GreetProps {\n  age: number;\n}"
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 973,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 975,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"age\" to come before \"name\"",
+    "line": 973,
+    "column": 33,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 973,
+    "endColumn": 36,
+    "fix": {
+      "range": [
+        42296,
+        42305
+      ],
+      "text": "age, name"
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 978,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 980,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"React.Component<infer P>\" to come before \"React.ComponentType<infer P>\"",
+    "line": 993,
+    "column": 5,
+    "nodeType": "TSTypeReference",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 993,
+    "endColumn": 29,
+    "fix": {
+      "range": [
+        42818,
+        42875
+      ],
+      "text": "React.Component<infer P>\n  | React.ComponentType<infer P>"
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 997,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 999,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "perfectionist/sort-intersection-types",
+    "severity": 2,
+    "message": "Expected \"{ /* additional props here */\n}\" to come before \"Required<typeof MyComponent.defaultProps>\"",
+    "line": 1028,
+    "column": 58,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "unexpectedIntersectionTypesOrder",
+    "endLine": 1030,
+    "endColumn": 2,
+    "fix": {
+      "range": [
+        44399,
+        44476
+      ],
+      "text": "{\n  /* additional props here */\n} & Required<typeof MyComponent.defaultProps>"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 1075,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 1075,
+    "endColumn": 14,
+    "fix": {
+      "range": [
+        45959,
+        47680
+      ],
+      "text": "interface AppProps {\n  message: string;\n  count: number;\n  disabled: boolean;\n  /** array of a type! */\n  names: string[];\n  /** string literals to specify exact string values, with a union type to join them together */\n  status: \"waiting\" | \"success\";\n  /** an object with known properties (but could have more at runtime) */\n  obj: {\n    id: string;\n    title: string;\n  };\n  /** array of objects! (common) */\n  objArr: {\n    id: string;\n    title: string;\n  }[];\n  /** any non-primitive value - can't access any properties (NOT COMMON but useful as placeholder) */\n  obj2: object;\n  /** an interface with no required properties - (NOT COMMON, except for things like `React.Component<{}, State>`) */\n  obj3: {};\n  /** a dict object with any number of properties of the same type */\n  dict1: {\n    [key: string]: MyTypeHere;\n  };\n  dict2: Record<string, MyTypeHere>; // equivalent to dict1\n  /** function that doesn't take or return anything (VERY COMMON) */\n  onClick: () => void;\n  /** function with named prop (VERY COMMON) */\n  onChange: (id: number) => void;\n  /** function type syntax that takes an event (VERY COMMON) */\n  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;\n  /** alternative function type syntax that takes an event (VERY COMMON) */\n  onClick(event: React.MouseEvent<HTMLButtonElement>): void;\n  /** any function as long as you don't invoke it (not recommended) */\n  onSomething: Function;\n  /** an optional prop (VERY COMMON!) */\n  optional?: OptionalType;\n  /** when passing down the state setter function returned by `useState` to a child component. `number` is an example, swap out with whatever the type of your state */\n  setState: React.Dispatch<React.SetStateAction<number>>;\n}"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"count\" to come before \"message\"",
+    "line": 1077,
+    "column": 3,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 1077,
+    "endColumn": 17,
+    "fix": {
+      "range": [
+        45979,
+        47677
+      ],
+      "text": "count: number;\n  /** a dict object with any number of properties of the same type */\n  dict1: {\n    [key: string]: MyTypeHere;\n  };\n  dict2: Record<string, MyTypeHere>; // equivalent to dict1\n  disabled: boolean;\n  message: string;\n  /** array of a type! */\n  names: string[];\n  /** an object with known properties (but could have more at runtime) */\n  obj: {\n    id: string;\n    title: string;\n  };\n  /** any non-primitive value - can't access any properties (NOT COMMON but useful as placeholder) */\n  obj2: object;\n  /** an interface with no required properties - (NOT COMMON, except for things like `React.Component<{}, State>`) */\n  obj3: {};\n  /** array of objects! (common) */\n  objArr: {\n    id: string;\n    title: string;\n  }[];\n  /** function with named prop (VERY COMMON) */\n  onChange: (id: number) => void;\n  /** function type syntax that takes an event (VERY COMMON) */\n  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;\n  /** function that doesn't take or return anything (VERY COMMON) */\n  onClick: () => void;\n  /** alternative function type syntax that takes an event (VERY COMMON) */\n  onClick(event: React.MouseEvent<HTMLButtonElement>): void;\n  /** any function as long as you don't invoke it (not recommended) */\n  onSomething: Function;\n  /** an optional prop (VERY COMMON!) */\n  optional?: OptionalType;\n  /** when passing down the state setter function returned by `useState` to a child component. `number` is an example, swap out with whatever the type of your state */\n  setState: React.Dispatch<React.SetStateAction<number>>;\n  /** string literals to specify exact string values, with a union type to join them together */\n  status: \"waiting\" | \"success\";"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"\"success\"\" to come before \"\"waiting\"\"",
+    "line": 1082,
+    "column": 23,
+    "nodeType": "TSLiteralType",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 1082,
+    "endColumn": 32,
+    "fix": {
+      "range": [
+        46186,
+        46207
+      ],
+      "text": "\"success\" | \"waiting\""
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"obj\" to come before \"status\"",
+    "line": 1084,
+    "column": 3,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 1087,
+    "endColumn": 5,
+    "fix": {
+      "range": [
+        45979,
+        47677
+      ],
+      "text": "count: number;\n  /** a dict object with any number of properties of the same type */\n  dict1: {\n    [key: string]: MyTypeHere;\n  };\n  dict2: Record<string, MyTypeHere>; // equivalent to dict1\n  disabled: boolean;\n  message: string;\n  /** array of a type! */\n  names: string[];\n  /** an object with known properties (but could have more at runtime) */\n  obj: {\n    id: string;\n    title: string;\n  };\n  /** any non-primitive value - can't access any properties (NOT COMMON but useful as placeholder) */\n  obj2: object;\n  /** an interface with no required properties - (NOT COMMON, except for things like `React.Component<{}, State>`) */\n  obj3: {};\n  /** array of objects! (common) */\n  objArr: {\n    id: string;\n    title: string;\n  }[];\n  /** function with named prop (VERY COMMON) */\n  onChange: (id: number) => void;\n  /** function type syntax that takes an event (VERY COMMON) */\n  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;\n  /** function that doesn't take or return anything (VERY COMMON) */\n  onClick: () => void;\n  /** alternative function type syntax that takes an event (VERY COMMON) */\n  onClick(event: React.MouseEvent<HTMLButtonElement>): void;\n  /** any function as long as you don't invoke it (not recommended) */\n  onSomething: Function;\n  /** an optional prop (VERY COMMON!) */\n  optional?: OptionalType;\n  /** when passing down the state setter function returned by `useState` to a child component. `number` is an example, swap out with whatever the type of your state */\n  setState: React.Dispatch<React.SetStateAction<number>>;\n  /** string literals to specify exact string values, with a union type to join them together */\n  status: \"waiting\" | \"success\";"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"obj2\" to come before \"objArr\"",
+    "line": 1094,
+    "column": 3,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 1094,
+    "endColumn": 16,
+    "fix": {
+      "range": [
+        45979,
+        47677
+      ],
+      "text": "count: number;\n  /** a dict object with any number of properties of the same type */\n  dict1: {\n    [key: string]: MyTypeHere;\n  };\n  dict2: Record<string, MyTypeHere>; // equivalent to dict1\n  disabled: boolean;\n  message: string;\n  /** array of a type! */\n  names: string[];\n  /** an object with known properties (but could have more at runtime) */\n  obj: {\n    id: string;\n    title: string;\n  };\n  /** any non-primitive value - can't access any properties (NOT COMMON but useful as placeholder) */\n  obj2: object;\n  /** an interface with no required properties - (NOT COMMON, except for things like `React.Component<{}, State>`) */\n  obj3: {};\n  /** array of objects! (common) */\n  objArr: {\n    id: string;\n    title: string;\n  }[];\n  /** function with named prop (VERY COMMON) */\n  onChange: (id: number) => void;\n  /** function type syntax that takes an event (VERY COMMON) */\n  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;\n  /** function that doesn't take or return anything (VERY COMMON) */\n  onClick: () => void;\n  /** alternative function type syntax that takes an event (VERY COMMON) */\n  onClick(event: React.MouseEvent<HTMLButtonElement>): void;\n  /** any function as long as you don't invoke it (not recommended) */\n  onSomething: Function;\n  /** an optional prop (VERY COMMON!) */\n  optional?: OptionalType;\n  /** when passing down the state setter function returned by `useState` to a child component. `number` is an example, swap out with whatever the type of your state */\n  setState: React.Dispatch<React.SetStateAction<number>>;\n  /** string literals to specify exact string values, with a union type to join them together */\n  status: \"waiting\" | \"success\";"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/ban-types",
+    "severity": 2,
+    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
+    "line": 1096,
+    "column": 9,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "bannedTypeMessage",
+    "endLine": 1096,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"dict1\" to come before \"obj3\"",
+    "line": 1098,
+    "column": 3,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 1100,
+    "endColumn": 5,
+    "fix": {
+      "range": [
+        45979,
+        47677
+      ],
+      "text": "count: number;\n  /** a dict object with any number of properties of the same type */\n  dict1: {\n    [key: string]: MyTypeHere;\n  };\n  dict2: Record<string, MyTypeHere>; // equivalent to dict1\n  disabled: boolean;\n  message: string;\n  /** array of a type! */\n  names: string[];\n  /** an object with known properties (but could have more at runtime) */\n  obj: {\n    id: string;\n    title: string;\n  };\n  /** any non-primitive value - can't access any properties (NOT COMMON but useful as placeholder) */\n  obj2: object;\n  /** an interface with no required properties - (NOT COMMON, except for things like `React.Component<{}, State>`) */\n  obj3: {};\n  /** array of objects! (common) */\n  objArr: {\n    id: string;\n    title: string;\n  }[];\n  /** function with named prop (VERY COMMON) */\n  onChange: (id: number) => void;\n  /** function type syntax that takes an event (VERY COMMON) */\n  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;\n  /** function that doesn't take or return anything (VERY COMMON) */\n  onClick: () => void;\n  /** alternative function type syntax that takes an event (VERY COMMON) */\n  onClick(event: React.MouseEvent<HTMLButtonElement>): void;\n  /** any function as long as you don't invoke it (not recommended) */\n  onSomething: Function;\n  /** an optional prop (VERY COMMON!) */\n  optional?: OptionalType;\n  /** when passing down the state setter function returned by `useState` to a child component. `number` is an example, swap out with whatever the type of your state */\n  setState: React.Dispatch<React.SetStateAction<number>>;\n  /** string literals to specify exact string values, with a union type to join them together */\n  status: \"waiting\" | \"success\";"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-indexed-object-style",
+    "severity": 2,
+    "message": "A record is preferred over an index signature.",
+    "line": 1098,
+    "column": 10,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "preferRecord",
+    "endLine": 1100,
+    "endColumn": 4,
+    "fix": {
+      "range": [
+        46749,
+        46785
+      ],
+      "text": "Record<string, MyTypeHere>"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"onChange\" to come before \"onClick\"",
+    "line": 1105,
+    "column": 3,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 1105,
+    "endColumn": 34,
+    "fix": {
+      "range": [
+        45979,
+        47677
+      ],
+      "text": "count: number;\n  /** a dict object with any number of properties of the same type */\n  dict1: {\n    [key: string]: MyTypeHere;\n  };\n  dict2: Record<string, MyTypeHere>; // equivalent to dict1\n  disabled: boolean;\n  message: string;\n  /** array of a type! */\n  names: string[];\n  /** an object with known properties (but could have more at runtime) */\n  obj: {\n    id: string;\n    title: string;\n  };\n  /** any non-primitive value - can't access any properties (NOT COMMON but useful as placeholder) */\n  obj2: object;\n  /** an interface with no required properties - (NOT COMMON, except for things like `React.Component<{}, State>`) */\n  obj3: {};\n  /** array of objects! (common) */\n  objArr: {\n    id: string;\n    title: string;\n  }[];\n  /** function with named prop (VERY COMMON) */\n  onChange: (id: number) => void;\n  /** function type syntax that takes an event (VERY COMMON) */\n  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;\n  /** function that doesn't take or return anything (VERY COMMON) */\n  onClick: () => void;\n  /** alternative function type syntax that takes an event (VERY COMMON) */\n  onClick(event: React.MouseEvent<HTMLButtonElement>): void;\n  /** any function as long as you don't invoke it (not recommended) */\n  onSomething: Function;\n  /** an optional prop (VERY COMMON!) */\n  optional?: OptionalType;\n  /** when passing down the state setter function returned by `useState` to a child component. `number` is an example, swap out with whatever the type of your state */\n  setState: React.Dispatch<React.SetStateAction<number>>;\n  /** string literals to specify exact string values, with a union type to join them together */\n  status: \"waiting\" | \"success\";"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/method-signature-style",
+    "severity": 2,
+    "message": "Shorthand method signature is forbidden. Use a function property instead.",
+    "line": 1109,
+    "column": 3,
+    "nodeType": "TSMethodSignature",
+    "messageId": "errorMethod",
+    "endLine": 1109,
+    "endColumn": 61,
+    "fix": {
+      "range": [
+        47229,
+        47287
+      ],
+      "text": "onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/member-ordering",
+    "severity": 2,
+    "message": "Member onSomething should be declared before all method definitions.",
+    "line": 1111,
+    "column": 3,
+    "nodeType": "TSPropertySignature",
+    "messageId": "incorrectGroupOrder",
+    "endLine": 1111,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "@typescript-eslint/ban-types",
+    "severity": 2,
+    "message": "Don't use `Function` as a type. The `Function` type accepts any function-like value.\nIt provides no type safety when calling the function, which can be a common source of bugs.\nIt also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.\nIf you are expecting the function to accept certain arguments, you should explicitly define the function shape.",
+    "line": 1111,
+    "column": 16,
+    "nodeType": "Identifier",
+    "messageId": "bannedTypeMessage",
+    "endLine": 1111,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "@typescript-eslint/member-ordering",
+    "severity": 2,
+    "message": "Member optional should be declared before all method definitions.",
+    "line": 1113,
+    "column": 3,
+    "nodeType": "TSPropertySignature",
+    "messageId": "incorrectGroupOrder",
+    "endLine": 1113,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "@typescript-eslint/member-ordering",
+    "severity": 2,
+    "message": "Member setState should be declared before all method definitions.",
+    "line": 1115,
+    "column": 3,
+    "nodeType": "TSPropertySignature",
+    "messageId": "incorrectGroupOrder",
+    "endLine": 1115,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "@typescript-eslint/no-empty-interface",
+    "severity": 2,
+    "message": "An empty interface is equivalent to `{}`.",
+    "line": 1130,
+    "column": 11,
+    "nodeType": "Identifier",
+    "messageId": "noEmpty",
+    "endLine": 1130,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "perfectionist/sort-interfaces",
+    "severity": 2,
+    "message": "Expected \"onChange\" to come before \"style\"",
+    "line": 1155,
+    "column": 3,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedInterfacePropertiesOrder",
+    "endLine": 1155,
+    "endColumn": 55,
+    "fix": {
+      "range": [
+        48928,
+        49675
+      ],
+      "text": "children?: React.ReactNode; // best, accepts everything React can render\n  childrenElement: React.JSX.Element; // A single React element\n  onChange?: React.FormEventHandler<HTMLInputElement>; // form events! the generic parameter is the type of event.target\n  //  more info: https://react-typescript-cheatsheet.netlify.app/docs/advanced/patterns_by_usecase/#wrappingmirroring\n  props: Props & React.ComponentPropsWithoutRef<\"button\">; // to impersonate all the props of a button element and explicitly not forwarding its ref\n  props2: Props & React.ComponentPropsWithRef<MyButtonWithForwardRef>; // to impersonate all the props of MyButtonForwardedRef and explicitly forwarding its ref\n  style?: React.CSSProperties; // to pass through style props"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 1168,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 1168,
+    "endColumn": 11,
+    "fix": {
+      "range": [
+        49935,
+        49982
+      ],
+      "text": "interface Props {\n  children?: React.ReactNode;\n}"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"null\" to come before \"Partial<State>\"",
+    "line": 1269,
+    "column": 23,
+    "nodeType": "TSNullKeyword",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 1269,
+    "endColumn": 27,
+    "fix": {
+      "range": [
+        55111,
+        55132
+      ],
+      "text": "null | Partial<State>"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/no-empty-function",
+    "severity": 2,
+    "message": "Unexpected empty static method 'getDerivedStateFromProps'.",
+    "line": 1282,
+    "column": 49,
+    "nodeType": "FunctionExpression",
+    "messageId": "unexpected",
+    "endLine": 1282,
+    "endColumn": 51
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"derivedState\" to come before \"savedPropA\"",
+    "line": 1300,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 1300,
+    "endColumn": 30,
+    "fix": {
+      "range": [
+        55723,
+        55802
+      ],
+      "text": "derivedState: props.propA,\n    savedPropA: props.propA, // save for memoization"
+    }
+  },
+  {
+    "ruleId": "curly",
+    "severity": 2,
+    "message": "Expected { after 'if' condition.",
+    "line": 1312,
+    "column": 49,
+    "nodeType": "IfStatement",
+    "messageId": "missingCurlyAfterCondition",
+    "endLine": 1312,
+    "endColumn": 61,
+    "fix": {
+      "range": [
+        56124,
+        56136
+      ],
+      "text": "{return null;}"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 1341,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 1341,
+    "endColumn": 11,
+    "fix": {
+      "range": [
+        57712,
+        57745
+      ],
+      "text": "interface State {\n  text: string;\n}"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-classes",
+    "severity": 2,
+    "message": "Expected \"onChange\" to come before \"state\"",
+    "line": 1350,
+    "column": 3,
+    "nodeType": "PropertyDefinition",
+    "messageId": "unexpectedClassesOrder",
+    "endLine": 1352,
+    "endColumn": 5,
+    "fix": {
+      "range": [
+        57798,
+        58124
+      ],
+      "text": "// typing on RIGHT hand side of =\n  onChange = (e: React.FormEvent<HTMLInputElement>): void => {\n    this.setState({ text: e.currentTarget.value });\n  };\n\n  state = {\n    text: \"\",\n  };\n  render() {\n    return (\n      <div>\n        <input type=\"text\" value={this.state.text} onChange={this.onChange} />\n      </div>\n    );\n  }"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"onChange\" to come before \"value\"",
+    "line": 1356,
+    "column": 52,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 1356,
+    "endColumn": 76,
+    "fix": {
+      "range": [
+        58037,
+        58097
+      ],
+      "text": "onChange={this.onChange} type=\"text\" value={this.state.text}"
+    }
+  },
+  {
+    "ruleId": "no-unused-labels",
+    "severity": 2,
+    "message": "'onChange:' is defined but never used.",
+    "line": 1369,
+    "column": 3,
+    "nodeType": "Identifier",
+    "messageId": "unused",
+    "endLine": 1369,
+    "endColumn": 11,
+    "fix": {
+      "range": [
+        58897,
+        58907
+      ],
+      "text": ""
+    }
+  },
+  {
+    "ruleId": "no-labels",
+    "severity": 2,
+    "message": "Unexpected labeled statement.",
+    "line": 1369,
+    "column": 3,
+    "nodeType": "LabeledStatement",
+    "messageId": "unexpectedLabel",
+    "endLine": 1371,
+    "endColumn": 4
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "severity": 2,
+    "message": "Unexpected 'this'.",
+    "line": 1370,
+    "column": 5,
+    "nodeType": "ThisExpression",
+    "messageId": "unexpectedThis",
+    "endLine": 1370,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"onSubmit\" to come before \"ref\"",
+    "line": 1389,
+    "column": 3,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 1398,
+    "endColumn": 5,
+    "fix": {
+      "range": [
+        59847,
+        60183
+      ],
+      "text": "onSubmit={(e: React.SyntheticEvent) => {\n    e.preventDefault();\n    const target = e.target as typeof e.target & {\n      email: { value: string };\n      password: { value: string };\n    };\n    const email = target.email.value; // typechecks!\n    const password = target.password.value; // typechecks!\n    // etc...\n  }}\n  ref={formRef}"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-intersection-types",
+    "severity": 2,
+    "message": "Expected \"{ email: { value: string }; password: { value: string }; }\" to come before \"typeof e.target\"",
+    "line": 1391,
+    "column": 50,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "unexpectedIntersectionTypesOrder",
+    "endLine": 1394,
+    "endColumn": 6,
+    "fix": {
+      "range": [
+        59959,
+        60051
+      ],
+      "text": "{\n      email: { value: string };\n      password: { value: string };\n    } & typeof e.target"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"name\" to come before \"type\"",
+    "line": 1403,
+    "column": 27,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 1403,
+    "endColumn": 39,
+    "fix": {
+      "range": [
+        60232,
+        60257
+      ],
+      "text": "name=\"email\" type=\"email\""
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"name\" to come before \"type\"",
+    "line": 1409,
+    "column": 30,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 1409,
+    "endColumn": 45,
+    "fix": {
+      "range": [
+        60332,
+        60363
+      ],
+      "text": "name=\"password\" type=\"password\""
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"\"dark\"\" to come before \"\"light\"\"",
+    "line": 1469,
+    "column": 35,
+    "nodeType": "TSLiteralType",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 1469,
+    "endColumn": 41,
+    "fix": {
+      "range": [
+        67284,
+        67300
+      ],
+      "text": "\"dark\" | \"light\""
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 1479,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 1487,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 1495,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 1499,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 1517,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 1527,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 1535,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 1539,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 1553,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 1563,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 1571,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 1575,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 1585,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 1589,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "@typescript-eslint/no-non-null-assertion",
+    "severity": 2,
+    "message": "Forbidden non-null assertion.",
+    "line": 1588,
+    "column": 20,
+    "nodeType": "TSNonNullExpression",
+    "messageId": "noNonNull",
+    "endLine": 1588,
+    "endColumn": 32,
+    "suggestions": [
+      {
+        "messageId": "suggestOptionalChain",
+        "fix": {
+          "range": [
+            150,
+            151
+          ],
+          "text": "?"
+        },
+        "desc": "Consider using the optional chain operator `?.` instead. This operator includes runtime checks, so it is safer than the compile-only non-null assertion operator."
+      }
+    ]
+  },
+  {
+    "ruleId": "@typescript-eslint/no-non-null-assertion",
+    "severity": 2,
+    "message": "Forbidden non-null assertion.",
+    "line": 1603,
+    "column": 66,
+    "nodeType": "TSNonNullExpression",
+    "messageId": "noNonNull",
+    "endLine": 1603,
+    "endColumn": 71
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"\"button\"\" to come before \"\"submit\"\"",
+    "line": 1636,
+    "column": 20,
+    "nodeType": "TSLiteralType",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 1636,
+    "endColumn": 28,
+    "fix": {
+      "range": [
+        71411,
+        71430
+      ],
+      "text": "\"button\" | \"submit\""
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"className\" to come before \"ref\"",
+    "line": 1641,
+    "column": 21,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 1641,
+    "endColumn": 44,
+    "fix": {
+      "range": [
+        71550,
+        71601
+      ],
+      "text": "className=\"MyClassName\" ref={ref} type={props.type}"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"\"button\"\" to come before \"\"submit\"\"",
+    "line": 1657,
+    "column": 20,
+    "nodeType": "TSLiteralType",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 1657,
+    "endColumn": 28,
+    "fix": {
+      "range": [
+        72105,
+        72124
+      ],
+      "text": "\"button\" | \"submit\""
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"className\" to come before \"ref\"",
+    "line": 1665,
+    "column": 23,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 1665,
+    "endColumn": 46,
+    "fix": {
+      "range": [
+        72256,
+        72307
+      ],
+      "text": "className=\"MyClassName\" ref={ref} type={props.type}"
+    }
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: '>' expected.",
+    "line": 1691,
+    "column": 8,
+    "nodeType": null
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: '>' expected.",
+    "line": 1726,
+    "column": 8,
+    "nodeType": null
+  },
+  {
+    "ruleId": "unicorn/prefer-query-selector",
+    "severity": 2,
+    "message": "Prefer `.querySelector()` over `.getElementById()`.",
+    "line": 1757,
+    "column": 28,
+    "nodeType": "Identifier",
+    "messageId": "prefer-query-selector",
+    "endLine": 1757,
+    "endColumn": 42,
+    "fix": {
+      "range": [
+        74481,
+        74508
+      ],
+      "text": "querySelector(\"#modal-root\""
+    }
+  },
+  {
+    "ruleId": "unicorn/prefer-dom-node-append",
+    "severity": 2,
+    "message": "Prefer `Node#append()` over `Node#appendChild()`.",
+    "line": 1764,
+    "column": 5,
+    "nodeType": "CallExpression",
+    "messageId": "prefer-dom-node-append",
+    "endLine": 1764,
+    "endColumn": 35,
+    "fix": {
+      "range": [
+        74756,
+        74767
+      ],
+      "text": "append"
+    }
+  },
+  {
+    "ruleId": "unicorn/prefer-dom-node-remove",
+    "severity": 2,
+    "message": "Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`.",
+    "line": 1768,
+    "column": 5,
+    "nodeType": "CallExpression",
+    "messageId": "error",
+    "endLine": 1768,
+    "endColumn": 35,
+    "fix": {
+      "range": [
+        74814,
+        74844
+      ],
+      "text": "this.el.remove()"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-named-imports",
+    "severity": 2,
+    "message": "Expected \"ReactNode\" to come before \"useRef\"",
+    "line": 1785,
+    "column": 29,
+    "nodeType": "ImportSpecifier",
+    "messageId": "unexpectedNamedImportsOrder",
+    "endLine": 1785,
+    "endColumn": 38,
+    "fix": {
+      "range": [
+        75623,
+        75651
+      ],
+      "text": "ReactNode, useEffect, useRef"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 1790,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 1790,
+    "endColumn": 16,
+    "fix": {
+      "range": [
+        75784,
+        75829
+      ],
+      "text": "interface ModalProps {\n  children: ReactNode;\n}"
+    }
+  },
+  {
+    "ruleId": "curly",
+    "severity": 2,
+    "message": "Expected { after 'if' condition.",
+    "line": 1797,
+    "column": 23,
+    "nodeType": "IfStatement",
+    "messageId": "missingCurlyAfterCondition",
+    "endLine": 1797,
+    "endColumn": 69,
+    "fix": {
+      "range": [
+        75993,
+        76039
+      ],
+      "text": "{elRef.current = document.createElement(\"div\");}"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/no-non-null-assertion",
+    "severity": 2,
+    "message": "Forbidden non-null assertion.",
+    "line": 1800,
+    "column": 16,
+    "nodeType": "TSNonNullExpression",
+    "messageId": "noNonNull",
+    "endLine": 1800,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "unicorn/prefer-dom-node-append",
+    "severity": 2,
+    "message": "Prefer `Node#append()` over `Node#appendChild()`.",
+    "line": 1801,
+    "column": 5,
+    "nodeType": "CallExpression",
+    "messageId": "prefer-dom-node-append",
+    "endLine": 1801,
+    "endColumn": 30,
+    "fix": {
+      "range": [
+        76158,
+        76169
+      ],
+      "text": "append"
+    }
+  },
+  {
+    "ruleId": "unicorn/prefer-dom-node-remove",
+    "severity": 2,
+    "message": "Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`.",
+    "line": 1803,
+    "column": 7,
+    "nodeType": "CallExpression",
+    "messageId": "error",
+    "endLine": 1803,
+    "endColumn": 32,
+    "fix": {
+      "range": [
+        76200,
+        76225
+      ],
+      "text": "el.remove()"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"height\" to come before \"placeItems\"",
+    "line": 1833,
+    "column": 15,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 1833,
+    "endColumn": 30,
+    "fix": {
+      "range": [
+        78020,
+        78203
+      ],
+      "text": "background: \"rgba(0,0,0,0.1)\",\n              display: \"grid\",\n              height: \"100vh\",\n              placeItems: \"center\",\n              width: \"100vh\",\n              zIndex: 99"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"background\" to come before \"width\"",
+    "line": 1835,
+    "column": 15,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 1835,
+    "endColumn": 44,
+    "fix": {
+      "range": [
+        78020,
+        78203
+      ],
+      "text": "background: \"rgba(0,0,0,0.1)\",\n              display: \"grid\",\n              height: \"100vh\",\n              placeItems: \"center\",\n              width: \"100vh\",\n              zIndex: 99"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"onClick\" to come before \"style\"",
+    "line": 1842,
+    "column": 15,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 1842,
+    "endColumn": 50,
+    "fix": {
+      "range": [
+        78296,
+        78381
+      ],
+      "text": "onClick={() => setShowModal(false)}\n              style={{ background: \"papyawhip\" }}"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/class-methods-use-this",
+    "severity": 2,
+    "message": "Expected 'this' to be used by class method 'componentDidCatch'.",
+    "line": 1900,
+    "column": 3,
+    "nodeType": "FunctionExpression",
+    "messageId": "missingThis",
+    "endLine": 1900,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "vue/require-direct-export",
+    "severity": 2,
+    "message": "Expected the component literal to be directly exported.",
+    "line": 1913,
+    "column": 1,
+    "nodeType": "ExportDefaultDeclaration",
+    "messageId": "expectedDirectExport",
+    "endLine": 1913,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "@typescript-eslint/ban-types",
+    "severity": 2,
+    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
+    "line": 1947,
+    "column": 3,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "bannedTypeMessage",
+    "endLine": 1947,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"null\" to come before \"number\"",
+    "line": 1949,
+    "column": 21,
+    "nodeType": "TSNullKeyword",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 1949,
+    "endColumn": 25,
+    "fix": {
+      "range": [
+        81401,
+        81414
+      ],
+      "text": "null | number"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-classes",
+    "severity": 2,
+    "message": "Expected \"increment\" to come before \"render\"",
+    "line": 1958,
+    "column": 3,
+    "nodeType": "PropertyDefinition",
+    "messageId": "unexpectedClassesOrder",
+    "endLine": 1962,
+    "endColumn": 5,
+    "fix": {
+      "range": [
+        81439,
+        81681
+      ],
+      "text": "increment = (amt: number) => {\n    this.setState((state) => ({\n      count: (state.count || 0) + amt,\n    }));\n  };\n  state = {\n    count: null,\n  };\n  render() {\n    return <div onClick={() => this.increment(1)}>{this.state.count}</div>;\n  }"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"\"bottom\"\" to come before \"\"top\"\"",
+    "line": 2026,
+    "column": 59,
+    "nodeType": "TSLiteralType",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 2026,
+    "endColumn": 67,
+    "fix": {
+      "range": [
+        85352,
+        85387
+      ],
+      "text": "\"bottom\" | \"left\" | \"right\" | \"top\""
+    }
+  },
+  {
+    "ruleId": "no-restricted-syntax",
+    "severity": 2,
+    "message": "Don't declare enums",
+    "line": 2032,
+    "column": 8,
+    "nodeType": "TSEnumDeclaration",
+    "messageId": "restrictedSyntax",
+    "endLine": 2036,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "perfectionist/sort-enums",
+    "severity": 2,
+    "message": "Expected \"large\" to come before \"small\"",
+    "line": 2035,
+    "column": 3,
+    "nodeType": "TSEnumMember",
+    "messageId": "unexpectedEnumsOrder",
+    "endLine": 2035,
+    "endColumn": 18,
+    "fix": {
+      "range": [
+        85561,
+        85618
+      ],
+      "text": "default = \"default\",\n  large = \"large\",\n  small = \"small\""
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 2039,
+    "column": 14,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 2041,
+    "endColumn": 54
+  },
+  {
+    "ruleId": "unicorn/prefer-dom-node-remove",
+    "severity": 2,
+    "message": "Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`.",
+    "line": 2068,
+    "column": 1,
+    "nodeType": "CallExpression",
+    "messageId": "error",
+    "endLine": 2068,
+    "endColumn": 41,
+    "fix": {
+      "range": [
+        87018,
+        87058
+      ],
+      "text": "element.remove()"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/no-non-null-assertion",
+    "severity": 2,
+    "message": "Forbidden non-null assertion.",
+    "line": 2068,
+    "column": 1,
+    "nodeType": "TSNonNullExpression",
+    "messageId": "noNonNull",
+    "endLine": 2068,
+    "endColumn": 20,
+    "suggestions": [
+      {
+        "messageId": "suggestOptionalChain",
+        "fix": {
+          "range": [
+            18,
+            19
+          ],
+          "text": "?"
+        },
+        "desc": "Consider using the optional chain operator `?.` instead. This operator includes runtime checks, so it is safer than the compile-only non-null assertion operator."
+      }
+    ]
+  },
+  {
+    "ruleId": "@typescript-eslint/no-non-null-assertion",
+    "severity": 2,
+    "message": "Forbidden non-null assertion.",
+    "line": 2069,
+    "column": 12,
+    "nodeType": "TSNonNullExpression",
+    "messageId": "noNonNull",
+    "endLine": 2069,
+    "endColumn": 48
+  },
+  {
+    "ruleId": "unicorn/prefer-query-selector",
+    "severity": 2,
+    "message": "Prefer `.querySelector()` over `.getElementById()`.",
+    "line": 2069,
+    "column": 21,
+    "nodeType": "Identifier",
+    "messageId": "prefer-query-selector",
+    "endLine": 2069,
+    "endColumn": 35
+  },
+  {
+    "ruleId": "@typescript-eslint/no-non-null-assertion",
+    "severity": 2,
+    "message": "Forbidden non-null assertion.",
+    "line": 2069,
+    "column": 36,
+    "nodeType": "TSNonNullExpression",
+    "messageId": "noNonNull",
+    "endLine": 2069,
+    "endColumn": 46
+  },
+  {
+    "ruleId": "perfectionist/sort-intersection-types",
+    "severity": 2,
+    "message": "Expected \"{ readonly brand: unique symbol }\" to come before \"string\"",
+    "line": 2080,
+    "column": 25,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "unexpectedIntersectionTypesOrder",
+    "endLine": 2080,
+    "endColumn": 58,
+    "fix": {
+      "range": [
+        87549,
+        87591
+      ],
+      "text": "{ readonly brand: unique symbol } & string"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-intersection-types",
+    "severity": 2,
+    "message": "Expected \"{ readonly brand: unique symbol }\" to come before \"string\"",
+    "line": 2081,
+    "column": 24,
+    "nodeType": "TSTypeLiteral",
+    "messageId": "unexpectedIntersectionTypesOrder",
+    "endLine": 2081,
+    "endColumn": 57,
+    "fix": {
+      "range": [
+        87607,
+        87649
+      ],
+      "text": "{ readonly brand: unique symbol } & string"
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 2115,
+    "column": 14,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 2120,
+    "endColumn": 2
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: '{' expected.",
+    "line": 2140,
+    "column": 0,
+    "nodeType": null
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"card\" to come before \"suit\"",
+    "line": 2164,
+    "column": 38,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 2164,
+    "endColumn": 50,
+    "fix": {
+      "range": [
+        90888,
+        90914
+      ],
+      "text": "card: number; suit: string"
+    }
+  },
+  {
+    "ruleId": "no-redeclare",
+    "severity": 2,
+    "message": "'pickCard' is already defined.",
+    "line": 2165,
+    "column": 10,
+    "nodeType": "Identifier",
+    "messageId": "redeclared",
+    "endLine": 2165,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"card\" to come before \"suit\"",
+    "line": 2165,
+    "column": 47,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 2165,
+    "endColumn": 59,
+    "fix": {
+      "range": [
+        90961,
+        90987
+      ],
+      "text": "card: number; suit: string"
+    }
+  },
+  {
+    "ruleId": "no-redeclare",
+    "severity": 2,
+    "message": "'pickCard' is already defined.",
+    "line": 2166,
+    "column": 10,
+    "nodeType": "Identifier",
+    "messageId": "redeclared",
+    "endLine": 2166,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-definitions",
+    "severity": 2,
+    "message": "Use an `interface` instead of a `type`.",
+    "line": 2175,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "interfaceOverType",
+    "endLine": 2175,
+    "endColumn": 14,
+    "fix": {
+      "range": [
+        91404,
+        91652
+      ],
+      "text": "interface pickCard {\n  (x: { suit: string; card: number }[]): number;\n  (x: number): { suit: string; card: number };\n  // no need for combined signature in this form\n  // you can also type static properties of functions here eg `pickCard.wasCalled`\n}"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"card\" to come before \"suit\"",
+    "line": 2176,
+    "column": 23,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 2176,
+    "endColumn": 35,
+    "fix": {
+      "range": [
+        91430,
+        91456
+      ],
+      "text": "card: number; suit: string"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-object-types",
+    "severity": 2,
+    "message": "Expected \"card\" to come before \"suit\"",
+    "line": 2177,
+    "column": 32,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedObjectTypesOrder",
+    "endLine": 2177,
+    "endColumn": 44,
+    "fix": {
+      "range": [
+        91488,
+        91514
+      ],
+      "text": "card: number; suit: string"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"bar\" to come before \"foo\"",
+    "line": 2196,
+    "column": 3,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2196,
+    "endColumn": 9,
+    "fix": {
+      "range": [
+        92393,
+        92409
+      ],
+      "text": "bar: 2,\n  foo: 1"
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 2199,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 2203,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"bar\" to come before \"foo\"",
+    "line": 2213,
+    "column": 3,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2213,
+    "endColumn": 9,
+    "fix": {
+      "range": [
+        92881,
+        92897
+      ],
+      "text": "bar: 2,\n  foo: 1"
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 2218,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 2219,
+    "endColumn": 33
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 2242,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 2244,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "prefer-const",
+    "severity": 2,
+    "message": "'baz' is never reassigned. Use 'const' instead.",
+    "line": 2281,
+    "column": 5,
+    "nodeType": "Identifier",
+    "messageId": "useConst",
+    "endLine": 2281,
+    "endColumn": 21,
+    "fix": {
+      "range": [
+        95425,
+        95487
+      ],
+      "text": "const baz: SubInstType = {\n  c: 5,\n  d: 6, // type checks ok!\n};"
+    }
+  },
+  {
+    "ruleId": "prefer-const",
+    "severity": 2,
+    "message": "'baz2' is never reassigned. Use 'const' instead.",
+    "line": 2290,
+    "column": 5,
+    "nodeType": "Identifier",
+    "messageId": "useConst",
+    "endLine": 2290,
+    "endColumn": 23,
+    "fix": {
+      "range": [
+        95704,
+        95768
+      ],
+      "text": "const baz2: SubInstType2 = {\n  c: 5,\n  d: 6, // type checks ok!\n};"
+    }
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 2358,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 2363,
+    "endColumn": 2
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: Property or signature expected.",
+    "line": 2371,
+    "column": 32,
+    "nodeType": null
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 2385,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 2406,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"classNameDark\" to come before \"element\"",
+    "line": 2390,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2390,
+    "endColumn": 18,
+    "fix": {
+      "range": [
+        100008,
+        100182
+      ],
+      "text": "classNameDark,\n    classNameLight,\n    // -> input props / config props to be exported\n    element,\n    global,\n    onChange,\n    storageKey = \"darkMode\",\n    storageProvider"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"global\" to come before \"storageProvider\"",
+    "line": 2395,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2395,
+    "endColumn": 11,
+    "fix": {
+      "range": [
+        100008,
+        100182
+      ],
+      "text": "classNameDark,\n    classNameLight,\n    // -> input props / config props to be exported\n    element,\n    global,\n    onChange,\n    storageKey = \"darkMode\",\n    storageProvider"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"enable\" to come before \"value\"",
+    "line": 2402,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2402,
+    "endColumn": 58,
+    "fix": {
+      "range": [
+        100224,
+        100470
+      ],
+      "text": "disable: useCallback(() => setState(false), [setState]),\n    enable: useCallback(() => setState(true), [setState]),\n    toggle: useCallback(() => setState((current) => !current), [setState]),\n    // -> return props to be exported\n    value: state"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"disable\" to come before \"enable\"",
+    "line": 2403,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2403,
+    "endColumn": 60,
+    "fix": {
+      "range": [
+        100224,
+        100470
+      ],
+      "text": "disable: useCallback(() => setState(false), [setState]),\n    enable: useCallback(() => setState(true), [setState]),\n    toggle: useCallback(() => setState((current) => !current), [setState]),\n    // -> return props to be exported\n    value: state"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-interfaces",
+    "severity": 2,
+    "message": "Expected \"global\" to come before \"storageProvider\"",
+    "line": 2424,
+    "column": 5,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedInterfacePropertiesOrder",
+    "endLine": 2424,
+    "endColumn": 21,
+    "fix": {
+      "range": [
+        100835,
+        101484
+      ],
+      "text": "classNameDark?: string; // A className to set \"dark mode\". Default = \"dark-mode\".\n    classNameLight?: string; // A className to set \"light mode\". Default = \"light-mode\".\n    element?: HTMLElement; // The element to apply the className. Default = `document.body`\n    global?: Window; // The global object. Default = `window`.\n    onChange?: (val?: boolean) => void; // Override the default className handler with a custom callback.\n    storageKey?: string; // Specify the `localStorage` key. Default = \"darkMode\". Set to `null` to disable persistent storage.\n    storageProvider?: WindowLocalStorage; // A storage provider. Default = `localStorage`."
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-interfaces",
+    "severity": 2,
+    "message": "Expected \"enable\" to come before \"value\"",
+    "line": 2431,
+    "column": 5,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedInterfacePropertiesOrder",
+    "endLine": 2431,
+    "endColumn": 24,
+    "fix": {
+      "range": [
+        101589,
+        101686
+      ],
+      "text": "disable: () => void;\n    enable: () => void;\n    toggle: () => void;\n    readonly value: boolean;"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-interfaces",
+    "severity": 2,
+    "message": "Expected \"disable\" to come before \"enable\"",
+    "line": 2432,
+    "column": 5,
+    "nodeType": "TSPropertySignature",
+    "messageId": "unexpectedInterfacePropertiesOrder",
+    "endLine": 2432,
+    "endColumn": 25,
+    "fix": {
+      "range": [
+        101589,
+        101686
+      ],
+      "text": "disable: () => void;\n    enable: () => void;\n    toggle: () => void;\n    readonly value: boolean;"
+    }
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: '}' expected.",
+    "line": 2465,
+    "column": 0,
+    "nodeType": null
+  },
+  {
+    "ruleId": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: JSX element 'div' has no corresponding closing tag.",
+    "line": 2487,
+    "column": 3,
+    "nodeType": null
+  },
+  {
+    "ruleId": "@typescript-eslint/method-signature-style",
+    "severity": 2,
+    "message": "Shorthand method signature is forbidden. Use a function property instead.",
+    "line": 2627,
+    "column": 5,
+    "nodeType": "TSMethodSignature",
+    "messageId": "errorMethod",
+    "endLine": 2627,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "func-style",
+    "severity": 2,
+    "message": "Expected a function declaration.",
+    "line": 2634,
+    "column": 7,
+    "nodeType": "VariableDeclarator",
+    "messageId": "declaration",
+    "endLine": 2636,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "prefer-const",
+    "severity": 2,
+    "message": "'process' is never reassigned. Use 'const' instead.",
+    "line": 2659,
+    "column": 1,
+    "nodeType": "Identifier",
+    "messageId": "useConst",
+    "endLine": 2659,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "unicorn/prefer-module",
+    "severity": 2,
+    "message": "Do not use \"module\".",
+    "line": 2753,
+    "column": 1,
+    "nodeType": "Identifier",
+    "messageId": "error/identifier",
+    "endLine": 2753,
+    "endColumn": 7,
+    "suggestions": [
+      {
+        "messageId": "suggestion/export",
+        "fix": {
+          "range": [
+            0,
+            17
+          ],
+          "text": "export default "
+        },
+        "data": {
+          "name": "module"
+        },
+        "desc": "Switch to `export`."
+      }
+    ]
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"jest\" to come before \"node\"",
+    "line": 2757,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2757,
+    "endColumn": 15,
+    "fix": {
+      "range": [
+        114536,
+        114577
+      ],
+      "text": "es6: true,\n    jest: true,\n    node: true"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"parserOptions\" to come before \"plugins\"",
+    "line": 2762,
+    "column": 3,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2765,
+    "endColumn": 4,
+    "fix": {
+      "range": [
+        114525,
+        115274
+      ],
+      "text": "env: {\n    es6: true,\n    node: true,\n    jest: true,\n  },\n  extends: \"eslint:recommended\",\n  parser: \"@typescript-eslint/parser\",\n  parserOptions: {\n    ecmaVersion: 2017,\n    sourceType: \"module\",\n  },\n  plugins: [\"@typescript-eslint\"],\n  rules: {\n    indent: [\"error\", 2],\n    \"linebreak-style\": [\"error\", \"unix\"],\n    quotes: [\"error\", \"single\"],\n    \"no-console\": \"warn\",\n    \"no-unused-vars\": \"off\",\n    \"@typescript-eslint/no-unused-vars\": [\n      \"error\",\n      { vars: \"all\", args: \"after-used\", ignoreRestSiblings: false },\n    ],\n    \"@typescript-eslint/explicit-function-return-type\": \"warn\", // Consider using explicit annotations for object literals and function return types even when they can be inferred.\n    \"no-empty\": \"warn\",\n  }"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"no-console\" to come before \"quotes\"",
+    "line": 2770,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2770,
+    "endColumn": 25,
+    "fix": {
+      "range": [
+        114779,
+        115269
+      ],
+      "text": "\"@typescript-eslint/explicit-function-return-type\": \"warn\", // Consider using explicit annotations for object literals and function return types even when they can be inferred.\n    \"@typescript-eslint/no-unused-vars\": [\n      \"error\",\n      { vars: \"all\", args: \"after-used\", ignoreRestSiblings: false },\n    ],\n    indent: [\"error\", 2],\n    \"linebreak-style\": [\"error\", \"unix\"],\n    \"no-console\": \"warn\",\n    \"no-empty\": \"warn\",\n    \"no-unused-vars\": \"off\",\n    quotes: [\"error\", \"single\"]"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"@typescript-eslint/no-unused-vars\" to come before \"no-unused-vars\"",
+    "line": 2772,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2775,
+    "endColumn": 6,
+    "fix": {
+      "range": [
+        114779,
+        115269
+      ],
+      "text": "\"@typescript-eslint/explicit-function-return-type\": \"warn\", // Consider using explicit annotations for object literals and function return types even when they can be inferred.\n    \"@typescript-eslint/no-unused-vars\": [\n      \"error\",\n      { vars: \"all\", args: \"after-used\", ignoreRestSiblings: false },\n    ],\n    indent: [\"error\", 2],\n    \"linebreak-style\": [\"error\", \"unix\"],\n    \"no-console\": \"warn\",\n    \"no-empty\": \"warn\",\n    \"no-unused-vars\": \"off\",\n    quotes: [\"error\", \"single\"]"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"args\" to come before \"vars\"",
+    "line": 2774,
+    "column": 22,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2774,
+    "endColumn": 40,
+    "fix": {
+      "range": [
+        114997,
+        115055
+      ],
+      "text": "args: \"after-used\", ignoreRestSiblings: false, vars: \"all\""
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-objects",
+    "severity": 2,
+    "message": "Expected \"@typescript-eslint/explicit-function-return-type\" to come before \"@typescript-eslint/no-unused-vars\"",
+    "line": 2776,
+    "column": 5,
+    "nodeType": "Property",
+    "messageId": "unexpectedObjectsOrder",
+    "endLine": 2776,
+    "endColumn": 63,
+    "fix": {
+      "range": [
+        114779,
+        115269
+      ],
+      "text": "\"@typescript-eslint/explicit-function-return-type\": \"warn\", // Consider using explicit annotations for object literals and function return types even when they can be inferred.\n    \"@typescript-eslint/no-unused-vars\": [\n      \"error\",\n      { vars: \"all\", args: \"after-used\", ignoreRestSiblings: false },\n    ],\n    indent: [\"error\", 2],\n    \"linebreak-style\": [\"error\", \"unix\"],\n    \"no-console\": \"warn\",\n    \"no-empty\": \"warn\",\n    \"no-unused-vars\": \"off\",\n    quotes: [\"error\", \"single\"]"
+    }
+  }
+]

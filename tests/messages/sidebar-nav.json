@@ -1,0 +1,469 @@
+[
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"use·client\"` with `'use·client'`",
+    "line": 1,
+    "column": 1,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 1,
+    "endColumn": 13,
+    "fix": {
+      "range": [
+        0,
+        12
+      ],
+      "text": "'use client'"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"next/link\"` with `'next/link'`",
+    "line": 3,
+    "column": 18,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 3,
+    "endColumn": 29,
+    "fix": {
+      "range": [
+        31,
+        42
+      ],
+      "text": "'next/link'"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"next/navigation\"` with `'next/navigation'`",
+    "line": 4,
+    "column": 29,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 4,
+    "endColumn": 46,
+    "fix": {
+      "range": [
+        71,
+        88
+      ],
+      "text": "'next/navigation'"
+    }
+  },
+  {
+    "ruleId": "import/order",
+    "severity": 2,
+    "message": "There should be no empty line between import groups",
+    "line": 5,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "endLine": 5,
+    "endColumn": 43,
+    "fix": {
+      "range": [
+        132,
+        133
+      ],
+      "text": ""
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"types/nav\"` with `'types/nav'`",
+    "line": 5,
+    "column": 32,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 5,
+    "endColumn": 43,
+    "fix": {
+      "range": [
+        120,
+        131
+      ],
+      "text": "'types/nav'"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"@/lib/utils\"` with `'@/lib/utils'`",
+    "line": 7,
+    "column": 20,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 7,
+    "endColumn": 33,
+    "fix": {
+      "range": [
+        152,
+        165
+      ],
+      "text": "'@/lib/utils'"
+    }
+  },
+  {
+    "ruleId": "unicorn/explicit-length-check",
+    "severity": 2,
+    "message": "Use `.length > 0` when checking length is not zero.",
+    "line": 16,
+    "column": 10,
+    "nodeType": "MemberExpression",
+    "messageId": "non-zero",
+    "endLine": 16,
+    "endColumn": 22,
+    "fix": {
+      "range": [
+        343,
+        355
+      ],
+      "text": "items.length > 0"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"className\" to come before \"key\"",
+    "line": 19,
+    "column": 26,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 19,
+    "endColumn": 48,
+    "fix": {
+      "range": [
+        438,
+        472
+      ],
+      "text": "className={cn(\"pb-4\")} key={index}"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"pb-4\"` with `'pb-4'`",
+    "line": 19,
+    "column": 40,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 19,
+    "endColumn": 46,
+    "fix": {
+      "range": [
+        464,
+        470
+      ],
+      "text": "'pb-4'"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `⏎············{item.title}⏎··········` with `{item.title}`",
+    "line": 20,
+    "column": 75,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 22,
+    "endColumn": 11,
+    "fix": {
+      "range": [
+        548,
+        584
+      ],
+      "text": "{item.title}"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `(⏎············<DocsSidebarNavItems·items={item.items}·pathname={pathname}·/>⏎··········)` with `<DocsSidebarNavItems·items={item.items}·pathname={pathname}·/>`",
+    "line": 23,
+    "column": 35,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 25,
+    "endColumn": 12,
+    "fix": {
+      "range": [
+        624,
+        712
+      ],
+      "text": "<DocsSidebarNavItems items={item.items} pathname={pathname} />"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-union-types",
+    "severity": 2,
+    "message": "Expected \"null\" to come before \"string\"",
+    "line": 34,
+    "column": 22,
+    "nodeType": "TSNullKeyword",
+    "messageId": "unexpectedUnionTypesOrder",
+    "endLine": 34,
+    "endColumn": 26,
+    "fix": {
+      "range": [
+        839,
+        852
+      ],
+      "text": "null | string"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `⏎··items,⏎··pathname,⏎` with `·items,·pathname·`",
+    "line": 37,
+    "column": 38,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 40,
+    "endColumn": 1,
+    "fix": {
+      "range": [
+        893,
+        915
+      ],
+      "text": " items, pathname "
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"href\" to come before \"key\"",
+    "line": 47,
+    "column": 13,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 47,
+    "endColumn": 29,
+    "fix": {
+      "range": [
+        1138,
+        1625
+      ],
+      "text": "className={cn(\n              \"group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline\",\n              item.disabled && \"cursor-not-allowed opacity-60\",\n              pathname === item.href\n                ? \"font-medium text-foreground\"\n                : \"text-muted-foreground\"\n            )}\n            href={item.href}\n            key={index}\n            rel={item.external ? \"noreferrer\" : \"\"}\n            target={item.external ? \"_blank\" : \"\"}"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"className\" to come before \"href\"",
+    "line": 48,
+    "column": 13,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 54,
+    "endColumn": 15,
+    "fix": {
+      "range": [
+        1138,
+        1625
+      ],
+      "text": "className={cn(\n              \"group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline\",\n              item.disabled && \"cursor-not-allowed opacity-60\",\n              pathname === item.href\n                ? \"font-medium text-foreground\"\n                : \"text-muted-foreground\"\n            )}\n            href={item.href}\n            key={index}\n            rel={item.external ? \"noreferrer\" : \"\"}\n            target={item.external ? \"_blank\" : \"\"}"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"group·flex·w-full·items-center·rounded-md·border·border-transparent·px-2·py-1·hover:underline\"` with `'group·flex·w-full·items-center·rounded-md·border·border-transparent·px-2·py-1·hover:underline'`",
+    "line": 49,
+    "column": 15,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 49,
+    "endColumn": 110,
+    "fix": {
+      "range": [
+        1220,
+        1315
+      ],
+      "text": "'group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline'"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"cursor-not-allowed·opacity-60\"` with `'cursor-not-allowed·opacity-60'`",
+    "line": 50,
+    "column": 32,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 50,
+    "endColumn": 63,
+    "fix": {
+      "range": [
+        1348,
+        1379
+      ],
+      "text": "'cursor-not-allowed opacity-60'"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `⏎················?·\"font-medium·text-foreground\"⏎················:·\"text-muted-foreground\"` with `·?·'text-foreground·font-medium'·:·'text-muted-foreground',`",
+    "line": 51,
+    "column": 37,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 53,
+    "endColumn": 42,
+    "fix": {
+      "range": [
+        1417,
+        1507
+      ],
+      "text": " ? 'text-foreground font-medium' : 'text-muted-foreground',"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"_blank\"·:·\"\"` with `'_blank'·:·''`",
+    "line": 55,
+    "column": 37,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 55,
+    "endColumn": 50,
+    "fix": {
+      "range": [
+        1559,
+        1572
+      ],
+      "text": "'_blank' : ''"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"rel\" to come before \"target\"",
+    "line": 56,
+    "column": 13,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 56,
+    "endColumn": 52,
+    "fix": {
+      "range": [
+        1138,
+        1625
+      ],
+      "text": "className={cn(\n              \"group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline\",\n              item.disabled && \"cursor-not-allowed opacity-60\",\n              pathname === item.href\n                ? \"font-medium text-foreground\"\n                : \"text-muted-foreground\"\n            )}\n            href={item.href}\n            key={index}\n            rel={item.external ? \"noreferrer\" : \"\"}\n            target={item.external ? \"_blank\" : \"\"}"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"noreferrer\"·:·\"\"` with `'noreferrer'·:·''`",
+    "line": 56,
+    "column": 34,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 56,
+    "endColumn": 51,
+    "fix": {
+      "range": [
+        1607,
+        1624
+      ],
+      "text": "'noreferrer' : ''"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-jsx-props",
+    "severity": 2,
+    "message": "Expected \"className\" to come before \"key\"",
+    "line": 68,
+    "column": 13,
+    "nodeType": "JSXAttribute",
+    "messageId": "unexpectedJSXPropsOrder",
+    "endLine": 71,
+    "endColumn": 15,
+    "fix": {
+      "range": [
+        1968,
+        2198
+      ],
+      "text": "className={cn(\n              \"flex w-full cursor-not-allowed items-center rounded-md p-2 text-muted-foreground hover:underline\",\n              item.disabled && \"cursor-not-allowed opacity-60\"\n            )}\n            key={index}"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline\"` with `'text-muted-foreground·flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·hover:underline'`",
+    "line": 69,
+    "column": 15,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 69,
+    "endColumn": 113,
+    "fix": {
+      "range": [
+        2021,
+        2119
+      ],
+      "text": "'text-muted-foreground flex w-full cursor-not-allowed items-center rounded-md p-2 hover:underline'"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `\"cursor-not-allowed·opacity-60\"` with `'cursor-not-allowed·opacity-60',`",
+    "line": 70,
+    "column": 32,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 70,
+    "endColumn": 63,
+    "fix": {
+      "range": [
+        2152,
+        2183
+      ],
+      "text": "'cursor-not-allowed opacity-60',"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Replace `ml-2·rounded-md·bg-muted·px-1.5·py-0.5·text-xs·leading-none·text-muted-foreground` with `bg-muted·text-muted-foreground·ml-2·rounded-md·px-1.5·py-0.5·text-xs·leading-none`",
+    "line": 75,
+    "column": 32,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 75,
+    "endColumn": 113,
+    "fix": {
+      "range": [
+        2296,
+        2377
+      ],
+      "text": "bg-muted text-muted-foreground ml-2 rounded-md px-1.5 py-0.5 text-xs leading-none"
+    }
+  },
+  {
+    "ruleId": "prettier/prettier",
+    "severity": 2,
+    "message": "Insert `,`",
+    "line": 80,
+    "column": 10,
+    "nodeType": null,
+    "messageId": "insert",
+    "endLine": 80,
+    "endColumn": 10,
+    "fix": {
+      "range": [
+        2511,
+        2511
+      ],
+      "text": ","
+    }
+  }
+]

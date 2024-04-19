@@ -4,17 +4,17 @@ import { describe, test } from 'node:test'
 import { fileURLToPath } from 'node:url'
 // @ts-expect-error unknown loadESLint api from the community types
 import { type ESLint, loadESLint } from 'eslint'
-import { debounceMessages } from './messages/debounce'
-import { explicitReturnTypeUtilsMessages } from './messages/explicit-return-type-utils'
-import { sidebarNavMessages } from './messages/sidebar-nav'
-import { typescriptCheatsheetsReactMessages } from './messages/typescript-cheatsheets-react'
+import debounceMessages from './messages/debounce.json'
+import explicitReturnTypeUtilsMessages from './messages/explicit-return-type-utils.json'
+import sidebarNavMessages from './messages/sidebar-nav.json'
+import typescriptCheatsheetsReactMessages from './messages/typescript-cheatsheets-react.json'
 
 const testsDir = path.dirname(fileURLToPath(import.meta.url))
 const inputsDir = path.join(testsDir, 'inputs')
 
 describe('ESLint config', async () => {
   const TestESLint: typeof ESLint = await loadESLint({ cwd: inputsDir })
-  const eslint = new TestESLint({ ignore: false, overrideConfigFile: path.join(inputsDir, 'eslint.config.js') })
+  const eslint = new TestESLint({ ignore: false, overrideConfigFile: path.join(inputsDir, 'eslint.config.test.js') })
 
   test('js file', async () => {
     const file = path.join(inputsDir, 'debounce.js')

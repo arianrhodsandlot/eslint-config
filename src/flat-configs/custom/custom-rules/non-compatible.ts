@@ -6,6 +6,7 @@ const eslintMajorVersion = Number.parseInt(Linter.version, 10)
 export const nonCompatibleRules: FlatConfigRules =
   eslintMajorVersion > 8
     ? {
+        'import/first': 'off',
         'import/newline-after-import': 'off',
         'promise/no-callback-in-promise': 'off',
         'promise/no-nesting': 'off',
