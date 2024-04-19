@@ -4,8 +4,14 @@ import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
 import { isPackageInstalled, setContext } from './lib/utils.js'
 import type { CreateConfigOptions } from './types/config.js'
 
+function shouldEnableDiff() {
+  return true
+}
+
 const defaultOptions: Required<CreateConfigOptions> = {
   append: [],
+  compat: true,
+  diff: shouldEnableDiff(),
   eslintComments: true,
   import: true,
   jsdoc: true,

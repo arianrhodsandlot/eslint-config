@@ -1,6 +1,7 @@
 import { getContext } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 import { baseConfigs } from './base.js'
+import { compatConfigs } from './compat.js'
 import { eslintCommentsConfigs } from './eslint-comments.js'
 import { importConfigs } from './import.js'
 import { jsdocConfigs } from './jsdoc.js'
@@ -20,6 +21,7 @@ import { unicornConfigs } from './unicorn.js'
 import { vueConfigs } from './vue.js'
 
 const optionalConfigsMap = {
+  compat: compatConfigs,
   eslintComments: eslintCommentsConfigs,
   import: importConfigs,
   jsdoc: jsdocConfigs,

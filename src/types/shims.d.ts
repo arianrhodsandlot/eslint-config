@@ -9,6 +9,17 @@ declare module '@next/eslint-plugin-next' {
   export = plugin
 }
 
+declare module 'eslint-plugin-compat' {
+  import type { ESLint, Linter } from 'eslint'
+
+  interface Plugin extends ESLint.Plugin {
+    configs: Record<string, Linter.FlatConfig | Linter.FlatConfig[]>
+    rules: NonNullable<ESLint.Plugin['rules']>
+  }
+  declare const plugin: Plugin
+  export = plugin
+}
+
 declare module 'eslint-plugin-eslint-comments' {
   import type { ESLint, Linter } from 'eslint'
 

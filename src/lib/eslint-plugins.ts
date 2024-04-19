@@ -1,4 +1,6 @@
 import * as eslintPluginNextModule from '@next/eslint-plugin-next'
+import * as eslintPluginCompatModule from 'eslint-plugin-compat'
+import * as eslintPluginDiffModule from 'eslint-plugin-diff'
 import * as eslintPluginEslintCommentsModule from 'eslint-plugin-eslint-comments'
 import * as eslintPluginImportModule from 'eslint-plugin-import'
 import * as eslintPluginJsdocModule from 'eslint-plugin-jsdoc'
@@ -28,6 +30,8 @@ function interopESLintPlugin(mod: any) {
   return mod
 }
 
+export const eslintPluginCompat = interopESLintPlugin(eslintPluginCompatModule)
+export const eslintPluginDiff = interopESLintPlugin(eslintPluginDiffModule)
 export const eslintPluginEslintComments = interopESLintPlugin(eslintPluginEslintCommentsModule)
 export const eslintPluginImport = interopESLintPlugin(eslintPluginImportModule)
 export const eslintPluginJsdoc = interopESLintPlugin(eslintPluginJsdocModule)

@@ -3,6 +3,8 @@ import type { FlatConfig, FlatConfigRules, FlatConfigs } from './eslint.js'
 export interface CreateConfigOptions {
   /** append custom flat configs to default */
   append?: FlatConfig | FlatConfigs
+  compat?: boolean
+  diff?: boolean
   eslintComments?: boolean
   import?: boolean
   jsdoc?: boolean
