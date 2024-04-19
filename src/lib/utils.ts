@@ -38,9 +38,11 @@ export function getPackageVersion(packageName: string) {
   for (const packageJson of packageJsons) {
     try {
       const packageInfo = JSON.parse(fs.readFileSync(packageJson, 'utf8'))
-      const version: string = packageInfo.dependencies[packageName] || packageInfo.devDependencies[packageName]
-      if (version) {
-        return version
+      if (packageInfo) {
+        const version: string = packageInfo.dependencies?.[packageName] || packageInfo.devDependencies?.[packageName]
+        if (version) {
+          return version
+        }
       }
     } catch {}
   }

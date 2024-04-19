@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.2] - 2024-04-19
+### Fixed
+- Fix parse error when there are empty dependencies or dev dependencies
+
 ## [0.10.1] - 2024-04-19
 ### Fixed
 - Fix config loading failed when vue is not installed
@@ -138,7 +142,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - First release!
 
-[unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.1...HEAD
+[unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.2...HEAD
+[0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.1...v0.10.2
 [0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.0...v0.10.1
 [0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.9.1...v0.10.0
 [0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.9.0...v0.9.1
