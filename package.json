@@ -1,6 +1,6 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "type": "module",
   "description": "A set of predefined ESLint config.",
   "main": "dist/umd/index.cjs",

@@ -38,7 +38,7 @@ export function getPackageVersion(packageName: string) {
   for (const packageJson of packageJsons) {
     try {
       const packageInfo = JSON.parse(fs.readFileSync(packageJson, 'utf8'))
-      const version = packageInfo.dependencies[packageName] || packageInfo.devDependencies[packageName]
+      const version: string = packageInfo.dependencies[packageName] || packageInfo.devDependencies[packageName]
       if (version) {
         return version
       }
@@ -57,16 +57,18 @@ export function isPackageInstalled(packageName: string) {
 
 const vueVersion = getMajorVersion(getPackageVersion('vue'))
 
-function getMajorVersion(version: string) {
-  let major = ''
-  for (const char of version) {
-    if (Number.parseInt(char, 10)) {
-      major += char
-    } else if (major) {
-      return Number.parseInt(major, 10)
+function getMajorVersion(version: string | undefined) {
+  if (version) {
+    let major = ''
+    for (const char of version) {
+      if (Number.parseInt(char, 10)) {
+        major += char
+      } else if (major) {
+        return Number.parseInt(major, 10)
+      }
     }
+    return Number.parseInt(major, 10)
   }
-  return Number.parseInt(major, 10)
 }
 
 export const isLegacyVue = vueVersion === 2
