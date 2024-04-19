@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.0] - 2024-04-19
+### Added
+- Add more plugins
+- Add support for ESLint 9
+
+### Changed
+- Remove shareable configs such as eslint-config-standard, eslint-config-love
+- Expose the default config via `default`
+
 ## [0.9.1] - 2024-03-24
 ### Fixed
 - Fix exported path
