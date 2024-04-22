@@ -73,7 +73,9 @@ export const vueRules: FlatConfigRules = {
   'vue/no-this-in-before-route-enter': 'error',
   'vue/no-undef-components': [
     'error',
-    { ignorePatterns: ['client-only', 'el(\\-\\w+)+', 'router(\\-\\w+)+', 'van(\\-\\w+)+'] },
+    {
+      ignorePatterns: ['client-only', 'el(\\-\\w+)+', 'router(\\-\\w+)+', 'svg-icon', 'van(\\-\\w+)+'],
+    },
   ],
   'vue/no-undef-properties': 'error',
   'vue/no-unused-emit-declarations': 'error',
