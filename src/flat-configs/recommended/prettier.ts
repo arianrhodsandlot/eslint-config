@@ -21,7 +21,7 @@ const prettierConfigFileNames = ['.prettierrc.js', '.prettierrc.json', '.prettie
 function readPrettierConfig() {
   const content = lookupFiles(...prettierConfigFileNames)
   if (content) {
-    const result = content.match(/{([\S\s]*?)}/)
+    const result = content.match(/\{([\s\S]*?)\}/)
     if (result) {
       const [configString] = result
       if (configString) {

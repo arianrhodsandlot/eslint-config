@@ -7,7 +7,7 @@ import { findSync } from 'new-find-package-json'
 import type { CreateConfigOptions } from '../types/config.js'
 export const isProduction = process.env.NODE_ENV === 'production'
 
-const { compact, mergeWith, castArray } = _
+const { castArray, compact, mergeWith } = _
 
 let gitIgnores: string[]
 export function getGitIgnores() {
