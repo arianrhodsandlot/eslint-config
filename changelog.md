@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.11.1] - 2024-04-22
+### Fixed
+Add diff plugin at last
+Add global parser
+Update several rules
+
 ## [0.11.0] - 2024-04-22
 ### Feature
 - Add support for CommonJS
@@ -150,7 +156,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - First release!
 
-[unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.0...HEAD
+[unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.1...HEAD
+[0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.0...v0.11.1
 [0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.2...v0.11.0
 [0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.1...v0.10.2
 [0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.0...v0.10.1
