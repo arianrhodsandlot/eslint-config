@@ -1,7 +1,6 @@
 import { execSync } from 'node:child_process'
 import fs, { readFileSync } from 'node:fs'
 import path from 'node:path'
-import process, { cwd } from 'node:process'
 import _ from 'lodash'
 import { findSync } from 'new-find-package-json'
 import type { CreateConfigOptions } from '../types/config.js'
@@ -39,7 +38,7 @@ function isRootDirectory(directory: string) {
 }
 
 function lookupFile(fileName: string) {
-  let directory = cwd()
+  let directory = process.cwd()
   while (true) {
     const filepath = path.join(directory, fileName)
     try {
