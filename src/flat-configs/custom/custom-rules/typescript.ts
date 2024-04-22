@@ -79,7 +79,6 @@ export const typescriptRules: Linter.RulesRecord = {
   '@typescript-eslint/method-signature-style': 'error',
   '@typescript-eslint/no-array-constructor': 'error',
   '@typescript-eslint/no-dupe-class-members': 'error',
-  '@typescript-eslint/no-dynamic-delete': 'error',
   '@typescript-eslint/no-empty-function': [
     'error',
     {
