@@ -21,11 +21,9 @@ export const reactConfigs: FlatConfigs = [
     rules: {
       'react-refresh/only-export-components': [
         'error',
-        {
-          allowConstantExport: true,
-          allowExportNames: ['meta', 'links', 'headers', 'loader', 'action'],
-        },
+        { allowConstantExport: true, allowExportNames: ['meta', 'links', 'headers', 'loader', 'action'] },
       ],
     },
   },
+  { settings: { react: { version: 'detect' } } },
 ]
