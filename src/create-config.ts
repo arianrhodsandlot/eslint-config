@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
-import { getPackageField, isPackageInstalled, lookupFiles, setContext } from './lib/utils.js'
+import { getPackageField, isNodeJsProject, isPackageInstalled, lookupFiles, setContext } from './lib/utils.js'
 import type { CreateConfigOptions } from './types/config.js'
 
 const { defaultsDeep } = _
@@ -14,7 +14,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
   import: true,
   jsdoc: true,
   markdown: true,
-  n: true,
+  n: isNodeJsProject(),
   next: isPackageInstalled('next'),
   perfectionist: true,
   prepend: [],

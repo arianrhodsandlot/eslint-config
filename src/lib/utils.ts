@@ -132,3 +132,13 @@ export function setContext({ options }: Context) {
 export function getContext() {
   return context
 }
+
+const frontEndPackages = ['astro', 'jquery', 'react', 'solid-js', 'svelte', 'vue', 'zepto']
+
+export function isBrowserProject() {
+  return frontEndPackages.some((frontEndPackage) => isPackageInstalled(frontEndPackage))
+}
+
+export function isNodeJsProject() {
+  return !isBrowserProject()
+}
