@@ -1,12 +1,12 @@
 import _ from 'lodash'
 import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
-import { isPackageInstalled, setContext } from './lib/utils.js'
+import { getPackageField, isPackageInstalled, lookupFiles, setContext } from './lib/utils.js'
 import type { CreateConfigOptions } from './types/config.js'
 
 const defaultOptions: Required<CreateConfigOptions> = {
   append: [],
-  compat: true,
+  compat: getPackageField('browserslist') || lookupFiles('.browserslistrc'),
   diff: false,
   eslintComments: true,
   import: true,

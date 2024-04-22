@@ -1,11 +1,10 @@
 import { execSync } from 'node:child_process'
-import fs from 'node:fs'
+import fs, { readFileSync } from 'node:fs'
 import path from 'node:path'
-import process from 'node:process'
+import process, { cwd } from 'node:process'
 import _ from 'lodash'
 import { findSync } from 'new-find-package-json'
 import type { CreateConfigOptions } from '../types/config.js'
-
 export const isProduction = process.env.NODE_ENV === 'production'
 
 let gitIgnores: string[]
@@ -33,7 +32,51 @@ export function mergeWithConcat(object: any, source: any) {
   return object
 }
 
+function isRootDirectory(directory: string) {
+  return directory === path.resolve(directory, '..')
+}
+
+function lookupFile(fileName: string) {
+  let directory = cwd()
+  while (true) {
+    const filepath = path.join(directory, fileName)
+    try {
+      return readFileSync(filepath, 'utf8')
+    } catch {}
+
+    directory = path.resolve(directory, '..')
+    if (isRootDirectory(directory)) {
+      return
+    }
+  }
+}
+
+export function lookupFiles(...fileNames: string[]) {
+  for (const fileName of fileNames) {
+    const content = lookupFile(fileName)
+    if (content) {
+      return content
+    }
+  }
+}
+
 const packageJsons = [...findSync(process.cwd())]
+
+function getPackageJson() {
+  for (const packageJson of packageJsons) {
+    try {
+      const packageInfo = JSON.parse(fs.readFileSync(packageJson, 'utf8'))
+      if (packageInfo) {
+        return packageInfo
+      }
+    } catch {}
+  }
+}
+
+export function getPackageField(field: string) {
+  return getPackageJson()?.field
+}
+
 export function getPackageVersion(packageName: string) {
   for (const packageJson of packageJsons) {
     try {

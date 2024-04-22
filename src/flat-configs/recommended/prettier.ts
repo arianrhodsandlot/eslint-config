@@ -1,9 +1,6 @@
-import { readFileSync } from 'node:fs'
-import path from 'node:path'
-import { cwd } from 'node:process'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import { Config } from 'prettier'
-import { getContext, getPackageVersion } from '../../lib/utils.js'
+import { getContext, getPackageVersion, lookupFiles } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 const plugins = []
@@ -18,34 +15,6 @@ const defaultPrettierConfig: Config = {
   printWidth: 120,
   semi: false,
   singleQuote: true,
-}
-
-function isRootDirectory(directory: string) {
-  return directory === path.resolve(directory, '..')
-}
-
-function lookupFile(fileName: string) {
-  let directory = cwd()
-  while (true) {
-    const filepath = path.join(directory, fileName)
-    try {
-      return readFileSync(filepath, 'utf8')
-    } catch {}
-
-    directory = path.resolve(directory, '..')
-    if (isRootDirectory(directory)) {
-      return
-    }
-  }
-}
-
-function lookupFiles(...fileNames: string[]) {
-  for (const fileName of fileNames) {
-    const content = lookupFile(fileName)
-    if (content) {
-      return content
-    }
-  }
 }
 
 const prettierConfigFileNames = ['.prettierrc.js', '.prettierrc.json', '.prettierrc.json5']
