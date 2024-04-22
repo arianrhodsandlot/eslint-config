@@ -23,7 +23,6 @@ import { vueConfigs } from './vue.js'
 
 const optionalConfigsMap = {
   compat: compatConfigs,
-  diff: diffConfigs,
   eslintComments: eslintCommentsConfigs,
   import: importConfigs,
   jsdoc: jsdocConfigs,
@@ -56,6 +55,10 @@ export function getRecommendedFlatConfigs() {
 
   if (options.prettier) {
     recommendedFlatConfigs.push(...getPrettierConfigs())
+  }
+
+  if (options.diff) {
+    recommendedFlatConfigs.push(...diffConfigs)
   }
 
   return recommendedFlatConfigs
