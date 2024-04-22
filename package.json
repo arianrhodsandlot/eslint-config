@@ -23,12 +23,13 @@
   "scripts": {
     "build:esm": "swc src -d dist/esm --strip-leading-paths",
     "build:types": "tsc",
-    "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd -C module.importInterop=node --out-file-extension=cjs",
+    "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd --out-file-extension=cjs && tsx scripts/fix-cjs-require",
     "build": "conc npm:build:*",
     "lint": "eslint src",
     "test": "tsx --test tests/*.test.ts"
   },
   "devDependencies": {
+    "@ast-grep/cli": "^0.20.5",
     "@eslint/config-inspector": "0.4.6",
     "@swc/cli": "0.3.12",
     "@swc/core": "1.4.16",
@@ -37,7 +38,7 @@
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint-plugin-markdown": "2.0.2",
     "@types/eslint__js": "8.42.3",
-    "@types/lodash": "4.17.0",
+    "@types/lodash-es": "^4.17.12",
     "@types/node": "20.12.7",
     "concurrently": "8.2.2",
     "eslint": "9.1.0",
@@ -48,6 +49,7 @@
   "dependencies": {
     "@eslint/js": "^9.1.1",
     "@next/eslint-plugin-next": "^14.2.2",
+    "@types/lodash": "^4.17.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-compat": "^4.2.0",
@@ -75,6 +77,7 @@
     "get-tsconfig": "^4.7.3",
     "globals": "^15.0.0",
     "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "new-find-package-json": "^2.0.0",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",

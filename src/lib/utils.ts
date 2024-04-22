@@ -7,6 +7,8 @@ import { findSync } from 'new-find-package-json'
 import type { CreateConfigOptions } from '../types/config.js'
 export const isProduction = process.env.NODE_ENV === 'production'
 
+const { compact, mergeWith, castArray } = _
+
 let gitIgnores: string[]
 export function getGitIgnores() {
   if (gitIgnores) {
@@ -16,7 +18,7 @@ export function getGitIgnores() {
     const root = `${execSync('git rev-parse --show-toplevel')}`.trim()
     const gitignorePath = path.resolve(root, '.gitignore')
     const gitignoreContent = fs.readFileSync(gitignorePath, 'utf8')
-    gitIgnores = _.compact(gitignoreContent.split('\n'))
+    gitIgnores = compact(gitignoreContent.split('\n'))
   } catch {
     gitIgnores = []
   }
@@ -24,9 +26,9 @@ export function getGitIgnores() {
 }
 
 export function mergeWithConcat(object: any, source: any) {
-  _.mergeWith(object, source, (objValue, srcValue) => {
-    if (_.isArray(objValue)) {
-      return [...objValue, ..._.castArray(srcValue)]
+  mergeWith(object, source, (objValue, srcValue) => {
+    if (Array.isArray(objValue)) {
+      return [...objValue, ...castArray(srcValue)]
     }
   })
   return object

@@ -4,6 +4,8 @@ import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
 import { getPackageField, isPackageInstalled, lookupFiles, setContext } from './lib/utils.js'
 import type { CreateConfigOptions } from './types/config.js'
 
+const { defaultsDeep } = _
+
 const defaultOptions: Required<CreateConfigOptions> = {
   append: [],
   compat: getPackageField('browserslist') || lookupFiles('.browserslistrc'),
@@ -30,7 +32,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
 }
 
 export function createConfig(initialOptions?: CreateConfigOptions) {
-  const options: Required<CreateConfigOptions> = _.defaultsDeep(initialOptions, defaultOptions)
+  const options: Required<CreateConfigOptions> = defaultsDeep(initialOptions, defaultOptions)
   setContext({ options })
   const recommendedFlatConfig = getRecommendedFlatConfigs()
   const customFlatConfig = getCustomFlatConfigs()

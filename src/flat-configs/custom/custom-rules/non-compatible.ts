@@ -37,6 +37,7 @@ export const nonCompatibleRules: FlatConfigRules =
         'sonarjs/no-redundant-jump': 'off',
         'sonarjs/no-unused-collection': 'off',
         'sonarjs/no-use-of-empty-return-value': 'off',
+        'sonarjs/prefer-immediate-return': 'off',
         'vuejs-accessibility/alt-text': 'off',
         'vuejs-accessibility/anchor-has-content': 'off',
         'vuejs-accessibility/aria-props': 'off',
