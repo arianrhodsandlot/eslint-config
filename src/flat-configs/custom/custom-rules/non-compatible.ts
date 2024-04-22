@@ -6,6 +6,7 @@ const eslintMajorVersion = Number.parseInt(Linter.version, 10)
 export const nonCompatibleRules: FlatConfigRules =
   eslintMajorVersion > 8
     ? {
+        '@next/next/no-duplicate-head': 'off',
         'compat/compat': 'off',
         'import/first': 'off',
         'import/newline-after-import': 'off',

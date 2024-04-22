@@ -2453,33 +2453,6 @@
     "endColumn": 8
   },
   {
-    "ruleId": "unicorn/prefer-module",
-    "severity": 2,
-    "message": "Do not use \"module\".",
-    "line": 2753,
-    "column": 1,
-    "nodeType": "Identifier",
-    "messageId": "error/identifier",
-    "endLine": 2753,
-    "endColumn": 7,
-    "suggestions": [
-      {
-        "messageId": "suggestion/export",
-        "fix": {
-          "range": [
-            0,
-            17
-          ],
-          "text": "export default "
-        },
-        "data": {
-          "name": "module"
-        },
-        "desc": "Switch to `export`."
-      }
-    ]
-  },
-  {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
     "message": "Expected \"jest\" to come before \"node\"",
