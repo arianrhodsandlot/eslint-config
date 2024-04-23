@@ -11,6 +11,7 @@ export const nonCompatibleRules: FlatConfigRules =
         'import/first': 'off',
         'import/newline-after-import': 'off',
         'promise/no-callback-in-promise': 'off',
+        'promise/no-multiple-resolved': 'off',
         'promise/no-nesting': 'off',
         'promise/no-promise-in-callback': 'off',
         'promise/no-return-wrap': 'off',
