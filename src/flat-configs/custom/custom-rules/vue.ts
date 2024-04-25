@@ -50,7 +50,14 @@ export const vueRules: FlatConfigRules = {
   'vue/eqeqeq': 'error',
   'vue/html-button-has-type': 'error',
   'vue/html-comment-content-spacing': 'error',
-  'vue/html-self-closing': 'error',
+  'vue/html-self-closing': [
+    'error',
+    {
+      html: { component: 'always', normal: 'always', void: 'always' },
+      math: 'always',
+      svg: 'always',
+    },
+  ],
   'vue/match-component-file-name': 'error',
   'vue/match-component-import-name': 'error',
   'vue/new-line-between-multi-line-property': 'error',
