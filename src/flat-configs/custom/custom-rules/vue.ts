@@ -37,6 +37,7 @@ export const vueRules: FlatConfigRules = {
   'vue/camelcase': 'error',
   'vue/component-name-in-template-casing': ['error', 'kebab-case', { registeredComponentsOnly: false }],
   'vue/component-options-name-casing': 'error',
+  'vue/component-tags-order': 'off',
   'vue/define-macros-order': [
     'error',
     {

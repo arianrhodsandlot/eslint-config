@@ -36,17 +36,6 @@ export const eslintRules: FlatConfigRules = {
   'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
   'no-lone-blocks': 'error',
   'no-lonely-if': 'error',
-  'no-mixed-operators': [
-    'error',
-    {
-      allowSamePrecedence: true,
-      groups: [
-        ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-        ['&&', '||'],
-        ['in', 'instanceof'],
-      ],
-    },
-  ],
   'no-mixed-spaces-and-tabs': 'off',
   'no-multi-assign': 'error',
   'no-multi-str': 'error',

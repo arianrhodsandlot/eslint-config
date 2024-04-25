@@ -19,6 +19,7 @@ export function getConflictConfigs() {
     if (options.vue) {
       Object.assign(rules, {
         'perfectionist/sort-vue-attributes': 'off',
+        'vue/padding-lines-in-component-definition': ['error', { groupSingleLineProperties: false }],
       })
     }
   }
