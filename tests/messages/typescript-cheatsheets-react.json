@@ -2086,6 +2086,17 @@
     "endColumn": 18
   },
   {
+    "ruleId": "@typescript-eslint/naming-convention",
+    "severity": 2,
+    "message": "Type Alias name `pickCard` must match one of the following formats: PascalCase",
+    "line": 2175,
+    "column": 6,
+    "nodeType": "Identifier",
+    "messageId": "doesNotMatchFormat",
+    "endLine": 2175,
+    "endColumn": 14
+  },
+  {
     "ruleId": "@typescript-eslint/consistent-type-definitions",
     "severity": 2,
     "message": "Use an `interface` instead of a `type`.",
