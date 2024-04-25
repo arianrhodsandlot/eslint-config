@@ -80,7 +80,7 @@ export const typescriptRules: Linter.RulesRecord = {
   '@typescript-eslint/naming-convention': [
     'error',
     { format: ['camelCase'], leadingUnderscore: 'allow', selector: 'default', trailingUnderscore: 'allow' },
-    { format: ['camelCase', 'PascalCase'], selector: 'import' },
+    { format: ['camelCase', 'PascalCase'], leadingUnderscore: 'allow', selector: 'import' },
     { format: ['camelCase', 'PascalCase', 'UPPER_CASE'], selector: 'variable' },
     { format: ['camelCase', 'PascalCase'], selector: 'function' },
     { format: ['PascalCase'], selector: 'typeLike' },
