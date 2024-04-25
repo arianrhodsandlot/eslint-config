@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.11.2] - 2024-04-25
+### Fixed
+- Update a few rules
+- Add typescript to dependencies
+
 ## [0.11.1] - 2024-04-22
 ### Fixed
 Add diff plugin at last
@@ -156,12 +161,13 @@ Update several rules
 ### Added
 - First release!
 
-[unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.1...HEAD
-[0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.0...v0.11.1
-[0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.2...v0.11.0
-[0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.1...v0.10.2
-[0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.0...v0.10.1
-[0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.9.1...v0.10.0
+[unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.2...HEAD
+[0.11.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.1...v0.11.2
+[0.11.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.0...v0.11.1
+[0.11.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.2...v0.11.0
+[0.10.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.1...v0.10.2
+[0.10.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.10.0...v0.10.1
+[0.10.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.9.1...v0.10.0
 [0.9.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.9.0...v0.9.1
 [0.9.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.8.5...v0.9.0
 [0.8.5]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.8.4...v0.8.5
