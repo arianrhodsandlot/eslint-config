@@ -25,6 +25,7 @@
     "build:types": "tsc",
     "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd --out-file-extension=cjs && tsx scripts/fix-cjs-require",
     "build": "conc npm:build:*",
+    "dev": "swc src -d dist/esm --strip-leading-paths -w",
     "lint": "eslint src",
     "test": "tsx --test tests/*.test.ts"
   },

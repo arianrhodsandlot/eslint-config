@@ -77,6 +77,15 @@ export const typescriptRules: Linter.RulesRecord = {
   '@typescript-eslint/explicit-module-boundary-types': 'off',
   '@typescript-eslint/member-ordering': ['error'],
   '@typescript-eslint/method-signature-style': 'error',
+  '@typescript-eslint/naming-convention': [
+    'error',
+    { format: ['camelCase'], leadingUnderscore: 'allow', selector: 'default', trailingUnderscore: 'allow' },
+    { format: ['camelCase', 'PascalCase'], selector: 'import' },
+    { format: ['camelCase', 'UPPER_CASE'], selector: 'variable' },
+    { format: ['camelCase', 'PascalCase'], selector: 'function' },
+    { format: ['PascalCase'], selector: 'typeLike' },
+    { format: null, selector: 'objectLiteralProperty' },
+  ],
   '@typescript-eslint/no-array-constructor': 'error',
   '@typescript-eslint/no-dupe-class-members': 'error',
   '@typescript-eslint/no-empty-function': [
