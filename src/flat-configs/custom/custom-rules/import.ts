@@ -10,6 +10,8 @@ export const importRules: FlatConfigRules = {
   'import/no-absolute-path': ['error', { amd: false, commonjs: true, esmodule: true }],
   'import/no-duplicates': ['error', { 'prefer-inline': true }],
   'import/no-dynamic-require': 'error',
+  'import/no-empty-named-blocks': 'error',
+  'import/no-extraneous-dependencies': 'error',
   'import/no-named-as-default': 'off',
   'import/no-named-as-default-member': 'off',
   'import/no-named-default': 'error',
@@ -19,7 +21,7 @@ export const importRules: FlatConfigRules = {
     'error',
     {
       alphabetize: { order: 'asc' },
-      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
       'newlines-between': 'never',
     },
   ],
