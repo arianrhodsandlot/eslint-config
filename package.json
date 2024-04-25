@@ -45,7 +45,6 @@
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "0.5.14",
     "tsx": "4.7.2",
-    "typescript": "5.4.5",
     "vue": "3.4.23"
   },
   "dependencies": {
@@ -80,6 +79,7 @@
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "new-find-package-json": "^2.0.0",
+    "typescript": "5.4.5",
     "typescript-eslint": "^7.7.0",
     "vue-eslint-parser": "^9.4.2"
   },
