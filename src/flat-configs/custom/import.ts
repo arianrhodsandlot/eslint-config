@@ -1,5 +1,7 @@
+import type { FlatConfigs } from '../../types/eslint.js'
+
 export function getImportConfigs() {
-  return [
+  const importConfigs: FlatConfigs = [
     {
       settings: {
         'import/extensions': [
@@ -21,4 +23,5 @@ export function getImportConfigs() {
       },
     },
   ]
+  return importConfigs
 }

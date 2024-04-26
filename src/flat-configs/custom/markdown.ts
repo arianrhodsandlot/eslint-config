@@ -1,6 +1,6 @@
 import { jsOrTsExtensionGlob } from '../../lib/constants.js'
 import { getContext } from '../../lib/utils.js'
-import type { FlatConfigRules } from '../../types/eslint.js'
+import type { FlatConfigRules, FlatConfigs } from '../../types/eslint.js'
 
 export function getMarkdownConfigs() {
   const { options } = getContext()
@@ -27,5 +27,6 @@ export function getMarkdownConfigs() {
     })
   }
 
-  return [{ files: [`**/*.md/*${jsOrTsExtensionGlob}`], rules }]
+  const markdownConfigs: FlatConfigs = [{ files: [`**/*.md/*${jsOrTsExtensionGlob}`], rules }]
+  return markdownConfigs
 }

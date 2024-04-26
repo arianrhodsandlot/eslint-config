@@ -1,5 +1,5 @@
 import { getContext } from '../../lib/utils.js'
-import type { FlatConfigRules } from '../../types/eslint.js'
+import type { FlatConfigRules, FlatConfigs } from '../../types/eslint.js'
 
 export function getConflictConfigs() {
   const { options } = getContext()
@@ -30,5 +30,6 @@ export function getConflictConfigs() {
     })
   }
 
-  return [{ rules }]
+  const conflictConfigs: FlatConfigs = [{ rules }]
+  return conflictConfigs
 }

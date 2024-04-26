@@ -1,5 +1,5 @@
 import { getContext } from '../../../lib/utils.js'
-import type { FlatConfigRules } from '../../../types/eslint.js'
+import type { FlatConfigRules, FlatConfigs } from '../../../types/eslint.js'
 import { eslintRules } from './eslint.js'
 import { importRules } from './import.js'
 import { nRules } from './n.js'
@@ -51,5 +51,6 @@ export function getCustomRulesConfigs() {
 
   Object.assign(customRules, nonCompatibleRules)
 
-  return [{ rules: customRules }]
+  const customRulesConfigs: FlatConfigs = [{ rules: customRules }]
+  return customRulesConfigs
 }
