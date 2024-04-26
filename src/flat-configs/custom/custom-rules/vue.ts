@@ -127,8 +127,27 @@ const vueCommonRules: FlatConfigRules = {
 export function getVueRules() {
   const { options } = getContext()
 
+  let blockLangStyleOption: { allowNoLang?: boolean; lang?: string } = { allowNoLang: true }
+  if (isPackageInstalled('sass')) {
+    blockLangStyleOption = { lang: 'scss' }
+  } else if (isPackageInstalled('node-sass')) {
+    blockLangStyleOption = { lang: 'scss' }
+  } else if (isPackageInstalled('dart-sass')) {
+    blockLangStyleOption = { lang: 'scss' }
+  } else if (isPackageInstalled('less')) {
+    blockLangStyleOption = { lang: 'less' }
+  } else if (isPackageInstalled('stylus')) {
+    blockLangStyleOption = { lang: 'stylus' }
+  }
+
   const vueAdditionalRules: FlatConfigRules = {
-    'vue/block-lang': ['error', { script: { allowNoLang: options.typescript, lang: 'ts' }, style: { lang: 'scss' } }],
+    'vue/block-lang': [
+      'error',
+      {
+        script: { allowNoLang: !options.typescript, lang: 'ts' },
+        style: blockLangStyleOption,
+      },
+    ],
   }
 
   const vueRules: FlatConfigRules = {
