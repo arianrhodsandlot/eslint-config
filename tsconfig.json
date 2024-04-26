@@ -1,10 +1,17 @@
 {
-  "extends": "@tsconfig/node-lts",
-  "include": ["src"],
-  "exclude": ["eslint.config.mjs", "dist", "tests"],
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "outDir": "dist/types",
     "declaration": true,
-    "emitDeclarationOnly": true
-  }
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "lib": ["es2023"],
+    "module": "node16",
+    "moduleResolution": "node16",
+    "outDir": "dist/types",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2022"
+  },
+  "exclude": ["eslint.config.mjs", "dist", "tests"],
+  "include": ["src"]
 }
