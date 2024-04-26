@@ -1,7 +1,10 @@
-import { getContext, isLegacyVue } from '../../../lib/utils.js'
+import { getContext, isLegacyVue, isPackageInstalled } from '../../../lib/utils.js'
 import type { FlatConfigRules } from '../../../types/eslint.js'
 
 const vueLegacyRules: FlatConfigRules = {
+  'vue/component-api-style': isPackageInstalled('@vue/composition-api')
+    ? ['error', ['script-setup', 'composition-vue2']]
+    : 'off',
   'vue/custom-event-name-casing': ['error', 'kebab-case'],
   'vue/no-unsupported-features': ['error', { version: '^2.6.0' }],
 }
@@ -58,7 +61,12 @@ const vueCommonRules: FlatConfigRules = {
       svg: 'always',
     },
   ],
-  'vue/match-component-file-name': 'error',
+  'vue/match-component-file-name': [
+    'error',
+    {
+      extensions: ['js', 'cjs', 'mjs', 'jsx', 'cjsx', 'mjsx', 'ts', 'cts', 'mts', 'tsx', 'ctsx', 'mtsx', 'vue'],
+    },
+  ],
   'vue/match-component-import-name': 'error',
   'vue/new-line-between-multi-line-property': 'error',
   'vue/next-tick-style': 'error',
