@@ -11,7 +11,7 @@ import { securityRules } from './security.js'
 import { sonarjsRules } from './sonarjs.js'
 import { typescriptRules } from './typescript.js'
 import { unicornRules } from './unicorn.js'
-import { vueRules } from './vue.js'
+import { getVueRules } from './vue.js'
 
 export function getCustomRulesConfigs() {
   const customRules: FlatConfigRules = { ...eslintRules }
@@ -43,7 +43,7 @@ export function getCustomRulesConfigs() {
     Object.assign(customRules, unicornRules)
   }
   if (options.vue) {
-    Object.assign(customRules, vueRules)
+    Object.assign(customRules, getVueRules())
   }
   if (options.perfectionist) {
     Object.assign(customRules, perfectionistRules)

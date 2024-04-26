@@ -1,4 +1,4 @@
-import { isLegacyVue } from '../../../lib/utils.js'
+import { getContext, isLegacyVue } from '../../../lib/utils.js'
 import type { FlatConfigRules } from '../../../types/eslint.js'
 
 const vueLegacyRules: FlatConfigRules = {
@@ -11,7 +11,7 @@ const vueModernRules: FlatConfigRules = {
   'vue/custom-event-name-casing': ['error', 'camelCase'],
 }
 
-export const vueRules: FlatConfigRules = {
+const vueCommonRules: FlatConfigRules = {
   'vue/attributes-order': [
     'error',
     {
@@ -31,7 +31,6 @@ export const vueRules: FlatConfigRules = {
       ],
     },
   ],
-  'vue/block-lang': ['error', { script: { allowNoLang: true, lang: 'ts' }, style: { lang: 'scss' } }],
   'vue/block-order': 'error',
   'vue/block-tag-newline': 'error',
   'vue/camelcase': 'error',
@@ -115,5 +114,20 @@ export const vueRules: FlatConfigRules = {
   'vue/v-on-event-hyphenation': 'error',
   'vue/v-on-handler-style': 'off',
   'vue/valid-define-options': 'error',
-  ...(isLegacyVue ? vueLegacyRules : vueModernRules),
+}
+
+export function getVueRules() {
+  const { options } = getContext()
+
+  const vueAdditionalRules: FlatConfigRules = {
+    'vue/block-lang': ['error', { script: { allowNoLang: options.typescript, lang: 'ts' }, style: { lang: 'scss' } }],
+  }
+
+  const vueRules: FlatConfigRules = {
+    ...vueCommonRules,
+    ...vueAdditionalRules,
+    ...(isLegacyVue ? vueLegacyRules : vueModernRules),
+  }
+
+  return vueRules
 }
