@@ -1,52 +1,35 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
   "version": "0.11.2",
-  "type": "module",
   "description": "A set of predefined ESLint config.",
-  "main": "dist/umd/index.cjs",
-  "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "license": "MIT",
+  "author": "arianrhodsandlot",
+  "type": "module",
   "exports": {
     "import": "./dist/esm/index.js",
     "require": "./dist/umd/index.cjs",
     "types": "./dist/types/index.d.ts"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
-  "author": "arianrhodsandlot",
-  "license": "MIT",
+  "main": "dist/umd/index.cjs",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
+    "build": "conc npm:build:*",
     "build:esm": "swc src -d dist/esm --strip-leading-paths",
     "build:types": "tsc",
     "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd --out-file-extension=cjs && tsx scripts/fix-cjs-require",
-    "build": "conc npm:build:*",
+    "dev": "conc npm:dev:*",
     "dev:build": "pnpm build:esm -w",
     "dev:inspect": "eslint-config-inspector",
-    "dev": "conc npm:dev:*",
     "lint": "eslint src",
     "test": "tsx --test tests/*.test.ts"
-  },
-  "devDependencies": {
-    "@eslint/config-inspector": "0.4.7",
-    "@swc/cli": "0.3.12",
-    "@swc/core": "1.5.0",
-    "@types/eslint": "8.56.10",
-    "@types/eslint-config-prettier": "6.11.3",
-    "@types/eslint-plugin-markdown": "2.0.2",
-    "@types/eslint__js": "8.42.3",
-    "@types/lodash": "^4.17.0",
-    "@types/node": "20.12.7",
-    "concurrently": "8.2.2",
-    "eslint": "9.1.1",
-    "prettier": "3.2.5",
-    "prettier-plugin-tailwindcss": "0.5.14",
-    "tsx": "4.7.3",
-    "vue": "3.4.25"
   },
   "dependencies": {
     "@eslint/js": "^9.1.1",
@@ -83,6 +66,23 @@
     "typescript": "5.4.5",
     "typescript-eslint": "^7.7.1",
     "vue-eslint-parser": "^9.4.2"
+  },
+  "devDependencies": {
+    "@eslint/config-inspector": "0.4.7",
+    "@swc/cli": "0.3.12",
+    "@swc/core": "1.5.0",
+    "@types/eslint": "8.56.10",
+    "@types/eslint-config-prettier": "6.11.3",
+    "@types/eslint-plugin-markdown": "2.0.2",
+    "@types/eslint__js": "8.42.3",
+    "@types/lodash": "^4.17.0",
+    "@types/node": "20.12.7",
+    "concurrently": "8.2.2",
+    "eslint": "9.1.1",
+    "prettier": "3.2.5",
+    "prettier-plugin-tailwindcss": "0.5.14",
+    "tsx": "4.7.3",
+    "vue": "3.4.25"
   },
   "peerDependencies": {
     "eslint": "*"

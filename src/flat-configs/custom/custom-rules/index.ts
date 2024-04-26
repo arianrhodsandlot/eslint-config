@@ -1,5 +1,6 @@
 import { getContext } from '../../../lib/utils.js'
 import type { FlatConfigRules, FlatConfigs } from '../../../types/eslint.js'
+import { eslintCommentsRules } from './eslint-comments.js'
 import { eslintRules } from './eslint.js'
 import { importRules } from './import.js'
 import { nRules } from './n.js'
@@ -18,6 +19,9 @@ export function getCustomRulesConfigs() {
 
   const { options } = getContext()
 
+  if (options.eslintComments) {
+    Object.assign(customRules, eslintCommentsRules)
+  }
   if (options.import) {
     Object.assign(customRules, importRules)
   }
