@@ -1019,17 +1019,6 @@
     }
   },
   {
-    "ruleId": "@typescript-eslint/member-ordering",
-    "severity": 2,
-    "message": "Member onSomething should be declared before all method definitions.",
-    "line": 1111,
-    "column": 3,
-    "nodeType": "TSPropertySignature",
-    "messageId": "incorrectGroupOrder",
-    "endLine": 1111,
-    "endColumn": 25
-  },
-  {
     "ruleId": "@typescript-eslint/ban-types",
     "severity": 2,
     "message": "Don't use `Function` as a type. The `Function` type accepts any function-like value.\nIt provides no type safety when calling the function, which can be a common source of bugs.\nIt also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.\nIf you are expecting the function to accept certain arguments, you should explicitly define the function shape.",
@@ -1039,28 +1028,6 @@
     "messageId": "bannedTypeMessage",
     "endLine": 1111,
     "endColumn": 24
-  },
-  {
-    "ruleId": "@typescript-eslint/member-ordering",
-    "severity": 2,
-    "message": "Member optional should be declared before all method definitions.",
-    "line": 1113,
-    "column": 3,
-    "nodeType": "TSPropertySignature",
-    "messageId": "incorrectGroupOrder",
-    "endLine": 1113,
-    "endColumn": 27
-  },
-  {
-    "ruleId": "@typescript-eslint/member-ordering",
-    "severity": 2,
-    "message": "Member setState should be declared before all method definitions.",
-    "line": 1115,
-    "column": 3,
-    "nodeType": "TSPropertySignature",
-    "messageId": "incorrectGroupOrder",
-    "endLine": 1115,
-    "endColumn": 58
   },
   {
     "ruleId": "@typescript-eslint/no-empty-interface",
