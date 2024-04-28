@@ -1,6 +1,7 @@
 import * as eslintPluginNextModule from '@next/eslint-plugin-next'
 import * as eslintPluginCompatModule from 'eslint-plugin-compat'
 import * as eslintPluginDiffModule from 'eslint-plugin-diff'
+import * as eslintPluginEsXModule from 'eslint-plugin-es-x'
 import * as eslintPluginEslintCommentsModule from 'eslint-plugin-eslint-comments'
 import * as eslintPluginImportModule from 'eslint-plugin-import'
 import * as eslintPluginJsdocModule from 'eslint-plugin-jsdoc'
@@ -16,6 +17,7 @@ import * as eslintPluginReactRefreshModule from 'eslint-plugin-react-refresh'
 import * as eslintPluginRegexpModule from 'eslint-plugin-regexp'
 import * as eslintPluginSecurityModule from 'eslint-plugin-security'
 import * as eslintPluginSonarjsModule from 'eslint-plugin-sonarjs'
+import * as eslintPluginTailwindcssModule from 'eslint-plugin-tailwindcss'
 import * as eslintPluginTsdocModule from 'eslint-plugin-tsdoc'
 import * as eslintPluginUnicornModule from 'eslint-plugin-unicorn'
 import * as eslintPluginVueModule from 'eslint-plugin-vue'
@@ -33,6 +35,7 @@ function interopESLintPlugin(mod: any) {
 export const eslintPluginCompat = interopESLintPlugin(eslintPluginCompatModule)
 export const eslintPluginDiff = interopESLintPlugin(eslintPluginDiffModule)
 export const eslintPluginEslintComments = interopESLintPlugin(eslintPluginEslintCommentsModule)
+export const eslintPluginEsX = interopESLintPlugin(eslintPluginEsXModule)
 export const eslintPluginImport = interopESLintPlugin(eslintPluginImportModule)
 export const eslintPluginJsdoc = interopESLintPlugin(eslintPluginJsdocModule)
 export const eslintPluginJsxA11y = interopESLintPlugin(eslintPluginJsxA11yModule)
@@ -48,6 +51,7 @@ export const eslintPluginReactRefresh = interopESLintPlugin(eslintPluginReactRef
 export const eslintPluginRegexp = interopESLintPlugin(eslintPluginRegexpModule)
 export const eslintPluginSecurity = interopESLintPlugin(eslintPluginSecurityModule)
 export const eslintPluginSonarjs = interopESLintPlugin(eslintPluginSonarjsModule)
+export const eslintPluginTailwindcss = interopESLintPlugin(eslintPluginTailwindcssModule)
 export const eslintPluginTsdoc = interopESLintPlugin(eslintPluginTsdocModule)
 export const eslintPluginTypescript = interopESLintPlugin(tseslint.plugin)
 export const eslintPluginUnicorn = interopESLintPlugin(eslintPluginUnicornModule)

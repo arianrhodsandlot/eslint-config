@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.12.0] - 2024-04-28
+### Added
+- Add support for eslint-plugin-tailwindcss and eslint-plugin-es-x
+
+### Fixed
+- Update a few rules
+
 ## [0.11.3] - 2024-04-26
 ### Fixed
 - Update a few rules

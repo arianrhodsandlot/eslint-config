@@ -1,5 +1,44 @@
 import type { FlatConfig, FlatConfigRules, FlatConfigs } from './eslint.js'
 
+type EsXConfigName =
+  | 'no-new-in-es2015'
+  | 'no-new-in-es2016-intl-api'
+  | 'no-new-in-es2016'
+  | 'no-new-in-es2017-intl-api'
+  | 'no-new-in-es2017'
+  | 'no-new-in-es2018-intl-api'
+  | 'no-new-in-es2018'
+  | 'no-new-in-es2019'
+  | 'no-new-in-es2020-intl-api'
+  | 'no-new-in-es2020'
+  | 'no-new-in-es2021-intl-api'
+  | 'no-new-in-es2021'
+  | 'no-new-in-es2022-intl-api'
+  | 'no-new-in-es2022'
+  | 'no-new-in-es2023-intl-api'
+  | 'no-new-in-es2023'
+  | 'no-new-in-es5'
+  | 'no-new-in-esnext'
+  | 'restrict-to-es-intl-api-1st-edition'
+  | 'restrict-to-es2015-intl-api'
+  | 'restrict-to-es2015'
+  | 'restrict-to-es2016-intl-api'
+  | 'restrict-to-es2016'
+  | 'restrict-to-es2017-intl-api'
+  | 'restrict-to-es2017'
+  | 'restrict-to-es2018-intl-api'
+  | 'restrict-to-es2018'
+  | 'restrict-to-es2019-intl-api'
+  | 'restrict-to-es2019'
+  | 'restrict-to-es2020-intl-api'
+  | 'restrict-to-es2020'
+  | 'restrict-to-es2021-intl-api'
+  | 'restrict-to-es2021'
+  | 'restrict-to-es2022-intl-api'
+  | 'restrict-to-es2022'
+  | 'restrict-to-es3'
+  | 'restrict-to-es5'
+
 export interface CreateConfigOptions {
   /** Append custom flat configs to default */
   append?: FlatConfig | FlatConfigs
@@ -12,6 +51,12 @@ export interface CreateConfigOptions {
 
   /** Should eslint-plugin-eslint-comments be enabled */
   eslintComments?: boolean
+
+  /**
+   * Which configs should be used
+   * @see https://eslint-community.github.io/eslint-plugin-es-x/configs/
+   */
+  esX?: boolean | EsXConfigName | EsXConfigName[]
 
   /** Should eslint-plugin-import be enabled */
   import?: boolean
@@ -51,6 +96,9 @@ export interface CreateConfigOptions {
 
   /** Should eslint-plugin-security be enabled */
   security?: boolean
+
+  /** Should eslint-plugin-tailwindcss be enabled */
+  tailwindcss?: boolean
 
   /** Should eslint-plugin-sonarjs be enabled */
   sonarjs?: boolean
