@@ -431,6 +431,24 @@
     }
   },
   {
+    "ruleId": "tailwindcss/classnames-order",
+    "severity": 1,
+    "message": "Invalid Tailwind CSS classnames order",
+    "line": 75,
+    "column": 21,
+    "nodeType": "JSXAttribute",
+    "messageId": "invalidOrder",
+    "endLine": 75,
+    "endColumn": 152,
+    "fix": {
+      "range": [
+        2296,
+        2415
+      ],
+      "text": "bg-muted text-muted-foreground ml-2 rounded-md px-1.5 py-0.5 text-xs leading-none no-underline group-hover:no-underline"
+    }
+  },
+  {
     "ruleId": "prettier/prettier",
     "severity": 2,
     "message": "Replace `ml-2·rounded-md·bg-muted·px-1.5·py-0.5·text-xs·leading-none·text-muted-foreground` with `bg-muted·text-muted-foreground·ml-2·rounded-md·px-1.5·py-0.5·text-xs·leading-none`",

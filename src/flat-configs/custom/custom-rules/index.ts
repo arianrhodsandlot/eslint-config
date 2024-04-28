@@ -10,6 +10,7 @@ import { promiseRules } from './promise.js'
 import { reactRules } from './react.js'
 import { securityRules } from './security.js'
 import { sonarjsRules } from './sonarjs.js'
+import { tailwindcssRules } from './tailwindcss.js'
 import { typescriptRules } from './typescript.js'
 import { unicornRules } from './unicorn.js'
 import { getVueRules } from './vue.js'
@@ -39,6 +40,9 @@ export function getCustomRulesConfigs() {
   }
   if (options.sonarjs) {
     Object.assign(customRules, sonarjsRules)
+  }
+  if (options.tailwindcss) {
+    Object.assign(customRules, tailwindcssRules)
   }
   if (options.typescript) {
     Object.assign(customRules, typescriptRules)
