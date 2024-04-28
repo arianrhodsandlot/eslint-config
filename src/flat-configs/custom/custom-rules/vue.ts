@@ -63,9 +63,7 @@ const vueCommonRules: FlatConfigRules = {
   ],
   'vue/match-component-file-name': [
     'error',
-    {
-      extensions: ['js', 'cjs', 'mjs', 'jsx', 'cjsx', 'mjsx', 'ts', 'cts', 'mts', 'tsx', 'ctsx', 'mtsx', 'vue'],
-    },
+    { extensions: ['js', 'cjs', 'mjs', 'jsx', 'cjsx', 'mjsx', 'ts', 'cts', 'mts', 'tsx', 'ctsx', 'mtsx', 'vue'] },
   ],
   'vue/match-component-import-name': 'error',
   'vue/new-line-between-multi-line-property': 'error',
@@ -127,7 +125,12 @@ const vueCommonRules: FlatConfigRules = {
 export function getVueRules() {
   const { options } = getContext()
 
-  let blockLangStyleOption: { allowNoLang?: boolean; lang?: string } = { allowNoLang: true }
+  interface BlockLangOption {
+    allowNoLang?: boolean
+    lang?: string
+  }
+
+  let blockLangStyleOption: BlockLangOption = { allowNoLang: true }
   if (isPackageInstalled('sass')) {
     blockLangStyleOption = { lang: 'scss' }
   } else if (isPackageInstalled('node-sass')) {
