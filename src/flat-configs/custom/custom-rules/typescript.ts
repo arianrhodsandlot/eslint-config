@@ -79,11 +79,17 @@ export const typescriptRules: Linter.RulesRecord = {
   '@typescript-eslint/method-signature-style': 'error',
   '@typescript-eslint/naming-convention': [
     'error',
-    { format: ['camelCase'], leadingUnderscore: 'allow', selector: 'default', trailingUnderscore: 'allow' },
+    {
+      format: ['camelCase', 'UPPER_CASE'],
+      leadingUnderscore: 'allow',
+      selector: 'default',
+      trailingUnderscore: 'allow',
+    },
     { format: ['camelCase', 'PascalCase'], leadingUnderscore: 'allow', selector: 'import' },
     { format: ['camelCase', 'PascalCase', 'UPPER_CASE'], selector: 'variable' },
     { format: ['camelCase', 'PascalCase'], selector: 'function' },
     { format: ['PascalCase'], selector: 'typeLike' },
+    { format: ['camelCase', 'PascalCase', 'UPPER_CASE'], modifiers: ['static'], selector: 'classProperty' },
     { format: null, selector: ['objectLiteralProperty', 'typeProperty'] },
   ],
   '@typescript-eslint/no-array-constructor': 'error',

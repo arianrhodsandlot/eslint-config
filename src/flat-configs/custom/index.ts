@@ -11,13 +11,13 @@ export function getCustomFlatConfigs() {
   return [
     ...getCustomRulesConfigs(),
 
-    ...getConflictConfigs(),
-
     ...getImportConfigs(),
     ...getJsConfigs(),
     ...getJsdocConfigs(),
     ...getMarkdownConfigs(),
     ...getNConfigs(),
     ...getTestConfigs(),
+
+    ...getConflictConfigs(),
   ]
 }

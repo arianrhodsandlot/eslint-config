@@ -22,6 +22,12 @@ export function getConflictConfigs() {
         'vue/padding-lines-in-component-definition': ['error', { groupSingleLineProperties: false }],
       })
     }
+
+    if (options.typescript) {
+      Object.assign(rules, {
+        '@typescript-eslint/member-ordering': 'off',
+      })
+    }
   }
 
   if (options.unicorn && options.regexp) {

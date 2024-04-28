@@ -11,6 +11,7 @@ if (getPackageVersion('prettier-plugin-tailwindcss')) {
 const defaultPrettierConfig: Config = {
   htmlWhitespaceSensitivity: 'ignore',
   jsSingleQuote: true,
+  jsxSingleQuote: true,
   plugins,
   printWidth: 120,
   semi: false,
