@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.12.1] - 2024-04-28
+### Fixed
+- Fix eslint-plugin-tailwindcss failing to load
+
 ## [0.12.0] - 2024-04-28
 ### Added
 - Add support for eslint-plugin-tailwindcss and eslint-plugin-es-x
@@ -174,7 +178,8 @@ Update several rules
 - First release!
 
 [unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.12.0...HEAD
-[0.11.3]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.3...v0.12.0
+[0.12.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.12.0...v0.12.1
+[0.12.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.3...v0.12.0
 [0.11.3]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.2...v0.11.3
 [0.11.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.1...v0.11.2
 [0.11.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.11.0...v0.11.1
