@@ -48,10 +48,8 @@ export const eslintRules: FlatConfigRules = {
   'no-plusplus': 'error',
   'no-promise-executor-return': 'error',
   'no-proto': 'error',
-  'no-redeclare': ['error', { builtinGlobals: false }],
   'no-restricted-syntax': ['error', { message: "Don't declare enums", selector: 'TSEnumDeclaration' }],
   'no-return-assign': ['error', 'except-parens'],
-  'no-self-assign': ['error', { props: true }],
   'no-self-compare': 'error',
   'no-sequences': 'error',
   'no-template-curly-in-string': 'error',
@@ -95,6 +93,5 @@ export const eslintRules: FlatConfigRules = {
   'symbol-description': 'error',
   'unicode-bom': ['error', 'never'],
   'use-isnan': ['error', { enforceForIndexOf: true, enforceForSwitchCase: true }],
-  'valid-typeof': ['error', { requireStringLiterals: true }],
   yoda: ['error', 'never'],
 }

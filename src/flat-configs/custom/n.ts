@@ -9,6 +9,7 @@ export function getNConfigs() {
   const nConfigs: FlatConfigs = [
     {
       files: [jsxOrTsxGlob, '**/*.vue'],
+      name: 'n',
       rules: mapValues(eslintPluginN.configs['flat/recommended'].rules, () => 'off'),
     },
   ]

@@ -69,7 +69,6 @@ const vueCommonRules: FlatConfigRules = {
   'vue/new-line-between-multi-line-property': 'error',
   'vue/next-tick-style': 'error',
   'vue/no-boolean-default': 'error',
-  'vue/no-child-content': 'error',
   'vue/no-console': 'error',
   'vue/no-constant-condition': 'error',
   'vue/no-duplicate-attr-inheritance': 'error',

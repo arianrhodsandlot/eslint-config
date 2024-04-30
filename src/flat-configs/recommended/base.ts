@@ -13,6 +13,10 @@ export const baseConfigs: FlatConfigs = [
       parser: tseslint.parser,
     },
     linterOptions: { reportUnusedDisableDirectives: true },
+    name: 'base',
   },
-  js.configs.recommended,
+  {
+    name: '@eslint/js/recommended',
+    ...js.configs.recommended,
+  },
 ]

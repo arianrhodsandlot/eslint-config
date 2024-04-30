@@ -71,6 +71,24 @@
     }
   },
   {
+    "ruleId": "@typescript-eslint/consistent-type-imports",
+    "severity": 2,
+    "message": "All imports in the declaration are only used as types. Use `import type`.",
+    "line": 5,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "messageId": "typeOverValue",
+    "endLine": 5,
+    "endColumn": 43,
+    "fix": {
+      "range": [
+        98,
+        112
+      ],
+      "text": "type SidebarNavItem"
+    }
+  },
+  {
     "ruleId": "prettier/prettier",
     "severity": 2,
     "message": "Replace `\"types/nav\"` with `'types/nav'`",

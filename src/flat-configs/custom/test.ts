@@ -20,6 +20,6 @@ export function getTestConfigs() {
     })
   }
 
-  const testConfigs: FlatConfigs = [{ files, rules }]
+  const testConfigs: FlatConfigs = [{ files, name: 'test', rules }]
   return testConfigs
 }

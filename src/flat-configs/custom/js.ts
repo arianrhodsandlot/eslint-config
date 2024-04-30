@@ -5,6 +5,7 @@ export function getJsConfigs() {
   const jsConfigs: FlatConfigs = [
     {
       files: [jsGlob],
+      name: 'js',
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
         'unicorn/prefer-module': 'off',

@@ -3,6 +3,7 @@ import type { FlatConfigs } from '../../types/eslint.js'
 
 export const nextConfigs: FlatConfigs = [
   {
+    name: 'next/recommended',
     plugins: { '@next/next': eslintPluginNext },
     rules: {
       ...eslintPluginNext.configs.recommended.rules,

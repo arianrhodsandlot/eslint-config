@@ -3,6 +3,7 @@ import type { FlatConfigs } from '../../types/eslint.js'
 export function getImportConfigs() {
   const importConfigs: FlatConfigs = [
     {
+      name: 'import',
       settings: {
         'import/extensions': [
           '.js',

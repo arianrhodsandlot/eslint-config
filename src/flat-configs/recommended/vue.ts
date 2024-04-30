@@ -4,12 +4,16 @@ import { isLegacyVue } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 const configName = `flat/${isLegacyVue ? 'vue2-' : ''}recommended`
-const recommendedConfigs = [...eslintPluginVue.configs[configName], ...eslintPluginVueScopedCSS.configs[configName]]
+const recommendedConfigs = [
+  ...eslintPluginVue.configs[configName],
+  ...eslintPluginVueScopedCSS.configs[configName],
+].map((config) => ({ name: 'vue/recommended', ...config }))
 
-export const vueConfigs: FlatConfigs = [
+const vueConfigs: FlatConfigs = [
   ...recommendedConfigs,
 
   {
+    name: 'vuejs-accessibility/recommended',
     plugins: { 'vuejs-accessibility': eslintPluginVuejsAccessibility },
     rules: eslintPluginVuejsAccessibility.configs.recommended.rules,
   },
@@ -22,3 +26,5 @@ if (languageOptions) {
     parser: tseslint.parser,
   }
 }
+
+export { vueConfigs }

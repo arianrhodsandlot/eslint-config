@@ -59,6 +59,6 @@ export function getCustomRulesConfigs() {
 
   Object.assign(customRules, nonCompatibleRules)
 
-  const customRulesConfigs: FlatConfigs = [{ rules: customRules }]
+  const customRulesConfigs: FlatConfigs = [{ name: 'custom-rules', rules: customRules }]
   return customRulesConfigs
 }

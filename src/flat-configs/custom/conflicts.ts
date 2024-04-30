@@ -36,6 +36,6 @@ export function getConflictConfigs() {
     })
   }
 
-  const conflictConfigs: FlatConfigs = [{ rules }]
+  const conflictConfigs: FlatConfigs = [{ name: 'conflicts', rules }]
   return conflictConfigs
 }

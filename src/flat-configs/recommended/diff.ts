@@ -3,6 +3,7 @@ import type { FlatConfigs } from '../../types/eslint.js'
 
 export const diffConfigs: FlatConfigs = [
   {
+    name: 'diff',
     plugins: { diff: eslintPluginDiff },
     processor: 'diff/diff',
   },

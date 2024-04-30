@@ -29,17 +29,6 @@
     "endColumn": 60
   },
   {
-    "ruleId": "no-redeclare",
-    "severity": 2,
-    "message": "'App' is already defined.",
-    "line": 200,
-    "column": 7,
-    "nodeType": "Identifier",
-    "messageId": "redeclared",
-    "endLine": 200,
-    "endColumn": 10
-  },
-  {
     "ruleId": "@typescript-eslint/no-redeclare",
     "severity": 2,
     "message": "'App' is already defined.",
@@ -62,17 +51,6 @@
     "endColumn": 79
   },
   {
-    "ruleId": "no-redeclare",
-    "severity": 2,
-    "message": "'App' is already defined.",
-    "line": 203,
-    "column": 7,
-    "nodeType": "Identifier",
-    "messageId": "redeclared",
-    "endLine": 203,
-    "endColumn": 10
-  },
-  {
     "ruleId": "@typescript-eslint/no-redeclare",
     "severity": 2,
     "message": "'App' is already defined.",
@@ -93,17 +71,6 @@
     "messageId": "declaration",
     "endLine": 203,
     "endColumn": 71
-  },
-  {
-    "ruleId": "no-redeclare",
-    "severity": 2,
-    "message": "'App' is already defined.",
-    "line": 207,
-    "column": 7,
-    "nodeType": "Identifier",
-    "messageId": "redeclared",
-    "endLine": 207,
-    "endColumn": 56
   },
   {
     "ruleId": "@typescript-eslint/no-redeclare",
@@ -441,13 +408,93 @@
   {
     "ruleId": "@typescript-eslint/ban-types",
     "severity": 2,
-    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
+    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.\n- If you want a type meaning \"empty object\", you probably want `Record<string, never>` instead.\n- If you really want a type meaning \"any non-nullish value\", you probably want `NonNullable<unknown>` instead.",
     "line": 557,
     "column": 23,
     "nodeType": "TSTypeLiteral",
     "messageId": "bannedTypeMessage",
     "endLine": 557,
-    "endColumn": 25
+    "endColumn": 25,
+    "suggestions": [
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "Record<string, unknown>"
+        },
+        "fix": {
+          "range": [
+            163,
+            165
+          ],
+          "text": "Record<string, unknown>"
+        },
+        "desc": "Replace `{}` with `Record<string, unknown>`."
+      },
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "unknown"
+        },
+        "fix": {
+          "range": [
+            163,
+            165
+          ],
+          "text": "unknown"
+        },
+        "desc": "Replace `{}` with `unknown`."
+      },
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "Record<string, never>"
+        },
+        "fix": {
+          "range": [
+            163,
+            165
+          ],
+          "text": "Record<string, never>"
+        },
+        "desc": "Replace `{}` with `Record<string, never>`."
+      },
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "NonNullable<unknown>"
+        },
+        "fix": {
+          "range": [
+            163,
+            165
+          ],
+          "text": "NonNullable<unknown>"
+        },
+        "desc": "Replace `{}` with `NonNullable<unknown>`."
+      }
+    ]
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-imports",
+    "severity": 2,
+    "message": "Imports \"CountdownHandle\" are only used as type.",
+    "line": 574,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "messageId": "someImportsAreOnlyTypes",
+    "endLine": 574,
+    "endColumn": 62,
+    "fix": {
+      "range": [
+        27977,
+        27992
+      ],
+      "text": "type CountdownHandle"
+    }
   },
   {
     "ruleId": "func-style",
@@ -938,13 +985,75 @@
   {
     "ruleId": "@typescript-eslint/ban-types",
     "severity": 2,
-    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
+    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.\n- If you want a type meaning \"empty object\", you probably want `Record<string, never>` instead.\n- If you really want a type meaning \"any non-nullish value\", you probably want `NonNullable<unknown>` instead.",
     "line": 1096,
     "column": 9,
     "nodeType": "TSTypeLiteral",
     "messageId": "bannedTypeMessage",
     "endLine": 1096,
-    "endColumn": 11
+    "endColumn": 11,
+    "suggestions": [
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "Record<string, unknown>"
+        },
+        "fix": {
+          "range": [
+            707,
+            709
+          ],
+          "text": "Record<string, unknown>"
+        },
+        "desc": "Replace `{}` with `Record<string, unknown>`."
+      },
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "unknown"
+        },
+        "fix": {
+          "range": [
+            707,
+            709
+          ],
+          "text": "unknown"
+        },
+        "desc": "Replace `{}` with `unknown`."
+      },
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "Record<string, never>"
+        },
+        "fix": {
+          "range": [
+            707,
+            709
+          ],
+          "text": "Record<string, never>"
+        },
+        "desc": "Replace `{}` with `Record<string, never>`."
+      },
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "NonNullable<unknown>"
+        },
+        "fix": {
+          "range": [
+            707,
+            709
+          ],
+          "text": "NonNullable<unknown>"
+        },
+        "desc": "Replace `{}` with `NonNullable<unknown>`."
+      }
+    ]
   },
   {
     "ruleId": "perfectionist/sort-object-types",
@@ -1438,6 +1547,24 @@
     "endColumn": 71
   },
   {
+    "ruleId": "@typescript-eslint/consistent-type-imports",
+    "severity": 2,
+    "message": "Imports \"ReactNode\" are only used as type.",
+    "line": 1632,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "messageId": "someImportsAreOnlyTypes",
+    "endLine": 1632,
+    "endColumn": 47,
+    "fix": {
+      "range": [
+        71334,
+        71343
+      ],
+      "text": "type ReactNode"
+    }
+  },
+  {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
     "message": "Expected \"\"button\"\" to come before \"\"submit\"\"",
@@ -1471,6 +1598,24 @@
         71601
       ],
       "text": "className=\"MyClassName\" ref={ref} type={props.type}"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-imports",
+    "severity": 2,
+    "message": "Imports \"ReactNode\" and \"Ref\" are only used as type.",
+    "line": 1653,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "messageId": "someImportsAreOnlyTypes",
+    "endLine": 1653,
+    "endColumn": 52,
+    "fix": {
+      "range": [
+        72023,
+        72037
+      ],
+      "text": "type ReactNode, type Ref"
     }
   },
   {
@@ -1579,6 +1724,24 @@
         74844
       ],
       "text": "this.el.remove()"
+    }
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-imports",
+    "severity": 2,
+    "message": "Imports \"ReactNode\" are only used as type.",
+    "line": 1785,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "messageId": "someImportsAreOnlyTypes",
+    "endLine": 1785,
+    "endColumn": 54,
+    "fix": {
+      "range": [
+        75642,
+        75651
+      ],
+      "text": "type ReactNode"
     }
   },
   {
@@ -1737,6 +1900,24 @@
     }
   },
   {
+    "ruleId": "@typescript-eslint/consistent-type-imports",
+    "severity": 2,
+    "message": "Imports \"ErrorInfo\" and \"ReactNode\" are only used as type.",
+    "line": 1880,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "messageId": "someImportsAreOnlyTypes",
+    "endLine": 1880,
+    "endColumn": 64,
+    "fix": {
+      "range": [
+        79405,
+        79425
+      ],
+      "text": "type ErrorInfo, type ReactNode"
+    }
+  },
+  {
     "ruleId": "@typescript-eslint/class-methods-use-this",
     "severity": 2,
     "message": "Expected 'this' to be used by class method 'componentDidCatch'.",
@@ -1761,13 +1942,75 @@
   {
     "ruleId": "@typescript-eslint/ban-types",
     "severity": 2,
-    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
+    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.\n- If you want a type meaning \"empty object\", you probably want `Record<string, never>` instead.\n- If you really want a type meaning \"any non-nullish value\", you probably want `NonNullable<unknown>` instead.",
     "line": 1947,
     "column": 3,
     "nodeType": "TSTypeLiteral",
     "messageId": "bannedTypeMessage",
     "endLine": 1947,
-    "endColumn": 5
+    "endColumn": 5,
+    "suggestions": [
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "Record<string, unknown>"
+        },
+        "fix": {
+          "range": [
+            37,
+            39
+          ],
+          "text": "Record<string, unknown>"
+        },
+        "desc": "Replace `{}` with `Record<string, unknown>`."
+      },
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "unknown"
+        },
+        "fix": {
+          "range": [
+            37,
+            39
+          ],
+          "text": "unknown"
+        },
+        "desc": "Replace `{}` with `unknown`."
+      },
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "Record<string, never>"
+        },
+        "fix": {
+          "range": [
+            37,
+            39
+          ],
+          "text": "Record<string, never>"
+        },
+        "desc": "Replace `{}` with `Record<string, never>`."
+      },
+      {
+        "messageId": "bannedTypeReplacement",
+        "data": {
+          "name": "{}",
+          "replacement": "NonNullable<unknown>"
+        },
+        "fix": {
+          "range": [
+            37,
+            39
+          ],
+          "text": "NonNullable<unknown>"
+        },
+        "desc": "Replace `{}` with `NonNullable<unknown>`."
+      }
+    ]
   },
   {
     "ruleId": "perfectionist/sort-union-types",
@@ -2013,17 +2256,6 @@
     }
   },
   {
-    "ruleId": "no-redeclare",
-    "severity": 2,
-    "message": "'pickCard' is already defined.",
-    "line": 2165,
-    "column": 10,
-    "nodeType": "Identifier",
-    "messageId": "redeclared",
-    "endLine": 2165,
-    "endColumn": 18
-  },
-  {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
     "message": "Expected \"card\" to come before \"suit\"",
@@ -2040,17 +2272,6 @@
       ],
       "text": "card: number; suit: string"
     }
-  },
-  {
-    "ruleId": "no-redeclare",
-    "severity": 2,
-    "message": "'pickCard' is already defined.",
-    "line": 2166,
-    "column": 10,
-    "nodeType": "Identifier",
-    "messageId": "redeclared",
-    "endLine": 2166,
-    "endColumn": 18
   },
   {
     "ruleId": "@typescript-eslint/naming-convention",
@@ -2407,6 +2628,24 @@
     "messageId": "errorMethod",
     "endLine": 2627,
     "endColumn": 32
+  },
+  {
+    "ruleId": "@typescript-eslint/consistent-type-imports",
+    "severity": 2,
+    "message": "All imports in the declaration are only used as types. Use `import type`.",
+    "line": 2632,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "messageId": "typeOverValue",
+    "endLine": 2632,
+    "endColumn": 47,
+    "fix": {
+      "range": [
+        110128,
+        110145
+      ],
+      "text": "type PlotlyHTMLElement"
+    }
   },
   {
     "ruleId": "func-style",

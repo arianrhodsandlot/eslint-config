@@ -7,6 +7,7 @@
     "lib": ["es2023"],
     "module": "node16",
     "moduleResolution": "node16",
+    "noImplicitAny": false,
     "outDir": "dist/types",
     "skipLibCheck": true,
     "strict": true,

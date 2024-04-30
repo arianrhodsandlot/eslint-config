@@ -15,12 +15,14 @@ export function getJsdocConfigs() {
 
   const jsdocConfigs: FlatConfigs = [
     {
+      name: 'jsdoc',
       rules: {
         'jsdoc/require-jsdoc': 'off',
       },
     },
     {
       files: [tsGlob],
+      name: 'jsdoc',
       rules: mapValues(eslintPluginJsdoc.configs['flat/recommended'].rules, () => 'off'),
     },
   ]

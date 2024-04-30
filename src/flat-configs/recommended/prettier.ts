@@ -1,9 +1,9 @@
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
-import { Config } from 'prettier'
+import type { Config } from 'prettier'
 import { getContext, getPackageVersion, lookupFiles } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
-const plugins = []
+const plugins: string[] = []
 if (getPackageVersion('prettier-plugin-tailwindcss')) {
   plugins.push('prettier-plugin-tailwindcss')
 }
@@ -45,8 +45,8 @@ export function getPrettierConfigs() {
 
   const prettierConfig = typeof options.prettier === 'object' ? options.prettier : readPrettierConfig()
   const prettierConfigs: FlatConfigs = [
-    eslintPluginPrettierRecommended,
-    { rules: { 'prettier/prettier': ['error', prettierConfig] } },
+    { name: 'prettier/recommended', ...eslintPluginPrettierRecommended },
+    { name: 'prettier/recommended', rules: { 'prettier/prettier': ['error', prettierConfig] } },
   ]
   return prettierConfigs
 }

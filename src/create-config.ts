@@ -40,5 +40,15 @@ export function createConfig(initialOptions?: CreateConfigOptions) {
   const customFlatConfig = getCustomFlatConfigs()
   const prepend = Array.isArray(options.prepend) ? options.prepend : [options.prepend]
   const append = Array.isArray(options.append) ? options.append : [options.append]
-  return [...prepend, ...recommendedFlatConfig, ...customFlatConfig, { rules: options.rules }, ...append]
+  const config = [...recommendedFlatConfig, ...customFlatConfig]
+  if (prepend) {
+    config.unshift(...prepend)
+  }
+  if (Object.keys(options.rules).length > 0) {
+    config.push({ rules: options.rules })
+  }
+  if (append) {
+    config.push(...append)
+  }
+  return config
 }

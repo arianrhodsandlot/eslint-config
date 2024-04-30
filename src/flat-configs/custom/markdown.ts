@@ -13,7 +13,6 @@ export function getMarkdownConfigs() {
     Object.assign(rules, {
       '@typescript-eslint/no-unused-expressions': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
-      '@typescript-eslint/no-var-requires': 'off',
     })
   }
   if (options.import) {
@@ -27,6 +26,6 @@ export function getMarkdownConfigs() {
     })
   }
 
-  const markdownConfigs: FlatConfigs = [{ files: [`**/*.md/*${jsOrTsExtensionGlob}`], rules }]
+  const markdownConfigs: FlatConfigs = [{ files: [`**/*.md/*${jsOrTsExtensionGlob}`], name: 'markdown', rules }]
   return markdownConfigs
 }
