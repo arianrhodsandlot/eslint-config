@@ -142,3 +142,10 @@ export function isBrowserProject() {
 export function isNodeJsProject() {
   return !isBrowserProject()
 }
+
+export function shouldEnableDiff() {
+  const shortlog = `${execSync('git shortlog -sne --no-merges --all')}`.trim()
+  const [majorLine] = shortlog.split('\n')
+  const myKeywords = ['arianrhod', 'theguidanceofawhitetower@gmail.com', 'thefalsegodofcausality@outlook.com']
+  return myKeywords.some((myKeyword) => majorLine.includes(myKeyword))
+}

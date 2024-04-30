@@ -1,7 +1,14 @@
 import _ from 'lodash'
 import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
-import { getPackageField, isNodeJsProject, isPackageInstalled, lookupFiles, setContext } from './lib/utils.js'
+import {
+  getPackageField,
+  isNodeJsProject,
+  isPackageInstalled,
+  lookupFiles,
+  setContext,
+  shouldEnableDiff,
+} from './lib/utils.js'
 import type { CreateConfigOptions } from './types/config.js'
 
 const { defaultsDeep } = _
@@ -9,7 +16,7 @@ const { defaultsDeep } = _
 const defaultOptions: Required<CreateConfigOptions> = {
   append: [],
   compat: getPackageField('browserslist') || lookupFiles('.browserslistrc'),
-  diff: false,
+  diff: shouldEnableDiff(),
   eslintComments: true,
   esX: true,
   import: true,
@@ -33,8 +40,11 @@ const defaultOptions: Required<CreateConfigOptions> = {
   vue: isPackageInstalled('vue'),
 }
 
-export function createConfig(initialOptions?: CreateConfigOptions) {
-  const options: Required<CreateConfigOptions> = defaultsDeep(initialOptions, defaultOptions)
+export function createConfig(
+  initialOptions?: ((defailtOption?: typeof defaultOptions) => CreateConfigOptions) | CreateConfigOptions,
+) {
+  const resolvedInitialOptions = typeof initialOptions === 'function' ? initialOptions(defaultOptions) : initialOptions
+  const options: Required<CreateConfigOptions> = defaultsDeep(resolvedInitialOptions, defaultOptions)
   setContext({ options })
   const recommendedFlatConfig = getRecommendedFlatConfigs()
   const customFlatConfig = getCustomFlatConfigs()
