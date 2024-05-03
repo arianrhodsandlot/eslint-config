@@ -139,8 +139,8 @@ To use this package, ESLint should be configured by an file named `eslint.config
 ## Features
 + Integrated with following ESLint plugins and configurations recommended by them:
   + For best practices:
+    + [@eslint-community/eslint-plugin-eslint-comments](https://github.com/eslint-community/eslint-plugin-eslint-comments)
     + [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)
-    + [eslint-plugin-eslint-comments](https://github.com/eslint-community/eslint-plugin-eslint-comments)
     + [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
     + [eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc)
     + [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)

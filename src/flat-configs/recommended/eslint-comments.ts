@@ -1,10 +1,9 @@
-import { eslintPluginEslintComments } from '../../lib/eslint-plugins.js'
+import eslintPluginEslintCommentsConfigs from '@eslint-community/eslint-plugin-eslint-comments/configs'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const eslintCommentsConfigs: FlatConfigs = [
   {
-    name: 'eslint-comments/recommended',
-    plugins: { 'eslint-comments': eslintPluginEslintComments },
-    rules: eslintPluginEslintComments.configs?.recommended.rules,
+    name: '@eslint-community/eslint-plugin-eslint-comments/recommended',
+    ...eslintPluginEslintCommentsConfigs.recommended,
   },
 ]
