@@ -5,6 +5,6 @@ export const compatConfigs: FlatConfigs = [
   {
     name: 'compat',
     plugins: { compat: eslintPluginCompat },
-    rules: eslintPluginCompat.configs?.recommended.rules,
+    rules: eslintPluginCompat.configs.recommended.rules,
   },
 ]
