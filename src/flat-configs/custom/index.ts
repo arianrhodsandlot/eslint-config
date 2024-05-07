@@ -5,6 +5,7 @@ import { getJsConfigs } from './js.js'
 import { getJsdocConfigs } from './jsdoc.js'
 import { getMarkdownConfigs } from './markdown.js'
 import { getNConfigs } from './n.js'
+import { getReactConfigs } from './react.js'
 import { getTestConfigs } from './test.js'
 
 export function getCustomFlatConfigs() {
@@ -16,6 +17,7 @@ export function getCustomFlatConfigs() {
     ...getJsdocConfigs(),
     ...getMarkdownConfigs(),
     ...getNConfigs(),
+    ...getReactConfigs(),
     ...getTestConfigs(),
 
     ...getConflictConfigs(),
