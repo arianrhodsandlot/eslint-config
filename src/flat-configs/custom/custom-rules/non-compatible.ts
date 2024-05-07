@@ -22,6 +22,7 @@ export const nonCompatibleRules: FlatConfigRules =
         'react/jsx-no-undef': 'off',
         'react/jsx-uses-vars': 'off',
         'react/no-arrow-function-lifecycle': 'off',
+        'react/no-danger-with-children': 'off',
         'react/no-direct-mutation-state': 'off',
         'react/no-multi-comp': 'off',
         'react/no-string-refs': 'off',
