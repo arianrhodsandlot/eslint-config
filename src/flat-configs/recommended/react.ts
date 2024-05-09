@@ -20,10 +20,7 @@ export const reactConfigs: FlatConfigs = [
     name: 'react-refresh/recommended',
     plugins: { 'react-refresh': eslintPluginReactRefresh },
     rules: {
-      'react-refresh/only-export-components': [
-        'error',
-        { allowConstantExport: true, allowExportNames: ['meta', 'links', 'headers', 'loader', 'action'] },
-      ],
+      'react-refresh/only-export-components': 'error',
     },
   },
 ]

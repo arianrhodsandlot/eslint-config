@@ -1,22 +1,37 @@
-import { jsxOrTsxExtensionGlob } from '../../lib/constants.js'
 import { getContext, isPackageInstalled } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
+
+function getAllowExportNames() {
+  const allowExportNames: string[] = []
+  if (isPackageInstalled('next')) {
+    allowExportNames.push(
+      'config',
+      'generateMetadata',
+      'generateStaticParams',
+      'generateViewport',
+      'metadata',
+      'viewport',
+    )
+  }
+  if (isPackageInstalled('remix')) {
+    allowExportNames.push('meta', 'links', 'headers', 'loader', 'action')
+  }
+  return allowExportNames
+}
 
 export function getReactConfigs() {
   const { options } = getContext()
 
   const reactConfigs: FlatConfigs = []
 
-  const multipleExportsFiles: string[] = []
-  if (options.react && isPackageInstalled('next')) {
-    multipleExportsFiles.push(`**/layout${jsxOrTsxExtensionGlob}`)
-  }
-  if (multipleExportsFiles.length > 0) {
+  if (options.react) {
     reactConfigs.push({
-      files: multipleExportsFiles,
       name: 'react',
       rules: {
-        'react-refresh/only-export-components': 'off',
+        'react-refresh/only-export-components': [
+          'error',
+          { allowConstantExport: true, allowExportNames: getAllowExportNames() },
+        ],
       },
     })
   }
