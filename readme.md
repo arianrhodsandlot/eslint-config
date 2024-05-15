@@ -9,10 +9,6 @@ To use this package, ESLint should be configured by an file named `eslint.config
 
 + Basic usage:
   ```js
-  export { config as default } from '@arianrhodsandlot/eslint-config'
-  ```
-  or
-  ```js
   export { default } from '@arianrhodsandlot/eslint-config'
   ```
 + For CommonJS environment:
