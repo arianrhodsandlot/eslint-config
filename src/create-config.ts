@@ -1,3 +1,4 @@
+import { fixupConfigRules } from '@eslint/compat'
 import _ from 'lodash'
 import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
@@ -60,5 +61,6 @@ export function createConfig(
   if (append) {
     config.push(...append)
   }
-  return config
+  // @ts-expect-error types from @eslint/compat are not reliable
+  return fixupConfigRules(config) as typeof config
 }

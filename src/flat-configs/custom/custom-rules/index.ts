@@ -4,7 +4,6 @@ import { eslintCommentsRules } from './eslint-comments.js'
 import { eslintRules } from './eslint.js'
 import { importRules } from './import.js'
 import { nRules } from './n.js'
-import { nonCompatibleRules } from './non-compatible.js'
 import { perfectionistRules } from './perfectionist.js'
 import { promiseRules } from './promise.js'
 import { reactRules } from './react.js'
@@ -56,8 +55,6 @@ export function getCustomRulesConfigs() {
   if (options.perfectionist) {
     Object.assign(customRules, perfectionistRules)
   }
-
-  Object.assign(customRules, nonCompatibleRules)
 
   const customRulesConfigs: FlatConfigs = [{ name: 'custom-rules', rules: customRules }]
   return customRulesConfigs

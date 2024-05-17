@@ -316,7 +316,7 @@
   {
     "ruleId": "unicorn/throw-new-error",
     "severity": 2,
-    "message": "Use `new` when throwing an error.",
+    "message": "Use `new` when creating an error.",
     "line": 490,
     "column": 32,
     "nodeType": "CallExpression",
@@ -508,6 +508,16 @@
     "endColumn": 4
   },
   {
+    "ruleId": "promise/prefer-await-to-then",
+    "severity": 2,
+    "message": "Prefer await to then()/catch()/finally().",
+    "line": 605,
+    "column": 21,
+    "nodeType": "Identifier",
+    "endLine": 605,
+    "endColumn": 28
+  },
+  {
     "ruleId": "func-style",
     "severity": 2,
     "message": "Expected a function declaration.",
@@ -517,6 +527,16 @@
     "messageId": "declaration",
     "endLine": 628,
     "endColumn": 4
+  },
+  {
+    "ruleId": "promise/prefer-await-to-then",
+    "severity": 2,
+    "message": "Prefer await to then()/catch()/finally().",
+    "line": 627,
+    "column": 21,
+    "nodeType": "Identifier",
+    "endLine": 627,
+    "endColumn": 28
   },
   {
     "ruleId": "@typescript-eslint/no-empty-function",
@@ -2397,6 +2417,21 @@
     "endColumn": 33
   },
   {
+    "ruleId": "import/newline-after-import",
+    "severity": 2,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "line": 2239,
+    "column": 1,
+    "nodeType": null,
+    "fix": {
+      "range": [
+        93955,
+        93955
+      ],
+      "text": "\n"
+    }
+  },
+  {
     "ruleId": "func-style",
     "severity": 2,
     "message": "Expected a function declaration.",
@@ -2630,6 +2665,23 @@
     "endColumn": 32
   },
   {
+    "ruleId": "import/first",
+    "severity": 2,
+    "message": "Import in body of module; reorder to top.",
+    "line": 2632,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "endLine": 2632,
+    "endColumn": 47,
+    "fix": {
+      "range": [
+        109983,
+        110165
+      ],
+      "text": "// my-typings.ts\n// MyComponent.tsx\nimport { PlotlyHTMLElement } from \"plotly.js\";\n\ndeclare module \"plotly.js\" {\n  interface PlotlyHTMLElement {\n    removeAllListeners(): void;\n  }\n}"
+    }
+  },
+  {
     "ruleId": "@typescript-eslint/consistent-type-imports",
     "severity": 2,
     "message": "All imports in the declaration are only used as types. Use `import type`.",
@@ -2668,6 +2720,23 @@
     "messageId": "useConst",
     "endLine": 2659,
     "endColumn": 8
+  },
+  {
+    "ruleId": "import/first",
+    "severity": 2,
+    "message": "Import in body of module; reorder to top.",
+    "line": 2694,
+    "column": 1,
+    "nodeType": "ImportDeclaration",
+    "endLine": 2694,
+    "endColumn": 36,
+    "fix": {
+      "range": [
+        111707,
+        111890
+      ],
+      "text": "// declaration.d.ts\n// anywhere in your project, NOT the same name as any of your .ts/tsx files\n// importing in a tsx file\nimport * as logo from \"./logo.png\";\n\ndeclare module \"*.png\";"
+    }
   },
   {
     "ruleId": "perfectionist/sort-objects",
