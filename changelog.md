@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.15.0] - 2024-05-17
+### Added
+Add @eslint/compat to support legacy plugins
+Add support for nextjs and remix constant exports
+Add support for i18n
+
 ## [0.14.0] - 2024-05-06
 ### Added
 - Replace eslint-plugin-comments with @eslint-community/eslint-plugin-comments
@@ -195,8 +201,9 @@ Update several rules
 ### Added
 - First release!
 
-[unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.14.0...HEAD
-[0.13.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.13.0...v0.14.0
+[unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.15.0...HEAD
+[0.15.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.15.0...v0.15.0
+[0.14.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.13.0...v0.14.0
 [0.13.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.12.2...v0.13.0
 [0.12.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.12.1...v0.12.2
 [0.12.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.12.0...v0.12.1
