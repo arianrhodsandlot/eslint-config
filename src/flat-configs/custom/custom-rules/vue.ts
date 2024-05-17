@@ -86,7 +86,13 @@ const vueCommonRules: FlatConfigRules = {
   'vue/no-undef-components': [
     'error',
     {
-      ignorePatterns: ['client-only', 'el(\\-\\w+)+', 'router(\\-\\w+)+', 'svg-icon', 'van(\\-\\w+)+'],
+      ignorePatterns: [
+        'client-only',
+        String.raw`el(\-\w+)+`,
+        String.raw`router(\-\w+)+`,
+        'svg-icon',
+        String.raw`van(\-\w+)+`,
+      ],
     },
   ],
   'vue/no-undef-properties': 'error',

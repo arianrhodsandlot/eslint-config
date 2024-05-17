@@ -4,6 +4,7 @@ import path from 'node:path'
 import _ from 'lodash'
 import { findSync } from 'new-find-package-json'
 import type { CreateConfigOptions } from '../types/config.js'
+
 export const isProduction = process.env.NODE_ENV === 'production'
 
 const { castArray, compact, mergeWith } = _
