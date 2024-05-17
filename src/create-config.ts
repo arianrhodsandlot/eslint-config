@@ -39,6 +39,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
   typescript: isPackageInstalled('typescript'),
   unicorn: true,
   vue: isPackageInstalled('vue'),
+  vueI18n: isPackageInstalled('vue-i18n'),
 }
 
 export function createConfig(

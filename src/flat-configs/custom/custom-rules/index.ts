@@ -12,6 +12,7 @@ import { sonarjsRules } from './sonarjs.js'
 import { tailwindcssRules } from './tailwindcss.js'
 import { typescriptRules } from './typescript.js'
 import { unicornRules } from './unicorn.js'
+import { vueI18nRules } from './vue-i18n.js'
 import { getVueRules } from './vue.js'
 
 export function getCustomRulesConfigs() {
@@ -51,6 +52,9 @@ export function getCustomRulesConfigs() {
   }
   if (options.vue) {
     Object.assign(customRules, getVueRules())
+  }
+  if (options.vueI18n) {
+    Object.assign(customRules, vueI18nRules)
   }
   if (options.perfectionist) {
     Object.assign(customRules, perfectionistRules)

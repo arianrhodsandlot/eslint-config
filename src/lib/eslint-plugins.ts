@@ -1,4 +1,5 @@
 import * as eslintPluginEslintCommentsModule from '@eslint-community/eslint-plugin-eslint-comments'
+import * as eslintPluginVueI18nModule from '@intlify/eslint-plugin-vue-i18n'
 import * as eslintPluginNextModule from '@next/eslint-plugin-next'
 import * as eslintPluginCompatModule from 'eslint-plugin-compat'
 import * as eslintPluginDiffModule from 'eslint-plugin-diff'
@@ -56,5 +57,6 @@ export const eslintPluginTsdoc = interopESLintPlugin(eslintPluginTsdocModule)
 export const eslintPluginTypescript = interopESLintPlugin(tseslint.plugin)
 export const eslintPluginUnicorn = interopESLintPlugin(eslintPluginUnicornModule)
 export const eslintPluginVue = interopESLintPlugin(eslintPluginVueModule)
+export const eslintPluginVueI18n = interopESLintPlugin(eslintPluginVueI18nModule)
 export const eslintPluginVuejsAccessibility = interopESLintPlugin(eslintPluginVuejsAccessibilityModule)
 export const eslintPluginVueScopedCSS = interopESLintPlugin(eslintPluginVueScopedCSSModule)

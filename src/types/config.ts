@@ -114,4 +114,7 @@ export interface CreateConfigOptions {
 
   /** Should eslint-plugin-vue, eslint-plugin-vuejs-accessibility, eslint-plugin-vue-scoped-css be enabled */
   vue?: boolean
+
+  /** Should \@intlify/eslint-plugin-vue-i18n be enabled */
+  vueI18n?: boolean
 }

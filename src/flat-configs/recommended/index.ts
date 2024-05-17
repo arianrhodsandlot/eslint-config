@@ -21,6 +21,7 @@ import { tailwindcssConfigs } from './tailwind.js'
 import { tsdocConfigs } from './tsdoc.js'
 import { typescriptConfigs } from './typescript.js'
 import { unicornConfigs } from './unicorn.js'
+import { vueI18nConfigs } from './vue-i18n.js'
 import { vueConfigs } from './vue.js'
 
 export function getRecommendedFlatConfigs() {
@@ -44,6 +45,7 @@ export function getRecommendedFlatConfigs() {
     typescript: typescriptConfigs,
     unicorn: unicornConfigs,
     vue: vueConfigs,
+    vueI18n: vueI18nConfigs,
   }
 
   const recommendedFlatConfigs: FlatConfigs = [...baseConfigs]
