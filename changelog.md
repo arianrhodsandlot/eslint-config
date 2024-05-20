@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.15.1] - 2024-05-20
 ## Fixed
-- Turn on the no-undef rule for js files
+- Turn off the no-undef rule for ts files only
+- Improve compatibility
 
 ## [0.15.0] - 2024-05-17
 ### Added

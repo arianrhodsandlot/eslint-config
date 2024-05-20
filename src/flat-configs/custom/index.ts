@@ -7,6 +7,7 @@ import { getMarkdownConfigs } from './markdown.js'
 import { getNConfigs } from './n.js'
 import { getReactConfigs } from './react.js'
 import { getTestConfigs } from './test.js'
+import { getTypeScriptConfigs } from './typescript.js'
 
 export function getCustomFlatConfigs() {
   return [
@@ -19,6 +20,7 @@ export function getCustomFlatConfigs() {
     ...getNConfigs(),
     ...getReactConfigs(),
     ...getTestConfigs(),
+    ...getTypeScriptConfigs(),
 
     ...getConflictConfigs(),
   ]
