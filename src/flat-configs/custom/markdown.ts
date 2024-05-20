@@ -7,6 +7,7 @@ export function getMarkdownConfigs() {
 
   const rules: FlatConfigRules = {
     'no-console': 'off',
+    'no-undef': 'off',
   }
 
   if (options.typescript) {

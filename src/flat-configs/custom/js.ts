@@ -8,6 +8,7 @@ export function getJsConfigs() {
       name: 'js',
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
+        'no-undef': 'error',
         'unicorn/prefer-module': 'off',
       },
     },
