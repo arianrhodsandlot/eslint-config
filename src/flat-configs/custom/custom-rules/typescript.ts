@@ -72,7 +72,6 @@ export const typescriptRules: Linter.RulesRecord = {
   ],
   '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
   '@typescript-eslint/no-useless-constructor': 'error',
-  '@typescript-eslint/prefer-ts-expect-error': 'error',
   '@typescript-eslint/unified-signatures': 'error',
   'no-useless-constructor': 'off',
 }
