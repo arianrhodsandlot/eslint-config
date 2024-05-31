@@ -12,6 +12,16 @@ const vueLegacyRules: FlatConfigRules = {
 const vueModernRules: FlatConfigRules = {
   'vue/component-api-style': 'error',
   'vue/custom-event-name-casing': ['error', 'camelCase'],
+
+  'vue-scoped-css/no-deprecated-deep-combinator': 'error',
+  'vue-scoped-css/no-deprecated-v-enter-v-leave-class': 'error',
+  'vue-scoped-css/no-parent-of-v-global': 'error',
+  'vue-scoped-css/require-v-deep-argument': 'error',
+  'vue-scoped-css/require-v-global-argument': 'error',
+  'vue-scoped-css/require-v-slotted-argument': 'error',
+  'vue-scoped-css/v-deep-pseudo-style': 'error',
+  'vue-scoped-css/v-global-pseudo-style': 'error',
+  'vue-scoped-css/v-slotted-pseudo-style': 'error',
 }
 
 const vueCommonRules: FlatConfigRules = {
@@ -122,6 +132,11 @@ const vueCommonRules: FlatConfigRules = {
   'vue/v-on-event-hyphenation': 'error',
   'vue/v-on-handler-style': 'off',
   'vue/valid-define-options': 'error',
+
+  'vue-scoped-css/enforce-style-type': 'error',
+  'vue-scoped-css/no-parsing-error': 'error',
+  'vue-scoped-css/no-unused-keyframes': 'error',
+  'vue-scoped-css/no-unused-selector': 'off',
 }
 
 export function getVueRules() {

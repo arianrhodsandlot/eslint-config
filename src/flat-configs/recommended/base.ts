@@ -1,4 +1,5 @@
 import js from '@eslint/js'
+import globals from 'globals'
 import tseslint from 'typescript-eslint'
 import { jsOrTsGlob } from '../../lib/constants.js'
 import { getGitIgnores } from '../../lib/utils.js'
@@ -9,6 +10,12 @@ export const baseConfigs: FlatConfigs = [
     files: [jsOrTsGlob],
     ignores: getGitIgnores(),
     languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.builtin,
+        ...globals.commonjs,
+        ...globals.nodeBuiltin,
+      },
       // @ts-expect-error types in tseslint do not match those in eslint
       parser: tseslint.parser,
     },
