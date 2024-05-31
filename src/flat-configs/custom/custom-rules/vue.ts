@@ -61,10 +61,7 @@ const vueCommonRules: FlatConfigRules = {
       svg: 'always',
     },
   ],
-  'vue/match-component-file-name': [
-    'error',
-    { extensions: ['js', 'cjs', 'mjs', 'jsx', 'cjsx', 'mjsx', 'ts', 'cts', 'mts', 'tsx', 'ctsx', 'mtsx', 'vue'] },
-  ],
+  'vue/match-component-file-name': ['error', { extensions: ['vue'] }],
   'vue/match-component-import-name': 'error',
   'vue/new-line-between-multi-line-property': 'error',
   'vue/next-tick-style': 'error',
