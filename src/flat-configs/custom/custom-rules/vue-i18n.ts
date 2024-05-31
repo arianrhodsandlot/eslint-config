@@ -30,6 +30,7 @@ export const vueI18nRules: FlatConfigRules = {
       },
       ignoreNodes: ['el-icon', 'md-icon', 'svg-icon', 'v-icon'],
       ignorePattern: '^[-#:()&]+$',
+      ignoreText: [''],
     },
   ],
   '@intlify/vue-i18n/no-unknown-locale': 'error',
