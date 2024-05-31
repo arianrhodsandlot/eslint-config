@@ -62,6 +62,5 @@ export function createConfig(
   if (append) {
     config.push(...append)
   }
-  // @ts-expect-error types from @eslint/compat are not reliable
-  return fixupConfigRules(config) as typeof config
+  return fixupConfigRules(config)
 }
