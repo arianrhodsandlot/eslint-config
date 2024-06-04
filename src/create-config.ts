@@ -4,8 +4,8 @@ import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
 import {
   getPackageField,
-  isNodeJsProject,
   isPackageInstalled,
+  isServerProject,
   lookupFiles,
   setContext,
   shouldEnableDiff,
@@ -23,7 +23,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
   import: true,
   jsdoc: true,
   markdown: true,
-  n: isNodeJsProject(),
+  n: isServerProject(),
   next: isPackageInstalled('next'),
   perfectionist: true,
   prepend: [],

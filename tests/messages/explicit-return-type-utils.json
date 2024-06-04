@@ -17,6 +17,17 @@
     }
   },
   {
+    "ruleId": "n/no-extraneous-import",
+    "severity": 2,
+    "message": "\"@typescript-eslint/utils\" is extraneous.",
+    "line": 1,
+    "column": 41,
+    "nodeType": "Literal",
+    "messageId": "extraneous",
+    "endLine": 1,
+    "endColumn": 67
+  },
+  {
     "ruleId": "import/order",
     "severity": 2,
     "message": "There should be no empty line between import groups",
@@ -40,6 +51,17 @@
     "line": 2,
     "column": 45,
     "nodeType": "Literal",
+    "endLine": 2,
+    "endColumn": 71
+  },
+  {
+    "ruleId": "n/no-extraneous-import",
+    "severity": 2,
+    "message": "\"@typescript-eslint/utils\" is extraneous.",
+    "line": 2,
+    "column": 45,
+    "nodeType": "Literal",
+    "messageId": "extraneous",
     "endLine": 2,
     "endColumn": 71
   },

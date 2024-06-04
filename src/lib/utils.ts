@@ -64,11 +64,16 @@ export function lookupFiles(...fileNames: string[]) {
 
 const packageJsons = [...findSync(process.cwd())]
 
+let cachedPackageJson
 function getPackageJson() {
+  if (cachedPackageJson) {
+    return cachedPackageJson
+  }
   for (const packageJson of packageJsons) {
     try {
       const packageInfo = JSON.parse(fs.readFileSync(packageJson, 'utf8'))
       if (packageInfo) {
+        cachedPackageJson = packageInfo
         return packageInfo
       }
     } catch {}
@@ -76,30 +81,37 @@ function getPackageJson() {
 }
 
 export function getPackageField(field: string) {
-  return getPackageJson()?.field
+  return getPackageJson()?.[field]
 }
 
 export function getPackageVersion(packageName: string) {
-  for (const packageJson of packageJsons) {
-    try {
-      const packageInfo = JSON.parse(fs.readFileSync(packageJson, 'utf8'))
-      if (packageInfo) {
-        const version: string = packageInfo.dependencies?.[packageName] || packageInfo.devDependencies?.[packageName]
-        if (version) {
-          return version
-        }
-      }
-    } catch {}
+  const version: string =
+    getPackageField('dependencies')?.[packageName] || getPackageField('devDependencies')?.[packageName]
+  if (version) {
+    return version
   }
 }
 
-const memo: Record<string, boolean> = {}
-export function isPackageInstalled(packageName: string) {
-  if (packageName in memo) {
-    return memo[packageName]
+export function getProdPackageVersion(packageName: string) {
+  const version: string = getPackageField('dependencies')?.[packageName]
+  if (version) {
+    return version
   }
-  memo[packageName] = Boolean(getPackageVersion(packageName))
-  return memo[packageName]
+}
+
+export function getDevPackageVersion(packageName: string) {
+  const version: string = getPackageField('devDependencies')?.[packageName]
+  if (version) {
+    return version
+  }
+}
+
+export function isPackageInstalled(packageName: string) {
+  return Boolean(getPackageVersion(packageName))
+}
+
+export function isProdPackageInstalled(packageName: string) {
+  return Boolean(getProdPackageVersion(packageName))
 }
 
 const vueVersion = getMajorVersion(getPackageVersion('vue'))
@@ -137,10 +149,10 @@ export function getContext() {
 const frontEndPackages = ['astro', 'jquery', 'react', 'solid-js', 'svelte', 'vue', 'zepto']
 
 export function isBrowserProject() {
-  return frontEndPackages.some((frontEndPackage) => isPackageInstalled(frontEndPackage))
+  return frontEndPackages.some((frontEndPackage) => isProdPackageInstalled(frontEndPackage))
 }
 
-export function isNodeJsProject() {
+export function isServerProject() {
   return !isBrowserProject()
 }
 

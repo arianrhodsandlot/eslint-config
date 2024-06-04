@@ -497,6 +497,16 @@
     }
   },
   {
+    "ruleId": "import/extensions",
+    "severity": 2,
+    "message": "Unexpected use of file extension \"tsx\" for \"./Countdown.tsx\"",
+    "line": 574,
+    "column": 44,
+    "nodeType": "Literal",
+    "endLine": 574,
+    "endColumn": 61
+  },
+  {
     "ruleId": "func-style",
     "severity": 2,
     "message": "Expected a function declaration.",

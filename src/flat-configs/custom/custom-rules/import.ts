@@ -1,9 +1,47 @@
+import { getPackageField, isServerProject } from '../../../lib/utils.js'
 import type { FlatConfigRules } from '../../../types/eslint.js'
 
+const isESMCodeBase = isServerProject() && getPackageField('type') === 'module'
+
 export const importRules: FlatConfigRules = {
-  // temporarily disabled since eslint-import-plugin does not support flat config
-  // see https://github.com/import-js/eslint-plugin-import/pull/2714
-  'import/default': 'off',
+  'import/extensions': [
+    'error',
+    {
+      ignorePackages: true,
+      pattern: {
+        json: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+
+        js: isESMCodeBase ? 'always' : 'never',
+
+        css: 'always',
+        eot: 'always',
+        less: 'always',
+        sass: 'always',
+        scss: 'always',
+        styl: 'always',
+        vue: 'always',
+
+        cjs: 'always',
+        cts: 'always',
+        ctsx: 'always',
+        mjs: 'always',
+        mjsx: 'always',
+        mts: 'always',
+        mtsx: 'always',
+
+        jpeg: 'always',
+        jpg: 'always',
+        png: 'always',
+        svg: 'always',
+        ttf: 'always',
+        woff: 'always',
+        woff2: 'always',
+      },
+    },
+  ],
   'import/first': 'error',
   'import/namespace': 'off',
   'import/newline-after-import': 'error',
@@ -16,6 +54,7 @@ export const importRules: FlatConfigRules = {
   'import/no-named-as-default-member': 'off',
   'import/no-named-default': 'error',
   'import/no-unresolved': 'off',
+  'import/no-useless-path-segments': ['error', { noUselessIndex: !isESMCodeBase }],
   'import/no-webpack-loader-syntax': 'error',
   'import/order': [
     'error',
