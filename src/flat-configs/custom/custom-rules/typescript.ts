@@ -49,7 +49,10 @@ export const typescriptRules: Linter.RulesRecord = {
     { format: ['camelCase', 'PascalCase'], selector: 'function' },
     { format: ['PascalCase'], selector: 'typeLike' },
     { format: ['camelCase', 'PascalCase', 'UPPER_CASE'], modifiers: ['static'], selector: 'classProperty' },
-    { format: null, selector: ['objectLiteralProperty', 'typeProperty'] },
+    {
+      format: null,
+      selector: ['objectLiteralProperty', 'objectLiteralMethod', 'typeProperty'],
+    },
   ],
   '@typescript-eslint/no-dupe-class-members': 'error',
   '@typescript-eslint/no-empty-function': [

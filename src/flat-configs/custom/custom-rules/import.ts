@@ -16,13 +16,16 @@ export const importRules: FlatConfigRules = {
 
         js: isESMCodeBase ? 'always' : 'never',
 
+        astro: 'always',
         css: 'always',
         eot: 'always',
         less: 'always',
         sass: 'always',
         scss: 'always',
         styl: 'always',
+        svelte: 'always',
         vue: 'always',
+        wasm: 'always',
 
         cjs: 'always',
         cts: 'always',
@@ -32,11 +35,16 @@ export const importRules: FlatConfigRules = {
         mts: 'always',
         mtsx: 'always',
 
+        gif: 'always',
+        htm: 'always',
+        html: 'always',
+        ico: 'always',
         jpeg: 'always',
         jpg: 'always',
         png: 'always',
         svg: 'always',
         ttf: 'always',
+        webp: 'always',
         woff: 'always',
         woff2: 'always',
       },
