@@ -1,4 +1,4 @@
-import { jsxOrTsxGlob } from '../../lib/constants.js'
+import { jsOrTsExtensionGlob, jsxOrTsxGlob } from '../../lib/constants.js'
 import { getContext, isPackageInstalled } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
@@ -26,17 +26,27 @@ export function getReactConfigs() {
   const reactConfigs: FlatConfigs = []
 
   if (options.react) {
-    reactConfigs.push({
-      files: [jsxOrTsxGlob],
-      name: 'react',
-      rules: {
-        'max-lines-per-function': ['error', { max: 500, skipBlankLines: true, skipComments: true }],
-        'react-refresh/only-export-components': [
-          'error',
-          { allowConstantExport: true, allowExportNames: getAllowExportNames() },
-        ],
+    reactConfigs.push(
+      {
+        files: [jsxOrTsxGlob],
+        name: 'react',
+        rules: {
+          'max-lines-per-function': ['error', { max: 500, skipBlankLines: true, skipComments: true }],
+          'react-refresh/only-export-components': [
+            'error',
+            { allowConstantExport: true, allowExportNames: getAllowExportNames() },
+          ],
+          'unicorn/no-nested-ternary': 'off',
+        },
       },
-    })
+      {
+        files: [`**/use*${jsOrTsExtensionGlob}`],
+        name: 'react',
+        rules: {
+          'max-lines-per-function': ['error', { max: 500, skipBlankLines: true, skipComments: true }],
+        },
+      },
+    )
   }
 
   return reactConfigs
