@@ -7,7 +7,6 @@ import type { FlatConfigs } from '../../types/eslint.js'
 
 export const baseConfigs: FlatConfigs = [
   {
-    files: [jsOrTsGlob],
     ignores: ['node_modules/**/*', 'dist/**/*', '**/vendor?(s)/**/*', ...getGitIgnores()],
     languageOptions: {
       globals: {
@@ -20,6 +19,10 @@ export const baseConfigs: FlatConfigs = [
       parser: tseslint.parser,
     },
     linterOptions: { reportUnusedDisableDirectives: true },
+    name: 'base',
+  },
+  {
+    files: [jsOrTsGlob],
     name: 'base',
   },
   {

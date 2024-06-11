@@ -1,3 +1,1 @@
-import { config } from '../../dist/esm/index.js'
-
-export default config
+export { config as default } from '../../dist/esm/index.js'
