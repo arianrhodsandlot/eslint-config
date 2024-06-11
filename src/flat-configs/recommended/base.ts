@@ -8,7 +8,7 @@ import type { FlatConfigs } from '../../types/eslint.js'
 export const baseConfigs: FlatConfigs = [
   {
     files: [jsOrTsGlob],
-    ignores: ['node_modules/**/*', 'dist/**/*', ...getGitIgnores()],
+    ignores: ['node_modules/**/*', 'dist/**/*', '**/vendor?(s)/**/*', ...getGitIgnores()],
     languageOptions: {
       globals: {
         ...globals.browser,
