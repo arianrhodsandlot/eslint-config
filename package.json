@@ -1,6 +1,6 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
-  "version": "0.15.3",
+  "version": "0.15.4",
   "description": "A set of predefined ESLint config.",
   "keywords": [
     "eslint",
