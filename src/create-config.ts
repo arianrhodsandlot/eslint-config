@@ -3,6 +3,7 @@ import _ from 'lodash'
 import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
 import {
+  getGitIgnores,
   getPackageField,
   isPackageInstalled,
   isServerProject,
@@ -52,7 +53,11 @@ export function createConfig(
   const customFlatConfig = getCustomFlatConfigs()
   const prepend = Array.isArray(options.prepend) ? options.prepend : [options.prepend]
   const append = Array.isArray(options.append) ? options.append : [options.append]
-  const config = [...recommendedFlatConfig, ...customFlatConfig]
+  const config = [
+    ...recommendedFlatConfig,
+    ...customFlatConfig,
+    { ignores: ['node_modules/**/*', 'dist/**/*', '**/vendor?(s)/**/*', ...getGitIgnores()] },
+  ]
   if (prepend) {
     config.unshift(...prepend)
   }

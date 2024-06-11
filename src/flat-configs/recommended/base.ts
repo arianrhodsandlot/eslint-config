@@ -2,12 +2,11 @@ import js from '@eslint/js'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 import { jsOrTsGlob } from '../../lib/constants.js'
-import { getGitIgnores } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const baseConfigs: FlatConfigs = [
   {
-    ignores: ['node_modules/**/*', 'dist/**/*', '**/vendor?(s)/**/*', ...getGitIgnores()],
+    files: [jsOrTsGlob],
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -19,10 +18,6 @@ export const baseConfigs: FlatConfigs = [
       parser: tseslint.parser,
     },
     linterOptions: { reportUnusedDisableDirectives: true },
-    name: 'base',
-  },
-  {
-    files: [jsOrTsGlob],
     name: 'base',
   },
   {
