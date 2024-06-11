@@ -4,6 +4,7 @@ import type { FlatConfigRules } from '../../../types/eslint.js'
 const isESMCodeBase = isServerProject() && getPackageField('type') === 'module'
 
 export const importRules: FlatConfigRules = {
+  'import/default': 'off',
   'import/extensions': [
     'error',
     {
