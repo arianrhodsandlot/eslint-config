@@ -118,12 +118,12 @@
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: ')' expected.",
     "line": 264,
-    "column": 12,
-    "nodeType": null
+    "column": 12
   },
   {
     "ruleId": "perfectionist/sort-union-types",
@@ -145,12 +145,12 @@
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: Expression expected.",
     "line": 341,
-    "column": 6,
-    "nodeType": null
+    "column": 6
   },
   {
     "ruleId": "@typescript-eslint/ban-types",
@@ -288,12 +288,12 @@
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: '(' expected.",
     "line": 427,
-    "column": 23,
-    "nodeType": null
+    "column": 23
   },
   {
     "ruleId": "curly",
@@ -362,12 +362,12 @@
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: Expression expected.",
     "line": 531,
-    "column": 41,
-    "nodeType": null
+    "column": 41
   },
   {
     "ruleId": "@typescript-eslint/consistent-type-definitions",
@@ -727,12 +727,12 @@
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: Expression expected.",
     "line": 868,
-    "column": 43,
-    "nodeType": null
+    "column": 43
   },
   {
     "ruleId": "@typescript-eslint/consistent-type-definitions",
@@ -1686,21 +1686,21 @@
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: '>' expected.",
     "line": 1691,
-    "column": 8,
-    "nodeType": null
+    "column": 8
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: '>' expected.",
     "line": 1726,
-    "column": 8,
-    "nodeType": null
+    "column": 8
   },
   {
     "ruleId": "unicorn/prefer-query-selector",
@@ -2260,12 +2260,12 @@
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: '{' expected.",
     "line": 2140,
-    "column": 0,
-    "nodeType": null
+    "column": 0
   },
   {
     "ruleId": "perfectionist/sort-object-types",
@@ -2501,12 +2501,12 @@
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: Property or signature expected.",
     "line": 2371,
-    "column": 32,
-    "nodeType": null
+    "column": 32
   },
   {
     "ruleId": "func-style",
@@ -2647,21 +2647,21 @@
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: '}' expected.",
     "line": 2465,
-    "column": 0,
-    "nodeType": null
+    "column": 0
   },
   {
     "ruleId": null,
+    "nodeType": null,
     "fatal": true,
     "severity": 2,
     "message": "Parsing error: JSX element 'div' has no corresponding closing tag.",
     "line": 2487,
-    "column": 3,
-    "nodeType": null
+    "column": 3
   },
   {
     "ruleId": "@typescript-eslint/method-signature-style",
