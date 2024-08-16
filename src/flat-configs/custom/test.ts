@@ -12,8 +12,8 @@ export function getTestConfigs() {
   ]
 
   const rules: FlatConfigRules = {
-    'no-empty-pattern': 'off',
     'max-lines-per-function': 'off',
+    'no-empty-pattern': 'off',
   }
   if (options.typescript) {
     Object.assign(rules, {

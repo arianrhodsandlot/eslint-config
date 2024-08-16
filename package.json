@@ -28,7 +28,7 @@
     "dev": "conc npm:dev:*",
     "dev:build": "pnpm build:esm -w",
     "dev:inspect": "eslint-config-inspector",
-    "lint": "eslint src",
+    "lint": "eslint --flag unstable_ts_config src",
     "test": "node --experimental-strip-types --test tests/*.test.ts"
   },
   "dependencies": {

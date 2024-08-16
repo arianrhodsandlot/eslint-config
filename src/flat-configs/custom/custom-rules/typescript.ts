@@ -1,9 +1,6 @@
 import type { Linter } from 'eslint'
 
 export const typescriptRules: Linter.RulesRecord = {
-  "@typescript-eslint/no-empty-object-type": "error",
-  "@typescript-eslint/no-unsafe-function-type": "error",
-  "@typescript-eslint/no-wrapper-object-types": "error",
   '@typescript-eslint/class-methods-use-this': [
     'error',
     { ignoreClassesThatImplementAnInterface: true, ignoreOverrideMethods: true },
@@ -35,12 +32,14 @@ export const typescriptRules: Linter.RulesRecord = {
     'error',
     { allow: ['private-constructors', 'protected-constructors', 'decoratedFunctions', 'overrideMethods'] },
   ],
+  '@typescript-eslint/no-empty-object-type': 'error',
   '@typescript-eslint/no-explicit-any': 'off',
   '@typescript-eslint/no-extraneous-class': ['error', { allowWithDecorator: true }],
   '@typescript-eslint/no-import-type-side-effects': 'error',
   '@typescript-eslint/no-invalid-void-type': 'error',
   '@typescript-eslint/no-non-null-assertion': 'error',
   '@typescript-eslint/no-redeclare': ['error', { builtinGlobals: false }],
+  '@typescript-eslint/no-unsafe-function-type': 'error',
   '@typescript-eslint/no-unused-expressions': [
     'error',
     { allowShortCircuit: true, allowTaggedTemplates: true, allowTernary: true },
@@ -51,6 +50,7 @@ export const typescriptRules: Linter.RulesRecord = {
   ],
   '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
   '@typescript-eslint/no-useless-constructor': 'error',
+  '@typescript-eslint/no-wrapper-object-types': 'error',
   '@typescript-eslint/unified-signatures': 'error',
   'no-useless-constructor': 'off',
 }
