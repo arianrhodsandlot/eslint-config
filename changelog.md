@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.15.9] - 2024-08-16
+### Changed
+- Upgrade dependencies
+
 ## [0.15.8] - 2024-07-15
 ### Changed
-- update Vue rules
+- Update Vue rules
 
 ## [0.15.7] - 2024-07-15
 ### Changed
