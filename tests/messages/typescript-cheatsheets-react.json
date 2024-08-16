@@ -128,7 +128,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"null\" to come before \"User\"",
+    "message": "Expected \"null\" to come before \"User\".",
     "line": 314,
     "column": 41,
     "nodeType": "TSNullKeyword",
@@ -153,13 +153,13 @@
     "column": 6
   },
   {
-    "ruleId": "@typescript-eslint/ban-types",
+    "ruleId": "@typescript-eslint/no-unsafe-function-type",
     "severity": 2,
-    "message": "Don't use `Function` as a type. The `Function` type accepts any function-like value.\nIt provides no type safety when calling the function, which can be a common source of bugs.\nIt also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.\nIf you are expecting the function to accept certain arguments, you should explicitly define the function shape.",
+    "message": "The `Function` type accepts any function-like value.\nPrefer explicitly defining any function parameters and return type.",
     "line": 362,
     "column": 32,
     "nodeType": "Identifier",
-    "messageId": "bannedTypeMessage",
+    "messageId": "bannedFunctionType",
     "endLine": 362,
     "endColumn": 40
   },
@@ -188,7 +188,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"payload\" to come before \"type\"",
+    "message": "Expected \"payload\" to come before \"type\".",
     "line": 384,
     "column": 26,
     "nodeType": "TSPropertySignature",
@@ -206,7 +206,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"{ type: \"decrement\"; payload: string }\" to come before \"{ type: \"increment\"; payload: number }\"",
+    "message": "Expected \"{ type: \"decrement\"; payload: string }\" to come before \"{ type: \"increment\"; payload: number }\".",
     "line": 385,
     "column": 5,
     "nodeType": "TSTypeLiteral",
@@ -224,7 +224,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"payload\" to come before \"type\"",
+    "message": "Expected \"payload\" to come before \"type\".",
     "line": 385,
     "column": 26,
     "nodeType": "TSPropertySignature",
@@ -253,7 +253,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"payload\" to come before \"type\"",
+    "message": "Expected \"payload\" to come before \"type\".",
     "line": 403,
     "column": 60,
     "nodeType": "Property",
@@ -271,7 +271,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"payload\" to come before \"type\"",
+    "message": "Expected \"payload\" to come before \"type\".",
     "line": 406,
     "column": 60,
     "nodeType": "Property",
@@ -406,37 +406,35 @@
     }
   },
   {
-    "ruleId": "@typescript-eslint/ban-types",
+    "ruleId": "@typescript-eslint/no-empty-object-type",
     "severity": 2,
-    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.\n- If you want a type meaning \"empty object\", you probably want `Record<string, never>` instead.\n- If you really want a type meaning \"any non-nullish value\", you probably want `NonNullable<unknown>` instead.",
+    "message": "The `{}` (\"empty object\") type allows any non-nullish value, including literals like `0` and `\"\"`.\n- If that's what you want, disable this lint rule with an inline comment or configure the 'allowObjectTypes' rule option.\n- If you want a type meaning \"any object\", you probably want `object` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
     "line": 557,
     "column": 23,
     "nodeType": "TSTypeLiteral",
-    "messageId": "bannedTypeMessage",
+    "messageId": "noEmptyObject",
     "endLine": 557,
     "endColumn": 25,
     "suggestions": [
       {
-        "messageId": "bannedTypeReplacement",
         "data": {
-          "name": "{}",
-          "replacement": "Record<string, unknown>"
+          "replacement": "object"
         },
+        "messageId": "replaceEmptyObjectType",
         "fix": {
           "range": [
             163,
             165
           ],
-          "text": "Record<string, unknown>"
+          "text": "object"
         },
-        "desc": "Replace `{}` with `Record<string, unknown>`."
+        "desc": "Replace `{}` with `object`."
       },
       {
-        "messageId": "bannedTypeReplacement",
         "data": {
-          "name": "{}",
           "replacement": "unknown"
         },
+        "messageId": "replaceEmptyObjectType",
         "fix": {
           "range": [
             163,
@@ -445,36 +443,6 @@
           "text": "unknown"
         },
         "desc": "Replace `{}` with `unknown`."
-      },
-      {
-        "messageId": "bannedTypeReplacement",
-        "data": {
-          "name": "{}",
-          "replacement": "Record<string, never>"
-        },
-        "fix": {
-          "range": [
-            163,
-            165
-          ],
-          "text": "Record<string, never>"
-        },
-        "desc": "Replace `{}` with `Record<string, never>`."
-      },
-      {
-        "messageId": "bannedTypeReplacement",
-        "data": {
-          "name": "{}",
-          "replacement": "NonNullable<unknown>"
-        },
-        "fix": {
-          "range": [
-            163,
-            165
-          ],
-          "text": "NonNullable<unknown>"
-        },
-        "desc": "Replace `{}` with `NonNullable<unknown>`."
       }
     ]
   },
@@ -524,6 +492,7 @@
     "line": 605,
     "column": 21,
     "nodeType": "Identifier",
+    "messageId": "preferAwaitToCallback",
     "endLine": 605,
     "endColumn": 28
   },
@@ -545,6 +514,7 @@
     "line": 627,
     "column": 21,
     "nodeType": "Identifier",
+    "messageId": "preferAwaitToCallback",
     "endLine": 627,
     "endColumn": 28
   },
@@ -645,11 +615,11 @@
   {
     "ruleId": "perfectionist/sort-classes",
     "severity": 2,
-    "message": "Expected \"increment\" to come before \"render\"",
+    "message": "Expected \"increment\" (property) to come before \"render\" (method).",
     "line": 751,
     "column": 3,
     "nodeType": "PropertyDefinition",
-    "messageId": "unexpectedClassesOrder",
+    "messageId": "unexpectedClassesGroupOrder",
     "endLine": 756,
     "endColumn": 5,
     "fix": {
@@ -663,7 +633,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"null\" to come before \"Partial<State>\"",
+    "message": "Expected \"null\" to come before \"Partial<State>\".",
     "line": 799,
     "column": 23,
     "nodeType": "TSNullKeyword",
@@ -692,7 +662,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"derivedState\" to come before \"savedPropA\"",
+    "message": "Expected \"derivedState\" to come before \"savedPropA\".",
     "line": 830,
     "column": 5,
     "nodeType": "Property",
@@ -784,7 +754,7 @@
   {
     "ruleId": "perfectionist/sort-intersection-types",
     "severity": 2,
-    "message": "Expected \"{ age: number;\n}\" to come before \"typeof Greet.defaultProps\"",
+    "message": "Expected \"{ age: number;\n}\" to come before \"typeof Greet.defaultProps\".",
     "line": 915,
     "column": 47,
     "nodeType": "TSTypeLiteral",
@@ -849,7 +819,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"age\" to come before \"name\"",
+    "message": "Expected \"age\" to come before \"name\".",
     "line": 973,
     "column": 33,
     "nodeType": "Property",
@@ -878,7 +848,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"React.Component<infer P>\" to come before \"React.ComponentType<infer P>\"",
+    "message": "Expected \"React.Component<infer P>\" to come before \"React.ComponentType<infer P>\".",
     "line": 993,
     "column": 5,
     "nodeType": "TSTypeReference",
@@ -907,7 +877,7 @@
   {
     "ruleId": "perfectionist/sort-intersection-types",
     "severity": 2,
-    "message": "Expected \"{ /* additional props here */\n}\" to come before \"Required<typeof MyComponent.defaultProps>\"",
+    "message": "Expected \"{ /* additional props here */\n}\" to come before \"Required<typeof MyComponent.defaultProps>\".",
     "line": 1028,
     "column": 58,
     "nodeType": "TSTypeLiteral",
@@ -943,7 +913,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"count\" to come before \"message\"",
+    "message": "Expected \"count\" to come before \"message\".",
     "line": 1077,
     "column": 3,
     "nodeType": "TSPropertySignature",
@@ -961,7 +931,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"\"success\"\" to come before \"\"waiting\"\"",
+    "message": "Expected \"\"success\"\" to come before \"\"waiting\"\".",
     "line": 1082,
     "column": 23,
     "nodeType": "TSLiteralType",
@@ -979,7 +949,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"obj\" to come before \"status\"",
+    "message": "Expected \"obj\" to come before \"status\".",
     "line": 1084,
     "column": 3,
     "nodeType": "TSPropertySignature",
@@ -997,7 +967,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"obj2\" to come before \"objArr\"",
+    "message": "Expected \"obj2\" to come before \"objArr\".",
     "line": 1094,
     "column": 3,
     "nodeType": "TSPropertySignature",
@@ -1013,37 +983,35 @@
     }
   },
   {
-    "ruleId": "@typescript-eslint/ban-types",
+    "ruleId": "@typescript-eslint/no-empty-object-type",
     "severity": 2,
-    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.\n- If you want a type meaning \"empty object\", you probably want `Record<string, never>` instead.\n- If you really want a type meaning \"any non-nullish value\", you probably want `NonNullable<unknown>` instead.",
+    "message": "The `{}` (\"empty object\") type allows any non-nullish value, including literals like `0` and `\"\"`.\n- If that's what you want, disable this lint rule with an inline comment or configure the 'allowObjectTypes' rule option.\n- If you want a type meaning \"any object\", you probably want `object` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
     "line": 1096,
     "column": 9,
     "nodeType": "TSTypeLiteral",
-    "messageId": "bannedTypeMessage",
+    "messageId": "noEmptyObject",
     "endLine": 1096,
     "endColumn": 11,
     "suggestions": [
       {
-        "messageId": "bannedTypeReplacement",
         "data": {
-          "name": "{}",
-          "replacement": "Record<string, unknown>"
+          "replacement": "object"
         },
+        "messageId": "replaceEmptyObjectType",
         "fix": {
           "range": [
             707,
             709
           ],
-          "text": "Record<string, unknown>"
+          "text": "object"
         },
-        "desc": "Replace `{}` with `Record<string, unknown>`."
+        "desc": "Replace `{}` with `object`."
       },
       {
-        "messageId": "bannedTypeReplacement",
         "data": {
-          "name": "{}",
           "replacement": "unknown"
         },
+        "messageId": "replaceEmptyObjectType",
         "fix": {
           "range": [
             707,
@@ -1052,43 +1020,13 @@
           "text": "unknown"
         },
         "desc": "Replace `{}` with `unknown`."
-      },
-      {
-        "messageId": "bannedTypeReplacement",
-        "data": {
-          "name": "{}",
-          "replacement": "Record<string, never>"
-        },
-        "fix": {
-          "range": [
-            707,
-            709
-          ],
-          "text": "Record<string, never>"
-        },
-        "desc": "Replace `{}` with `Record<string, never>`."
-      },
-      {
-        "messageId": "bannedTypeReplacement",
-        "data": {
-          "name": "{}",
-          "replacement": "NonNullable<unknown>"
-        },
-        "fix": {
-          "range": [
-            707,
-            709
-          ],
-          "text": "NonNullable<unknown>"
-        },
-        "desc": "Replace `{}` with `NonNullable<unknown>`."
       }
     ]
   },
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"dict1\" to come before \"obj3\"",
+    "message": "Expected \"dict1\" to come before \"obj3\".",
     "line": 1098,
     "column": 3,
     "nodeType": "TSPropertySignature",
@@ -1124,7 +1062,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"onChange\" to come before \"onClick\"",
+    "message": "Expected \"onChange\" to come before \"onClick\".",
     "line": 1105,
     "column": 3,
     "nodeType": "TSPropertySignature",
@@ -1158,31 +1096,61 @@
     }
   },
   {
-    "ruleId": "@typescript-eslint/ban-types",
+    "ruleId": "@typescript-eslint/no-unsafe-function-type",
     "severity": 2,
-    "message": "Don't use `Function` as a type. The `Function` type accepts any function-like value.\nIt provides no type safety when calling the function, which can be a common source of bugs.\nIt also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.\nIf you are expecting the function to accept certain arguments, you should explicitly define the function shape.",
+    "message": "The `Function` type accepts any function-like value.\nPrefer explicitly defining any function parameters and return type.",
     "line": 1111,
     "column": 16,
     "nodeType": "Identifier",
-    "messageId": "bannedTypeMessage",
+    "messageId": "bannedFunctionType",
     "endLine": 1111,
     "endColumn": 24
   },
   {
-    "ruleId": "@typescript-eslint/no-empty-interface",
+    "ruleId": "@typescript-eslint/no-empty-object-type",
     "severity": 2,
-    "message": "An empty interface is equivalent to `{}`.",
+    "message": "An empty interface declaration allows any non-nullish value, including literals like `0` and `\"\"`.\n- If that's what you want, disable this lint rule with an inline comment or configure the 'allowInterfaces' rule option.\n- If you want a type meaning \"any object\", you probably want `object` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
     "line": 1130,
     "column": 11,
     "nodeType": "Identifier",
-    "messageId": "noEmpty",
+    "messageId": "noEmptyInterface",
     "endLine": 1130,
-    "endColumn": 29
+    "endColumn": 29,
+    "suggestions": [
+      {
+        "data": {
+          "replacement": "object"
+        },
+        "fix": {
+          "range": [
+            0,
+            31
+          ],
+          "text": "type AnyNonNullishValue = object"
+        },
+        "messageId": "replaceEmptyInterface",
+        "desc": "Replace empty interface with `object`."
+      },
+      {
+        "data": {
+          "replacement": "unknown"
+        },
+        "fix": {
+          "range": [
+            0,
+            31
+          ],
+          "text": "type AnyNonNullishValue = unknown"
+        },
+        "messageId": "replaceEmptyInterface",
+        "desc": "Replace empty interface with `unknown`."
+      }
+    ]
   },
   {
     "ruleId": "perfectionist/sort-interfaces",
     "severity": 2,
-    "message": "Expected \"onChange\" to come before \"style\"",
+    "message": "Expected \"onChange\" to come before \"style\".",
     "line": 1155,
     "column": 3,
     "nodeType": "TSPropertySignature",
@@ -1218,7 +1186,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"null\" to come before \"Partial<State>\"",
+    "message": "Expected \"null\" to come before \"Partial<State>\".",
     "line": 1269,
     "column": 23,
     "nodeType": "TSNullKeyword",
@@ -1247,7 +1215,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"derivedState\" to come before \"savedPropA\"",
+    "message": "Expected \"derivedState\" to come before \"savedPropA\".",
     "line": 1300,
     "column": 5,
     "nodeType": "Property",
@@ -1301,7 +1269,7 @@
   {
     "ruleId": "perfectionist/sort-classes",
     "severity": 2,
-    "message": "Expected \"onChange\" to come before \"state\"",
+    "message": "Expected \"onChange\" to come before \"state\".",
     "line": 1350,
     "column": 3,
     "nodeType": "PropertyDefinition",
@@ -1319,7 +1287,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"onChange\" to come before \"value\"",
+    "message": "Expected \"onChange\" to come before \"value\".",
     "line": 1356,
     "column": 52,
     "nodeType": "JSXAttribute",
@@ -1377,7 +1345,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"onSubmit\" to come before \"ref\"",
+    "message": "Expected \"onSubmit\" to come before \"ref\".",
     "line": 1389,
     "column": 3,
     "nodeType": "JSXAttribute",
@@ -1395,7 +1363,7 @@
   {
     "ruleId": "perfectionist/sort-intersection-types",
     "severity": 2,
-    "message": "Expected \"{ email: { value: string }; password: { value: string }; }\" to come before \"typeof e.target\"",
+    "message": "Expected \"{ email: { value: string }; password: { value: string }; }\" to come before \"typeof e.target\".",
     "line": 1391,
     "column": 50,
     "nodeType": "TSTypeLiteral",
@@ -1413,7 +1381,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"name\" to come before \"type\"",
+    "message": "Expected \"name\" to come before \"type\".",
     "line": 1403,
     "column": 27,
     "nodeType": "JSXAttribute",
@@ -1431,7 +1399,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"name\" to come before \"type\"",
+    "message": "Expected \"name\" to come before \"type\".",
     "line": 1409,
     "column": 30,
     "nodeType": "JSXAttribute",
@@ -1449,7 +1417,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"\"dark\"\" to come before \"\"light\"\"",
+    "message": "Expected \"\"dark\"\" to come before \"\"light\"\".",
     "line": 1469,
     "column": 35,
     "nodeType": "TSLiteralType",
@@ -1597,7 +1565,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"\"button\"\" to come before \"\"submit\"\"",
+    "message": "Expected \"\"button\"\" to come before \"\"submit\"\".",
     "line": 1636,
     "column": 20,
     "nodeType": "TSLiteralType",
@@ -1615,7 +1583,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"className\" to come before \"ref\"",
+    "message": "Expected \"className\" to come before \"ref\".",
     "line": 1641,
     "column": 21,
     "nodeType": "JSXAttribute",
@@ -1651,7 +1619,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"\"button\"\" to come before \"\"submit\"\"",
+    "message": "Expected \"\"button\"\" to come before \"\"submit\"\".",
     "line": 1657,
     "column": 20,
     "nodeType": "TSLiteralType",
@@ -1669,7 +1637,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"className\" to come before \"ref\"",
+    "message": "Expected \"className\" to come before \"ref\".",
     "line": 1665,
     "column": 23,
     "nodeType": "JSXAttribute",
@@ -1777,7 +1745,7 @@
   {
     "ruleId": "perfectionist/sort-named-imports",
     "severity": 2,
-    "message": "Expected \"ReactNode\" to come before \"useRef\"",
+    "message": "Expected \"ReactNode\" to come before \"useRef\".",
     "line": 1785,
     "column": 29,
     "nodeType": "ImportSpecifier",
@@ -1878,7 +1846,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"height\" to come before \"placeItems\"",
+    "message": "Expected \"height\" to come before \"placeItems\".",
     "line": 1833,
     "column": 15,
     "nodeType": "Property",
@@ -1896,7 +1864,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"background\" to come before \"width\"",
+    "message": "Expected \"background\" to come before \"width\".",
     "line": 1835,
     "column": 15,
     "nodeType": "Property",
@@ -1914,7 +1882,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"onClick\" to come before \"style\"",
+    "message": "Expected \"onClick\" to come before \"style\".",
     "line": 1842,
     "column": 15,
     "nodeType": "JSXAttribute",
@@ -1970,37 +1938,35 @@
     "endColumn": 30
   },
   {
-    "ruleId": "@typescript-eslint/ban-types",
+    "ruleId": "@typescript-eslint/no-empty-object-type",
     "severity": 2,
-    "message": "Don't use `{}` as a type. `{}` actually means \"any non-nullish value\".\n- If you want a type meaning \"any object\", you probably want `Record<string, unknown>` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.\n- If you want a type meaning \"empty object\", you probably want `Record<string, never>` instead.\n- If you really want a type meaning \"any non-nullish value\", you probably want `NonNullable<unknown>` instead.",
+    "message": "The `{}` (\"empty object\") type allows any non-nullish value, including literals like `0` and `\"\"`.\n- If that's what you want, disable this lint rule with an inline comment or configure the 'allowObjectTypes' rule option.\n- If you want a type meaning \"any object\", you probably want `object` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
     "line": 1947,
     "column": 3,
     "nodeType": "TSTypeLiteral",
-    "messageId": "bannedTypeMessage",
+    "messageId": "noEmptyObject",
     "endLine": 1947,
     "endColumn": 5,
     "suggestions": [
       {
-        "messageId": "bannedTypeReplacement",
         "data": {
-          "name": "{}",
-          "replacement": "Record<string, unknown>"
+          "replacement": "object"
         },
+        "messageId": "replaceEmptyObjectType",
         "fix": {
           "range": [
             37,
             39
           ],
-          "text": "Record<string, unknown>"
+          "text": "object"
         },
-        "desc": "Replace `{}` with `Record<string, unknown>`."
+        "desc": "Replace `{}` with `object`."
       },
       {
-        "messageId": "bannedTypeReplacement",
         "data": {
-          "name": "{}",
           "replacement": "unknown"
         },
+        "messageId": "replaceEmptyObjectType",
         "fix": {
           "range": [
             37,
@@ -2009,43 +1975,13 @@
           "text": "unknown"
         },
         "desc": "Replace `{}` with `unknown`."
-      },
-      {
-        "messageId": "bannedTypeReplacement",
-        "data": {
-          "name": "{}",
-          "replacement": "Record<string, never>"
-        },
-        "fix": {
-          "range": [
-            37,
-            39
-          ],
-          "text": "Record<string, never>"
-        },
-        "desc": "Replace `{}` with `Record<string, never>`."
-      },
-      {
-        "messageId": "bannedTypeReplacement",
-        "data": {
-          "name": "{}",
-          "replacement": "NonNullable<unknown>"
-        },
-        "fix": {
-          "range": [
-            37,
-            39
-          ],
-          "text": "NonNullable<unknown>"
-        },
-        "desc": "Replace `{}` with `NonNullable<unknown>`."
       }
     ]
   },
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"null\" to come before \"number\"",
+    "message": "Expected \"null\" to come before \"number\".",
     "line": 1949,
     "column": 21,
     "nodeType": "TSNullKeyword",
@@ -2063,11 +1999,11 @@
   {
     "ruleId": "perfectionist/sort-classes",
     "severity": 2,
-    "message": "Expected \"increment\" to come before \"render\"",
+    "message": "Expected \"increment\" (property) to come before \"render\" (method).",
     "line": 1958,
     "column": 3,
     "nodeType": "PropertyDefinition",
-    "messageId": "unexpectedClassesOrder",
+    "messageId": "unexpectedClassesGroupOrder",
     "endLine": 1962,
     "endColumn": 5,
     "fix": {
@@ -2081,7 +2017,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"\"bottom\"\" to come before \"\"top\"\"",
+    "message": "Expected \"\"bottom\"\" to come before \"\"top\"\".",
     "line": 2026,
     "column": 59,
     "nodeType": "TSLiteralType",
@@ -2110,7 +2046,7 @@
   {
     "ruleId": "perfectionist/sort-enums",
     "severity": 2,
-    "message": "Expected \"large\" to come before \"small\"",
+    "message": "Expected \"large\" to come before \"small\".",
     "line": 2035,
     "column": 3,
     "nodeType": "TSEnumMember",
@@ -2214,7 +2150,7 @@
   {
     "ruleId": "perfectionist/sort-intersection-types",
     "severity": 2,
-    "message": "Expected \"{ readonly brand: unique symbol }\" to come before \"string\"",
+    "message": "Expected \"{ readonly brand: unique symbol }\" to come before \"string\".",
     "line": 2080,
     "column": 25,
     "nodeType": "TSTypeLiteral",
@@ -2232,7 +2168,7 @@
   {
     "ruleId": "perfectionist/sort-intersection-types",
     "severity": 2,
-    "message": "Expected \"{ readonly brand: unique symbol }\" to come before \"string\"",
+    "message": "Expected \"{ readonly brand: unique symbol }\" to come before \"string\".",
     "line": 2081,
     "column": 24,
     "nodeType": "TSTypeLiteral",
@@ -2270,7 +2206,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"card\" to come before \"suit\"",
+    "message": "Expected \"card\" to come before \"suit\".",
     "line": 2164,
     "column": 38,
     "nodeType": "TSPropertySignature",
@@ -2288,7 +2224,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"card\" to come before \"suit\"",
+    "message": "Expected \"card\" to come before \"suit\".",
     "line": 2165,
     "column": 47,
     "nodeType": "TSPropertySignature",
@@ -2335,7 +2271,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"card\" to come before \"suit\"",
+    "message": "Expected \"card\" to come before \"suit\".",
     "line": 2176,
     "column": 23,
     "nodeType": "TSPropertySignature",
@@ -2353,7 +2289,7 @@
   {
     "ruleId": "perfectionist/sort-object-types",
     "severity": 2,
-    "message": "Expected \"card\" to come before \"suit\"",
+    "message": "Expected \"card\" to come before \"suit\".",
     "line": 2177,
     "column": 32,
     "nodeType": "TSPropertySignature",
@@ -2371,7 +2307,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"bar\" to come before \"foo\"",
+    "message": "Expected \"bar\" to come before \"foo\".",
     "line": 2196,
     "column": 3,
     "nodeType": "Property",
@@ -2400,7 +2336,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"bar\" to come before \"foo\"",
+    "message": "Expected \"bar\" to come before \"foo\".",
     "line": 2213,
     "column": 3,
     "nodeType": "Property",
@@ -2522,7 +2458,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"classNameDark\" to come before \"element\"",
+    "message": "Expected \"classNameDark\" to come before \"element\".",
     "line": 2390,
     "column": 5,
     "nodeType": "Property",
@@ -2540,7 +2476,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"global\" to come before \"storageProvider\"",
+    "message": "Expected \"global\" to come before \"storageProvider\".",
     "line": 2395,
     "column": 5,
     "nodeType": "Property",
@@ -2558,7 +2494,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"enable\" to come before \"value\"",
+    "message": "Expected \"enable\" to come before \"value\".",
     "line": 2402,
     "column": 5,
     "nodeType": "Property",
@@ -2576,7 +2512,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"disable\" to come before \"enable\"",
+    "message": "Expected \"disable\" to come before \"enable\".",
     "line": 2403,
     "column": 5,
     "nodeType": "Property",
@@ -2594,7 +2530,7 @@
   {
     "ruleId": "perfectionist/sort-interfaces",
     "severity": 2,
-    "message": "Expected \"global\" to come before \"storageProvider\"",
+    "message": "Expected \"global\" to come before \"storageProvider\".",
     "line": 2424,
     "column": 5,
     "nodeType": "TSPropertySignature",
@@ -2612,7 +2548,7 @@
   {
     "ruleId": "perfectionist/sort-interfaces",
     "severity": 2,
-    "message": "Expected \"enable\" to come before \"value\"",
+    "message": "Expected \"enable\" to come before \"value\".",
     "line": 2431,
     "column": 5,
     "nodeType": "TSPropertySignature",
@@ -2630,7 +2566,7 @@
   {
     "ruleId": "perfectionist/sort-interfaces",
     "severity": 2,
-    "message": "Expected \"disable\" to come before \"enable\"",
+    "message": "Expected \"disable\" to come before \"enable\".",
     "line": 2432,
     "column": 5,
     "nodeType": "TSPropertySignature",
@@ -2751,7 +2687,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"jest\" to come before \"node\"",
+    "message": "Expected \"jest\" to come before \"node\".",
     "line": 2757,
     "column": 5,
     "nodeType": "Property",
@@ -2769,7 +2705,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"parserOptions\" to come before \"plugins\"",
+    "message": "Expected \"parserOptions\" to come before \"plugins\".",
     "line": 2762,
     "column": 3,
     "nodeType": "Property",
@@ -2787,7 +2723,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"no-console\" to come before \"quotes\"",
+    "message": "Expected \"no-console\" to come before \"quotes\".",
     "line": 2770,
     "column": 5,
     "nodeType": "Property",
@@ -2805,7 +2741,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"@typescript-eslint/no-unused-vars\" to come before \"no-unused-vars\"",
+    "message": "Expected \"@typescript-eslint/no-unused-vars\" to come before \"no-unused-vars\".",
     "line": 2772,
     "column": 5,
     "nodeType": "Property",
@@ -2823,7 +2759,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"args\" to come before \"vars\"",
+    "message": "Expected \"args\" to come before \"vars\".",
     "line": 2774,
     "column": 22,
     "nodeType": "Property",
@@ -2841,7 +2777,7 @@
   {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
-    "message": "Expected \"@typescript-eslint/explicit-function-return-type\" to come before \"@typescript-eslint/no-unused-vars\"",
+    "message": "Expected \"@typescript-eslint/explicit-function-return-type\" to come before \"@typescript-eslint/no-unused-vars\".",
     "line": 2776,
     "column": 5,
     "nodeType": "Property",

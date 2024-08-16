@@ -86,17 +86,6 @@ declare module 'eslint-plugin-n' {
   export = plugin
 }
 
-declare module 'eslint-plugin-perfectionist' {
-  import type { ESLint, Linter } from 'eslint'
-
-  interface Plugin extends ESLint.Plugin {
-    configs: Record<string, Linter.FlatConfig | Linter.FlatConfig[]>
-    rules: NonNullable<ESLint.Plugin['rules']>
-  }
-  declare const plugin: Plugin
-  export = plugin
-}
-
 declare module 'eslint-plugin-promise' {
   import type { ESLint, Linter } from 'eslint'
 

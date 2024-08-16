@@ -13,7 +13,6 @@ export const eslintRules: FlatConfigRules = {
   eqeqeq: ['error', 'always', { null: 'ignore' }],
   'func-style': ['error', 'declaration'],
   'max-depth': ['error', 4],
-  'max-lines': ['error', { max: 500, skipBlankLines: true, skipComments: true }],
   'max-lines-per-function': ['error', { max: 80, skipBlankLines: true, skipComments: true }],
   'max-params': 'error',
   'new-cap': ['error', { capIsNew: false, newIsCap: true, properties: true }],

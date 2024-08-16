@@ -163,7 +163,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"className\" to come before \"key\"",
+    "message": "Expected \"className\" to come before \"key\".",
     "line": 19,
     "column": 26,
     "nodeType": "JSXAttribute",
@@ -235,7 +235,7 @@
   {
     "ruleId": "perfectionist/sort-union-types",
     "severity": 2,
-    "message": "Expected \"null\" to come before \"string\"",
+    "message": "Expected \"null\" to come before \"string\".",
     "line": 34,
     "column": 22,
     "nodeType": "TSNullKeyword",
@@ -289,7 +289,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"href\" to come before \"key\"",
+    "message": "Expected \"href\" to come before \"key\".",
     "line": 47,
     "column": 13,
     "nodeType": "JSXAttribute",
@@ -307,7 +307,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"className\" to come before \"href\"",
+    "message": "Expected \"className\" to come before \"href\".",
     "line": 48,
     "column": 13,
     "nodeType": "JSXAttribute",
@@ -397,7 +397,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"rel\" to come before \"target\"",
+    "message": "Expected \"rel\" to come before \"target\".",
     "line": 56,
     "column": 13,
     "nodeType": "JSXAttribute",
@@ -451,7 +451,7 @@
   {
     "ruleId": "perfectionist/sort-jsx-props",
     "severity": 2,
-    "message": "Expected \"className\" to come before \"key\"",
+    "message": "Expected \"className\" to come before \"key\".",
     "line": 68,
     "column": 13,
     "nodeType": "JSXAttribute",

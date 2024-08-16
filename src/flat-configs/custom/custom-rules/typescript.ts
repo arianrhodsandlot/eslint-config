@@ -1,33 +1,9 @@
 import type { Linter } from 'eslint'
 
 export const typescriptRules: Linter.RulesRecord = {
-  '@typescript-eslint/ban-types': [
-    'error',
-    {
-      extendDefaults: true,
-      types: {
-        '{}': {
-          message: [
-            '`{}` actually means "any non-nullish value".',
-            '- If you want a type meaning "any object", you probably want `Record<string, unknown>` instead.',
-            '- If you want a type meaning "any value", you probably want `unknown` instead.',
-            '- If you want a type meaning "empty object", you probably want `Record<string, never>` instead.',
-            '- If you really want a type meaning "any non-nullish value", you probably want `NonNullable<unknown>` instead.',
-          ].join('\n'),
-          suggest: ['Record<string, unknown>', 'unknown', 'Record<string, never>', 'NonNullable<unknown>'],
-        },
-        Object: {
-          message: [
-            'The `Object` type actually means "any non-nullish value", so it is marginally better than `unknown`.',
-            '- If you want a type meaning "any object", you probably want `Record<string, unknown>` instead.',
-            '- If you want a type meaning "any value", you probably want `unknown` instead.',
-            '- If you really want a type meaning "any non-nullish value", you probably want `NonNullable<unknown>` instead.',
-          ].join('\n'),
-          suggest: ['Record<string, unknown>', 'unknown', 'NonNullable<unknown>'],
-        },
-      },
-    },
-  ],
+  "@typescript-eslint/no-empty-object-type": "error",
+  "@typescript-eslint/no-unsafe-function-type": "error",
+  "@typescript-eslint/no-wrapper-object-types": "error",
   '@typescript-eslint/class-methods-use-this': [
     'error',
     { ignoreClassesThatImplementAnInterface: true, ignoreOverrideMethods: true },

@@ -1,4 +1,5 @@
-import perfectionistAlphabetical from 'eslint-plugin-perfectionist/configs/recommended-alphabetical'
+import perfectionist from 'eslint-plugin-perfectionist'
 import type { FlatConfigs } from '../../types/eslint.js'
 
-export const perfectionistConfigs: FlatConfigs = [{ name: 'perfectionist/recommended', ...perfectionistAlphabetical }]
+// @ts-expect-error
+export const perfectionistConfigs: FlatConfigs = [{ name: 'perfectionist/recommended', ...perfectionist.configs['recommended-alphabetical'] }]
