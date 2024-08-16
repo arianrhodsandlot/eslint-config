@@ -9,6 +9,7 @@
   "license": "MIT",
   "author": "arianrhodsandlot",
   "type": "module",
+  "packageManager": "pnpm@9.7.1",
   "exports": {
     "import": "./dist/esm/index.js",
     "require": "./dist/umd/index.cjs",
