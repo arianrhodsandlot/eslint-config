@@ -24,12 +24,12 @@
     "build": "conc npm:build:*",
     "build:esm": "swc src -d dist/esm --strip-leading-paths",
     "build:types": "tsc",
-    "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd --out-file-extension=cjs && tsx scripts/fix-cjs-require",
+    "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd --out-file-extension=cjs && node --experimental-strip-types scripts/fix-cjs-require.ts",
     "dev": "conc npm:dev:*",
     "dev:build": "pnpm build:esm -w",
     "dev:inspect": "eslint-config-inspector",
     "lint": "eslint src",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.0",
@@ -84,7 +84,6 @@
     "eslint": "9.9.0",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.6",
-    "tsx": "4.17.0",
     "vue": "3.4.38",
     "vue-i18n": "^9.13.1"
   },

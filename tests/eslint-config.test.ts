@@ -3,18 +3,17 @@ import { writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, test } from 'node:test'
 import { fileURLToPath } from 'node:url'
-// @ts-expect-error unknown loadESLint api from the community types
-import { type ESLint, loadESLint } from 'eslint'
-import debounceMessages from './messages/debounce.json'
-import explicitReturnTypeUtilsMessages from './messages/explicit-return-type-utils.json'
-import sidebarNavMessages from './messages/sidebar-nav.json'
-import typescriptCheatsheetsReactMessages from './messages/typescript-cheatsheets-react.json'
+import {  loadESLint } from 'eslint'
+import debounceMessages from './messages/debounce.json' with { type: 'json' };
+import explicitReturnTypeUtilsMessages from './messages/explicit-return-type-utils.json' with { type: 'json' };
+import sidebarNavMessages from './messages/sidebar-nav.json' with { type: 'json' };
+import typescriptCheatsheetsReactMessages from './messages/typescript-cheatsheets-react.json' with { type: 'json' };
 
 const testsDir = path.dirname(fileURLToPath(import.meta.url))
 const inputsDir = path.join(testsDir, 'inputs')
 
 describe('ESLint config', async () => {
-  const TestESLint: typeof ESLint = await loadESLint({ cwd: inputsDir })
+  const TestESLint = await loadESLint()
   const eslint = new TestESLint({ ignore: false, overrideConfigFile: path.join(inputsDir, 'eslint.config.test.js') })
 
   test('js file', async () => {
