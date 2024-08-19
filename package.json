@@ -1,6 +1,6 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
-  "version": "0.15.10",
+  "version": "0.15.11",
   "description": "A set of predefined ESLint config.",
   "keywords": [
     "eslint",
@@ -74,19 +74,19 @@
   "devDependencies": {
     "@eslint/config-inspector": "0.5.3",
     "@swc/cli": "0.4.0",
-    "@swc/core": "1.7.11",
+    "@swc/core": "1.7.12",
     "@types/eslint": "9.6.0",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint-plugin-markdown": "2.0.2",
     "@types/eslint__js": "8.42.3",
     "@types/lodash": "4.17.7",
-    "@types/node": "22.3.0",
+    "@types/node": "22.4.1",
     "concurrently": "8.2.2",
     "eslint": "9.9.0",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.6",
     "vue": "3.4.38",
-    "vue-i18n": "^9.13.1"
+    "vue-i18n": "9.14.0"
   },
   "peerDependencies": {
     "eslint": "*"

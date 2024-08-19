@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.15.11] - 2024-08-19
+### Fixed
+- Turn off no-new-func
+
 ## [0.15.10] - 2024-08-16
 ### Fixed
 - Fix wrong types

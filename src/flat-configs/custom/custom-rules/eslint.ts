@@ -40,7 +40,7 @@ export const eslintRules: FlatConfigRules = {
   'no-multi-str': 'error',
   'no-negated-condition': 'error',
   'no-new': 'error',
-  'no-new-func': 'error',
+  'no-new-func': 'off',
   'no-new-wrappers': 'error',
   'no-object-constructor': 'error',
   'no-octal-escape': 'error',
