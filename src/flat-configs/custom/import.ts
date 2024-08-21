@@ -5,22 +5,11 @@ export function getImportConfigs() {
     {
       name: 'import',
       settings: {
-        'import/extensions': [
+        'import-x/extensions': [
           '.js',
-          '.mjs',
-          '.cjs',
-          '.jsx',
-          '.mjsx',
-          '.cjsx',
           '.ts',
-          '.mts',
-          '.cts',
-          '.tsx',
-          '.mtsx',
-          '.ctsx',
-          '.json',
         ],
-        'import/internal-regex': '^(@|~)/',
+        'import-x/internal-regex': '^(@|~)/',
       },
     },
   ]

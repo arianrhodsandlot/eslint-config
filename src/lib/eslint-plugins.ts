@@ -4,7 +4,7 @@ import * as eslintPluginNextModule from '@next/eslint-plugin-next'
 import * as eslintPluginCompatModule from 'eslint-plugin-compat'
 import * as eslintPluginDiffModule from 'eslint-plugin-diff'
 import * as eslintPluginEsXModule from 'eslint-plugin-es-x'
-import * as eslintPluginImportModule from 'eslint-plugin-import'
+import * as eslintPluginImportXModule from 'eslint-plugin-import-x'
 import * as eslintPluginJsdocModule from 'eslint-plugin-jsdoc'
 import * as eslintPluginJsxA11yModule from 'eslint-plugin-jsx-a11y'
 import * as eslintPluginMarkdownModule from 'eslint-plugin-markdown'
@@ -37,7 +37,7 @@ export const eslintPluginCompat = interopESLintPlugin(eslintPluginCompatModule)
 export const eslintPluginDiff = interopESLintPlugin(eslintPluginDiffModule)
 export const eslintPluginEslintComments = interopESLintPlugin(eslintPluginEslintCommentsModule)
 export const eslintPluginEsX = interopESLintPlugin(eslintPluginEsXModule)
-export const eslintPluginImport = interopESLintPlugin(eslintPluginImportModule)
+export const eslintPluginImportX = interopESLintPlugin(eslintPluginImportXModule)
 export const eslintPluginJsdoc = interopESLintPlugin(eslintPluginJsdocModule)
 export const eslintPluginJsxA11y = interopESLintPlugin(eslintPluginJsxA11yModule)
 export const eslintPluginMarkdown = interopESLintPlugin(eslintPluginMarkdownModule)
