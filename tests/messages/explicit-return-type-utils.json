@@ -1,11 +1,12 @@
 [
   {
-    "ruleId": "import/no-duplicates",
+    "ruleId": "import-x/no-duplicates",
     "severity": 2,
     "message": "'@typescript-eslint/utils' imported multiple times.",
     "line": 1,
     "column": 41,
     "nodeType": "Literal",
+    "messageId": "duplicate",
     "endLine": 1,
     "endColumn": 67,
     "fix": {
@@ -28,12 +29,13 @@
     "endColumn": 67
   },
   {
-    "ruleId": "import/order",
+    "ruleId": "import-x/order",
     "severity": 2,
     "message": "There should be no empty line between import groups",
     "line": 2,
     "column": 1,
     "nodeType": "ImportDeclaration",
+    "messageId": "noLineBetweenGroups",
     "endLine": 2,
     "endColumn": 71,
     "fix": {
@@ -45,12 +47,13 @@
     }
   },
   {
-    "ruleId": "import/no-duplicates",
+    "ruleId": "import-x/no-duplicates",
     "severity": 2,
     "message": "'@typescript-eslint/utils' imported multiple times.",
     "line": 2,
     "column": 45,
     "nodeType": "Literal",
+    "messageId": "duplicate",
     "endLine": 2,
     "endColumn": 71
   },

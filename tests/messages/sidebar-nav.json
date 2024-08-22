@@ -54,12 +54,13 @@
     }
   },
   {
-    "ruleId": "import/order",
+    "ruleId": "import-x/order",
     "severity": 2,
     "message": "There should be no empty line between import groups",
     "line": 5,
     "column": 1,
     "nodeType": "ImportDeclaration",
+    "messageId": "noLineBetweenGroups",
     "endLine": 5,
     "endColumn": 43,
     "fix": {
@@ -159,6 +160,17 @@
       ],
       "text": "'w-full'"
     }
+  },
+  {
+    "ruleId": "@eslint-react/no-array-index-key",
+    "severity": 1,
+    "message": "Do not use Array index as 'key'.",
+    "line": 19,
+    "column": 19,
+    "nodeType": "Identifier",
+    "messageId": "noArrayIndexKey",
+    "endLine": 19,
+    "endColumn": 24
   },
   {
     "ruleId": "perfectionist/sort-jsx-props",
@@ -285,6 +297,17 @@
       ],
       "text": "'grid grid-flow-row auto-rows-max text-sm'"
     }
+  },
+  {
+    "ruleId": "@eslint-react/no-array-index-key",
+    "severity": 1,
+    "message": "Do not use Array index as 'key'.",
+    "line": 46,
+    "column": 18,
+    "nodeType": "Identifier",
+    "messageId": "noArrayIndexKey",
+    "endLine": 46,
+    "endColumn": 23
   },
   {
     "ruleId": "perfectionist/sort-jsx-props",
@@ -447,6 +470,17 @@
       ],
       "text": "'ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline'"
     }
+  },
+  {
+    "ruleId": "@eslint-react/no-array-index-key",
+    "severity": 1,
+    "message": "Do not use Array index as 'key'.",
+    "line": 67,
+    "column": 18,
+    "nodeType": "Identifier",
+    "messageId": "noArrayIndexKey",
+    "endLine": 67,
+    "endColumn": 23
   },
   {
     "ruleId": "perfectionist/sort-jsx-props",

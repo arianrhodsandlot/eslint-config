@@ -15,11 +15,7 @@ function getAllowExportNames() {
     )
   }
   if (isPackageInstalled('remix')) {
-    allowExportNames.push('meta'
-      '@eslint-react/links': 'error'
-      '@eslint-react/headers': 'error'
-      '@eslint-react/loader': 'error'
-      '@eslint-react/action'): 'error'
+    allowExportNames.push('meta', 'links', 'headers', 'loader', 'action')
   }
   return allowExportNames
 }
