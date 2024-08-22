@@ -15,7 +15,11 @@ function getAllowExportNames() {
     )
   }
   if (isPackageInstalled('remix')) {
-    allowExportNames.push('meta', 'links', 'headers', 'loader', 'action')
+    allowExportNames.push('meta'
+      '@eslint-react/links': 'error'
+      '@eslint-react/headers': 'error'
+      '@eslint-react/loader': 'error'
+      '@eslint-react/action'): 'error'
   }
   return allowExportNames
 }
@@ -31,19 +35,16 @@ export function getReactConfigs() {
         files: [jsxOrTsxGlob],
         name: 'react',
         rules: {
-          'max-lines-per-function': ['error', { max: 500, skipBlankLines: true, skipComments: true }],
           'react-refresh/only-export-components': [
             'error',
             { allowConstantExport: true, allowExportNames: getAllowExportNames() },
           ],
-          'unicorn/no-nested-ternary': 'off',
         },
       },
       {
         files: [`**/use*${jsOrTsExtensionGlob}`],
         name: 'react',
         rules: {
-          'max-lines-per-function': ['error', { max: 500, skipBlankLines: true, skipComments: true }],
         },
       },
     )

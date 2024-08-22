@@ -1,6 +1,4 @@
-import reactJsxRuntime from 'eslint-plugin-react/configs/jsx-runtime.js'
-import reactRecommended from 'eslint-plugin-react/configs/recommended.js'
-import { eslintPluginJsxA11y, eslintPluginReactHooks, eslintPluginReactRefresh } from '../../lib/eslint-plugins.js'
+import { eslintPluginReact, eslintPluginJsxA11y, eslintPluginReactHooks, eslintPluginReactRefresh } from '../../lib/eslint-plugins.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const reactConfigs: FlatConfigs = [
@@ -9,8 +7,10 @@ export const reactConfigs: FlatConfigs = [
     plugins: { 'jsx-a11y': eslintPluginJsxA11y },
     rules: eslintPluginJsxA11y.configs.recommended.rules,
   },
-  { name: 'react/recommended', ...reactRecommended, settings: { react: { version: 'detect' } } },
-  { name: 'react-jsx-runtime/recommended', ...reactJsxRuntime },
+  {
+    name: 'react/recommended',
+    ...eslintPluginReact.configs.recommended,
+  },
   {
     name: 'react-hooks/recommended',
     plugins: { 'react-hooks': eslintPluginReactHooks },
