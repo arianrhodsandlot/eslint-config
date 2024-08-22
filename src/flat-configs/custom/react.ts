@@ -40,8 +40,7 @@ export function getReactConfigs() {
       {
         files: [`**/use*${jsOrTsExtensionGlob}`],
         name: 'react',
-        rules: {
-        },
+        rules: {},
       },
     )
   }

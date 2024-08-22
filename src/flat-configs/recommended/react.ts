@@ -1,4 +1,9 @@
-import { eslintPluginReact, eslintPluginJsxA11y, eslintPluginReactHooks, eslintPluginReactRefresh } from '../../lib/eslint-plugins.js'
+import {
+  eslintPluginJsxA11y,
+  eslintPluginReact,
+  eslintPluginReactHooks,
+  eslintPluginReactRefresh,
+} from '../../lib/eslint-plugins.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const reactConfigs: FlatConfigs = [

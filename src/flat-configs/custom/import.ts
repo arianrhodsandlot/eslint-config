@@ -5,10 +5,7 @@ export function getImportConfigs() {
     {
       name: 'import',
       settings: {
-        'import-x/extensions': [
-          '.js',
-          '.ts',
-        ],
+        'import-x/extensions': ['.js', '.ts'],
         'import-x/internal-regex': '^(@|~)/',
       },
     },
