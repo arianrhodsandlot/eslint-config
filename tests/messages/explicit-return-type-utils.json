@@ -11,10 +11,10 @@
     "endColumn": 67,
     "fix": {
       "range": [
-        33,
+        7,
         138
       ],
-      "text": ", AST_NODE_TYPES, ESLintUtils } from '@typescript-eslint/utils'\n"
+      "text": "{ type TSESLint, type TSESTree, AST_NODE_TYPES, ESLintUtils  } from '@typescript-eslint/utils'\n"
     }
   },
   {
@@ -208,6 +208,35 @@
     "messageId": "refactorFunction",
     "endLine": 242,
     "endColumn": 31
+  },
+  {
+    "ruleId": "perfectionist/sort-switch-case",
+    "severity": 2,
+    "message": "Expected \"AST_NODE_TYPES.FunctionDeclaration\" to come before \"AST_NODE_TYPES.FunctionExpression\".",
+    "line": 261,
+    "column": 12,
+    "nodeType": "MemberExpression",
+    "messageId": "unexpectedSwitchCaseOrder",
+    "endLine": 261,
+    "endColumn": 46,
+    "fix": {
+      "range": [
+        7872,
+        7952
+      ],
+      "text": "AST_NODE_TYPES.FunctionDeclaration:\n      case AST_NODE_TYPES.FunctionExpression"
+    }
+  },
+  {
+    "ruleId": "perfectionist/sort-switch-case",
+    "severity": 2,
+    "message": "Expected \"AST_NODE_TYPES.PropertyDefinition\" to come before \"AST_NODE_TYPES.VariableDeclarator\".",
+    "line": 274,
+    "column": 7,
+    "nodeType": "SwitchCase",
+    "messageId": "unexpectedSwitchCaseOrder",
+    "endLine": 278,
+    "endColumn": 14
   },
   {
     "ruleId": "perfectionist/sort-named-exports",

@@ -26,6 +26,11 @@ export function getMarkdownConfigs() {
       'n/no-missing-import': 'off',
     })
   }
+  if (options.react) {
+    Object.assign(rules, {
+      '@eslint-react/naming-convention/filename': 'off',
+    })
+  }
 
   const markdownConfigs: FlatConfigs = [{ files: [`**/*.md/*${jsOrTsExtensionGlob}`], name: 'markdown', rules }]
   return markdownConfigs
