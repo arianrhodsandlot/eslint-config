@@ -4,6 +4,7 @@ import {
   eslintPluginReactHooks,
   eslintPluginReactRefresh,
 } from '../../lib/eslint-plugins.js'
+import { isPackageInstalled } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const reactConfigs: FlatConfigs = [
@@ -23,9 +24,6 @@ export const reactConfigs: FlatConfigs = [
   },
   {
     name: 'react-refresh/recommended',
-    plugins: { 'react-refresh': eslintPluginReactRefresh },
-    rules: {
-      'react-refresh/only-export-components': 'error',
-    },
+    ...eslintPluginReactRefresh.configs[isPackageInstalled('vite') ? 'vite': 'recommended'],
   },
 ]
