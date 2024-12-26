@@ -8,7 +8,15 @@ export function getEsXConfigs() {
     return []
   }
 
-  const esXOption = Array.isArray(options.esX) ? options.esX : [options.esX === true ? 'no-new-in-esnext' : options.esX]
+  let esXOption: string[]
+  if (Array.isArray(options.esX)) {
+    esXOption = options.esX
+  } else if (options.esX) {
+    esXOption = ['no-new-in-esnext']
+  } else {
+    esXOption = [options.esX]
+  }
+
   const name = 'es-x/recommended'
   const esXConfigs: FlatConfigs = [
     { name, plugins: { 'es-x': eslintPluginEsX } },

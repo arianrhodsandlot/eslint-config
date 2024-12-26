@@ -13,10 +13,10 @@ const essentialTsRules = tseslint.configs.recommended.flatMap(({ rules = {} }) =
 const vueConfigName = `flat/${isLegacyVue ? 'vue2-' : ''}recommended`
 const essentialVueRules = eslintPluginVue.configs[vueConfigName].flatMap(({ rules = {} }) => Object.keys(rules))
 const essentialRules = new Set([
+  'prettier/prettier',
   ...essentialBuiltinRules,
   ...essentialTsRules,
   ...essentialVueRules,
-  'prettier/prettier',
 ])
 essentialRules.delete('vue/attributes-order')
 essentialRules.delete('vue/html-self-closing')

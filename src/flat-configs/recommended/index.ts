@@ -2,11 +2,13 @@ import { getContext } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 import { baseConfigs } from './base.js'
 import { compatConfigs } from './compat.js'
+import { cssConfigs } from './css.js'
 import { diffConfigs } from './diff.js'
 import { getEsXConfigs } from './es-x.js'
 import { eslintCommentsConfigs } from './eslint-comments.js'
 import { importConfigs } from './import.js'
 import { jsdocConfigs } from './jsdoc.js'
+import { jsonConfigs } from './json.js'
 import { markdownConfigs } from './markdown.js'
 import { nConfigs } from './n.js'
 import { nextConfigs } from './next.js'
@@ -27,10 +29,12 @@ import { vueConfigs } from './vue.js'
 export function getRecommendedFlatConfigs() {
   const optionalConfigsMap = {
     compat: compatConfigs,
+    css: cssConfigs,
     eslintComments: eslintCommentsConfigs,
     esX: getEsXConfigs(),
     import: importConfigs,
     jsdoc: jsdocConfigs,
+    json: jsonConfigs,
     markdown: markdownConfigs,
     n: nConfigs,
     next: nextConfigs,

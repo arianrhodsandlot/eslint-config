@@ -8,6 +8,12 @@ const { mapValues } = _
 export function getNConfigs() {
   const nConfigs: FlatConfigs = [
     {
+      name: 'n',
+      rules: {
+        'n/no-unsupported-features/node-builtins': 'off',
+      },
+    },
+    {
       files: [jsxOrTsxGlob, '**/*.vue'],
       name: 'n',
       rules: mapValues(eslintPluginN.configs['flat/recommended'].rules, () => 'off'),

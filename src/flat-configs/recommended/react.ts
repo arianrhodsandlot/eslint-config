@@ -24,6 +24,6 @@ export const reactConfigs: FlatConfigs = [
   },
   {
     name: 'react-refresh/recommended',
-    ...eslintPluginReactRefresh.configs[isPackageInstalled('vite') ? 'vite': 'recommended'],
+    ...eslintPluginReactRefresh.configs[isPackageInstalled('vite') ? 'vite' : 'recommended'],
   },
 ]

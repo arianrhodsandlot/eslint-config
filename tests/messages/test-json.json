@@ -1,0 +1,13 @@
+[
+  {
+    "ruleId": "json/no-duplicate-keys",
+    "severity": 2,
+    "message": "Duplicate key \"a\" found.",
+    "line": 3,
+    "column": 3,
+    "nodeType": null,
+    "messageId": "duplicateKey",
+    "endLine": 3,
+    "endColumn": 6
+  }
+]

@@ -1,3 +1,6 @@
+import * as eslintPluginCssModule from '@eslint/css'
+import * as eslintPluginJsonModule from '@eslint/json'
+import * as eslintPluginMarkdownModule from '@eslint/markdown'
 import * as eslintPluginEslintCommentsModule from '@eslint-community/eslint-plugin-eslint-comments'
 import * as eslintPluginReactModule from '@eslint-react/eslint-plugin'
 import * as eslintPluginVueI18nModule from '@intlify/eslint-plugin-vue-i18n'
@@ -8,7 +11,6 @@ import * as eslintPluginEsXModule from 'eslint-plugin-es-x'
 import * as eslintPluginImportXModule from 'eslint-plugin-import-x'
 import * as eslintPluginJsdocModule from 'eslint-plugin-jsdoc'
 import * as eslintPluginJsxA11yModule from 'eslint-plugin-jsx-a11y'
-import * as eslintPluginMarkdownModule from 'eslint-plugin-markdown'
 import * as eslintPluginNModule from 'eslint-plugin-n'
 import * as eslintPluginPerfectionistModule from 'eslint-plugin-perfectionist'
 import * as eslintPluginPrettierModule from 'eslint-plugin-prettier'
@@ -34,11 +36,13 @@ function interopESLintPlugin(mod: any) {
 }
 
 export const eslintPluginCompat = interopESLintPlugin(eslintPluginCompatModule)
+export const eslintPluginCss = interopESLintPlugin(eslintPluginCssModule)
 export const eslintPluginDiff = interopESLintPlugin(eslintPluginDiffModule)
 export const eslintPluginEslintComments = interopESLintPlugin(eslintPluginEslintCommentsModule)
 export const eslintPluginEsX = interopESLintPlugin(eslintPluginEsXModule)
 export const eslintPluginImportX = interopESLintPlugin(eslintPluginImportXModule)
 export const eslintPluginJsdoc = interopESLintPlugin(eslintPluginJsdocModule)
+export const eslintPluginJson = interopESLintPlugin(eslintPluginJsonModule)
 export const eslintPluginJsxA11y = interopESLintPlugin(eslintPluginJsxA11yModule)
 export const eslintPluginMarkdown = interopESLintPlugin(eslintPluginMarkdownModule)
 export const eslintPluginN = interopESLintPlugin(eslintPluginNModule)

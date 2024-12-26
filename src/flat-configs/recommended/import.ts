@@ -5,6 +5,6 @@ export const importConfigs: FlatConfigs = [
   {
     name: 'import/recommended',
     plugins: { 'import-x': eslintPluginImportX },
-    rules: eslintPluginImportX.configs?.recommended.rules,
+    rules: eslintPluginImportX.configs.recommended.rules,
   },
 ]

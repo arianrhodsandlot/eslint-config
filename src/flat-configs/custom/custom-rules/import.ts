@@ -10,7 +10,7 @@ export const importRules: FlatConfigRules = {
     {
       ignorePackages: true,
       pattern: {
-        json: 'never',
+        json: 'always',
         jsx: 'never',
         ts: 'never',
         tsx: 'never',

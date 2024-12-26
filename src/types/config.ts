@@ -43,6 +43,9 @@ export interface CreateConfigOptions {
   /** Append custom flat configs to default */
   append?: FlatConfig | FlatConfigs
 
+  /** Should \@eslint/css be enabled */
+  css?: boolean
+
   /** Should eslint-plugin-compat be enabled */
   compat?: boolean
 
@@ -64,7 +67,10 @@ export interface CreateConfigOptions {
   /** Should eslint-plugin-jsdoc be enabled */
   jsdoc?: boolean
 
-  /** Should eslint-plugin-markdown be enabled */
+  /** Should \@eslint/json be enabled */
+  json?: boolean
+
+  /** Should \@eslint/markdown be enabled */
   markdown?: boolean
 
   /** Should eslint-plugin-n be enabled */

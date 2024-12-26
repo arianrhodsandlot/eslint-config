@@ -1,7 +1,7 @@
-import { fixupConfigRules } from '@eslint/compat'
 import _ from 'lodash'
 import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
+import { jsOrTsGlob } from './lib/constants.js'
 import {
   getGitIgnores,
   getPackageField,
@@ -18,11 +18,13 @@ const { defaultsDeep } = _
 const defaultOptions: Required<CreateConfigOptions> = {
   append: [],
   compat: getPackageField('browserslist') || lookupFiles('.browserslistrc'),
+  css: true,
   diff: shouldEnableDiff(),
   eslintComments: true,
-  esX: true,
+  esX: false,
   import: true,
   jsdoc: true,
+  json: true,
   markdown: true,
   n: isServerProject(),
   next: isPackageInstalled('next'),
@@ -57,7 +59,13 @@ export function createConfig(
     ...recommendedFlatConfig,
     ...customFlatConfig,
     { ignores: ['node_modules/**/*', 'dist/**/*', '**/vendor?(s)/**/*', ...getGitIgnores()] },
-  ]
+  ].map((config) => {
+    if ('rules' in config) {
+      config.files ??= [jsOrTsGlob]
+    }
+    return config
+  })
+
   if (prepend) {
     config.unshift(...prepend)
   }
@@ -67,5 +75,6 @@ export function createConfig(
   if (append) {
     config.push(...append)
   }
-  return fixupConfigRules(config)
+
+  return config
 }

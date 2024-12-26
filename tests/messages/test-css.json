@@ -1,0 +1,9 @@
+[
+  {
+    "ruleId": null,
+    "fatal": false,
+    "severity": 1,
+    "message": "File ignored because no matching configuration was supplied.",
+    "nodeType": null
+  }
+]

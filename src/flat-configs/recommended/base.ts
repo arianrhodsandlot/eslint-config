@@ -1,12 +1,10 @@
 import js from '@eslint/js'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
-import { jsOrTsGlob } from '../../lib/constants.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const baseConfigs: FlatConfigs = [
   {
-    files: [jsOrTsGlob],
     languageOptions: {
       globals: {
         ...globals.browser,
