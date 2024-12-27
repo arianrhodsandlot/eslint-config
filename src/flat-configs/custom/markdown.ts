@@ -1,3 +1,4 @@
+import { sourceGlob } from '../../lib/constants.js'
 import { getContext } from '../../lib/utils.js'
 import type { FlatConfigRules, FlatConfigs } from '../../types/eslint.js'
 
@@ -15,11 +16,6 @@ export function getMarkdownConfigs() {
       '@typescript-eslint/no-unused-vars': 'off',
     })
   }
-  if (options.import) {
-    Object.assign(rules, {
-      'import/no-unresolved': 'off',
-    })
-  }
   if (options.n) {
     Object.assign(rules, {
       'n/no-missing-import': 'off',
@@ -31,6 +27,6 @@ export function getMarkdownConfigs() {
     })
   }
 
-  const markdownConfigs: FlatConfigs = []
+  const markdownConfigs: FlatConfigs = [{ files: [`**/*.md/${sourceGlob}`], name: 'markdown', rules }]
   return markdownConfigs
 }

@@ -5,6 +5,7 @@ export const cssConfigs: FlatConfigs = [
   {
     files: ['**/*.css'],
     language: 'css/css',
+    name: 'css/css',
     ...eslintPluginCss.configs.recommended,
   },
 ]

@@ -4042,6 +4042,15 @@
     }
   },
   {
+    "ruleId": null,
+    "nodeType": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: Unexpected character '/' found.",
+    "line": 2312,
+    "column": 1
+  },
+  {
     "ruleId": "func-style",
     "severity": 2,
     "message": "Expected a function declaration.",
@@ -4425,6 +4434,15 @@
         "desc": "Remove this import statement"
       }
     ]
+  },
+  {
+    "ruleId": null,
+    "nodeType": null,
+    "fatal": true,
+    "severity": 2,
+    "message": "Parsing error: Unexpected token Colon found.",
+    "line": 2745,
+    "column": 12
   },
   {
     "ruleId": "perfectionist/sort-objects",

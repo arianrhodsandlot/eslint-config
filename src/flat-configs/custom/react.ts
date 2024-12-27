@@ -1,4 +1,3 @@
-import { jsOrTsExtensionGlob, jsxOrTsxGlob } from '../../lib/constants.js'
 import { getContext, isPackageInstalled } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
@@ -26,23 +25,15 @@ export function getReactConfigs() {
   const reactConfigs: FlatConfigs = []
 
   if (options.react) {
-    reactConfigs.push(
-      {
-        files: [jsxOrTsxGlob],
-        name: 'react',
-        rules: {
-          'react-refresh/only-export-components': [
-            'error',
-            { allowConstantExport: true, allowExportNames: getAllowExportNames() },
-          ],
-        },
+    reactConfigs.push({
+      name: 'react',
+      rules: {
+        'react-refresh/only-export-components': [
+          'error',
+          { allowConstantExport: true, allowExportNames: getAllowExportNames() },
+        ],
       },
-      {
-        files: [`**/use*${jsOrTsExtensionGlob}`],
-        name: 'react',
-        rules: {},
-      },
-    )
+    })
   }
 
   return reactConfigs

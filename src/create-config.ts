@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
-import { jsOrTsGlob } from './lib/constants.js'
+import { sourceGlob } from './lib/constants.js'
 import {
   getGitIgnores,
   getPackageField,
@@ -61,7 +61,7 @@ export function createConfig(
     { ignores: ['node_modules/**/*', 'dist/**/*', '**/vendor?(s)/**/*', ...getGitIgnores()] },
   ].map((config) => {
     if ('rules' in config) {
-      config.files ??= [jsOrTsGlob]
+      config.files ??= [sourceGlob]
     }
     return config
   })
