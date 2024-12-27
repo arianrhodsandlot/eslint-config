@@ -1,6 +1,5 @@
 {
   "name": "@arianrhodsandlot/eslint-config",
-  "version": "0.15.11",
   "description": "A set of predefined ESLint config.",
   "keywords": [
     "eslint",
@@ -22,13 +21,14 @@
     "dist"
   ],
   "scripts": {
+    "release": "node --no-warnings --experimental-strip-types scripts/release.ts",
     "build": "conc npm:build:*",
     "build:esm": "swc src -d dist/esm --strip-leading-paths",
     "build:types": "tsc",
     "build:umd": "swc src -d dist/umd --strip-leading-paths -C module.type=umd --out-file-extension=cjs && node --experimental-strip-types scripts/fix-cjs-require.ts",
     "dev": "eslint-config-inspector",
     "eslint": "eslint --flag unstable_ts_config --no-warn-ignored",
-    "lint": "node --run eslint -- src",
+    "lint": "node --run=eslint -- src",
     "prepare": "simple-git-hooks",
     "test": "node --no-warnings --experimental-strip-types --test tests/*.test.ts"
   },
@@ -82,16 +82,21 @@
     "@types/eslint__js": "8.42.3",
     "@types/lodash": "4.17.13",
     "@types/node": "22.10.2",
+    "@types/semver": "7.5.8",
     "concurrently": "9.1.0",
+    "conventional-changelog-cli": "^5.0.0",
     "eslint": "9.17.0",
     "jiti": "2.4.2",
     "lint-staged": "15.2.11",
+    "package-up": "5.0.0",
     "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "0.6.9",
     "react": "19.0.0",
+    "semver": "7.6.3",
     "simple-git-hooks": "2.11.1",
     "vue": "3.5.13",
-    "vue-i18n": "11.0.1"
+    "vue-i18n": "11.0.1",
+    "zx": "8.3.0"
   },
   "peerDependencies": {
     "eslint": "*"
@@ -105,6 +110,6 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.?(m|c)@(j|t)s?(x)": "node --run eslint -- --fix"
+    "*.?(m|c)@(j|t)s?(x)": "node --run=eslint -- --fix"
   }
 }
