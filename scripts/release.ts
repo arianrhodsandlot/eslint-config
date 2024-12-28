@@ -1,5 +1,5 @@
 import { fs } from 'zx'
-import { $$, getCurrentVersion, getNextVersion } from './utils'
+import { $$, getCurrentVersion, getNextVersion } from './utils.ts'
 
 async function checkChangelog(newVersion: string) {
   const changelog = await fs.readFile(`changelog.md`, 'utf8')

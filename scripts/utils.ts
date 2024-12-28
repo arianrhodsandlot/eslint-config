@@ -11,32 +11,44 @@ export async function getCurrentVersion() {
   }
   const { name } = await fs.readJson(packageJsonPath)
   const json = await $`pnpm view ${name} --json`
-  const { versions } = JSON.parse(`${json}`)
-  return versions.at(-1)
+  const { versions } = JSON.parse(`${json}`) as { versions: string[] }
+  const version = versions.at(-1)
+  if (!version) {
+    throw new Error('Invalid version')
+  }
+  return version
 }
 
-function isFeatCommit(commitMessage: string) {
-  return commitMessage.startsWith('feat:')
+function isFeatCommit(commit: string) {
+  return commit.startsWith('feat:')
 }
 
-function isBreakingChangeCommit(commitMessage: string) {
-  return commitMessage.includes('!: ')
+function isBreakingChangeCommit(commit: string) {
+  return commit.includes('!: ')
+}
+
+export async function getCommits({ end, start }: { end?: string; start?: string } = {}) {
+  start ??= `v${await getCurrentVersion()}`
+  end ??= 'HEAD'
+  const { stdout } = await $`git log --oneline --no-merges --pretty=format:'%s' ${start}...${end}`
+  return stdout.split('\n').filter((line) => line.trim())
 }
 
 async function getNextVersionType(currentVersion: string) {
-  const { stdout } = await $`git log --oneline --no-merges --pretty=format:'%s' HEAD...v${currentVersion}`
-  const hasBreakingChange = stdout.split('\n').some((commitMessage) => isBreakingChangeCommit(commitMessage))
+  const commits = await getCommits({ start: `v${currentVersion}` })
+  const hasBreakingChange = commits.some((commit) => isBreakingChangeCommit(commit))
   if (hasBreakingChange) {
     return 'major'
   }
-  const hasFeat = stdout.split('\n').some((commitMessage) => isFeatCommit(commitMessage))
+  const hasFeat = commits.some((commit) => isFeatCommit(commit))
   if (hasFeat) {
     return 'minor'
   }
   return 'patch'
 }
 
-export async function getNextVersion(currentVersion: string) {
+export async function getNextVersion(currentVersion?: string) {
+  currentVersion ??= await getCurrentVersion()
   const nextVersionType = await getNextVersionType(currentVersion)
   const nextVersion = semver.inc(currentVersion, nextVersionType)
   if (!nextVersion) {

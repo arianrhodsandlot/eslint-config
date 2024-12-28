@@ -30,6 +30,7 @@
     "eslint": "eslint --flag unstable_ts_config --no-warn-ignored",
     "lint": "node --run=eslint -- src",
     "prepare": "simple-git-hooks",
+    "changelog": "node --no-warnings --experimental-strip-types scripts/changelog.ts",
     "test": "node --no-warnings --experimental-strip-types --test tests/*.test.ts"
   },
   "dependencies": {

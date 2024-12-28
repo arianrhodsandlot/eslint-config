@@ -7,6 +7,7 @@
     "lib": ["es2023"],
     "module": "node16",
     "moduleResolution": "node16",
+    "allowImportingTsExtensions": true,
     "noImplicitAny": false,
     "outDir": "dist/types",
     "skipLibCheck": true,
@@ -14,5 +15,5 @@
     "target": "es2022"
   },
   "exclude": ["eslint.config.mjs", "dist", "tests"],
-  "include": ["src"]
+  "include": ["src", "scripts"]
 }
