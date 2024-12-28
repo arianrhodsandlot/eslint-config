@@ -3,7 +3,7 @@ import { $$, getCurrentVersion, getNextVersion } from './utils.ts'
 
 async function checkChangelog(newVersion: string) {
   const changelog = await fs.readFile(`changelog.md`, 'utf8')
-  if (!changelog.includes(`## ${newVersion}`)) {
+  if (!changelog.includes(`## [${newVersion}]`)) {
     throw new Error(`Changelog does not contain a section for version ${newVersion}`)
   }
 }
@@ -13,12 +13,13 @@ async function main() {
   const newVersion = await getNextVersion(currentVersion)
   await $$`git pull -r`
   await checkChangelog(newVersion)
-  await $$`git tag v${newVersion}`
-  await $$`git push origin v${newVersion}`
+  // await $$`git tag v${newVersion}`
+  // await $$`git push origin v${newVersion}`
 }
 
 try {
   await main()
-} catch {
+} catch (error) {
+  console.error(error)
   process.exitCode = 1
 }

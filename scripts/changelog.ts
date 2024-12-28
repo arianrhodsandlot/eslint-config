@@ -37,6 +37,7 @@ ${sections.join('\n')}`
 
 try {
   await main()
-} catch {
+} catch (error) {
+  console.error(error)
   process.exitCode = 1
 }

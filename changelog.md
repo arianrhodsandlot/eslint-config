@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.16.0] - 2024-12-28
+### Added
+- add official plugins for css/md/json
+- migrate to @eslint-react/eslint-plugin from eslint-plugin-react
+- migrate to eslint-plugin-import-x from eslint-plugin-import
+
 ## [0.15.11] - 2024-08-19
 ### Fixed
 - Turn off no-new-func
@@ -249,6 +255,7 @@ Update several rules
 - First release!
 
 [unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.15.8...HEAD
+[0.16.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.15.8...v0.16.0
 [0.15.8]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.15.7...v0.15.8
 [0.15.7]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.15.6...v0.15.7
 [0.15.6]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.15.5...v0.15.6
