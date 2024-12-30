@@ -1,4 +1,5 @@
 import { parser } from 'keep-a-changelog'
+import _ from 'lodash'
 import { argv, fs } from 'zx'
 
 async function main() {
@@ -9,7 +10,12 @@ async function main() {
     argv.version ? `v${release.version}` === argv.version : release.version,
   )
   if (release) {
-    const note = release.toString().split('\n').slice(1).join('\n')
+    const note = release
+      .toString()
+      .split('\n')
+      .slice(1)
+      .map((line) => _.upperFirst(line))
+      .join('\n')
     await fs.writeFile('release-note.md', note)
   }
 }
