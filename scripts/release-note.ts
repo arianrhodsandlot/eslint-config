@@ -6,7 +6,7 @@ async function main() {
   const changelog = parser(changelogContent)
 
   const release = changelog.releases.find((release) =>
-    argv.version ? release.version === argv.version : release.version,
+    argv.version ? `v${release.version}` === argv.version : release.version,
   )
   if (release) {
     const note = release.toString().split('\n').slice(1).join('\n')
