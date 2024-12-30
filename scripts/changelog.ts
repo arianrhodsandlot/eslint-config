@@ -19,7 +19,7 @@ async function main() {
     const title = typeMap[type]
     const commits = groupedCommits[type]
     if (commits) {
-      const messages = commits.map((commit) => `- ${commit.message}`)
+      const messages = commits.map((commit) => `- ${_.upperFirst(commit.message)}`)
       const section = `### ${title}
 ${messages.join('\n')}`
       sections.push(section)
@@ -29,6 +29,7 @@ ${messages.join('\n')}`
   const changelog = await fs.readFile(changelogPath, 'utf8')
   const keyword = '## [Unreleased]'
   const replaced = `${keyword}
+
 ## [${nextVersion}] - ${new Date().toISOString().slice(0, 10)}
 ${sections.join('\n')}`
   const newChangelog = changelog.replace(keyword, replaced)
