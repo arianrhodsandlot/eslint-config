@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.16.1] - 2024-12-30
+### Fixed
+- Remove redundant dependences
+
 ## [0.16.0] - 2024-12-30
 ### Added
 - add official plugins for css/md/json
