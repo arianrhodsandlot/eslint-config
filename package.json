@@ -21,7 +21,7 @@
     "dist"
   ],
   "scripts": {
-    "rn": "node --no-warnings --experimental-strip-types scripts/release-note.ts",
+    "release-note": "node --no-warnings --experimental-strip-types scripts/release-note.ts",
     "release": "node --no-warnings --experimental-strip-types scripts/release.ts",
     "build": "conc npm:build:*",
     "build:esm": "swc src -d dist/esm --strip-leading-paths",
