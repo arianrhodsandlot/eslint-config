@@ -34,29 +34,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade dependencies
 
 ## [0.15.6] - 2024-06-11
-## Fixed
-+ Fix global ignores
+### Fixed
+- Fix global ignores
 
 ## [0.15.5] - 2024-06-11
-## Fixed
-+ Fix global ignores
+### Fixed
+- Fix global ignores
 
 ## [0.15.4] - 2024-06-11
-## Fixed
-+ fix: ignore vendors
-+ fix: update react rules
-+ fix: turn off import/default because of its buggy behavior
+### Fixed
+- fix: ignore vendors
+- fix: update react rules
+- fix: turn off import/default because of its buggy behavior
 
 ## [0.15.3] - 2024-06-11
-## Fixed
+### Fixed
 - Lint diff files with essential rules
 
 ## [0.15.2] - 2024-05-31
-## Fixed
+### Fixed
 - Adjust some vue rules
 
 ## [0.15.1] - 2024-05-20
-## Fixed
+### Fixed
 - Turn off the no-undef rule for ts files only
 - Improve compatibility
 
@@ -107,12 +107,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.11.1] - 2024-04-22
 ### Fixed
-Add diff plugin at last
-Add global parser
-Update several rules
+- Add diff plugin at last
+- Add global parser
+- Update several rules
 
 ## [0.11.0] - 2024-04-22
-### Feature
+### Added
 - Add support for CommonJS
 
 ### Fixed
@@ -157,7 +157,7 @@ Update several rules
 - Upgrade dependencies
 
 ### Fixed
-+ Enforce consistant type import or export declaration
+- Enforce consistant type import or export declaration
 
 ## [0.8.2] - 2023-08-30
 ### Fixed
