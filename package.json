@@ -21,6 +21,7 @@
     "dist"
   ],
   "scripts": {
+    "rn": "node --no-warnings --experimental-strip-types scripts/release-note.ts",
     "release": "node --no-warnings --experimental-strip-types scripts/release.ts",
     "build": "conc npm:build:*",
     "build:esm": "swc src -d dist/esm --strip-leading-paths",
@@ -88,6 +89,7 @@
     "conventional-changelog-cli": "^5.0.0",
     "eslint": "9.17.0",
     "jiti": "2.4.2",
+    "keep-a-changelog": "^2.5.3",
     "lint-staged": "15.2.11",
     "package-up": "5.0.0",
     "prettier": "3.4.2",

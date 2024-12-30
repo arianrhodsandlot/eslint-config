@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.16.0] - 2024-12-28
+## [0.16.0] - 2024-12-30
 ### Added
 - add official plugins for css/md/json
 - migrate to @eslint-react/eslint-plugin from eslint-plugin-react
