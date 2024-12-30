@@ -127,8 +127,8 @@ importers:
         version: 9.4.3(eslint@9.17.0(jiti@2.4.2))
     devDependencies:
       '@arianrhodsandlot/release-kit':
-        specifier: 0.1.2
-        version: 0.1.2
+        specifier: 0.1.4
+        version: 0.1.4
       '@eslint/config-inspector':
         specifier: 0.6.0
         version: 0.6.0(eslint@9.17.0(jiti@2.4.2))
@@ -209,8 +209,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@arianrhodsandlot/release-kit@0.1.2':
-    resolution: {integrity: sha512-HzTzY2U4EkYsn3hAacJb8kfL4iiWPWzfMbxNQIIDTj6bnI3T4SrIGL1cj14U5cqRnRRR+Z+2unG/0DpXrU80Hg==}
+  '@arianrhodsandlot/release-kit@0.1.4':
+    resolution: {integrity: sha512-YEAQI87p7NDLFIIRqmTCtjPh7EsulLBCTfl7pjqOqHDL4gJ8l9QNBpjZzarvaRRBZbtL2vU6Ao15kI5vCPZ14Q==}
     hasBin: true
 
   '@babel/code-frame@7.26.2':
@@ -4238,7 +4238,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@arianrhodsandlot/release-kit@0.1.2':
+  '@arianrhodsandlot/release-kit@0.1.4':
     dependencies:
       commander: 13.0.0
       es-toolkit: 1.31.0

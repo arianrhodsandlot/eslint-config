@@ -11,7 +11,6 @@
     "email": "theguidanceofawhitetower@gmail.com"
   },
   "type": "module",
-  "packageManager": "pnpm@9.15.2",
   "exports": {
     "import": "./dist/esm/index.js",
     "require": "./dist/umd/index.cjs",
@@ -33,6 +32,18 @@
     "lint": "node --run=eslint -- src",
     "prepare": "simple-git-hooks",
     "test": "node --no-warnings --experimental-strip-types --test tests/*.test.ts"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.?(m|c)@(j|t)s?(x)": "node --run=eslint -- --fix",
+    "package.json": "pnpm dlx sort-package-json"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-package"
+    ]
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
@@ -76,7 +87,7 @@
     "vue-eslint-parser": "^9.4.3"
   },
   "devDependencies": {
-    "@arianrhodsandlot/release-kit": "0.1.2",
+    "@arianrhodsandlot/release-kit": "0.1.4",
     "@eslint/config-inspector": "0.6.0",
     "@swc/cli": "0.5.2",
     "@swc/core": "1.10.4",
@@ -109,10 +120,5 @@
       "optional": false
     }
   },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*.?(m|c)@(j|t)s?(x)": "node --run=eslint -- --fix"
-  }
+  "packageManager": "pnpm@9.15.2"
 }
