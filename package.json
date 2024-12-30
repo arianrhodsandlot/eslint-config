@@ -6,7 +6,10 @@
     "eslint-config"
   ],
   "license": "MIT",
-  "author": "arianrhodsandlot",
+  "author": {
+    "name": "arianrhodsandlot",
+    "email": "theguidanceofawhitetower@gmail.com"
+  },
   "type": "module",
   "packageManager": "pnpm@9.15.2",
   "exports": {
@@ -21,8 +24,6 @@
     "dist"
   ],
   "scripts": {
-    "release-note": "node --no-warnings --experimental-strip-types scripts/release-note.ts",
-    "release": "node --no-warnings --experimental-strip-types scripts/release.ts",
     "build": "conc npm:build:*",
     "build:esm": "swc src -d dist/esm --strip-leading-paths",
     "build:types": "tsc",
@@ -31,7 +32,6 @@
     "eslint": "eslint --flag unstable_ts_config --no-warn-ignored",
     "lint": "node --run=eslint -- src",
     "prepare": "simple-git-hooks",
-    "changelog": "node --no-warnings --experimental-strip-types scripts/changelog.ts",
     "test": "node --no-warnings --experimental-strip-types --test tests/*.test.ts"
   },
   "dependencies": {
@@ -76,6 +76,7 @@
     "vue-eslint-parser": "^9.4.3"
   },
   "devDependencies": {
+    "@arianrhodsandlot/release-kit": "0.1.2",
     "@eslint/config-inspector": "0.6.0",
     "@swc/cli": "0.5.2",
     "@swc/core": "1.10.4",
