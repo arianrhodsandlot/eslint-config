@@ -112,17 +112,6 @@
     }
   },
   {
-    "ruleId": "max-lines-per-function",
-    "severity": 2,
-    "message": "Function 'debounce' has too many lines (118). Maximum allowed is 80.",
-    "line": 65,
-    "column": 1,
-    "nodeType": "FunctionDeclaration",
-    "messageId": "exceed",
-    "endLine": 214,
-    "endColumn": 2
-  },
-  {
     "ruleId": "no-implicit-coercion",
     "severity": 2,
     "message": "Unexpected implicit coercion encountered. Use `Number(wait)` instead.",

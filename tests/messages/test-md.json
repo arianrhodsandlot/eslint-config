@@ -626,17 +626,6 @@
     "endColumn": 22
   },
   {
-    "ruleId": "@typescript-eslint/no-non-null-assertion",
-    "severity": 2,
-    "message": "Forbidden non-null assertion.",
-    "line": 504,
-    "column": 39,
-    "nodeType": "TSNonNullExpression",
-    "messageId": "noNonNull",
-    "endLine": 504,
-    "endColumn": 44
-  },
-  {
     "ruleId": null,
     "nodeType": null,
     "fatal": true,
@@ -2753,30 +2742,6 @@
     "endColumn": 2
   },
   {
-    "ruleId": "@typescript-eslint/no-non-null-assertion",
-    "severity": 2,
-    "message": "Forbidden non-null assertion.",
-    "line": 1588,
-    "column": 20,
-    "nodeType": "TSNonNullExpression",
-    "messageId": "noNonNull",
-    "endLine": 1588,
-    "endColumn": 32,
-    "suggestions": [
-      {
-        "messageId": "suggestOptionalChain",
-        "fix": {
-          "range": [
-            150,
-            151
-          ],
-          "text": "?"
-        },
-        "desc": "Consider using the optional chain operator `?.` instead. This operator includes runtime checks, so it is safer than the compile-only non-null assertion operator."
-      }
-    ]
-  },
-  {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
     "message": "Use JSX file extension as needed.",
@@ -2819,17 +2784,6 @@
     "messageId": "noExport",
     "endLine": 1603,
     "endColumn": 25
-  },
-  {
-    "ruleId": "@typescript-eslint/no-non-null-assertion",
-    "severity": 2,
-    "message": "Forbidden non-null assertion.",
-    "line": 1603,
-    "column": 66,
-    "nodeType": "TSNonNullExpression",
-    "messageId": "noNonNull",
-    "endLine": 1603,
-    "endColumn": 71
   },
   {
     "ruleId": "@eslint-react/no-class-component",
@@ -3195,17 +3149,6 @@
       ],
       "text": "{elRef.current = document.createElement(\"div\");}"
     }
-  },
-  {
-    "ruleId": "@typescript-eslint/no-non-null-assertion",
-    "severity": 2,
-    "message": "Forbidden non-null assertion.",
-    "line": 1800,
-    "column": 16,
-    "nodeType": "TSNonNullExpression",
-    "messageId": "noNonNull",
-    "endLine": 1800,
-    "endColumn": 30
   },
   {
     "ruleId": "unicorn/prefer-dom-node-append",
@@ -3621,41 +3564,6 @@
     }
   },
   {
-    "ruleId": "@typescript-eslint/no-non-null-assertion",
-    "severity": 2,
-    "message": "Forbidden non-null assertion.",
-    "line": 2068,
-    "column": 1,
-    "nodeType": "TSNonNullExpression",
-    "messageId": "noNonNull",
-    "endLine": 2068,
-    "endColumn": 20,
-    "suggestions": [
-      {
-        "messageId": "suggestOptionalChain",
-        "fix": {
-          "range": [
-            18,
-            19
-          ],
-          "text": "?"
-        },
-        "desc": "Consider using the optional chain operator `?.` instead. This operator includes runtime checks, so it is safer than the compile-only non-null assertion operator."
-      }
-    ]
-  },
-  {
-    "ruleId": "@typescript-eslint/no-non-null-assertion",
-    "severity": 2,
-    "message": "Forbidden non-null assertion.",
-    "line": 2069,
-    "column": 12,
-    "nodeType": "TSNonNullExpression",
-    "messageId": "noNonNull",
-    "endLine": 2069,
-    "endColumn": 48
-  },
-  {
     "ruleId": "unicorn/prefer-query-selector",
     "severity": 2,
     "message": "Prefer `.querySelector()` over `.getElementById()`.",
@@ -3665,17 +3573,6 @@
     "messageId": "prefer-query-selector",
     "endLine": 2069,
     "endColumn": 35
-  },
-  {
-    "ruleId": "@typescript-eslint/no-non-null-assertion",
-    "severity": 2,
-    "message": "Forbidden non-null assertion.",
-    "line": 2069,
-    "column": 36,
-    "nodeType": "TSNonNullExpression",
-    "messageId": "noNonNull",
-    "endLine": 2069,
-    "endColumn": 46
   },
   {
     "ruleId": "perfectionist/sort-intersection-types",
