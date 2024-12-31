@@ -6,9 +6,9 @@ export function getTestConfigs() {
   const { options } = getContext()
 
   const files = [
-    `test?(s)/**/*.${jsOrTsExtensionGlob}`,
-    `__test?(s)__/**/*.${jsOrTsExtensionGlob}`,
-    `*.{spec,test}.${jsOrTsExtensionGlob}`,
+    `test?(s)/**/*${jsOrTsExtensionGlob}`,
+    `__test?(s)__/**/*${jsOrTsExtensionGlob}`,
+    `*.{spec,test}${jsOrTsExtensionGlob}`,
   ]
 
   const rules: FlatConfigRules = {
