@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.16.4] - 2025-01-03
+### Fixed
+- Fix exported types
+
 ## [0.16.3] - 2024-12-31
 ### Fixed
 - Fix test files detection
@@ -265,7 +269,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - First release!
 
-[Unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.3...HEAD
+[Unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.4...HEAD
+[0.16.4]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.3...v0.16.4
 [0.16.3]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.2...v0.16.3
 [0.16.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.1...v0.16.2
 [0.16.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.0...v0.16.1
