@@ -15,5 +15,5 @@
     "target": "es2022"
   },
   "exclude": ["eslint.config.mjs", "dist", "tests"],
-  "include": ["src", "scripts"]
+  "include": ["src"]
 }
