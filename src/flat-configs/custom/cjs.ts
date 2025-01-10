@@ -1,5 +1,5 @@
 import { cjsOrCtsGlob } from '../../lib/constants.js'
-import { getContext } from '../../lib/utils.ts'
+import { getContext } from '../../lib/utils.js'
 import type { FlatConfigRules, FlatConfigs } from '../../types/eslint.js'
 
 export function getCJSConfigs() {
