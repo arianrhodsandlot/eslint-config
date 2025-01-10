@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.16.8] - 2025-01-10
+### Fixed
+- Fix cjs rules not working
+
 ## [0.16.7] - 2025-01-10
 ### Fixed
 - Fix cjs rules not working
@@ -281,7 +285,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - First release!
 
-[Unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.7...HEAD
+[Unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.8...HEAD
+[0.16.8]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.7...v0.16.8
 [0.16.7]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.6...v0.16.7
 [0.16.6]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.5...v0.16.6
 [0.16.5]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.16.4...v0.16.5
