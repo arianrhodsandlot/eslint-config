@@ -1,3 +1,4 @@
+import { getCJSConfigs } from './cjs.ts'
 import { getConflictConfigs } from './conflicts.js'
 import { getCustomRulesConfigs } from './custom-rules/index.js'
 import { getImportConfigs } from './import.js'
@@ -13,6 +14,7 @@ export function getCustomFlatConfigs() {
   return [
     ...getCustomRulesConfigs(),
 
+    ...getCJSConfigs(),
     ...getImportConfigs(),
     ...getJsConfigs(),
     ...getJsdocConfigs(),
