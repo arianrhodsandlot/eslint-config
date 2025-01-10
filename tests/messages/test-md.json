@@ -434,10 +434,10 @@
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 403,
     "column": 7,
-    "nodeType": "JSXOpeningElement",
+    "nodeType": "JSXElement",
     "messageId": "noMissingButtonType",
-    "endLine": 403,
-    "endColumn": 77
+    "endLine": 405,
+    "endColumn": 16
   },
   {
     "ruleId": "perfectionist/sort-objects",
@@ -463,10 +463,10 @@
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 406,
     "column": 7,
-    "nodeType": "JSXOpeningElement",
+    "nodeType": "JSXElement",
     "messageId": "noMissingButtonType",
-    "endLine": 406,
-    "endColumn": 75
+    "endLine": 408,
+    "endColumn": 16
   },
   {
     "ruleId": "perfectionist/sort-objects",
@@ -2169,7 +2169,7 @@
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 1330,
     "column": 3,
-    "nodeType": "JSXOpeningElement",
+    "nodeType": "JSXElement",
     "messageId": "noMissingButtonType",
     "endLine": 1334,
     "endColumn": 5
@@ -3250,10 +3250,10 @@
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 1840,
     "column": 13,
-    "nodeType": "JSXOpeningElement",
+    "nodeType": "JSXElement",
     "messageId": "noMissingButtonType",
-    "endLine": 1843,
-    "endColumn": 14
+    "endLine": 1845,
+    "endColumn": 22
   },
   {
     "ruleId": "perfectionist/sort-jsx-props",
@@ -3279,10 +3279,10 @@
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 1849,
     "column": 7,
-    "nodeType": "JSXOpeningElement",
+    "nodeType": "JSXElement",
     "messageId": "noMissingButtonType",
     "endLine": 1849,
-    "endColumn": 50
+    "endColumn": 69
   },
   {
     "ruleId": "@eslint-react/no-comment-textnodes",
@@ -3627,10 +3627,10 @@
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 2119,
     "column": 10,
-    "nodeType": "JSXOpeningElement",
+    "nodeType": "JSXElement",
     "messageId": "noMissingButtonType",
     "endLine": 2119,
-    "endColumn": 29
+    "endColumn": 53
   },
   {
     "ruleId": "@eslint-react/prefer-destructuring-assignment",
