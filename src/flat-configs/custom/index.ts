@@ -1,4 +1,4 @@
-import { getCJSConfigs } from './cjs.ts'
+import { getCJSConfigs } from './cjs.js'
 import { getConflictConfigs } from './conflicts.js'
 import { getCustomRulesConfigs } from './custom-rules/index.js'
 import { getImportConfigs } from './import.js'
