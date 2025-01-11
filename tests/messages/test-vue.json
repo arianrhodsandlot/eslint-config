@@ -1,5 +1,23 @@
 [
   {
+    "ruleId": "biome-x/format",
+    "severity": 1,
+    "message": "Replace `<script>⏎import·{·GlIcon·}·from·'@gitlab/ui';` with `import·{·GlIcon·}·from·'@gitlab/ui'`",
+    "line": 1,
+    "column": 1,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 2,
+    "endColumn": 37,
+    "fix": {
+      "range": [
+        0,
+        45
+      ],
+      "text": "import { GlIcon } from '@gitlab/ui'"
+    }
+  },
+  {
     "ruleId": "vue/block-lang",
     "severity": 2,
     "message": "The 'lang' attribute of '<script>' is missing.",
@@ -29,6 +47,24 @@
     }
   },
   {
+    "ruleId": "biome-x/format",
+    "severity": 1,
+    "message": "Replace `·'~/locale';` with `'~/locale'`",
+    "line": 3,
+    "column": 21,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 3,
+    "endColumn": 33,
+    "fix": {
+      "range": [
+        66,
+        78
+      ],
+      "text": "'~/locale'"
+    }
+  },
+  {
     "ruleId": "prettier/prettier",
     "severity": 2,
     "message": "Replace `·'~/locale';` with `'~/locale'`",
@@ -44,6 +80,24 @@
         78
       ],
       "text": "'~/locale'"
+    }
+  },
+  {
+    "ruleId": "biome-x/format",
+    "severity": 1,
+    "message": "Delete `;`",
+    "line": 4,
+    "column": 50,
+    "nodeType": null,
+    "messageId": "delete",
+    "endLine": 4,
+    "endColumn": 51,
+    "fix": {
+      "range": [
+        128,
+        129
+      ],
+      "text": ""
     }
   },
   {
@@ -316,6 +370,24 @@
     "endColumn": 11
   },
   {
+    "ruleId": "biome-x/format",
+    "severity": 1,
+    "message": "Delete `;`",
+    "line": 28,
+    "column": 65,
+    "nodeType": null,
+    "messageId": "delete",
+    "endLine": 28,
+    "endColumn": 66,
+    "fix": {
+      "range": [
+        540,
+        541
+      ],
+      "text": ""
+    }
+  },
+  {
     "ruleId": "prettier/prettier",
     "severity": 2,
     "message": "Delete `;`",
@@ -352,6 +424,24 @@
     }
   },
   {
+    "ruleId": "biome-x/format",
+    "severity": 1,
+    "message": "Replace `⏎········'One·more·item',⏎········'%d·more·items',⏎········this.parentGroup.childrenCount·-·this.parentGroup.children.length,⏎······);` with `'One·more·item',·'%d·more·items',·this.parentGroup.childrenCount·-·this.parentGroup.children.length)`",
+    "line": 31,
+    "column": 18,
+    "nodeType": null,
+    "messageId": "replace",
+    "endLine": 35,
+    "endColumn": 9,
+    "fix": {
+      "range": [
+        592,
+        726
+      ],
+      "text": "'One more item', '%d more items', this.parentGroup.childrenCount - this.parentGroup.children.length)"
+    }
+  },
+  {
     "ruleId": "prettier/prettier",
     "severity": 2,
     "message": "Replace `⏎········'One·more·item',⏎········'%d·more·items',⏎········this.parentGroup.childrenCount·-·this.parentGroup.children.length,⏎······);` with `'One·more·item',·'%d·more·items',·this.parentGroup.childrenCount·-·this.parentGroup.children.length)`",
@@ -367,6 +457,24 @@
         726
       ],
       "text": "'One more item', '%d more items', this.parentGroup.childrenCount - this.parentGroup.children.length)"
+    }
+  },
+  {
+    "ruleId": "biome-x/format",
+    "severity": 1,
+    "message": "Delete `;⏎</script>⏎⏎<template>⏎··<ul·class=\"groups-list·group-list-tree·gl-m-0·gl-flex·gl-flex-col\">⏎····<!--·eslint-disable-next-line·vue/no-undef-components·-->⏎····<group-item⏎·······v-for=\"(group,·index)·in·groups\"⏎······:key=\"index\"⏎······:group=\"group\"⏎······:parent-group=\"parentGroup\"⏎······:action=\"action\"⏎····/>⏎····<li·v-if=\"hasMoreChildren\"·class=\"group-row\">⏎······<a·:href=\"parentGroup.relativePath\"·class=\"group-row-contents·has-more-items·gl-py-3\">⏎········<gl-icon·name=\"external-link\"·/>·{{·moreChildrenStats·}}⏎······</a>⏎····</li>⏎··</ul>⏎</template>`",
+    "line": 38,
+    "column": 2,
+    "nodeType": null,
+    "messageId": "delete",
+    "endLine": 57,
+    "endColumn": 12,
+    "fix": {
+      "range": [
+        740,
+        1304
+      ],
+      "text": ""
     }
   },
   {

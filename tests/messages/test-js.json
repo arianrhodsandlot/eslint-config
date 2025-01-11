@@ -112,6 +112,17 @@
     }
   },
   {
+    "ruleId": "biome-x/lint",
+    "severity": 2,
+    "message": "Reassigning a function parameter is confusing. The parameter is declared here: Use a local variable instead. See https://biomejs.dev/linter/rules/no-parameter-assign for more explanation.",
+    "line": 83,
+    "column": 3,
+    "nodeType": null,
+    "messageId": "lint",
+    "endLine": 83,
+    "endColumn": 7
+  },
+  {
     "ruleId": "no-implicit-coercion",
     "severity": 2,
     "message": "Unexpected implicit coercion encountered. Use `Number(wait)` instead.",

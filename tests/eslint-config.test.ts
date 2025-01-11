@@ -11,10 +11,7 @@ const messagesDir = path.join(testsDir, 'messages')
 
 describe('ESLint config', async () => {
   const TestESLint = await loadESLint()
-  const eslint = new TestESLint({
-    flags: ['unstable_ts_config'],
-    ignore: false,
-  })
+  const eslint = new TestESLint({ ignore: false })
 
   const inputFiles = [
     'test-css.css',

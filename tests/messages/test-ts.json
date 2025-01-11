@@ -239,6 +239,17 @@
     "endColumn": 14
   },
   {
+    "ruleId": "biome-x/lint",
+    "severity": 2,
+    "message": "Some exports are only types. This export is a type. This export is a type. Using export type allows compilers to safely drop exports of types without looking for their definition. Safe fix: Add inline type keywords. See https://biomejs.dev/linter/rules/use-export-type for more explanation.",
+    "line": 287,
+    "column": 8,
+    "nodeType": null,
+    "messageId": "lint",
+    "endLine": 296,
+    "endColumn": 2
+  },
+  {
     "ruleId": "perfectionist/sort-named-exports",
     "severity": 2,
     "message": "Expected \"ancestorHasReturnType\" to come before \"isValidFunctionExpressionReturnType\".",
