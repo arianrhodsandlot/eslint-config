@@ -48,12 +48,12 @@
     "@eslint/compat": "^1.2.5",
     "@eslint/css": "^0.2.0",
     "@eslint/js": "^9.18.0",
-    "@eslint/json": "^0.9.0",
+    "@eslint/json": "^0.9.1",
     "@eslint/markdown": "^6.2.1",
     "@intlify/eslint-plugin-vue-i18n": "3.2.0",
     "@next/eslint-plugin-next": "^15.1.4",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-biome-x": "^0.2.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-biome-x": "^0.2.1",
     "eslint-plugin-compat": "^6.0.2",
     "eslint-plugin-diff": "^2.0.3",
     "eslint-plugin-es-x": "^8.4.1",
@@ -62,10 +62,10 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-perfectionist": "^4.6.0",
-    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-prettier": "^5.2.2",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-react-refresh": "^0.4.18",
     "eslint-plugin-regexp": "^2.7.0",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-sonarjs": "^3.0.1",
@@ -81,19 +81,19 @@
     "new-find-package-json": "^2.0.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.19.1",
+    "typescript-eslint": "^8.20.0",
     "vue-eslint-parser": "^9.4.3"
   },
   "devDependencies": {
     "@arianrhodsandlot/release-kit": "0.1.5",
-    "@eslint/config-inspector": "0.7.1",
+    "@eslint/config-inspector": "1.0.0",
     "@swc/cli": "0.6.0",
     "@swc/core": "1.10.7",
     "@types/eslint": "9.6.1",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
     "@types/lodash": "4.17.14",
-    "@types/node": "22.10.5",
+    "@types/node": "22.10.6",
     "@types/semver": "7.5.8",
     "concurrently": "9.1.2",
     "eslint": "9.18.0",
@@ -117,5 +117,5 @@
       "optional": false
     }
   },
-  "packageManager": "pnpm@9.15.3"
+  "packageManager": "pnpm@9.15.4"
 }
