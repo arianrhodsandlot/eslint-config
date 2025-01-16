@@ -26,6 +26,16 @@ export function getMarkdownConfigs() {
       '@eslint-react/naming-convention/filename': 'off',
     })
   }
+  if (options.import) {
+    Object.assign(rules, {
+      'import-x/no-extraneous-dependencies': 'off',
+    })
+  }
+  if (options.sonarjs) {
+    Object.assign(rules, {
+      'sonarjs/unused-import': 'off',
+    })
+  }
 
   const markdownConfigs: FlatConfigs = [{ files: [`**/*.md/${sourceGlob}`], name: 'markdown', rules }]
   return markdownConfigs
