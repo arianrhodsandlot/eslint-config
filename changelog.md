@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.17.0] - 2025-01-16
+### Added
+- Add eslint-plugin-biome-x
+
 ## [0.16.8] - 2025-01-10
 ### Fixed
 - Fix cjs rules not working

@@ -28,7 +28,6 @@ const biomeConfig: Configuration = {
 }
 
 export const biomeXConfigs: FlatConfigs = [
-  // @ts-expect-error types from eslint-plugin-biome-x is not accurate
   eslintPluginBiomeX.configs.recommended,
   {
     settings: {
