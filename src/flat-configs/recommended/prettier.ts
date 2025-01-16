@@ -1,18 +1,12 @@
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import type { Config } from 'prettier'
-import { getContext, getPackageVersion, lookupFiles } from '../../lib/utils.js'
+import { getContext, lookupFiles } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
-
-const plugins: string[] = []
-if (getPackageVersion('prettier-plugin-tailwindcss')) {
-  plugins.push('prettier-plugin-tailwindcss')
-}
 
 const defaultPrettierConfig: Config = {
   htmlWhitespaceSensitivity: 'ignore',
   jsSingleQuote: true,
   jsxSingleQuote: true,
-  plugins,
   printWidth: 120,
   semi: false,
   singleQuote: true,

@@ -7,6 +7,7 @@ import { getJsdocConfigs } from './jsdoc.js'
 import { getMarkdownConfigs } from './markdown.js'
 import { getNConfigs } from './n.js'
 import { getReactConfigs } from './react.js'
+import { getTailwindConfigs } from './tailwind.ts'
 import { getTestConfigs } from './test.js'
 import { getTypeScriptConfigs } from './typescript.js'
 
@@ -21,6 +22,7 @@ export function getCustomFlatConfigs() {
     ...getMarkdownConfigs(),
     ...getNConfigs(),
     ...getReactConfigs(),
+    ...getTailwindConfigs(),
     ...getTestConfigs(),
     ...getTypeScriptConfigs(),
 

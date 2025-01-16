@@ -6938,17 +6938,6 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
-    "ruleId": "react-refresh/only-export-components",
-    "severity": 2,
-    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
-    "line": 1471,
-    "column": 7,
-    "nodeType": "Identifier",
-    "messageId": "noExport",
-    "endLine": 1471,
-    "endColumn": 19
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"light\\");\` with \`'light')\`",
@@ -7242,17 +7231,6 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
-    "ruleId": "react-refresh/only-export-components",
-    "severity": 2,
-    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
-    "line": 1513,
-    "column": 7,
-    "nodeType": "Identifier",
-    "messageId": "noExport",
-    "endLine": 1513,
-    "endColumn": 25
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Delete \`;\`",
@@ -7544,17 +7522,6 @@ exports[`ESLint config > test-md.md 1`] = `
       ],
       "text": ""
     }
-  },
-  {
-    "ruleId": "react-refresh/only-export-components",
-    "severity": 2,
-    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
-    "line": 1551,
-    "column": 7,
-    "nodeType": "Identifier",
-    "messageId": "noExport",
-    "endLine": 1551,
-    "endColumn": 25
   },
   {
     "ruleId": "biome-x/format",
@@ -7892,17 +7859,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 1
   },
   {
-    "ruleId": "react-refresh/only-export-components",
-    "severity": 2,
-    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
-    "line": 1595,
-    "column": 7,
-    "nodeType": "Identifier",
-    "messageId": "noExport",
-    "endLine": 1595,
-    "endColumn": 25
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`⏎··{}·as·CurrentUserContextType⏎);\` with \`{}·as·CurrentUserContextType)\`",
@@ -7930,17 +7886,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "filenameExtensionUnexpected",
     "endLine": 1604,
     "endColumn": 1
-  },
-  {
-    "ruleId": "react-refresh/only-export-components",
-    "severity": 2,
-    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
-    "line": 1603,
-    "column": 7,
-    "nodeType": "Identifier",
-    "messageId": "noExport",
-    "endLine": 1603,
-    "endColumn": 25
   },
   {
     "ruleId": "biome-x/lint",
@@ -13651,6 +13596,24 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
+    "ruleId": "tailwindcss/classnames-order",
+    "severity": 1,
+    "message": "Invalid Tailwind CSS classnames order",
+    "line": 48,
+    "column": 24,
+    "nodeType": "CallExpression",
+    "messageId": "invalidOrder",
+    "endLine": 54,
+    "endColumn": 14,
+    "fix": {
+      "range": [
+        1437,
+        1464
+      ],
+      "text": "text-foreground font-medium"
+    }
+  },
+  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"group·flex·w-full·items-center·rounded-md·border·border-transparent·px-2·py-1·hover:underline\\"\` with \`'group·flex·w-full·items-center·rounded-md·border·border-transparent·px-2·py-1·hover:underline'\`",
@@ -13743,7 +13706,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
   {
     "ruleId": "prettier/prettier",
     "severity": 2,
-    "message": "Replace \`⏎················?·\\"font-medium·text-foreground\\"⏎················:·\\"text-muted-foreground\\"\` with \`·?·'text-foreground·font-medium'·:·'text-muted-foreground',\`",
+    "message": "Replace \`⏎················?·\\"font-medium·text-foreground\\"⏎················:·\\"text-muted-foreground\\"\` with \`·?·'font-medium·text-foreground'·:·'text-muted-foreground',\`",
     "line": 51,
     "column": 37,
     "nodeType": null,
@@ -13755,7 +13718,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
         1417,
         1507
       ],
-      "text": " ? 'text-foreground font-medium' : 'text-muted-foreground',"
+      "text": " ? 'font-medium text-foreground' : 'text-muted-foreground',"
     }
   },
   {
@@ -13925,6 +13888,24 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
+    "ruleId": "tailwindcss/classnames-order",
+    "severity": 1,
+    "message": "Invalid Tailwind CSS classnames order",
+    "line": 68,
+    "column": 24,
+    "nodeType": "CallExpression",
+    "messageId": "invalidOrder",
+    "endLine": 71,
+    "endColumn": 14,
+    "fix": {
+      "range": [
+        2022,
+        2118
+      ],
+      "text": "text-muted-foreground flex w-full cursor-not-allowed items-center rounded-md p-2 hover:underline"
+    }
+  },
+  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline\\"\` with \`'flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline'\`",
@@ -13945,7 +13926,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
   {
     "ruleId": "prettier/prettier",
     "severity": 2,
-    "message": "Replace \`\\"flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline\\"\` with \`'text-muted-foreground·flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·hover:underline'\`",
+    "message": "Replace \`\\"flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline\\"\` with \`'flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline'\`",
     "line": 69,
     "column": 15,
     "nodeType": null,
@@ -13957,7 +13938,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
         2021,
         2119
       ],
-      "text": "'text-muted-foreground flex w-full cursor-not-allowed items-center rounded-md p-2 hover:underline'"
+      "text": "'flex w-full cursor-not-allowed items-center rounded-md p-2 text-muted-foreground hover:underline'"
     }
   },
   {
@@ -14035,7 +14016,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
   {
     "ruleId": "prettier/prettier",
     "severity": 2,
-    "message": "Replace \`\\"ml-2·rounded-md·bg-muted·px-1.5·py-0.5·text-xs·leading-none·text-muted-foreground·no-underline·group-hover:no-underline\\"\` with \`'bg-muted·text-muted-foreground·ml-2·rounded-md·px-1.5·py-0.5·text-xs·leading-none·no-underline·group-hover:no-underline'\`",
+    "message": "Replace \`\\"ml-2·rounded-md·bg-muted·px-1.5·py-0.5·text-xs·leading-none·text-muted-foreground·no-underline·group-hover:no-underline\\"\` with \`'ml-2·rounded-md·bg-muted·px-1.5·py-0.5·text-xs·leading-none·text-muted-foreground·no-underline·group-hover:no-underline'\`",
     "line": 75,
     "column": 31,
     "nodeType": null,
@@ -14047,7 +14028,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
         2295,
         2416
       ],
-      "text": "'bg-muted text-muted-foreground ml-2 rounded-md px-1.5 py-0.5 text-xs leading-none no-underline group-hover:no-underline'"
+      "text": "'ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline'"
     }
   },
   {
