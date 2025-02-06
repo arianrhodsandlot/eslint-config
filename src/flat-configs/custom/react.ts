@@ -1,3 +1,4 @@
+import { jsxOrTsxGlob } from '../../lib/constants.ts'
 import { getContext, isPackageInstalled } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
@@ -22,7 +23,15 @@ function getAllowExportNames() {
 export function getReactConfigs() {
   const { options } = getContext()
 
-  const reactConfigs: FlatConfigs = []
+  const reactConfigs: FlatConfigs = [
+    {
+      files: [jsxOrTsxGlob],
+      name: 'react',
+      rules: {
+        'max-lines-per-function': 'off',
+      },
+    },
+  ]
 
   if (options.react) {
     reactConfigs.push({
