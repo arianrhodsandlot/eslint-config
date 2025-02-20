@@ -5,6 +5,7 @@ import * as eslintPluginEslintCommentsModule from '@eslint-community/eslint-plug
 import * as eslintPluginReactModule from '@eslint-react/eslint-plugin'
 import * as eslintPluginVueI18nModule from '@intlify/eslint-plugin-vue-i18n'
 import * as eslintPluginNextModule from '@next/eslint-plugin-next'
+import * as eslintPluginStylisticModule from '@stylistic/eslint-plugin'
 import * as eslintPluginCompatModule from 'eslint-plugin-compat'
 import * as eslintPluginDiffModule from 'eslint-plugin-diff'
 import * as eslintPluginEsXModule from 'eslint-plugin-es-x'
@@ -56,6 +57,7 @@ export const eslintPluginReactRefresh = interopESLintPlugin(eslintPluginReactRef
 export const eslintPluginRegexp = interopESLintPlugin(eslintPluginRegexpModule)
 export const eslintPluginSecurity = interopESLintPlugin(eslintPluginSecurityModule)
 export const eslintPluginSonarjs = interopESLintPlugin(eslintPluginSonarjsModule)
+export const eslintPluginStylistic = interopESLintPlugin(eslintPluginStylisticModule)
 export const eslintPluginTailwindcss = interopESLintPlugin(eslintPluginTailwindcssModule)
 export const eslintPluginTsdoc = interopESLintPlugin(eslintPluginTsdocModule)
 export const eslintPluginTypescript = interopESLintPlugin(tseslint.plugin)

@@ -10,6 +10,7 @@ import { promiseRules } from './promise.js'
 import { reactRules } from './react.js'
 import { securityRules } from './security.js'
 import { sonarjsRules } from './sonarjs.js'
+import { stylisticRules } from './stylistic.js'
 import { tailwindcssRules } from './tailwindcss.js'
 import { typescriptRules } from './typescript.js'
 import { unicornRules } from './unicorn.js'
@@ -41,6 +42,9 @@ export function getCustomRulesConfigs() {
   }
   if (options.sonarjs) {
     Object.assign(customRules, sonarjsRules)
+  }
+  if (options.stylistic) {
+    Object.assign(customRules, stylisticRules)
   }
   if (options.tailwindcss) {
     Object.assign(customRules, tailwindcssRules)

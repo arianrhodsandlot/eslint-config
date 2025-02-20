@@ -20,6 +20,7 @@ import { reactConfigs } from './react.js'
 import { regexpConfigs } from './regexp.js'
 import { securityConfigs } from './security.js'
 import { sonarjsConfigs } from './sonarjs.js'
+import { stylisticConfigs } from './stylistic.ts'
 import { tailwindcssConfigs } from './tailwind.js'
 import { tsdocConfigs } from './tsdoc.js'
 import { typescriptConfigs } from './typescript.js'
@@ -46,6 +47,7 @@ export function getRecommendedFlatConfigs() {
     regexp: regexpConfigs,
     security: securityConfigs,
     sonarjs: sonarjsConfigs,
+    stylistic: stylisticConfigs,
     tailwindcss: tailwindcssConfigs,
     tsdoc: tsdocConfigs,
     typescript: typescriptConfigs,

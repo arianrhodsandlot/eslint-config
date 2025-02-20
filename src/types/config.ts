@@ -106,6 +106,9 @@ export interface CreateConfigOptions {
   /** Should eslint-plugin-security be enabled */
   security?: boolean
 
+  /** Should \@stylistic/eslint-plugin be enabled */
+  stylistic?: boolean
+
   /** Should eslint-plugin-tailwindcss be enabled */
   tailwindcss?: boolean
 
