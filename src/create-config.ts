@@ -39,7 +39,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
   security: true,
   sonarjs: true,
   stylistic: true,
-  tailwindcss: isPackageInstalled('tailwindcss'),
+  tailwindcss: true,
   tsdoc: isPackageInstalled('typescript'),
   typescript: isPackageInstalled('typescript'),
   unicorn: true,
