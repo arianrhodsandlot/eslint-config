@@ -5,7 +5,7 @@ const isESMCodeBase = isServerProject() && getPackageField('type') === 'module'
 
 export const importRules: FlatConfigRules = {
   'import-x/default': 'off',
-  'import-x/extensions': ['error', 'always'],
+  'import-x/extensions': ['error', 'always', { ignorePackages: true }],
   'import-x/first': 'error',
   'import-x/namespace': 'off',
   'import-x/newline-after-import': 'error',

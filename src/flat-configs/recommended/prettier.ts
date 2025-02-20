@@ -1,9 +1,8 @@
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
-import type { Config } from 'prettier'
 import { getContext, lookupFiles } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
-const defaultPrettierConfig: Config = {
+const defaultPrettierConfig = {
   htmlWhitespaceSensitivity: 'ignore',
   jsSingleQuote: true,
   jsxSingleQuote: true,

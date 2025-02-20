@@ -2202,17 +2202,6 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
-    "ruleId": "import-x/extensions",
-    "severity": 2,
-    "message": "Unexpected use of file extension \\"tsx\\" for \\"./Countdown.tsx\\"",
-    "line": 574,
-    "column": 44,
-    "nodeType": "Literal",
-    "messageId": "unexpected",
-    "endLine": 574,
-    "endColumn": 61
-  },
-  {
     "ruleId": "react-refresh/only-export-components",
     "severity": 2,
     "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
@@ -12931,6 +12920,28 @@ exports[`ESLint config > test-ts.ts 1`] = `
     "endColumn": 71
   },
   {
+    "ruleId": "import-x/extensions",
+    "severity": 2,
+    "message": "Missing file extension for \\"./astUtils\\"",
+    "line": 4,
+    "column": 58,
+    "nodeType": "Literal",
+    "messageId": "missing",
+    "endLine": 4,
+    "endColumn": 70
+  },
+  {
+    "ruleId": "import-x/extensions",
+    "severity": 2,
+    "message": "Missing file extension for \\"./getFunctionHeadLoc\\"",
+    "line": 5,
+    "column": 36,
+    "nodeType": "Literal",
+    "messageId": "missing",
+    "endLine": 5,
+    "endColumn": 58
+  },
+  {
     "ruleId": "no-implicit-coercion",
     "severity": 2,
     "message": "Unexpected implicit coercion encountered. Use \`Boolean(node.id.typeAnnotation)\` instead.",
@@ -13270,6 +13281,17 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
       ],
       "text": "'@/lib/utils'"
     }
+  },
+  {
+    "ruleId": "import-x/extensions",
+    "severity": 2,
+    "message": "Missing file extension for \\"@/lib/utils\\"",
+    "line": 7,
+    "column": 20,
+    "nodeType": "Literal",
+    "messageId": "missing",
+    "endLine": 7,
+    "endColumn": 33
   },
   {
     "ruleId": "unicorn/explicit-length-check",
@@ -13856,6 +13878,28 @@ exports[`ESLint config > test-vue.vue 1`] = `
       ],
       "text": "'~/locale'"
     }
+  },
+  {
+    "ruleId": "import-x/extensions",
+    "severity": 2,
+    "message": "Missing file extension for \\"~/locale\\"",
+    "line": 3,
+    "column": 22,
+    "nodeType": "Literal",
+    "messageId": "missing",
+    "endLine": 3,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "import-x/extensions",
+    "severity": 2,
+    "message": "Missing file extension for \\"../constants\\"",
+    "line": 4,
+    "column": 36,
+    "nodeType": "Literal",
+    "messageId": "missing",
+    "endLine": 4,
+    "endColumn": 50
   },
   {
     "ruleId": "biome-x/format",
