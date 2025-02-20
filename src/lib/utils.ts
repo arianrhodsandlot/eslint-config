@@ -62,47 +62,42 @@ export function lookupFiles(...fileNames: string[]) {
   }
 }
 
-const packageJsons = [...findSync(process.cwd())]
-
-let cachedPackageJson
-function getPackageJson() {
-  if (cachedPackageJson) {
-    return cachedPackageJson
+const packageJsons = [...findSync(process.cwd())].map((packageJson) => {
+  try {
+    return JSON.parse(fs.readFileSync(packageJson, 'utf8'))
+  } catch {
+    return {}
   }
-  for (const packageJson of packageJsons) {
-    try {
-      const packageInfo = JSON.parse(fs.readFileSync(packageJson, 'utf8'))
-      if (packageInfo) {
-        cachedPackageJson = packageInfo
-        return packageInfo
-      }
-    } catch {}
-  }
-}
+})
 
 export function getPackageField(field: string) {
-  return getPackageJson()?.[field]
+  for (const packageJson of packageJsons) {
+    const result = packageJson[field]
+    if (result) {
+      return result
+    }
+  }
 }
 
 export function getPackageVersion(packageName: string) {
-  const version: string =
-    getPackageField('dependencies')?.[packageName] || getPackageField('devDependencies')?.[packageName]
-  if (version) {
-    return version
-  }
+  return getDevPackageVersion(packageName) || getProdPackageVersion(packageName)
 }
 
 export function getProdPackageVersion(packageName: string) {
-  const version: string = getPackageField('dependencies')?.[packageName]
-  if (version) {
-    return version
+  for (const packageJson of packageJsons) {
+    const version = packageJson.dependencies?.[packageName]
+    if (version) {
+      return version
+    }
   }
 }
 
 export function getDevPackageVersion(packageName: string) {
-  const version: string = getPackageField('devDependencies')?.[packageName]
-  if (version) {
-    return version
+  for (const packageJson of packageJsons) {
+    const version = packageJson.devDependencies?.[packageName]
+    if (version) {
+      return version
+    }
   }
 }
 
