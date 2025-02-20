@@ -1,4 +1,4 @@
-import { jsxOrTsxGlob } from '../../lib/constants.ts'
+import { jsxOrTsxGlob } from '../../lib/constants.js'
 import { getContext, isPackageInstalled } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
