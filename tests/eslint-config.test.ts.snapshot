@@ -2001,8 +2001,8 @@ exports[`ESLint config > test-md.md 1`] = `
         },
         "fix": {
           "range": [
-            163,
-            165
+            27652,
+            27654
           ],
           "text": "object"
         },
@@ -2015,8 +2015,8 @@ exports[`ESLint config > test-md.md 1`] = `
         },
         "fix": {
           "range": [
-            163,
-            165
+            27652,
+            27654
           ],
           "text": "unknown"
         },
@@ -2068,7 +2068,7 @@ exports[`ESLint config > test-md.md 1`] = `
         27675,
         27896
       ],
-      "text": "({ ref, ...props }: CountdownProps & { ref: React.RefObject<CountdownHandle> }) => {\\n  useImperativeHandle(ref, () => ({\\n    // start() has type inference here\\n    start() {\\n      alert(\\"Start\\");\\n    },\\n  }));\\n\\n  return <div>Countdown</div>;\\n}"
+      "text": "({ ref, ...props }: CountdownProps & { ref?: React.RefObject<CountdownHandle | null> }) => {\\n  useImperativeHandle(ref, () => ({\\n    // start() has type inference here\\n    start() {\\n      alert(\\"Start\\");\\n    },\\n  }));\\n\\n  return <div>Countdown</div>;\\n}"
     }
   },
   {
@@ -3928,8 +3928,8 @@ exports[`ESLint config > test-md.md 1`] = `
       {
         "fix": {
           "range": [
-            125,
-            125
+            40630,
+            40630
           ],
           "text": " readonly"
         },
@@ -4104,8 +4104,8 @@ exports[`ESLint config > test-md.md 1`] = `
       {
         "fix": {
           "range": [
-            140,
-            140
+            41638,
+            41638
           ],
           "text": " readonly"
         },
@@ -4604,8 +4604,8 @@ exports[`ESLint config > test-md.md 1`] = `
       {
         "fix": {
           "range": [
-            159,
-            159
+            44545,
+            44545
           ],
           "text": " readonly"
         },
@@ -4722,8 +4722,8 @@ exports[`ESLint config > test-md.md 1`] = `
       {
         "fix": {
           "range": [
-            165,
-            165
+            45005,
+            45005
           ],
           "text": " readonly"
         },
@@ -5114,8 +5114,8 @@ exports[`ESLint config > test-md.md 1`] = `
         },
         "fix": {
           "range": [
-            707,
-            709
+            46666,
+            46668
           ],
           "text": "object"
         },
@@ -5128,8 +5128,8 @@ exports[`ESLint config > test-md.md 1`] = `
         },
         "fix": {
           "range": [
-            707,
-            709
+            46666,
+            46668
           ],
           "text": "unknown"
         },
@@ -5476,8 +5476,8 @@ exports[`ESLint config > test-md.md 1`] = `
         },
         "fix": {
           "range": [
-            0,
-            31
+            48426,
+            48457
           ],
           "text": "type AnyNonNullishValue = object"
         },
@@ -5490,8 +5490,8 @@ exports[`ESLint config > test-md.md 1`] = `
         },
         "fix": {
           "range": [
-            0,
-            31
+            48426,
+            48457
           ],
           "text": "type AnyNonNullishValue = unknown"
         },
@@ -7038,7 +7038,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-context-provider",
     "severity": 1,
-    "message": "In React 19, you can render '<Context>' as a provider instead of '<Context.Provider>'.",
+    "message": "In React 19, you can render '<ThemeContext>' as a provider instead of '<ThemeContext.Provider>'.",
     "line": 1483,
     "column": 5,
     "nodeType": "JSXElement",
@@ -7090,6 +7090,24 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
+    "ruleId": "@eslint-react/no-use-context",
+    "severity": 1,
+    "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+    "line": 1493,
+    "column": 10,
+    "nodeType": "ImportSpecifier",
+    "messageId": "noUseContext",
+    "endLine": 1493,
+    "endColumn": 20,
+    "fix": {
+      "range": [
+        67757,
+        67767
+      ],
+      "text": "use"
+    }
+  },
+  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"react\\";\` with \`'react'\`",
@@ -7128,6 +7146,24 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "declaration",
     "endLine": 1499,
     "endColumn": 2
+  },
+  {
+    "ruleId": "@eslint-react/no-use-context",
+    "severity": 1,
+    "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+    "line": 1496,
+    "column": 17,
+    "nodeType": "CallExpression",
+    "messageId": "noUseContext",
+    "endLine": 1496,
+    "endColumn": 41,
+    "fix": {
+      "range": [
+        67829,
+        67839
+      ],
+      "text": "use"
+    }
   },
   {
     "ruleId": "biome-x/format",
@@ -7331,7 +7367,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-context-provider",
     "severity": 1,
-    "message": "In React 19, you can render '<Context>' as a provider instead of '<Context.Provider>'.",
+    "message": "In React 19, you can render '<CurrentUserContext>' as a provider instead of '<CurrentUserContext.Provider>'.",
     "line": 1523,
     "column": 5,
     "nodeType": "JSXElement",
@@ -7383,6 +7419,24 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
+    "ruleId": "@eslint-react/no-use-context",
+    "severity": 1,
+    "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+    "line": 1533,
+    "column": 10,
+    "nodeType": "ImportSpecifier",
+    "messageId": "noUseContext",
+    "endLine": 1533,
+    "endColumn": 20,
+    "fix": {
+      "range": [
+        68725,
+        68735
+      ],
+      "text": "use"
+    }
+  },
+  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"react\\";\` with \`'react'\`",
@@ -7421,6 +7475,24 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "declaration",
     "endLine": 1539,
     "endColumn": 2
+  },
+  {
+    "ruleId": "@eslint-react/no-use-context",
+    "severity": 1,
+    "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+    "line": 1536,
+    "column": 23,
+    "nodeType": "CallExpression",
+    "messageId": "noUseContext",
+    "endLine": 1536,
+    "endColumn": 53,
+    "fix": {
+      "range": [
+        68803,
+        68813
+      ],
+      "text": "use"
+    }
   },
   {
     "ruleId": "biome-x/format",
@@ -7553,6 +7625,24 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 2
   },
   {
+    "ruleId": "@eslint-react/no-use-context",
+    "severity": 1,
+    "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+    "line": 1554,
+    "column": 30,
+    "nodeType": "CallExpression",
+    "messageId": "noUseContext",
+    "endLine": 1554,
+    "endColumn": 60,
+    "fix": {
+      "range": [
+        69375,
+        69385
+      ],
+      "text": "use"
+    }
+  },
+  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Delete \`;\`",
@@ -7625,28 +7715,22 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
-    "ruleId": "sonarjs/unused-import",
-    "severity": 2,
-    "message": "Remove this unused import of 'useContext'.",
+    "ruleId": "@eslint-react/no-use-context",
+    "severity": 1,
+    "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
     "line": 1569,
     "column": 10,
-    "nodeType": "Identifier",
-    "messageId": "removeUnusedImport",
+    "nodeType": "ImportSpecifier",
+    "messageId": "noUseContext",
     "endLine": 1569,
     "endColumn": 20,
-    "suggestions": [
-      {
-        "messageId": "suggestRemoveWholeStatement",
-        "fix": {
-          "range": [
-            0,
-            35
-          ],
-          "text": ""
-        },
-        "desc": "Remove this import statement"
-      }
-    ]
+    "fix": {
+      "range": [
+        69841,
+        69851
+      ],
+      "text": "use"
+    }
   },
   {
     "ruleId": "biome-x/format",
@@ -7743,6 +7827,24 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
+    "ruleId": "@eslint-react/no-use-context",
+    "severity": 1,
+    "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+    "line": 1583,
+    "column": 10,
+    "nodeType": "ImportSpecifier",
+    "messageId": "noUseContext",
+    "endLine": 1583,
+    "endColumn": 20,
+    "fix": {
+      "range": [
+        70182,
+        70192
+      ],
+      "text": "use"
+    }
+  },
+  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"react\\";\` with \`'react'\`",
@@ -7781,6 +7883,24 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "declaration",
     "endLine": 1589,
     "endColumn": 2
+  },
+  {
+    "ruleId": "@eslint-react/no-use-context",
+    "severity": 1,
+    "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+    "line": 1586,
+    "column": 23,
+    "nodeType": "CallExpression",
+    "messageId": "noUseContext",
+    "endLine": 1586,
+    "endColumn": 53,
+    "fix": {
+      "range": [
+        70260,
+        70270
+      ],
+      "text": "use"
+    }
   },
   {
     "ruleId": "biome-x/format",
@@ -8115,7 +8235,7 @@ exports[`ESLint config > test-md.md 1`] = `
         71499,
         71638
       ],
-      "text": "({ ref, ...props }: Props & { ref: React.RefObject<Ref> }) => (\\n  <button ref={ref} className=\\"MyClassName\\" type={props.type}>\\n    {props.children}\\n  </button>\\n)"
+      "text": "({ ref, ...props }: Props & { ref?: React.RefObject<Ref | null> }) => (\\n  <button ref={ref} className=\\"MyClassName\\" type={props.type}>\\n    {props.children}\\n  </button>\\n)"
     }
   },
   {
@@ -9054,6 +9174,24 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 34
   },
   {
+    "ruleId": "@stylistic/jsx-self-closing-comp",
+    "severity": 2,
+    "message": "Empty components are self-closing",
+    "line": 1826,
+    "column": 7,
+    "nodeType": "JSXOpeningElement",
+    "messageId": "notSelfClosing",
+    "endLine": 1826,
+    "endColumn": 28,
+    "fix": {
+      "range": [
+        77924,
+        77931
+      ],
+      "text": " />"
+    }
+  },
+  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"modal-root\\"\` with \`'modal-root'\`",
@@ -9569,8 +9707,8 @@ exports[`ESLint config > test-md.md 1`] = `
         },
         "fix": {
           "range": [
-            37,
-            39
+            81382,
+            81384
           ],
           "text": "object"
         },
@@ -9583,8 +9721,8 @@ exports[`ESLint config > test-md.md 1`] = `
         },
         "fix": {
           "range": [
-            37,
-            39
+            81382,
+            81384
           ],
           "text": "unknown"
         },
@@ -11124,6 +11262,30 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
+    "ruleId": "sonarjs/no-commented-code",
+    "severity": 2,
+    "message": "Remove this commented out code.",
+    "line": 2258,
+    "column": 42,
+    "nodeType": null,
+    "messageId": "commentedCode",
+    "endLine": 2258,
+    "endColumn": 60,
+    "suggestions": [
+      {
+        "messageId": "commentedCodeFix",
+        "fix": {
+          "range": [
+            94958,
+            94976
+          ],
+          "text": ""
+        },
+        "desc": "Remove this commented out code"
+      }
+    ]
+  },
+  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Delete \`;\`",
@@ -11534,8 +11696,8 @@ exports[`ESLint config > test-md.md 1`] = `
         "desc": "Update the dependencies array to be: []",
         "fix": {
           "range": [
-            439,
-            449
+            100322,
+            100332
           ],
           "text": "[]"
         }
@@ -11574,8 +11736,8 @@ exports[`ESLint config > test-md.md 1`] = `
         "desc": "Update the dependencies array to be: []",
         "fix": {
           "range": [
-            500,
-            510
+            100383,
+            100393
           ],
           "text": "[]"
         }
@@ -11596,8 +11758,8 @@ exports[`ESLint config > test-md.md 1`] = `
         "desc": "Update the dependencies array to be: []",
         "fix": {
           "range": [
-            576,
-            586
+            100459,
+            100469
           ],
           "text": "[]"
         }
@@ -12348,30 +12510,6 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
-    "ruleId": "sonarjs/unused-import",
-    "severity": 2,
-    "message": "Remove this unused import of 'logo'.",
-    "line": 2694,
-    "column": 13,
-    "nodeType": "Identifier",
-    "messageId": "removeUnusedImport",
-    "endLine": 2694,
-    "endColumn": 17,
-    "suggestions": [
-      {
-        "messageId": "suggestRemoveWholeStatement",
-        "fix": {
-          "range": [
-            147,
-            183
-          ],
-          "text": ""
-        },
-        "desc": "Remove this import statement"
-      }
-    ]
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"./logo.png\\";\` with \`'./logo.png'\`",
@@ -12764,17 +12902,6 @@ exports[`ESLint config > test-ts.ts 1`] = `
     }
   },
   {
-    "ruleId": "n/no-extraneous-import",
-    "severity": 2,
-    "message": "\\"@typescript-eslint/utils\\" is extraneous.",
-    "line": 1,
-    "column": 41,
-    "nodeType": "Literal",
-    "messageId": "extraneous",
-    "endLine": 1,
-    "endColumn": 67
-  },
-  {
     "ruleId": "import-x/order",
     "severity": 2,
     "message": "There should be no empty line between import groups",
@@ -12800,17 +12927,6 @@ exports[`ESLint config > test-ts.ts 1`] = `
     "column": 45,
     "nodeType": "Literal",
     "messageId": "duplicate",
-    "endLine": 2,
-    "endColumn": 71
-  },
-  {
-    "ruleId": "n/no-extraneous-import",
-    "severity": 2,
-    "message": "\\"@typescript-eslint/utils\\" is extraneous.",
-    "line": 2,
-    "column": 45,
-    "nodeType": "Literal",
-    "messageId": "extraneous",
     "endLine": 2,
     "endColumn": 71
   },
@@ -13037,24 +13153,6 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`\\"use·client\\"\` with \`'use·client'\`",
-    "line": 1,
-    "column": 1,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 1,
-    "endColumn": 13,
-    "fix": {
-      "range": [
-        0,
-        12
-      ],
-      "text": "'use client'"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"next/link\\"\` with \`'next/link'\`",
@@ -13073,44 +13171,8 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`\\"next/link\\"\` with \`'next/link'\`",
-    "line": 3,
-    "column": 18,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 3,
-    "endColumn": 29,
-    "fix": {
-      "range": [
-        31,
-        42
-      ],
-      "text": "'next/link'"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Replace \`\\"next/navigation\\"\` with \`'next/navigation'\`",
-    "line": 4,
-    "column": 29,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 4,
-    "endColumn": 46,
-    "fix": {
-      "range": [
-        71,
-        88
-      ],
-      "text": "'next/navigation'"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Replace \`\\"next/navigation\\"\` with \`'next/navigation'\`",
     "line": 4,
     "column": 29,
@@ -13192,44 +13254,8 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`\\"types/nav\\"\` with \`'types/nav'\`",
-    "line": 5,
-    "column": 32,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 5,
-    "endColumn": 43,
-    "fix": {
-      "range": [
-        120,
-        131
-      ],
-      "text": "'types/nav'"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Replace \`\\"@/lib/utils\\"\` with \`'@/lib/utils'\`",
-    "line": 7,
-    "column": 20,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 7,
-    "endColumn": 33,
-    "fix": {
-      "range": [
-        152,
-        165
-      ],
-      "text": "'@/lib/utils'"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Replace \`\\"@/lib/utils\\"\` with \`'@/lib/utils'\`",
     "line": 7,
     "column": 20,
@@ -13266,24 +13292,6 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
   {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Replace \`\\"w-full\\"\` with \`'w-full'\`",
-    "line": 17,
-    "column": 20,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 17,
-    "endColumn": 28,
-    "fix": {
-      "range": [
-        379,
-        387
-      ],
-      "text": "'w-full'"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Replace \`\\"w-full\\"\` with \`'w-full'\`",
     "line": 17,
     "column": 20,
@@ -13358,24 +13366,6 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`\\"pb-4\\"\` with \`'pb-4'\`",
-    "line": 19,
-    "column": 40,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 19,
-    "endColumn": 46,
-    "fix": {
-      "range": [
-        464,
-        470
-      ],
-      "text": "'pb-4'"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`\\"mb-1·rounded-md·px-2·py-1·text-sm·font-semibold\\">⏎············{item.title}⏎··········\` with \`'mb-1·rounded-md·px-2·py-1·text-sm·font-semibold'>{item.title}\`",
@@ -13394,44 +13384,8 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`\\"mb-1·rounded-md·px-2·py-1·text-sm·font-semibold\\">⏎············{item.title}⏎··········\` with \`'mb-1·rounded-md·px-2·py-1·text-sm·font-semibold'>{item.title}\`",
-    "line": 20,
-    "column": 25,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 22,
-    "endColumn": 11,
-    "fix": {
-      "range": [
-        498,
-        584
-      ],
-      "text": "'mb-1 rounded-md px-2 py-1 text-sm font-semibold'>{item.title}"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Replace \`(⏎············<DocsSidebarNavItems·items={item.items}·pathname={pathname}·/>⏎··········)\` with \`<DocsSidebarNavItems·items={item.items}·pathname={pathname}·/>\`",
-    "line": 23,
-    "column": 35,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 25,
-    "endColumn": 12,
-    "fix": {
-      "range": [
-        624,
-        712
-      ],
-      "text": "<DocsSidebarNavItems items={item.items} pathname={pathname} />"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Replace \`(⏎············<DocsSidebarNavItems·items={item.items}·pathname={pathname}·/>⏎··········)\` with \`<DocsSidebarNavItems·items={item.items}·pathname={pathname}·/>\`",
     "line": 23,
     "column": 35,
@@ -13484,44 +13438,8 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`⏎··items,⏎··pathname,⏎\` with \`·items,·pathname·\`",
-    "line": 37,
-    "column": 38,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 40,
-    "endColumn": 1,
-    "fix": {
-      "range": [
-        893,
-        915
-      ],
-      "text": " items, pathname "
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Replace \`\\"grid·grid-flow-row·auto-rows-max·text-sm\\"\` with \`'grid·grid-flow-row·auto-rows-max·text-sm'\`",
-    "line": 42,
-    "column": 20,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 42,
-    "endColumn": 62,
-    "fix": {
-      "range": [
-        992,
-        1034
-      ],
-      "text": "'grid grid-flow-row auto-rows-max text-sm'"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Replace \`\\"grid·grid-flow-row·auto-rows-max·text-sm\\"\` with \`'grid·grid-flow-row·auto-rows-max·text-sm'\`",
     "line": 42,
     "column": 20,
@@ -13632,44 +13550,8 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`\\"group·flex·w-full·items-center·rounded-md·border·border-transparent·px-2·py-1·hover:underline\\"\` with \`'group·flex·w-full·items-center·rounded-md·border·border-transparent·px-2·py-1·hover:underline'\`",
-    "line": 49,
-    "column": 15,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 49,
-    "endColumn": 110,
-    "fix": {
-      "range": [
-        1220,
-        1315
-      ],
-      "text": "'group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline'"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Replace \`\\"cursor-not-allowed·opacity-60\\"\` with \`'cursor-not-allowed·opacity-60'\`",
-    "line": 50,
-    "column": 32,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 50,
-    "endColumn": 63,
-    "fix": {
-      "range": [
-        1348,
-        1379
-      ],
-      "text": "'cursor-not-allowed opacity-60'"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Replace \`\\"cursor-not-allowed·opacity-60\\"\` with \`'cursor-not-allowed·opacity-60'\`",
     "line": 50,
     "column": 32,
@@ -13704,44 +13586,8 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`⏎················?·\\"font-medium·text-foreground\\"⏎················:·\\"text-muted-foreground\\"\` with \`·?·'font-medium·text-foreground'·:·'text-muted-foreground',\`",
-    "line": 51,
-    "column": 37,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 53,
-    "endColumn": 42,
-    "fix": {
-      "range": [
-        1417,
-        1507
-      ],
-      "text": " ? 'font-medium text-foreground' : 'text-muted-foreground',"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Replace \`\\"_blank\\"·:·\\"\\"\` with \`'_blank'·:·''\`",
-    "line": 55,
-    "column": 37,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 55,
-    "endColumn": 50,
-    "fix": {
-      "range": [
-        1559,
-        1572
-      ],
-      "text": "'_blank' : ''"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Replace \`\\"_blank\\"·:·\\"\\"\` with \`'_blank'·:·''\`",
     "line": 55,
     "column": 37,
@@ -13794,44 +13640,8 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`\\"noreferrer\\"·:·\\"\\"\` with \`'noreferrer'·:·''\`",
-    "line": 56,
-    "column": 34,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 56,
-    "endColumn": 51,
-    "fix": {
-      "range": [
-        1607,
-        1624
-      ],
-      "text": "'noreferrer' : ''"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Replace \`\\"ml-2·rounded-md·bg-[#adfa1d]·px-1.5·py-0.5·text-xs·leading-none·text-[#000000]·no-underline·group-hover:no-underline\\"\` with \`'ml-2·rounded-md·bg-[#adfa1d]·px-1.5·py-0.5·text-xs·leading-none·text-[#000000]·no-underline·group-hover:no-underline'\`",
-    "line": 60,
-    "column": 31,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 60,
-    "endColumn": 149,
-    "fix": {
-      "range": [
-        1722,
-        1840
-      ],
-      "text": "'ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline'"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Replace \`\\"ml-2·rounded-md·bg-[#adfa1d]·px-1.5·py-0.5·text-xs·leading-none·text-[#000000]·no-underline·group-hover:no-underline\\"\` with \`'ml-2·rounded-md·bg-[#adfa1d]·px-1.5·py-0.5·text-xs·leading-none·text-[#000000]·no-underline·group-hover:no-underline'\`",
     "line": 60,
     "column": 31,
@@ -13924,44 +13734,8 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`\\"flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline\\"\` with \`'flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline'\`",
-    "line": 69,
-    "column": 15,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 69,
-    "endColumn": 113,
-    "fix": {
-      "range": [
-        2021,
-        2119
-      ],
-      "text": "'flex w-full cursor-not-allowed items-center rounded-md p-2 text-muted-foreground hover:underline'"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Replace \`\\"cursor-not-allowed·opacity-60\\"\` with \`'cursor-not-allowed·opacity-60',\`",
-    "line": 70,
-    "column": 32,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 70,
-    "endColumn": 63,
-    "fix": {
-      "range": [
-        2152,
-        2183
-      ],
-      "text": "'cursor-not-allowed opacity-60',"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Replace \`\\"cursor-not-allowed·opacity-60\\"\` with \`'cursor-not-allowed·opacity-60',\`",
     "line": 70,
     "column": 32,
@@ -14014,44 +13788,8 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`\\"ml-2·rounded-md·bg-muted·px-1.5·py-0.5·text-xs·leading-none·text-muted-foreground·no-underline·group-hover:no-underline\\"\` with \`'ml-2·rounded-md·bg-muted·px-1.5·py-0.5·text-xs·leading-none·text-muted-foreground·no-underline·group-hover:no-underline'\`",
-    "line": 75,
-    "column": 31,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 75,
-    "endColumn": 152,
-    "fix": {
-      "range": [
-        2295,
-        2416
-      ],
-      "text": "'ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline'"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Insert \`,\`",
-    "line": 80,
-    "column": 10,
-    "nodeType": null,
-    "messageId": "insert",
-    "endLine": 80,
-    "endColumn": 10,
-    "fix": {
-      "range": [
-        2511,
-        2511
-      ],
-      "text": ","
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Insert \`,\`",
     "line": 80,
     "column": 10,
@@ -14102,24 +13840,6 @@ exports[`ESLint config > test-vue.vue 1`] = `
     "endColumn": 9
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Delete \`;\`",
-    "line": 2,
-    "column": 36,
-    "nodeType": null,
-    "messageId": "delete",
-    "endLine": 2,
-    "endColumn": 37,
-    "fix": {
-      "range": [
-        44,
-        45
-      ],
-      "text": ""
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Replace \`·'~/locale';\` with \`'~/locale'\`",
@@ -14138,44 +13858,8 @@ exports[`ESLint config > test-vue.vue 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`·'~/locale';\` with \`'~/locale'\`",
-    "line": 3,
-    "column": 21,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 3,
-    "endColumn": 33,
-    "fix": {
-      "range": [
-        66,
-        78
-      ],
-      "text": "'~/locale'"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
-    "message": "Delete \`;\`",
-    "line": 4,
-    "column": 50,
-    "nodeType": null,
-    "messageId": "delete",
-    "endLine": 4,
-    "endColumn": 51,
-    "fix": {
-      "range": [
-        128,
-        129
-      ],
-      "text": ""
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
     "message": "Delete \`;\`",
     "line": 4,
     "column": 50,
@@ -14461,24 +14145,6 @@ exports[`ESLint config > test-vue.vue 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Delete \`;\`",
-    "line": 28,
-    "column": 65,
-    "nodeType": null,
-    "messageId": "delete",
-    "endLine": 28,
-    "endColumn": 66,
-    "fix": {
-      "range": [
-        540,
-        541
-      ],
-      "text": ""
-    }
-  },
-  {
     "ruleId": "vue/new-line-between-multi-line-property",
     "severity": 2,
     "message": "Enforce new lines between multi-line properties in Vue components.",
@@ -14515,24 +14181,6 @@ exports[`ESLint config > test-vue.vue 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Replace \`⏎········'One·more·item',⏎········'%d·more·items',⏎········this.parentGroup.childrenCount·-·this.parentGroup.children.length,⏎······);\` with \`'One·more·item',·'%d·more·items',·this.parentGroup.childrenCount·-·this.parentGroup.children.length)\`",
-    "line": 31,
-    "column": 18,
-    "nodeType": null,
-    "messageId": "replace",
-    "endLine": 35,
-    "endColumn": 9,
-    "fix": {
-      "range": [
-        592,
-        726
-      ],
-      "text": "'One more item', '%d more items', this.parentGroup.childrenCount - this.parentGroup.children.length)"
-    }
-  },
-  {
     "ruleId": "biome-x/format",
     "severity": 1,
     "message": "Delete \`;⏎</script>⏎⏎<template>⏎··<ul·class=\\"groups-list·group-list-tree·gl-m-0·gl-flex·gl-flex-col\\">⏎····<!--·eslint-disable-next-line·vue/no-undef-components·-->⏎····<group-item⏎·······v-for=\\"(group,·index)·in·groups\\"⏎······:key=\\"index\\"⏎······:group=\\"group\\"⏎······:parent-group=\\"parentGroup\\"⏎······:action=\\"action\\"⏎····/>⏎····<li·v-if=\\"hasMoreChildren\\"·class=\\"group-row\\">⏎······<a·:href=\\"parentGroup.relativePath\\"·class=\\"group-row-contents·has-more-items·gl-py-3\\">⏎········<gl-icon·name=\\"external-link\\"·/>·{{·moreChildrenStats·}}⏎······</a>⏎····</li>⏎··</ul>⏎</template>\`",
@@ -14546,24 +14194,6 @@ exports[`ESLint config > test-vue.vue 1`] = `
       "range": [
         740,
         1304
-      ],
-      "text": ""
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Delete \`;\`",
-    "line": 38,
-    "column": 2,
-    "nodeType": null,
-    "messageId": "delete",
-    "endLine": 38,
-    "endColumn": 3,
-    "fix": {
-      "range": [
-        740,
-        741
       ],
       "text": ""
     }
@@ -14587,21 +14217,20 @@ exports[`ESLint config > test-vue.vue 1`] = `
     }
   },
   {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Delete \`·\`",
+    "ruleId": "vue/html-indent",
+    "severity": 1,
+    "message": "Expected indentation of 6 spaces but found 7 spaces.",
     "line": 45,
     "column": 1,
     "nodeType": null,
-    "messageId": "delete",
     "endLine": 45,
-    "endColumn": 2,
+    "endColumn": 8,
     "fix": {
       "range": [
         912,
-        913
+        919
       ],
-      "text": ""
+      "text": "      "
     }
   },
   {
@@ -14620,6 +14249,42 @@ exports[`ESLint config > test-vue.vue 1`] = `
         1048
       ],
       "text": ":action=\\"action\\"\\n      :parent-group=\\"parentGroup\\""
+    }
+  },
+  {
+    "ruleId": "vue/max-attributes-per-line",
+    "severity": 1,
+    "message": "'class' should be on a new line.",
+    "line": 51,
+    "column": 32,
+    "nodeType": "VAttribute",
+    "messageId": "shouldBeOnNewLine",
+    "endLine": 51,
+    "endColumn": 49,
+    "fix": {
+      "range": [
+        1086,
+        1087
+      ],
+      "text": "\\n"
+    }
+  },
+  {
+    "ruleId": "vue/max-attributes-per-line",
+    "severity": 1,
+    "message": "'class' should be on a new line.",
+    "line": 52,
+    "column": 43,
+    "nodeType": "VAttribute",
+    "messageId": "shouldBeOnNewLine",
+    "endLine": 52,
+    "endColumn": 92,
+    "fix": {
+      "range": [
+        1147,
+        1148
+      ],
+      "text": "\\n"
     }
   },
   {
@@ -14656,24 +14321,6 @@ exports[`ESLint config > test-vue.vue 1`] = `
         1215
       ],
       "text": "<GlIcon"
-    }
-  },
-  {
-    "ruleId": "prettier/prettier",
-    "severity": 2,
-    "message": "Insert \`⏎·······\`",
-    "line": 53,
-    "column": 41,
-    "nodeType": null,
-    "messageId": "insert",
-    "endLine": 53,
-    "endColumn": 41,
-    "fix": {
-      "range": [
-        1239,
-        1239
-      ],
-      "text": "\\n       "
     }
   }
 ]
