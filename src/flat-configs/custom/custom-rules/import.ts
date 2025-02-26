@@ -1,7 +1,4 @@
-import { getPackageField, isServerProject } from '../../../lib/utils.js'
 import type { FlatConfigRules } from '../../../types/eslint.js'
-
-const isESMCodeBase = isServerProject() && getPackageField('type') === 'module'
 
 export const importRules: FlatConfigRules = {
   'import-x/default': 'off',
@@ -18,7 +15,7 @@ export const importRules: FlatConfigRules = {
   'import-x/no-named-as-default-member': 'off',
   'import-x/no-named-default': 'error',
   'import-x/no-unresolved': 'off',
-  'import-x/no-useless-path-segments': ['error', { noUselessIndex: !isESMCodeBase }],
+  'import-x/no-useless-path-segments': 'off',
   'import-x/no-webpack-loader-syntax': 'error',
   'import-x/order': [
     'error',
