@@ -5,7 +5,16 @@ export const eslintRules: FlatConfigRules = {
   'accessor-pairs': ['error', { enforceForClassMembers: true, setWithoutGet: true }],
   'array-callback-return': ['error', { allowImplicit: false, checkForEach: false }],
   'arrow-body-style': 'off',
-  camelcase: ['error', { allow: ['^UNSAFE_'], ignoreGlobals: true, properties: 'never' }],
+  camelcase: [
+    'error',
+    {
+      allow: ['UNSAFE', 'UNSTABLE'],
+      ignoreDestructuring: true,
+      ignoreGlobals: true,
+      ignoreImports: true,
+      properties: 'never',
+    },
+  ],
   complexity: ['error'],
   curly: 'error',
   'default-case-last': 'error',
