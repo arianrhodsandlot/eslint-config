@@ -768,11 +768,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 304,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 307,
     "endColumn": 1
   },
@@ -807,11 +807,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 314,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 318,
     "endColumn": 1
   },
@@ -882,11 +882,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 323,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 327,
     "endColumn": 1
   },
@@ -1505,7 +1505,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 442,
     "column": 7,
     "nodeType": "CallExpression",
-    "messageId": "noLeakedTimeoutNoTimeoutId",
+    "messageId": "expectedTimeoutId",
     "endLine": 444,
     "endColumn": 18
   },
@@ -1566,11 +1566,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 457,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 468,
     "endColumn": 1
   },
@@ -1610,7 +1610,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 461,
     "column": 5,
     "nodeType": "CallExpression",
-    "messageId": "noLeakedTimeoutNoTimeoutId",
+    "messageId": "expectedTimeoutId",
     "endLine": 463,
     "endColumn": 16
   },
@@ -1826,11 +1826,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 504,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 507,
     "endColumn": 1
   },
@@ -2287,11 +2287,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 599,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 609,
     "endColumn": 1
   },
@@ -2428,11 +2428,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 621,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 634,
     "endColumn": 1
   },
@@ -2569,11 +2569,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 639,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 654,
     "endColumn": 1
   },
@@ -2883,11 +2883,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 727,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 733,
     "endColumn": 1
   },
@@ -3217,11 +3217,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 795,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 803,
     "endColumn": 1
   },
@@ -3275,11 +3275,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 808,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 814,
     "endColumn": 1
   },
@@ -3326,11 +3326,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 819,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 846,
     "endColumn": 1
   },
@@ -3714,11 +3714,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 898,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 908,
     "endColumn": 1
   },
@@ -3995,11 +3995,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 939,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 952,
     "endColumn": 1
   },
@@ -4760,11 +4760,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1075,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1117,
     "endColumn": 1
   },
@@ -5635,11 +5635,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1151,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1160,
     "endColumn": 1
   },
@@ -5884,11 +5884,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1265,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1273,
     "endColumn": 1
   },
@@ -5942,11 +5942,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1278,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1284,
     "endColumn": 1
   },
@@ -5993,11 +5993,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1289,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1316,
     "endColumn": 1
   },
@@ -6535,11 +6535,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1369,
     "column": 3,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1372,
     "endColumn": 1
   },
@@ -6864,11 +6864,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1467,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1472,
     "endColumn": 1
   },
@@ -7211,11 +7211,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1507,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1514,
     "endColumn": 1
   },
@@ -7540,11 +7540,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1545,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1564,
     "endColumn": 1
   },
@@ -7959,11 +7959,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1595,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1598,
     "endColumn": 1
   },
@@ -7988,11 +7988,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1603,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1604,
     "endColumn": 1
   },
@@ -8533,11 +8533,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1757,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1775,
     "endColumn": 1
   },
@@ -8699,11 +8699,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 1785,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 1809,
     "endColumn": 1
   },
@@ -10052,11 +10052,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 2026,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 2027,
     "endColumn": 1
   },
@@ -10870,11 +10870,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 2194,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 2204,
     "endColumn": 1
   },
@@ -10974,11 +10974,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 2211,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 2223,
     "endColumn": 1
   },
@@ -11206,11 +11206,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 2253,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 2259,
     "endColumn": 1
   },
@@ -12118,11 +12118,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 2625,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 2637,
     "endColumn": 1
   },
@@ -12288,11 +12288,11 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
-    "message": "Use JSX file extension as needed.",
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
     "line": 2643,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "filenameExtensionUnexpected",
+    "messageId": "useJsxFileExtensionAsNeeded",
     "endLine": 2644,
     "endColumn": 1
   },
