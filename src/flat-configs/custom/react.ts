@@ -43,6 +43,16 @@ export function getReactConfigs() {
         ],
       },
     })
+
+    if (isPackageInstalled('next') || isPackageInstalled('remix') || isPackageInstalled('waku')) {
+      reactConfigs.push({
+        files: ['src/pages/**/*', 'src/app/**/*'],
+        name: 'react',
+        rules: {
+          '@eslint-react/naming-convention/filename': 'off',
+        },
+      })
+    }
   }
 
   return reactConfigs
