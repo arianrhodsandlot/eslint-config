@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.18.4] - 2025-02-28
+### Fixed
+- Ignore imported name casings
+- Do not lint file names for certain frameworks
+- Disable no-useless-path-segments
+
 ## [0.18.3] - 2025-02-20
 ### Fixed
 - Fix import path
@@ -320,7 +326,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - First release!
 
 [Unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.17.2...HEAD
-[0.17.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.3...v0.17.2
+[0.17.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.4...v0.17.2
+[0.18.4]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.3...v0.18.4
 [0.18.3]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.2...v0.18.3
 [0.18.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.1...v0.18.2
 [0.18.1]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.0...v0.18.1
