@@ -7,4 +7,5 @@ export const sonarjsRules: FlatConfigRules = {
   'sonarjs/no-os-command-from-path': 'off',
   'sonarjs/os-command': 'off',
   'sonarjs/slow-regex': 'off',
+  'sonarjs/todo-tag': 'off',
 }
