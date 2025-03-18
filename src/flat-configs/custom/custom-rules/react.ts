@@ -15,4 +15,5 @@ export const reactRules: FlatConfigRules = {
   '@eslint-react/prefer-destructuring-assignment': 'error',
   '@eslint-react/prefer-shorthand-boolean': 'error',
   '@eslint-react/prefer-shorthand-fragment': 'error',
+  'jsx-a11y/label-has-associated-control': 'off',
 }
