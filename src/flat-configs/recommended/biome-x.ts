@@ -16,6 +16,9 @@ const biomeConfig: Configuration = {
   },
   linter: {
     rules: {
+      a11y: {
+        noLabelWithoutControl: 'off',
+      },
       security: {
         noGlobalEval: 'off',
       },
