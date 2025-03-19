@@ -772,7 +772,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 304,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 307,
     "endColumn": 1
   },
@@ -811,7 +811,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 314,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 318,
     "endColumn": 1
   },
@@ -886,7 +886,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 323,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 327,
     "endColumn": 1
   },
@@ -1570,7 +1570,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 457,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 468,
     "endColumn": 1
   },
@@ -1830,7 +1830,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 504,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 507,
     "endColumn": 1
   },
@@ -2291,7 +2291,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 599,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 609,
     "endColumn": 1
   },
@@ -2432,7 +2432,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 621,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 634,
     "endColumn": 1
   },
@@ -2573,7 +2573,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 639,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 654,
     "endColumn": 1
   },
@@ -2887,7 +2887,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 727,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 733,
     "endColumn": 1
   },
@@ -3221,7 +3221,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 795,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 803,
     "endColumn": 1
   },
@@ -3279,7 +3279,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 808,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 814,
     "endColumn": 1
   },
@@ -3330,7 +3330,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 819,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 846,
     "endColumn": 1
   },
@@ -3718,7 +3718,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 898,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 908,
     "endColumn": 1
   },
@@ -3999,7 +3999,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 939,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 952,
     "endColumn": 1
   },
@@ -4764,7 +4764,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1075,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1117,
     "endColumn": 1
   },
@@ -5639,7 +5639,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1151,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1160,
     "endColumn": 1
   },
@@ -5888,7 +5888,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1265,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1273,
     "endColumn": 1
   },
@@ -5946,7 +5946,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1278,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1284,
     "endColumn": 1
   },
@@ -5997,7 +5997,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1289,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1316,
     "endColumn": 1
   },
@@ -6539,7 +6539,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1369,
     "column": 3,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1372,
     "endColumn": 1
   },
@@ -6868,7 +6868,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1467,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1472,
     "endColumn": 1
   },
@@ -7027,7 +7027,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-context-provider",
     "severity": 1,
-    "message": "In React 19, you can render '<ThemeContext>' as a provider instead of '<ThemeContext.Provider>'.",
+    "message": "In React 19, you can render '<Context>' as a provider instead of '<Context.Provider>'.",
     "line": 1483,
     "column": 5,
     "nodeType": "JSXElement",
@@ -7142,10 +7142,10 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
     "line": 1496,
     "column": 17,
-    "nodeType": "CallExpression",
+    "nodeType": "Identifier",
     "messageId": "noUseContext",
     "endLine": 1496,
-    "endColumn": 41,
+    "endColumn": 27,
     "fix": {
       "range": [
         67829,
@@ -7215,7 +7215,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1507,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1514,
     "endColumn": 1
   },
@@ -7356,7 +7356,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-context-provider",
     "severity": 1,
-    "message": "In React 19, you can render '<CurrentUserContext>' as a provider instead of '<CurrentUserContext.Provider>'.",
+    "message": "In React 19, you can render '<Context>' as a provider instead of '<Context.Provider>'.",
     "line": 1523,
     "column": 5,
     "nodeType": "JSXElement",
@@ -7471,10 +7471,10 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
     "line": 1536,
     "column": 23,
-    "nodeType": "CallExpression",
+    "nodeType": "Identifier",
     "messageId": "noUseContext",
     "endLine": 1536,
-    "endColumn": 53,
+    "endColumn": 33,
     "fix": {
       "range": [
         68803,
@@ -7544,7 +7544,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1545,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1564,
     "endColumn": 1
   },
@@ -7619,10 +7619,10 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
     "line": 1554,
     "column": 30,
-    "nodeType": "CallExpression",
+    "nodeType": "Identifier",
     "messageId": "noUseContext",
     "endLine": 1554,
-    "endColumn": 60,
+    "endColumn": 40,
     "fix": {
       "range": [
         69375,
@@ -7879,10 +7879,10 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
     "line": 1586,
     "column": 23,
-    "nodeType": "CallExpression",
+    "nodeType": "Identifier",
     "messageId": "noUseContext",
     "endLine": 1586,
-    "endColumn": 53,
+    "endColumn": 33,
     "fix": {
       "range": [
         70260,
@@ -7963,7 +7963,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1595,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1598,
     "endColumn": 1
   },
@@ -7992,7 +7992,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1603,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1604,
     "endColumn": 1
   },
@@ -8537,7 +8537,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1757,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1775,
     "endColumn": 1
   },
@@ -8703,7 +8703,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1785,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 1809,
     "endColumn": 1
   },
@@ -10056,7 +10056,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2026,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 2027,
     "endColumn": 1
   },
@@ -10874,7 +10874,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2194,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 2204,
     "endColumn": 1
   },
@@ -10978,7 +10978,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2211,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 2223,
     "endColumn": 1
   },
@@ -11210,7 +11210,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2253,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 2259,
     "endColumn": 1
   },
@@ -11497,13 +11497,13 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 2
   },
   {
-    "ruleId": "@eslint-react/hooks-extra/no-useless-custom-hooks",
+    "ruleId": "@eslint-react/hooks-extra/no-unnecessary-use-prefix",
     "severity": 1,
     "message": "A custom Hook 'useUntypedHook' should use at least one other hook.",
     "line": 2358,
     "column": 24,
     "nodeType": "ArrowFunctionExpression",
-    "messageId": "noUselessCustomHooks",
+    "messageId": "noUnnecessaryUsePrefix",
     "endLine": 2363,
     "endColumn": 2
   },
@@ -12122,7 +12122,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2625,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 2637,
     "endColumn": 1
   },
@@ -12292,7 +12292,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2643,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useJsxFileExtensionAsNeeded",
+    "messageId": "useNonJsxFileExtension",
     "endLine": 2644,
     "endColumn": 1
   },
@@ -13343,7 +13343,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
   {
     "ruleId": "@eslint-react/no-array-index-key",
     "severity": 1,
-    "message": "Do not use Array index as 'key'.",
+    "message": "Do not use item index in the array as its key.",
     "line": 19,
     "column": 19,
     "nodeType": "Identifier",
@@ -13491,7 +13491,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
   {
     "ruleId": "@eslint-react/no-array-index-key",
     "severity": 1,
-    "message": "Do not use Array index as 'key'.",
+    "message": "Do not use item index in the array as its key.",
     "line": 46,
     "column": 18,
     "nodeType": "Identifier",
@@ -13693,7 +13693,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
   {
     "ruleId": "@eslint-react/no-array-index-key",
     "severity": 1,
-    "message": "Do not use Array index as 'key'.",
+    "message": "Do not use item index in the array as its key.",
     "line": 67,
     "column": 18,
     "nodeType": "Identifier",
