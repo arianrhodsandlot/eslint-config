@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.18.6] - 2025-04-07
+### Fixed
+- Disable max-lines-per-function for hooks
+- Support react-router
+
 ## [0.18.5] - 2025-03-19
 ### Fixed
 - Disable jsx-a11y/label-has-associated-control
@@ -332,7 +337,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - First release!
 
 [Unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.17.2...HEAD
-[0.17.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.5...v0.17.2
+[0.17.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.6...v0.17.2
+[0.18.6]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.5...v0.18.6
 [0.18.5]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.4...v0.18.5
 [0.18.4]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.3...v0.18.4
 [0.18.3]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.18.2...v0.18.3
