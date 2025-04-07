@@ -14,7 +14,7 @@ function getAllowExportNames() {
       'viewport',
     )
   }
-  if (isPackageInstalled('remix')) {
+  if (isPackageInstalled('remix') || isPackageInstalled('react-router')) {
     allowExportNames.push('meta', 'links', 'headers', 'loader', 'action')
   }
   return allowExportNames
