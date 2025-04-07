@@ -1,4 +1,4 @@
-import { jsxOrTsxGlob } from '../../lib/constants.js'
+import { jsOrTsExtensionGlob, jsxOrTsxGlob } from '../../lib/constants.js'
 import { getContext, isPackageInstalled } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
@@ -25,7 +25,7 @@ export function getReactConfigs() {
 
   const reactConfigs: FlatConfigs = [
     {
-      files: [jsxOrTsxGlob],
+      files: [jsxOrTsxGlob, `**/hooks/**/*${jsOrTsExtensionGlob}`],
       name: 'react',
       rules: {
         'max-lines-per-function': 'off',

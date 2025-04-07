@@ -11499,7 +11499,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/hooks-extra/no-unnecessary-use-prefix",
     "severity": 1,
-    "message": "A custom Hook 'useUntypedHook' should use at least one other hook.",
+    "message": "If your function doesn't call any Hooks, avoid the 'use' prefix. Instead, write it as a regular function without the 'use' prefix.",
     "line": 2358,
     "column": 24,
     "nodeType": "ArrowFunctionExpression",
