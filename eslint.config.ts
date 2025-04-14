@@ -1,4 +1,4 @@
-import { createConfig } from './src'
+import { createConfig } from './src/index.ts'
 
 export default createConfig({
   append: {

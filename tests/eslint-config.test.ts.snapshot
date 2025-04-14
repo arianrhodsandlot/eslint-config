@@ -2836,7 +2836,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 691,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -3002,7 +3002,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 742,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -3134,7 +3134,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 765,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -3228,7 +3228,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 795,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -3286,7 +3286,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 808,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -3456,7 +3456,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 833,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -3638,7 +3638,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 878,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -3884,7 +3884,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 919,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -4060,7 +4060,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 943,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -4560,7 +4560,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 1032,
     "column": 8,
     "nodeType": "ClassDeclaration",
@@ -4678,7 +4678,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 1047,
     "column": 8,
     "nodeType": "ClassDeclaration",
@@ -5895,7 +5895,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 1265,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -5953,7 +5953,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 1278,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -6123,7 +6123,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 1303,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -6336,7 +6336,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 1344,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -8046,7 +8046,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 1621,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -8580,7 +8580,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 1760,
     "column": 8,
     "nodeType": "ClassDeclaration",
@@ -9659,7 +9659,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 1946,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -9987,7 +9987,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 2005,
     "column": 1,
     "nodeType": "ClassDeclaration",
@@ -10222,7 +10222,7 @@ exports[`ESLint config > test-md.md 1`] = `
   {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
-    "message": "Do not use class components. Use function components instead.",
+    "message": "Avoid using class components. Use function components instead.",
     "line": 2049,
     "column": 1,
     "nodeType": "ClassDeclaration",
