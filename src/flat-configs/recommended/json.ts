@@ -1,4 +1,4 @@
-import { eslintPluginJson } from '../../lib/eslint-plugins.js'
+import eslintPluginJson from '@eslint/json'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const jsonConfigs: FlatConfigs = [

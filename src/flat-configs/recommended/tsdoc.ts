@@ -1,4 +1,4 @@
-import { eslintPluginTsdoc } from '../../lib/eslint-plugins.js'
+import eslintPluginTsdoc from 'eslint-plugin-tsdoc'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const tsdocConfigs: FlatConfigs = [

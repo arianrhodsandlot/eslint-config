@@ -1,4 +1,4 @@
-import { eslintPluginSecurity } from '../../lib/eslint-plugins.js'
+import eslintPluginSecurity from 'eslint-plugin-security'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const securityConfigs: FlatConfigs = [

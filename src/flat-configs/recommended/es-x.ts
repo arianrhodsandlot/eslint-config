@@ -1,4 +1,4 @@
-import { eslintPluginEsX } from '../../lib/eslint-plugins.js'
+import eslintPluginEsX from 'eslint-plugin-es-x'
 import { getContext } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 

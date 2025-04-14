@@ -1,4 +1,4 @@
-import { eslintPluginVueI18n } from '../../lib/eslint-plugins.js'
+import eslintPluginVueI18n from '@intlify/eslint-plugin-vue-i18n'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const vueI18nConfigs: FlatConfigs = eslintPluginVueI18n.configs['flat/recommended'].filter(

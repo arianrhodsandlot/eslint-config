@@ -1,4 +1,4 @@
-import { eslintPluginStylistic } from '../../lib/eslint-plugins.js'
+import eslintPluginStylistic from '@stylistic/eslint-plugin'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const stylisticConfigs: FlatConfigs = [

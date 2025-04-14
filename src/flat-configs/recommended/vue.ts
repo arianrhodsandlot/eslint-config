@@ -1,5 +1,7 @@
+import eslintPluginVue from 'eslint-plugin-vue'
+import eslintPluginVueScopedCSS from 'eslint-plugin-vue-scoped-css'
+import eslintPluginVuejsAccessibility from 'eslint-plugin-vuejs-accessibility'
 import tseslint from 'typescript-eslint'
-import { eslintPluginVue, eslintPluginVuejsAccessibility, eslintPluginVueScopedCSS } from '../../lib/eslint-plugins.js'
 import { isLegacyVue } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 

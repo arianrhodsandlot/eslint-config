@@ -1,6 +1,6 @@
+import eslintPluginJsdoc from 'eslint-plugin-jsdoc'
 import _ from 'lodash'
 import { tsGlob } from '../../lib/constants.js'
-import { eslintPluginJsdoc } from '../../lib/eslint-plugins.js'
 import { getContext } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 

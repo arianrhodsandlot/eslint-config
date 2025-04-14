@@ -1,6 +1,6 @@
+import eslintPluginN from 'eslint-plugin-n'
 import _ from 'lodash'
 import { jsxOrTsxGlob } from '../../lib/constants.js'
-import { eslintPluginN } from '../../lib/eslint-plugins.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 const { mapValues } = _

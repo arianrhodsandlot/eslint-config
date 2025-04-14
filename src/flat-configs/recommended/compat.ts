@@ -1,4 +1,4 @@
-import { eslintPluginCompat } from '../../lib/eslint-plugins.js'
+import eslintPluginCompat from 'eslint-plugin-compat'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const compatConfigs: FlatConfigs = [

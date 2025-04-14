@@ -1,4 +1,4 @@
-import { eslintPluginPromise } from '../../lib/eslint-plugins.js'
+import eslintPluginPromise from 'eslint-plugin-promise'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 export const promiseConfigs: FlatConfigs = [

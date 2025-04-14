@@ -1,23 +1,15 @@
 import { execSync } from 'node:child_process'
 import path from 'node:path'
 import js from '@eslint/js'
+import eslintPluginDiff from 'eslint-plugin-diff'
 import tseslint from 'typescript-eslint'
-import { eslintPluginDiff, eslintPluginVue } from '../../lib/eslint-plugins.js'
-import { isLegacyVue } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 
 const essentialBuiltinRules = Object.keys(js.configs.recommended.rules)
 const essentialTsRules = tseslint.configs.recommended.flatMap(({ rules = {} }) =>
   Object.keys(rules).filter((name) => rules[name] === 'error'),
 )
-const vueConfigName = `flat/${isLegacyVue ? 'vue2-' : ''}recommended`
-const essentialVueRules = eslintPluginVue.configs[vueConfigName].flatMap(({ rules = {} }) => Object.keys(rules))
-const essentialRules = new Set([
-  'prettier/prettier',
-  ...essentialBuiltinRules,
-  ...essentialTsRules,
-  ...essentialVueRules,
-])
+const essentialRules = new Set(['prettier/prettier', ...essentialBuiltinRules, ...essentialTsRules])
 essentialRules.delete('vue/attributes-order')
 essentialRules.delete('vue/html-self-closing')
 
@@ -46,7 +38,9 @@ export const diffConfigs: FlatConfigs = [
         const filteredMessages = postprocess(messages, filename)
         return messages
           .flat()
-          .filter((message) => filteredMessages.includes(message) || essentialRules.has(message.ruleId))
+          .filter(
+            (message) => filteredMessages.includes(message) || (message.ruleId && essentialRules.has(message.ruleId)),
+          )
       },
       preprocess(text, filename) {
         if (process.env.VSCODE_PID) {
