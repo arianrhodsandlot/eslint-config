@@ -1,3 +1,4 @@
+import { defineConfig, globalIgnores } from '@eslint/config-helpers'
 import _ from 'lodash'
 import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
@@ -60,7 +61,7 @@ export function createConfig(
   const config = [
     ...recommendedFlatConfig,
     ...customFlatConfig,
-    { ignores: ['node_modules/**/*', 'dist/**/*', '**/vendor?(s)/**/*', ...getGitIgnores()] },
+    globalIgnores(['node_modules/**/*', 'dist/**/*', '**/vendor?(s)/**/*', ...getGitIgnores()]),
   ].map((config) => {
     if ('rules' in config) {
       config.files ??= [sourceGlob]
@@ -78,5 +79,5 @@ export function createConfig(
     config.push(...append)
   }
 
-  return config
+  return defineConfig(config)
 }

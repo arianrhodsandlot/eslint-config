@@ -2058,11 +2058,11 @@ exports[`ESLint config > test-md.md 1`] = `
     "severity": 1,
     "message": "In React 19, 'forwardRef' is no longer necessary. Pass 'ref' as a prop instead.",
     "line": 559,
-    "column": 19,
-    "nodeType": "CallExpression",
+    "column": 7,
+    "nodeType": "Identifier",
     "messageId": "noForwardRef",
-    "endLine": 568,
-    "endColumn": 3,
+    "endLine": 559,
+    "endColumn": 16,
     "fix": {
       "range": [
         27675,
@@ -8214,11 +8214,11 @@ exports[`ESLint config > test-md.md 1`] = `
     "severity": 1,
     "message": "In React 19, 'forwardRef' is no longer necessary. Pass 'ref' as a prop instead.",
     "line": 1640,
-    "column": 28,
-    "nodeType": "CallExpression",
+    "column": 14,
+    "nodeType": "Identifier",
     "messageId": "noForwardRef",
-    "endLine": 1644,
-    "endColumn": 3,
+    "endLine": 1640,
+    "endColumn": 25,
     "fix": {
       "range": [
         71499,
@@ -8398,11 +8398,11 @@ exports[`ESLint config > test-md.md 1`] = `
     "severity": 1,
     "message": "In React 19, 'forwardRef' is no longer necessary. Pass 'ref' as a prop instead.",
     "line": 1660,
-    "column": 28,
-    "nodeType": "CallExpression",
+    "column": 14,
+    "nodeType": "Identifier",
     "messageId": "noForwardRef",
-    "endLine": 1669,
-    "endColumn": 2,
+    "endLine": 1660,
+    "endColumn": 25,
     "fix": {
       "range": [
         72156,
@@ -11501,11 +11501,11 @@ exports[`ESLint config > test-md.md 1`] = `
     "severity": 1,
     "message": "If your function doesn't call any Hooks, avoid the 'use' prefix. Instead, write it as a regular function without the 'use' prefix.",
     "line": 2358,
-    "column": 24,
-    "nodeType": "ArrowFunctionExpression",
+    "column": 7,
+    "nodeType": "Identifier",
     "messageId": "noUnnecessaryUsePrefix",
-    "endLine": 2363,
-    "endColumn": 2
+    "endLine": 2358,
+    "endColumn": 21
   },
   {
     "ruleId": "biome-x/format",
