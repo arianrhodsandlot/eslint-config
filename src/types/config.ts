@@ -43,9 +43,6 @@ export interface CreateConfigOptions {
   /** Append custom flat configs to default */
   append?: FlatConfig | FlatConfigs
 
-  /** Should eslint-plugin-biome-x be enabled */
-  biomeX?: boolean
-
   /** Should \@eslint/css be enabled */
   css?: boolean
 

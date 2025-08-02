@@ -1,7 +1,6 @@
 import { getContext } from '../../lib/utils.js'
 import type { FlatConfigs } from '../../types/eslint.js'
 import { baseConfigs } from './base.js'
-import { biomeXConfigs } from './biome-x.js'
 import { compatConfigs } from './compat.js'
 import { cssConfigs } from './css.js'
 import { diffConfigs } from './diff.js'
@@ -30,7 +29,6 @@ import { vueConfigs } from './vue.js'
 
 export function getRecommendedFlatConfigs() {
   const optionalConfigsMap = {
-    biomeX: biomeXConfigs,
     compat: compatConfigs,
     css: cssConfigs,
     eslintComments: eslintCommentsConfigs,

@@ -52,7 +52,7 @@ To use this package, ESLint should be configured by an file named `eslint.config
         export default createConfig({
           markdown: false,
           next: true,
-          prettier: false,
+          prettier: true,
           react: true,
           rules: {
             eqeqeq: 'off',

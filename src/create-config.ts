@@ -18,7 +18,6 @@ const { defaultsDeep } = _
 
 const defaultOptions: Required<CreateConfigOptions> = {
   append: [],
-  biomeX: true,
   compat: getPackageField('browserslist') || lookupFiles('.browserslistrc'),
   css: true,
   diff: shouldEnableDiff(),
