@@ -553,16 +553,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 1
   },
   {
-    "ruleId": "react-hooks/rules-of-hooks",
-    "severity": 2,
-    "message": "React Hook \\"useState\\" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function.",
-    "line": 304,
-    "column": 27,
-    "nodeType": "Identifier",
-    "endLine": 304,
-    "endColumn": 35
-  },
-  {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
     "severity": 2,
     "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
@@ -572,16 +562,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "useNonJsxFileExtension",
     "endLine": 318,
     "endColumn": 1
-  },
-  {
-    "ruleId": "react-hooks/rules-of-hooks",
-    "severity": 2,
-    "message": "React Hook \\"useState\\" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function.",
-    "line": 314,
-    "column": 25,
-    "nodeType": "Identifier",
-    "endLine": 314,
-    "endColumn": 33
   },
   {
     "ruleId": "perfectionist/sort-union-types",
@@ -613,16 +593,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 1
   },
   {
-    "ruleId": "react-hooks/rules-of-hooks",
-    "severity": 2,
-    "message": "React Hook \\"useState\\" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function.",
-    "line": 323,
-    "column": 25,
-    "nodeType": "Identifier",
-    "endLine": 323,
-    "endColumn": 33
-  },
-  {
     "ruleId": null,
     "nodeType": null,
     "fatal": true,
@@ -643,16 +613,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 40
   },
   {
-    "ruleId": "react-hooks/rules-of-hooks",
-    "severity": 2,
-    "message": "React Hook \\"useCallback\\" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function.",
-    "line": 369,
-    "column": 1,
-    "nodeType": "Identifier",
-    "endLine": 369,
-    "endColumn": 12
-  },
-  {
     "ruleId": "@typescript-eslint/no-empty-function",
     "severity": 2,
     "message": "Unexpected empty arrow function.",
@@ -662,16 +622,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "unexpected",
     "endLine": 369,
     "endColumn": 22
-  },
-  {
-    "ruleId": "react-hooks/rules-of-hooks",
-    "severity": 2,
-    "message": "React Hook \\"useCallback\\" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function.",
-    "line": 371,
-    "column": 1,
-    "nodeType": "Identifier",
-    "endLine": 371,
-    "endColumn": 12
   },
   {
     "ruleId": "@typescript-eslint/no-empty-function",
@@ -964,16 +914,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "useNonJsxFileExtension",
     "endLine": 507,
     "endColumn": 1
-  },
-  {
-    "ruleId": "react-hooks/rules-of-hooks",
-    "severity": 2,
-    "message": "React Hook \\"useRef\\" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function.",
-    "line": 504,
-    "column": 16,
-    "nodeType": "Identifier",
-    "endLine": 504,
-    "endColumn": 22
   },
   {
     "ruleId": null,
@@ -4136,16 +4076,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 1
   },
   {
-    "ruleId": "react-hooks/rules-of-hooks",
-    "severity": 2,
-    "message": "React Hook \\"useState\\" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function.",
-    "line": 2194,
-    "column": 27,
-    "nodeType": "Identifier",
-    "endLine": 2194,
-    "endColumn": 35
-  },
-  {
     "ruleId": "perfectionist/sort-objects",
     "severity": 2,
     "message": "Expected \\"bar\\" to come before \\"foo\\".",
@@ -4184,16 +4114,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "useNonJsxFileExtension",
     "endLine": 2223,
     "endColumn": 1
-  },
-  {
-    "ruleId": "react-hooks/rules-of-hooks",
-    "severity": 2,
-    "message": "React Hook \\"useState\\" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function.",
-    "line": 2211,
-    "column": 27,
-    "nodeType": "Identifier",
-    "endLine": 2211,
-    "endColumn": 35
   },
   {
     "ruleId": "perfectionist/sort-objects",
