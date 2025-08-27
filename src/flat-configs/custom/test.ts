@@ -20,6 +20,11 @@ export function getTestConfigs() {
       '@typescript-eslint/no-non-null-assertion': 'off',
     })
   }
+  if (options.react) {
+    Object.assign(rules, {
+      'react-hooks/rules-of-hooks': 'off',
+    })
+  }
 
   const testConfigs: FlatConfigs = [{ files, name: 'test', rules }]
   return testConfigs

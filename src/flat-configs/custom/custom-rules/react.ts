@@ -1,6 +1,8 @@
 import type { FlatConfigRules } from '../../../types/eslint.js'
 
 export const reactRules: FlatConfigRules = {
+  '@eslint-react/dom/no-dangerously-set-innerhtml': 'off',
+  '@eslint-react/dom/no-unsafe-iframe-sandbox': 'off',
   '@eslint-react/hooks-extra/ensure-use-callback-has-non-empty-deps': 'error',
   '@eslint-react/hooks-extra/ensure-use-memo-has-non-empty-deps': 'error',
   '@eslint-react/naming-convention/component-name': 'error',
@@ -16,4 +18,5 @@ export const reactRules: FlatConfigRules = {
   '@eslint-react/prefer-shorthand-boolean': 'error',
   '@eslint-react/prefer-shorthand-fragment': 'error',
   'jsx-a11y/label-has-associated-control': 'off',
+  'jsx-a11y/no-autofocus': 'off',
 }
