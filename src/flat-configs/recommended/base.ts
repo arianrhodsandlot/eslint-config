@@ -12,7 +12,6 @@ export const baseConfigs: FlatConfigs = [
         ...globals.commonjs,
         ...globals.nodeBuiltin,
       },
-      // @ts-expect-error types in tseslint do not match those in eslint
       parser: tseslint.parser,
     },
     linterOptions: { reportUnusedDisableDirectives: true },

@@ -20,7 +20,6 @@ export function getPrettierConfigs() {
 
   const prettierConfig = typeof options.prettier === 'object' ? options.prettier : defaultPrettierConfig
   const prettierConfigs: FlatConfigs = [
-    // @ts-expect-error ignore plugin type errors
     { name: 'prettier/recommended', ...eslintPluginPrettierRecommended },
     { name: 'prettier/recommended', rules: { 'prettier/prettier': ['error', prettierConfig] } },
   ]
