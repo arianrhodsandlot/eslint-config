@@ -11,7 +11,6 @@ export const reactConfigs: FlatConfigs = [
     plugins: { 'jsx-a11y': eslintPluginJsxA11y },
     rules: eslintPluginJsxA11y.configs.recommended.rules,
   },
-  // @ts-expect-error unknown reason
   eslintPluginReact.configs.recommended,
   {
     name: 'react-hooks/recommended',
