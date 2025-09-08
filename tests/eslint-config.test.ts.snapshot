@@ -4,33 +4,33 @@ exports[`ESLint config > test-css.css 1`] = `
     "ruleId": "css/no-invalid-properties",
     "severity": 2,
     "message": "Invalid value '1' for property 'color'. Expected <color>.",
-    "line": 2,
+    "line": 4,
     "column": 10,
     "nodeType": null,
     "messageId": "invalidPropertyValue",
-    "endLine": 2,
+    "endLine": 4,
     "endColumn": 11
   },
   {
     "ruleId": "css/no-invalid-at-rules",
     "severity": 2,
     "message": "Unknown at-rule '@aa' found.",
-    "line": 5,
+    "line": 7,
     "column": 3,
     "nodeType": null,
     "messageId": "unknownAtRule",
-    "endLine": 5,
+    "endLine": 7,
     "endColumn": 6
   },
   {
     "ruleId": "css/no-invalid-at-rules",
     "severity": 2,
     "message": "Unknown descriptor 'xx' found for at-rule '@aa'.",
-    "line": 6,
+    "line": 8,
     "column": 5,
     "nodeType": null,
     "messageId": "unknownDescriptor",
-    "endLine": 6,
+    "endLine": 8,
     "endColumn": 7
   }
 ]
@@ -621,7 +621,23 @@ exports[`ESLint config > test-md.md 1`] = `
     "nodeType": "ArrowFunctionExpression",
     "messageId": "unexpected",
     "endLine": 369,
-    "endColumn": 22
+    "endColumn": 22,
+    "suggestions": [
+      {
+        "messageId": "suggestComment",
+        "data": {
+          "name": "arrow function"
+        },
+        "fix": {
+          "range": [
+            18428,
+            18428
+          ],
+          "text": " /* empty */ "
+        },
+        "desc": "Add comment inside empty arrow function."
+      }
+    ]
   },
   {
     "ruleId": "@typescript-eslint/no-empty-function",
@@ -632,7 +648,23 @@ exports[`ESLint config > test-md.md 1`] = `
     "nodeType": "ArrowFunctionExpression",
     "messageId": "unexpected",
     "endLine": 371,
-    "endColumn": 27
+    "endColumn": 27,
+    "suggestions": [
+      {
+        "messageId": "suggestComment",
+        "data": {
+          "name": "arrow function"
+        },
+        "fix": {
+          "range": [
+            18485,
+            18485
+          ],
+          "text": " /* empty */ "
+        },
+        "desc": "Add comment inside empty arrow function."
+      }
+    ]
   },
   {
     "ruleId": "perfectionist/sort-object-types",
@@ -1149,7 +1181,23 @@ exports[`ESLint config > test-md.md 1`] = `
     "nodeType": "ArrowFunctionExpression",
     "messageId": "unexpected",
     "endLine": 645,
-    "endColumn": 40
+    "endColumn": 40,
+    "suggestions": [
+      {
+        "messageId": "suggestComment",
+        "data": {
+          "name": "arrow function"
+        },
+        "fix": {
+          "range": [
+            30501,
+            30501
+          ],
+          "text": " /* empty */ "
+        },
+        "desc": "Add comment inside empty arrow function."
+      }
+    ]
   },
   {
     "ruleId": "@typescript-eslint/no-empty-function",
@@ -1160,7 +1208,23 @@ exports[`ESLint config > test-md.md 1`] = `
     "nodeType": "ArrowFunctionExpression",
     "messageId": "unexpected",
     "endLine": 651,
-    "endColumn": 40
+    "endColumn": 40,
+    "suggestions": [
+      {
+        "messageId": "suggestComment",
+        "data": {
+          "name": "arrow function"
+        },
+        "fix": {
+          "range": [
+            30693,
+            30693
+          ],
+          "text": " /* empty */ "
+        },
+        "desc": "Add comment inside empty arrow function."
+      }
+    ]
   },
   {
     "ruleId": "@typescript-eslint/consistent-type-definitions",
@@ -1387,7 +1451,23 @@ exports[`ESLint config > test-md.md 1`] = `
     "nodeType": "FunctionExpression",
     "messageId": "unexpected",
     "endLine": 812,
-    "endColumn": 51
+    "endColumn": 51,
+    "suggestions": [
+      {
+        "messageId": "suggestComment",
+        "data": {
+          "name": "static method 'getDerivedStateFromProps'"
+        },
+        "fix": {
+          "range": [
+            36774,
+            36774
+          ],
+          "text": " /* empty */ "
+        },
+        "desc": "Add comment inside empty static method 'getDerivedStateFromProps'."
+      }
+    ]
   },
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",
@@ -2320,7 +2400,23 @@ exports[`ESLint config > test-md.md 1`] = `
     "nodeType": "FunctionExpression",
     "messageId": "unexpected",
     "endLine": 1282,
-    "endColumn": 51
+    "endColumn": 51,
+    "suggestions": [
+      {
+        "messageId": "suggestComment",
+        "data": {
+          "name": "static method 'getDerivedStateFromProps'"
+        },
+        "fix": {
+          "range": [
+            55383,
+            55383
+          ],
+          "text": " /* empty */ "
+        },
+        "desc": "Add comment inside empty static method 'getDerivedStateFromProps'."
+      }
+    ]
   },
   {
     "ruleId": "@eslint-react/naming-convention/filename-extension",

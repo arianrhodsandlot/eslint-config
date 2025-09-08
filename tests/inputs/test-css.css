@@ -1,3 +1,5 @@
+@plugin '@iconify/tailwind4';
+
 body {
   color: 1;
   background: red;
