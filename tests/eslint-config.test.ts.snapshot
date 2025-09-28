@@ -41,7 +41,7 @@ exports[`ESLint config > test-js.js 1`] = `
   {
     "ruleId": "jsdoc/tag-lines",
     "severity": 1,
-    "message": "Expected only 0 line after block description",
+    "message": "Expected only 0 lines after block description",
     "line": 27,
     "column": 1,
     "nodeType": "Block",
@@ -63,6 +63,16 @@ exports[`ESLint config > test-js.js 1`] = `
     "column": 1,
     "nodeType": "Block",
     "endLine": 30,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "jsdoc/reject-function-type",
+    "severity": 1,
+    "message": "Prefer a more specific type to \`Function\`",
+    "line": 31,
+    "column": 1,
+    "nodeType": "Block",
+    "endLine": 31,
     "endColumn": 1
   },
   {
@@ -149,6 +159,16 @@ exports[`ESLint config > test-js.js 1`] = `
       ],
       "text": "/**\\n * Creates a debounced function that delays invoking \`func\` until after \`wait\`\\n * milliseconds have elapsed since the last time the debounced function was\\n * invoked, or until the next browser frame is drawn. The debounced function\\n * comes with a \`cancel\` method to cancel delayed \`func\` invocations and a\\n * \`flush\` method to immediately invoke them. Provide \`options\` to indicate\\n * whether \`func\` should be invoked on the leading and/or trailing edge of the\\n * \`wait\` timeout. The \`func\` is invoked with the last arguments provided to the\\n * debounced function. Subsequent calls to the debounced function return the\\n * result of the last \`func\` invocation.\\n *\\n * **Note:** If \`leading\` and \`trailing\` options are \`true\`, \`func\` is\\n * invoked on the trailing edge of the timeout only if the debounced function\\n * is invoked more than once during the \`wait\` timeout.\\n *\\n * If \`wait\` is \`0\` and \`leading\` is \`false\`, \`func\` invocation is deferred\\n * until the next tick, similar to \`setTimeout\` with a timeout of \`0\`.\\n *\\n * If \`wait\` is omitted in an environment with \`requestAnimationFrame\`, \`func\`\\n * invocation will be deferred until the next frame is drawn (typically about\\n * 16ms).\\n *\\n * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)\\n * for details over the differences between \`debounce\` and \`throttle\`.\\n *\\n * @since 0.1.0\\n * @category Function\\n * @param {Function} func The function to debounce.\\n * @param {number} [wait]\\n *  The number of milliseconds to delay; if omitted, \`requestAnimationFrame\` is\\n *  used (if available).\\n * @param {Object} [options] The options object.\\n * @param {boolean} [options.leading]\\n *  Specify invoking on the leading edge of the timeout.\\n * @param {number} [options.maxWait]\\n *  The maximum time \`func\` is allowed to be delayed before it's invoked.\\n * @param {boolean} [options.trailing]\\n *  Specify invoking on the trailing edge of the timeout.\\n * @returns {Function} Returns the new debounced function.\\n * @example\\n *\\n * // Avoid costly calculations while the window size is in flux.\\n * jQuery(window).on('resize', debounce(calculateLayout, 150))\\n *\\n * // Invoke \`sendMail\` when clicked, debouncing subsequent calls.\\n * jQuery(element).on('click', debounce(sendMail, 300, {\\n *   'leading': true,\\n *   'trailing': false\\n * }))\\n *\\n * // Ensure \`batchLog\` is invoked once after 1 second of debounced calls.\\n * const debounced = debounce(batchLog, 250, { 'maxWait': 1000 })\\n * const source = new EventSource('/stream')\\n * jQuery(source).on('message', debounced)\\n *\\n * // Cancel the trailing debounced invocation.\\n * jQuery(window).on('popstate', debounced.cancel)\\n *\\n * // Check for pending invocations.\\n * const status = debounced.pending() ? \\"Pending...\\" : \\"Ready\\"\\n */"
     }
+  },
+  {
+    "ruleId": "jsdoc/reject-function-type",
+    "severity": 1,
+    "message": "Prefer a more specific type to \`Function\`",
+    "line": 42,
+    "column": 1,
+    "nodeType": "Block",
+    "endLine": 42,
+    "endColumn": 1
   },
   {
     "ruleId": "no-implicit-coercion",
@@ -548,7 +568,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 304,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 307,
     "endColumn": 1
   },
@@ -559,7 +579,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 314,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 318,
     "endColumn": 1
   },
@@ -588,7 +608,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 323,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 327,
     "endColumn": 1
   },
@@ -766,10 +786,54 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 403,
     "column": 7,
-    "nodeType": "JSXElement",
+    "nodeType": "JSXOpeningElement",
     "messageId": "noMissingButtonType",
-    "endLine": 405,
-    "endColumn": 16
+    "endLine": 403,
+    "endColumn": 77,
+    "suggestions": [
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "button"
+        },
+        "fix": {
+          "range": [
+            19385,
+            19385
+          ],
+          "text": " type=\\"button\\""
+        },
+        "desc": "Add 'type' attribute with value 'button'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "submit"
+        },
+        "fix": {
+          "range": [
+            19385,
+            19385
+          ],
+          "text": " type=\\"submit\\""
+        },
+        "desc": "Add 'type' attribute with value 'submit'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "reset"
+        },
+        "fix": {
+          "range": [
+            19385,
+            19385
+          ],
+          "text": " type=\\"reset\\""
+        },
+        "desc": "Add 'type' attribute with value 'reset'."
+      }
+    ]
   },
   {
     "ruleId": "perfectionist/sort-objects",
@@ -795,10 +859,54 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 406,
     "column": 7,
-    "nodeType": "JSXElement",
+    "nodeType": "JSXOpeningElement",
     "messageId": "noMissingButtonType",
-    "endLine": 408,
-    "endColumn": 16
+    "endLine": 406,
+    "endColumn": 75,
+    "suggestions": [
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "button"
+        },
+        "fix": {
+          "range": [
+            19488,
+            19488
+          ],
+          "text": " type=\\"button\\""
+        },
+        "desc": "Add 'type' attribute with value 'button'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "submit"
+        },
+        "fix": {
+          "range": [
+            19488,
+            19488
+          ],
+          "text": " type=\\"submit\\""
+        },
+        "desc": "Add 'type' attribute with value 'submit'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "reset"
+        },
+        "fix": {
+          "range": [
+            19488,
+            19488
+          ],
+          "text": " type=\\"reset\\""
+        },
+        "desc": "Add 'type' attribute with value 'reset'."
+      }
+    ]
   },
   {
     "ruleId": "perfectionist/sort-objects",
@@ -845,7 +953,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 457,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 468,
     "endColumn": 1
   },
@@ -943,7 +1051,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 504,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 507,
     "endColumn": 1
   },
@@ -1102,7 +1210,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 599,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 609,
     "endColumn": 1
   },
@@ -1135,7 +1243,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 621,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 634,
     "endColumn": 1
   },
@@ -1168,7 +1276,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 639,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 654,
     "endColumn": 1
   },
@@ -1280,7 +1388,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 727,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 733,
     "endColumn": 1
   },
@@ -1387,7 +1495,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 795,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 803,
     "endColumn": 1
   },
@@ -1427,7 +1535,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 808,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 814,
     "endColumn": 1
   },
@@ -1476,7 +1584,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 819,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 846,
     "endColumn": 1
   },
@@ -1601,7 +1709,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 898,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 908,
     "endColumn": 1
   },
@@ -1716,7 +1824,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 939,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 952,
     "endColumn": 1
   },
@@ -2001,7 +2109,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1075,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1117,
     "endColumn": 1
   },
@@ -2267,7 +2375,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1151,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1160,
     "endColumn": 1
   },
@@ -2336,7 +2444,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1265,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1273,
     "endColumn": 1
   },
@@ -2376,7 +2484,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1278,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1284,
     "endColumn": 1
   },
@@ -2425,7 +2533,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1289,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1316,
     "endColumn": 1
   },
@@ -2493,10 +2601,54 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 1330,
     "column": 3,
-    "nodeType": "JSXElement",
+    "nodeType": "JSXOpeningElement",
     "messageId": "noMissingButtonType",
     "endLine": 1334,
-    "endColumn": 5
+    "endColumn": 5,
+    "suggestions": [
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "button"
+        },
+        "fix": {
+          "range": [
+            57307,
+            57307
+          ],
+          "text": " type=\\"button\\""
+        },
+        "desc": "Add 'type' attribute with value 'button'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "submit"
+        },
+        "fix": {
+          "range": [
+            57307,
+            57307
+          ],
+          "text": " type=\\"submit\\""
+        },
+        "desc": "Add 'type' attribute with value 'submit'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "reset"
+        },
+        "fix": {
+          "range": [
+            57307,
+            57307
+          ],
+          "text": " type=\\"reset\\""
+        },
+        "desc": "Add 'type' attribute with value 'reset'."
+      }
+    ]
   },
   {
     "ruleId": "@typescript-eslint/consistent-type-definitions",
@@ -2603,7 +2755,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1369,
     "column": 3,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1372,
     "endColumn": 1
   },
@@ -2741,7 +2893,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1467,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1472,
     "endColumn": 1
   },
@@ -2890,7 +3042,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1507,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1514,
     "endColumn": 1
   },
@@ -3021,7 +3173,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1545,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1564,
     "endColumn": 1
   },
@@ -3159,7 +3311,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1595,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1598,
     "endColumn": 1
   },
@@ -3170,7 +3322,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1603,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1604,
     "endColumn": 1
   },
@@ -3269,6 +3421,61 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
+    "ruleId": "@eslint-react/dom/no-missing-button-type",
+    "severity": 1,
+    "message": "Add missing 'type' attribute on 'button' component.",
+    "line": 1641,
+    "column": 45,
+    "nodeType": "JSXAttribute",
+    "messageId": "noMissingButtonType",
+    "endLine": 1641,
+    "endColumn": 62,
+    "suggestions": [
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "button"
+        },
+        "fix": {
+          "range": [
+            71584,
+            71601
+          ],
+          "text": "type=\\"button\\""
+        },
+        "desc": "Add 'type' attribute with value 'button'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "submit"
+        },
+        "fix": {
+          "range": [
+            71584,
+            71601
+          ],
+          "text": "type=\\"submit\\""
+        },
+        "desc": "Add 'type' attribute with value 'submit'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "reset"
+        },
+        "fix": {
+          "range": [
+            71584,
+            71601
+          ],
+          "text": "type=\\"reset\\""
+        },
+        "desc": "Add 'type' attribute with value 'reset'."
+      }
+    ]
+  },
+  {
     "ruleId": "@typescript-eslint/consistent-type-imports",
     "severity": 2,
     "message": "Imports \\"ReactNode\\" and \\"Ref\\" are only used as type.",
@@ -3352,6 +3559,61 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
+    "ruleId": "@eslint-react/dom/no-missing-button-type",
+    "severity": 1,
+    "message": "Add missing 'type' attribute on 'button' component.",
+    "line": 1665,
+    "column": 47,
+    "nodeType": "JSXAttribute",
+    "messageId": "noMissingButtonType",
+    "endLine": 1665,
+    "endColumn": 64,
+    "suggestions": [
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "button"
+        },
+        "fix": {
+          "range": [
+            72290,
+            72307
+          ],
+          "text": "type=\\"button\\""
+        },
+        "desc": "Add 'type' attribute with value 'button'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "submit"
+        },
+        "fix": {
+          "range": [
+            72290,
+            72307
+          ],
+          "text": "type=\\"submit\\""
+        },
+        "desc": "Add 'type' attribute with value 'submit'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "reset"
+        },
+        "fix": {
+          "range": [
+            72290,
+            72307
+          ],
+          "text": "type=\\"reset\\""
+        },
+        "desc": "Add 'type' attribute with value 'reset'."
+      }
+    ]
+  },
+  {
     "ruleId": null,
     "nodeType": null,
     "fatal": true,
@@ -3376,7 +3638,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1757,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1775,
     "endColumn": 1
   },
@@ -3452,7 +3714,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 1785,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 1809,
     "endColumn": 1
   },
@@ -3587,13 +3849,13 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 13
   },
   {
-    "ruleId": "@eslint-react/no-comment-textnodes",
+    "ruleId": "@eslint-react/jsx-no-comment-textnodes",
     "severity": 1,
     "message": "Possible misused comment in text node. Comments inside children section of tag should be placed inside braces.",
     "line": 1824,
     "column": 10,
     "nodeType": "JSXText",
-    "messageId": "noCommentTextnodes",
+    "messageId": "jsxNoCommentTextnodes",
     "endLine": 1826,
     "endColumn": 7
   },
@@ -3657,10 +3919,54 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 1840,
     "column": 13,
-    "nodeType": "JSXElement",
+    "nodeType": "JSXOpeningElement",
     "messageId": "noMissingButtonType",
-    "endLine": 1845,
-    "endColumn": 22
+    "endLine": 1843,
+    "endColumn": 14,
+    "suggestions": [
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "button"
+        },
+        "fix": {
+          "range": [
+            78281,
+            78281
+          ],
+          "text": " type=\\"button\\""
+        },
+        "desc": "Add 'type' attribute with value 'button'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "submit"
+        },
+        "fix": {
+          "range": [
+            78281,
+            78281
+          ],
+          "text": " type=\\"submit\\""
+        },
+        "desc": "Add 'type' attribute with value 'submit'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "reset"
+        },
+        "fix": {
+          "range": [
+            78281,
+            78281
+          ],
+          "text": " type=\\"reset\\""
+        },
+        "desc": "Add 'type' attribute with value 'reset'."
+      }
+    ]
   },
   {
     "ruleId": "perfectionist/sort-jsx-props",
@@ -3686,19 +3992,63 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 1849,
     "column": 7,
-    "nodeType": "JSXElement",
+    "nodeType": "JSXOpeningElement",
     "messageId": "noMissingButtonType",
     "endLine": 1849,
-    "endColumn": 69
+    "endColumn": 50,
+    "suggestions": [
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "button"
+        },
+        "fix": {
+          "range": [
+            78494,
+            78494
+          ],
+          "text": " type=\\"button\\""
+        },
+        "desc": "Add 'type' attribute with value 'button'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "submit"
+        },
+        "fix": {
+          "range": [
+            78494,
+            78494
+          ],
+          "text": " type=\\"submit\\""
+        },
+        "desc": "Add 'type' attribute with value 'submit'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "reset"
+        },
+        "fix": {
+          "range": [
+            78494,
+            78494
+          ],
+          "text": " type=\\"reset\\""
+        },
+        "desc": "Add 'type' attribute with value 'reset'."
+      }
+    ]
   },
   {
-    "ruleId": "@eslint-react/no-comment-textnodes",
+    "ruleId": "@eslint-react/jsx-no-comment-textnodes",
     "severity": 1,
     "message": "Possible misused comment in text node. Comments inside children section of tag should be placed inside braces.",
     "line": 1849,
     "column": 69,
     "nodeType": "JSXText",
-    "messageId": "noCommentTextnodes",
+    "messageId": "jsxNoCommentTextnodes",
     "endLine": 1851,
     "endColumn": 5
   },
@@ -3868,7 +4218,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2026,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 2027,
     "endColumn": 1
   },
@@ -4034,10 +4384,54 @@ exports[`ESLint config > test-md.md 1`] = `
     "message": "Add missing 'type' attribute on 'button' component.",
     "line": 2119,
     "column": 10,
-    "nodeType": "JSXElement",
+    "nodeType": "JSXOpeningElement",
     "messageId": "noMissingButtonType",
     "endLine": 2119,
-    "endColumn": 53
+    "endColumn": 29,
+    "suggestions": [
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "button"
+        },
+        "fix": {
+          "range": [
+            88637,
+            88637
+          ],
+          "text": " type=\\"button\\""
+        },
+        "desc": "Add 'type' attribute with value 'button'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "submit"
+        },
+        "fix": {
+          "range": [
+            88637,
+            88637
+          ],
+          "text": " type=\\"submit\\""
+        },
+        "desc": "Add 'type' attribute with value 'submit'."
+      },
+      {
+        "messageId": "addButtonType",
+        "data": {
+          "type": "reset"
+        },
+        "fix": {
+          "range": [
+            88637,
+            88637
+          ],
+          "text": " type=\\"reset\\""
+        },
+        "desc": "Add 'type' attribute with value 'reset'."
+      }
+    ]
   },
   {
     "ruleId": "@eslint-react/prefer-destructuring-assignment",
@@ -4167,7 +4561,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2194,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 2204,
     "endColumn": 1
   },
@@ -4207,7 +4601,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2211,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 2223,
     "endColumn": 1
   },
@@ -4285,7 +4679,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2253,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 2259,
     "endColumn": 1
   },
@@ -4370,8 +4764,8 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 2
   },
   {
-    "ruleId": "@eslint-react/hooks-extra/no-unnecessary-use-prefix",
-    "severity": 1,
+    "ruleId": "@eslint-react/no-unnecessary-use-prefix",
+    "severity": 2,
     "message": "If your function doesn't call any Hooks, avoid the 'use' prefix. Instead, write it as a regular function without the 'use' prefix.",
     "line": 2358,
     "column": 7,
@@ -4617,7 +5011,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2625,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 2637,
     "endColumn": 1
   },
@@ -4686,7 +5080,7 @@ exports[`ESLint config > test-md.md 1`] = `
     "line": 2643,
     "column": 1,
     "nodeType": "Program",
-    "messageId": "useNonJsxFileExtension",
+    "messageId": "unnecessaryJSXExtension",
     "endLine": 2644,
     "endColumn": 1
   },

@@ -13,6 +13,7 @@ import {
   shouldEnableDiff,
 } from './lib/utils.js'
 import type { CreateConfigOptions } from './types/config.js'
+import type { FlatConfig } from './types/eslint.ts'
 
 const { defaultsDeep } = _
 
@@ -31,7 +32,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
   next: isPackageInstalled('next'),
   perfectionist: true,
   prepend: [],
-  prettier: isPackageInstalled('prettier'),
+  prettier: true,
   promise: true,
   react: isPackageInstalled('react'),
   regexp: true,
@@ -49,7 +50,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
 
 export function createConfig(
   initialOptions?: ((defailtOption?: typeof defaultOptions) => CreateConfigOptions) | CreateConfigOptions,
-) {
+): FlatConfig[] {
   const resolvedInitialOptions = typeof initialOptions === 'function' ? initialOptions(defaultOptions) : initialOptions
   const options: Required<CreateConfigOptions> = defaultsDeep(resolvedInitialOptions, defaultOptions)
   setContext({ options })
