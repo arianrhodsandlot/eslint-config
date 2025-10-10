@@ -23,7 +23,9 @@ describe('ESLint config', async () => {
     await test(inputFile, async (t) => {
       const file = path.join(inputsDir, inputFile)
       const [{ messages }] = await eslint.lintFiles(file)
-      t.assert.snapshot(messages)
+      for (const message of messages) {
+        t.assert.snapshot(message)
+      }
     })
   }
 })
