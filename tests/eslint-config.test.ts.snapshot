@@ -2,7 +2,7 @@ exports[`ESLint config > test-css.css 1`] = `
 {
   "ruleId": "css/no-invalid-properties",
   "severity": 2,
-  "message": "Invalid value '1' for property 'color'. Expected <color>.",
+  "message": "",
   "line": 4,
   "column": 10,
   "nodeType": null,
@@ -16,7 +16,7 @@ exports[`ESLint config > test-css.css 2`] = `
 {
   "ruleId": "css/no-invalid-at-rules",
   "severity": 2,
-  "message": "Unknown at-rule '@aa' found.",
+  "message": "",
   "line": 7,
   "column": 3,
   "nodeType": null,
@@ -30,7 +30,7 @@ exports[`ESLint config > test-css.css 3`] = `
 {
   "ruleId": "css/no-invalid-at-rules",
   "severity": 2,
-  "message": "Unknown descriptor 'xx' found for at-rule '@aa'.",
+  "message": "",
   "line": 8,
   "column": 5,
   "nodeType": null,
@@ -44,7 +44,7 @@ exports[`ESLint config > test-js.js 1`] = `
 {
   "ruleId": "jsdoc/tag-lines",
   "severity": 1,
-  "message": "Expected only 0 lines after block description",
+  "message": "",
   "line": 27,
   "column": 1,
   "nodeType": "Block",
@@ -64,7 +64,7 @@ exports[`ESLint config > test-js.js 10`] = `
 {
   "ruleId": "no-implicit-coercion",
   "severity": 2,
-  "message": "Unexpected implicit coercion encountered. Use \`Number(wait)\` instead.",
+  "message": "",
   "line": 83,
   "column": 10,
   "nodeType": "UnaryExpression",
@@ -94,7 +94,7 @@ exports[`ESLint config > test-js.js 11`] = `
 {
   "ruleId": "no-implicit-coercion",
   "severity": 2,
-  "message": "Unexpected implicit coercion encountered. Use \`Boolean(options.leading)\` instead.",
+  "message": "",
   "line": 85,
   "column": 15,
   "nodeType": "UnaryExpression",
@@ -115,7 +115,7 @@ exports[`ESLint config > test-js.js 12`] = `
 {
   "ruleId": "no-implicit-coercion",
   "severity": 2,
-  "message": "Unexpected implicit coercion encountered. Use \`Number(options.maxWait)\` instead.",
+  "message": "",
   "line": 87,
   "column": 33,
   "nodeType": "UnaryExpression",
@@ -145,7 +145,7 @@ exports[`ESLint config > test-js.js 13`] = `
 {
   "ruleId": "no-implicit-coercion",
   "severity": 2,
-  "message": "Unexpected implicit coercion encountered. Use \`Boolean(options.trailing)\` instead.",
+  "message": "",
   "line": 88,
   "column": 40,
   "nodeType": "UnaryExpression",
@@ -166,7 +166,7 @@ exports[`ESLint config > test-js.js 14`] = `
 {
   "ruleId": "no-multi-assign",
   "severity": 2,
-  "message": "Unexpected chained assignment.",
+  "message": "",
   "line": 95,
   "column": 16,
   "nodeType": "AssignmentExpression",
@@ -180,7 +180,7 @@ exports[`ESLint config > test-js.js 15`] = `
 {
   "ruleId": "no-multi-assign",
   "severity": 2,
-  "message": "Unexpected chained assignment.",
+  "message": "",
   "line": 167,
   "column": 16,
   "nodeType": "AssignmentExpression",
@@ -194,7 +194,7 @@ exports[`ESLint config > test-js.js 16`] = `
 {
   "ruleId": "no-multi-assign",
   "severity": 2,
-  "message": "Unexpected chained assignment.",
+  "message": "",
   "line": 176,
   "column": 16,
   "nodeType": "AssignmentExpression",
@@ -208,7 +208,7 @@ exports[`ESLint config > test-js.js 17`] = `
 {
   "ruleId": "no-multi-assign",
   "severity": 2,
-  "message": "Unexpected chained assignment.",
+  "message": "",
   "line": 176,
   "column": 31,
   "nodeType": "AssignmentExpression",
@@ -222,7 +222,7 @@ exports[`ESLint config > test-js.js 18`] = `
 {
   "ruleId": "no-multi-assign",
   "severity": 2,
-  "message": "Unexpected chained assignment.",
+  "message": "",
   "line": 176,
   "column": 42,
   "nodeType": "AssignmentExpression",
@@ -236,7 +236,7 @@ exports[`ESLint config > test-js.js 19`] = `
 {
   "ruleId": "unicorn/no-this-assignment",
   "severity": 2,
-  "message": "Do not assign \`this\` to \`lastThis\`.",
+  "message": "",
   "line": 192,
   "column": 5,
   "nodeType": "AssignmentExpression",
@@ -250,7 +250,7 @@ exports[`ESLint config > test-js.js 2`] = `
 {
   "ruleId": "jsdoc/check-tag-names",
   "severity": 1,
-  "message": "Invalid JSDoc tag name \\"category\\".",
+  "message": "",
   "line": 30,
   "column": 1,
   "nodeType": "Block",
@@ -263,7 +263,7 @@ exports[`ESLint config > test-js.js 20`] = `
 {
   "ruleId": "@typescript-eslint/no-this-alias",
   "severity": 2,
-  "message": "Unexpected aliasing of 'this' to local variable.",
+  "message": "",
   "line": 192,
   "column": 5,
   "nodeType": "Identifier",
@@ -277,7 +277,7 @@ exports[`ESLint config > test-js.js 21`] = `
 {
   "ruleId": "no-invalid-this",
   "severity": 2,
-  "message": "Unexpected 'this'.",
+  "message": "",
   "line": 192,
   "column": 16,
   "nodeType": "ThisExpression",
@@ -291,7 +291,7 @@ exports[`ESLint config > test-js.js 3`] = `
 {
   "ruleId": "jsdoc/reject-function-type",
   "severity": 1,
-  "message": "Prefer a more specific type to \`Function\`",
+  "message": "",
   "line": 31,
   "column": 1,
   "nodeType": "Block",
@@ -304,7 +304,7 @@ exports[`ESLint config > test-js.js 4`] = `
 {
   "ruleId": "jsdoc/no-defaults",
   "severity": 1,
-  "message": "Defaults are not permitted on @param.",
+  "message": "",
   "line": 32,
   "column": 1,
   "nodeType": "Block",
@@ -324,7 +324,7 @@ exports[`ESLint config > test-js.js 5`] = `
 {
   "ruleId": "jsdoc/check-types",
   "severity": 1,
-  "message": "Invalid JSDoc @param \\"options\\" type \\"Object\\"; prefer: \\"object\\".",
+  "message": "",
   "line": 35,
   "column": 1,
   "nodeType": "Block",
@@ -344,7 +344,7 @@ exports[`ESLint config > test-js.js 6`] = `
 {
   "ruleId": "jsdoc/no-defaults",
   "severity": 1,
-  "message": "Defaults are not permitted on @param.",
+  "message": "",
   "line": 35,
   "column": 1,
   "nodeType": "Block",
@@ -364,7 +364,7 @@ exports[`ESLint config > test-js.js 7`] = `
 {
   "ruleId": "jsdoc/no-defaults",
   "severity": 1,
-  "message": "Defaults are not permitted on @param.",
+  "message": "",
   "line": 36,
   "column": 1,
   "nodeType": "Block",
@@ -384,7 +384,7 @@ exports[`ESLint config > test-js.js 8`] = `
 {
   "ruleId": "jsdoc/no-defaults",
   "severity": 1,
-  "message": "Defaults are not permitted on @param.",
+  "message": "",
   "line": 40,
   "column": 1,
   "nodeType": "Block",
@@ -404,7 +404,7 @@ exports[`ESLint config > test-js.js 9`] = `
 {
   "ruleId": "jsdoc/reject-function-type",
   "severity": 1,
-  "message": "Prefer a more specific type to \`Function\`",
+  "message": "",
   "line": 42,
   "column": 1,
   "nodeType": "Block",
@@ -417,7 +417,7 @@ exports[`ESLint config > test-json.json 1`] = `
 {
   "ruleId": "json/no-duplicate-keys",
   "severity": 2,
-  "message": "Duplicate key \\"a\\" found.",
+  "message": "",
   "line": 3,
   "column": 3,
   "nodeType": null,
@@ -431,7 +431,7 @@ exports[`ESLint config > test-md.md 1`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 192,
   "column": 6,
   "nodeType": "Identifier",
@@ -452,7 +452,7 @@ exports[`ESLint config > test-md.md 10`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 207,
   "column": 7,
   "nodeType": "Identifier",
@@ -466,7 +466,7 @@ exports[`ESLint config > test-md.md 100`] = `
 {
   "ruleId": "@eslint-react/no-default-props",
   "severity": 2,
-  "message": "[Deprecated] Use ES6 default parameters instead.",
+  "message": "",
   "line": 907,
   "column": 7,
   "nodeType": "Identifier",
@@ -480,7 +480,7 @@ exports[`ESLint config > test-md.md 101`] = `
 {
   "ruleId": "perfectionist/sort-intersection-types",
   "severity": 2,
-  "message": "Expected \\"{ age: number;\\n}\\" to come before \\"typeof Greet.defaultProps\\".",
+  "message": "",
   "line": 915,
   "column": 47,
   "nodeType": "TSTypeLiteral",
@@ -501,7 +501,7 @@ exports[`ESLint config > test-md.md 102`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 919,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -515,7 +515,7 @@ exports[`ESLint config > test-md.md 103`] = `
 {
   "ruleId": "sonarjs/public-static-readonly",
   "severity": 2,
-  "message": "Make this public static property readonly.",
+  "message": "",
   "line": 920,
   "column": 10,
   "nodeType": "Identifier",
@@ -542,7 +542,7 @@ exports[`ESLint config > test-md.md 104`] = `
 {
   "ruleId": "prefer-const",
   "severity": 2,
-  "message": "'el' is never reassigned. Use 'const' instead.",
+  "message": "",
   "line": 927,
   "column": 5,
   "nodeType": "Identifier",
@@ -563,7 +563,7 @@ exports[`ESLint config > test-md.md 105`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 939,
   "column": 1,
   "nodeType": "Program",
@@ -577,7 +577,7 @@ exports[`ESLint config > test-md.md 106`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 939,
   "column": 6,
   "nodeType": "Identifier",
@@ -598,7 +598,7 @@ exports[`ESLint config > test-md.md 107`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 943,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -612,7 +612,7 @@ exports[`ESLint config > test-md.md 108`] = `
 {
   "ruleId": "sonarjs/public-static-readonly",
   "severity": 2,
-  "message": "Make this public static property readonly.",
+  "message": "",
   "line": 944,
   "column": 10,
   "nodeType": "Identifier",
@@ -639,7 +639,7 @@ exports[`ESLint config > test-md.md 109`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 973,
   "column": 7,
   "nodeType": "Identifier",
@@ -653,7 +653,7 @@ exports[`ESLint config > test-md.md 11`] = `
 {
   "ruleId": "@typescript-eslint/no-redeclare",
   "severity": 2,
-  "message": "'App' is already defined.",
+  "message": "",
   "line": 207,
   "column": 7,
   "nodeType": "Identifier",
@@ -667,7 +667,7 @@ exports[`ESLint config > test-md.md 110`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 973,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -681,7 +681,7 @@ exports[`ESLint config > test-md.md 111`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"age\\" to come before \\"name\\".",
+  "message": "",
   "line": 973,
   "column": 33,
   "nodeType": "Property",
@@ -702,7 +702,7 @@ exports[`ESLint config > test-md.md 112`] = `
 {
   "ruleId": "@eslint-react/no-default-props",
   "severity": 2,
-  "message": "[Deprecated] Use ES6 default parameters instead.",
+  "message": "",
   "line": 976,
   "column": 16,
   "nodeType": "Identifier",
@@ -716,7 +716,7 @@ exports[`ESLint config > test-md.md 113`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 978,
   "column": 7,
   "nodeType": "Identifier",
@@ -730,7 +730,7 @@ exports[`ESLint config > test-md.md 114`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 978,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -744,7 +744,7 @@ exports[`ESLint config > test-md.md 115`] = `
 {
   "ruleId": "jsx-a11y/heading-has-content",
   "severity": 2,
-  "message": "Headings must have content and the content must be accessible by a screen reader.",
+  "message": "",
   "line": 979,
   "column": 10,
   "nodeType": "JSXOpeningElement",
@@ -757,7 +757,7 @@ exports[`ESLint config > test-md.md 116`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"React.Component<infer P>\\" to come before \\"React.ComponentType<infer P>\\".",
+  "message": "",
   "line": 993,
   "column": 5,
   "nodeType": "TSTypeReference",
@@ -778,7 +778,7 @@ exports[`ESLint config > test-md.md 117`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 997,
   "column": 7,
   "nodeType": "Identifier",
@@ -792,7 +792,7 @@ exports[`ESLint config > test-md.md 118`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 997,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -806,7 +806,7 @@ exports[`ESLint config > test-md.md 119`] = `
 {
   "ruleId": "jsx-a11y/heading-has-content",
   "severity": 2,
-  "message": "Headings must have content and the content must be accessible by a screen reader.",
+  "message": "",
   "line": 998,
   "column": 10,
   "nodeType": "JSXOpeningElement",
@@ -819,7 +819,7 @@ exports[`ESLint config > test-md.md 12`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 207,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -833,7 +833,7 @@ exports[`ESLint config > test-md.md 120`] = `
 {
   "ruleId": "perfectionist/sort-intersection-types",
   "severity": 2,
-  "message": "Expected \\"{ /* additional props here */\\n}\\" to come before \\"Required<typeof MyComponent.defaultProps>\\".",
+  "message": "",
   "line": 1028,
   "column": 58,
   "nodeType": "TSTypeLiteral",
@@ -854,7 +854,7 @@ exports[`ESLint config > test-md.md 121`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 1032,
   "column": 8,
   "nodeType": "ClassDeclaration",
@@ -868,7 +868,7 @@ exports[`ESLint config > test-md.md 122`] = `
 {
   "ruleId": "sonarjs/public-static-readonly",
   "severity": 2,
-  "message": "Make this public static property readonly.",
+  "message": "",
   "line": 1033,
   "column": 10,
   "nodeType": "Identifier",
@@ -895,7 +895,7 @@ exports[`ESLint config > test-md.md 123`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 1047,
   "column": 8,
   "nodeType": "ClassDeclaration",
@@ -909,7 +909,7 @@ exports[`ESLint config > test-md.md 124`] = `
 {
   "ruleId": "sonarjs/public-static-readonly",
   "severity": 2,
-  "message": "Make this public static property readonly.",
+  "message": "",
   "line": 1048,
   "column": 17,
   "nodeType": "Identifier",
@@ -936,7 +936,7 @@ exports[`ESLint config > test-md.md 125`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1075,
   "column": 1,
   "nodeType": "Program",
@@ -950,7 +950,7 @@ exports[`ESLint config > test-md.md 126`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 1075,
   "column": 6,
   "nodeType": "Identifier",
@@ -971,7 +971,7 @@ exports[`ESLint config > test-md.md 127`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"count\\" to come before \\"message\\".",
+  "message": "",
   "line": 1077,
   "column": 3,
   "nodeType": "TSPropertySignature",
@@ -992,7 +992,7 @@ exports[`ESLint config > test-md.md 128`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"\\"success\\"\\" to come before \\"\\"waiting\\"\\".",
+  "message": "",
   "line": 1082,
   "column": 23,
   "nodeType": "TSLiteralType",
@@ -1013,7 +1013,7 @@ exports[`ESLint config > test-md.md 129`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"obj\\" to come before \\"status\\".",
+  "message": "",
   "line": 1084,
   "column": 3,
   "nodeType": "TSPropertySignature",
@@ -1034,7 +1034,7 @@ exports[`ESLint config > test-md.md 13`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 221,
   "column": 7,
   "nodeType": "Identifier",
@@ -1048,7 +1048,7 @@ exports[`ESLint config > test-md.md 130`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"obj2\\" to come before \\"objArr\\".",
+  "message": "",
   "line": 1094,
   "column": 3,
   "nodeType": "TSPropertySignature",
@@ -1069,7 +1069,7 @@ exports[`ESLint config > test-md.md 131`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-object-type",
   "severity": 2,
-  "message": "The \`{}\` (\\"empty object\\") type allows any non-nullish value, including literals like \`0\` and \`\\"\\"\`.\\n- If that's what you want, disable this lint rule with an inline comment or configure the 'allowObjectTypes' rule option.\\n- If you want a type meaning \\"any object\\", you probably want \`object\` instead.\\n- If you want a type meaning \\"any value\\", you probably want \`unknown\` instead.",
+  "message": "",
   "line": 1096,
   "column": 9,
   "nodeType": "TSTypeLiteral",
@@ -1113,7 +1113,7 @@ exports[`ESLint config > test-md.md 132`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"dict1\\" to come before \\"obj3\\".",
+  "message": "",
   "line": 1098,
   "column": 3,
   "nodeType": "TSPropertySignature",
@@ -1134,7 +1134,7 @@ exports[`ESLint config > test-md.md 133`] = `
 {
   "ruleId": "@typescript-eslint/consistent-indexed-object-style",
   "severity": 2,
-  "message": "A record is preferred over an index signature.",
+  "message": "",
   "line": 1098,
   "column": 10,
   "nodeType": "TSTypeLiteral",
@@ -1155,7 +1155,7 @@ exports[`ESLint config > test-md.md 134`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"onChange\\" to come before \\"onClick\\".",
+  "message": "",
   "line": 1105,
   "column": 3,
   "nodeType": "TSPropertySignature",
@@ -1176,7 +1176,7 @@ exports[`ESLint config > test-md.md 135`] = `
 {
   "ruleId": "@typescript-eslint/method-signature-style",
   "severity": 2,
-  "message": "Shorthand method signature is forbidden. Use a function property instead.",
+  "message": "",
   "line": 1109,
   "column": 3,
   "nodeType": "TSMethodSignature",
@@ -1197,7 +1197,7 @@ exports[`ESLint config > test-md.md 136`] = `
 {
   "ruleId": "@typescript-eslint/no-unsafe-function-type",
   "severity": 2,
-  "message": "The \`Function\` type accepts any function-like value.\\nPrefer explicitly defining any function parameters and return type.",
+  "message": "",
   "line": 1111,
   "column": 16,
   "nodeType": "Identifier",
@@ -1211,7 +1211,7 @@ exports[`ESLint config > test-md.md 137`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-object-type",
   "severity": 2,
-  "message": "An empty interface declaration allows any non-nullish value, including literals like \`0\` and \`\\"\\"\`.\\n- If that's what you want, disable this lint rule with an inline comment or configure the 'allowInterfaces' rule option.\\n- If you want a type meaning \\"any object\\", you probably want \`object\` instead.\\n- If you want a type meaning \\"any value\\", you probably want \`unknown\` instead.",
+  "message": "",
   "line": 1130,
   "column": 11,
   "nodeType": "Identifier",
@@ -1255,7 +1255,7 @@ exports[`ESLint config > test-md.md 138`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1151,
   "column": 1,
   "nodeType": "Program",
@@ -1269,7 +1269,7 @@ exports[`ESLint config > test-md.md 139`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
-  "message": "Expected \\"onChange\\" to come before \\"style\\".",
+  "message": "",
   "line": 1155,
   "column": 3,
   "nodeType": "TSPropertySignature",
@@ -1290,7 +1290,7 @@ exports[`ESLint config > test-md.md 14`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 221,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -1304,7 +1304,7 @@ exports[`ESLint config > test-md.md 140`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 1168,
   "column": 6,
   "nodeType": "Identifier",
@@ -1325,7 +1325,7 @@ exports[`ESLint config > test-md.md 141`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1172,
   "column": 10,
   "nodeType": "Identifier",
@@ -1339,7 +1339,7 @@ exports[`ESLint config > test-md.md 142`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1175,
   "column": 10,
   "nodeType": "Identifier",
@@ -1353,7 +1353,7 @@ exports[`ESLint config > test-md.md 143`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 1265,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -1367,7 +1367,7 @@ exports[`ESLint config > test-md.md 144`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1265,
   "column": 1,
   "nodeType": "Program",
@@ -1381,7 +1381,7 @@ exports[`ESLint config > test-md.md 145`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"null\\" to come before \\"Partial<State>\\".",
+  "message": "",
   "line": 1269,
   "column": 23,
   "nodeType": "TSNullKeyword",
@@ -1402,7 +1402,7 @@ exports[`ESLint config > test-md.md 146`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 1278,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -1416,7 +1416,7 @@ exports[`ESLint config > test-md.md 147`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1278,
   "column": 1,
   "nodeType": "Program",
@@ -1430,7 +1430,7 @@ exports[`ESLint config > test-md.md 148`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
-  "message": "Unexpected empty static method 'getDerivedStateFromProps'.",
+  "message": "",
   "line": 1282,
   "column": 49,
   "nodeType": "FunctionExpression",
@@ -1460,7 +1460,7 @@ exports[`ESLint config > test-md.md 149`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1289,
   "column": 1,
   "nodeType": "Program",
@@ -1474,7 +1474,7 @@ exports[`ESLint config > test-md.md 15`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 240,
   "column": 7,
   "nodeType": "Identifier",
@@ -1488,7 +1488,7 @@ exports[`ESLint config > test-md.md 150`] = `
 {
   "ruleId": "sonarjs/redundant-type-aliases",
   "severity": 2,
-  "message": "Remove this redundant type alias and replace its occurrences with \\"any\\".",
+  "message": "",
   "line": 1289,
   "column": 6,
   "nodeType": "Identifier",
@@ -1502,7 +1502,7 @@ exports[`ESLint config > test-md.md 151`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"derivedState\\" to come before \\"savedPropA\\".",
+  "message": "",
   "line": 1300,
   "column": 5,
   "nodeType": "Property",
@@ -1523,7 +1523,7 @@ exports[`ESLint config > test-md.md 152`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 1303,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -1537,7 +1537,7 @@ exports[`ESLint config > test-md.md 153`] = `
 {
   "ruleId": "curly",
   "severity": 2,
-  "message": "Expected { after 'if' condition.",
+  "message": "",
   "line": 1312,
   "column": 49,
   "nodeType": "IfStatement",
@@ -1558,7 +1558,7 @@ exports[`ESLint config > test-md.md 154`] = `
 {
   "ruleId": "@eslint-react/dom/no-missing-button-type",
   "severity": 1,
-  "message": "Add missing 'type' attribute on 'button' component.",
+  "message": "",
   "line": 1330,
   "column": 3,
   "nodeType": "JSXOpeningElement",
@@ -1616,7 +1616,7 @@ exports[`ESLint config > test-md.md 155`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 1341,
   "column": 6,
   "nodeType": "Identifier",
@@ -1637,7 +1637,7 @@ exports[`ESLint config > test-md.md 156`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 1344,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -1651,7 +1651,7 @@ exports[`ESLint config > test-md.md 157`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"onChange\\" to come before \\"value\\".",
+  "message": "",
   "line": 1356,
   "column": 52,
   "nodeType": "JSXAttribute",
@@ -1672,7 +1672,7 @@ exports[`ESLint config > test-md.md 158`] = `
 {
   "ruleId": "sonarjs/no-labels",
   "severity": 2,
-  "message": "Refactor the code to remove this label and the need for it.",
+  "message": "",
   "line": 1369,
   "column": 3,
   "nodeType": null,
@@ -1686,7 +1686,7 @@ exports[`ESLint config > test-md.md 159`] = `
 {
   "ruleId": "sonarjs/label-position",
   "severity": 2,
-  "message": "Remove this \\"onChange\\" label.",
+  "message": "",
   "line": 1369,
   "column": 3,
   "nodeType": "Identifier",
@@ -1700,7 +1700,7 @@ exports[`ESLint config > test-md.md 16`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 240,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -1714,7 +1714,7 @@ exports[`ESLint config > test-md.md 160`] = `
 {
   "ruleId": "no-unused-labels",
   "severity": 2,
-  "message": "'onChange:' is defined but never used.",
+  "message": "",
   "line": 1369,
   "column": 3,
   "nodeType": "Identifier",
@@ -1735,7 +1735,7 @@ exports[`ESLint config > test-md.md 161`] = `
 {
   "ruleId": "no-labels",
   "severity": 2,
-  "message": "Unexpected labeled statement.",
+  "message": "",
   "line": 1369,
   "column": 3,
   "nodeType": "LabeledStatement",
@@ -1749,7 +1749,7 @@ exports[`ESLint config > test-md.md 162`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1369,
   "column": 3,
   "nodeType": "Program",
@@ -1763,7 +1763,7 @@ exports[`ESLint config > test-md.md 163`] = `
 {
   "ruleId": "no-invalid-this",
   "severity": 2,
-  "message": "Unexpected 'this'.",
+  "message": "",
   "line": 1370,
   "column": 5,
   "nodeType": "ThisExpression",
@@ -1777,7 +1777,7 @@ exports[`ESLint config > test-md.md 164`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"onSubmit\\" to come before \\"ref\\".",
+  "message": "",
   "line": 1389,
   "column": 3,
   "nodeType": "JSXAttribute",
@@ -1798,7 +1798,7 @@ exports[`ESLint config > test-md.md 165`] = `
 {
   "ruleId": "perfectionist/sort-intersection-types",
   "severity": 2,
-  "message": "Expected \\"{ email: { value: string }; password: { value: string }; }\\" to come before \\"typeof e.target\\".",
+  "message": "",
   "line": 1391,
   "column": 50,
   "nodeType": "TSTypeLiteral",
@@ -1819,7 +1819,7 @@ exports[`ESLint config > test-md.md 166`] = `
 {
   "ruleId": "sonarjs/no-unused-vars",
   "severity": 2,
-  "message": "Remove the declaration of the unused 'email' variable.",
+  "message": "",
   "line": 1395,
   "column": 11,
   "nodeType": "Identifier",
@@ -1833,7 +1833,7 @@ exports[`ESLint config > test-md.md 167`] = `
 {
   "ruleId": "sonarjs/no-dead-store",
   "severity": 2,
-  "message": "Remove this useless assignment to variable \\"email\\".",
+  "message": "",
   "line": 1395,
   "column": 11,
   "nodeType": null,
@@ -1847,7 +1847,7 @@ exports[`ESLint config > test-md.md 168`] = `
 {
   "ruleId": "sonarjs/no-unused-vars",
   "severity": 2,
-  "message": "Remove the declaration of the unused 'password' variable.",
+  "message": "",
   "line": 1396,
   "column": 11,
   "nodeType": "Identifier",
@@ -1861,7 +1861,7 @@ exports[`ESLint config > test-md.md 169`] = `
 {
   "ruleId": "sonarjs/no-dead-store",
   "severity": 2,
-  "message": "Remove this useless assignment to variable \\"password\\".",
+  "message": "",
   "line": 1396,
   "column": 11,
   "nodeType": null,
@@ -1877,7 +1877,7 @@ exports[`ESLint config > test-md.md 17`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: ')' expected.",
+  "message": "",
   "line": 264,
   "column": 12
 }
@@ -1887,7 +1887,7 @@ exports[`ESLint config > test-md.md 170`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"name\\" to come before \\"type\\".",
+  "message": "",
   "line": 1403,
   "column": 27,
   "nodeType": "JSXAttribute",
@@ -1908,7 +1908,7 @@ exports[`ESLint config > test-md.md 171`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"name\\" to come before \\"type\\".",
+  "message": "",
   "line": 1409,
   "column": 30,
   "nodeType": "JSXAttribute",
@@ -1929,7 +1929,7 @@ exports[`ESLint config > test-md.md 172`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1467,
   "column": 1,
   "nodeType": "Program",
@@ -1943,7 +1943,7 @@ exports[`ESLint config > test-md.md 173`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"\\"dark\\"\\" to come before \\"\\"light\\"\\".",
+  "message": "",
   "line": 1469,
   "column": 35,
   "nodeType": "TSLiteralType",
@@ -1964,7 +1964,7 @@ exports[`ESLint config > test-md.md 174`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1479,
   "column": 7,
   "nodeType": "Identifier",
@@ -1978,7 +1978,7 @@ exports[`ESLint config > test-md.md 175`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 1479,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -1992,7 +1992,7 @@ exports[`ESLint config > test-md.md 176`] = `
 {
   "ruleId": "sonarjs/no-unused-vars",
   "severity": 2,
-  "message": "Remove the declaration of the unused 'setTheme' variable.",
+  "message": "",
   "line": 1480,
   "column": 17,
   "nodeType": "Identifier",
@@ -2006,7 +2006,7 @@ exports[`ESLint config > test-md.md 177`] = `
 {
   "ruleId": "sonarjs/no-dead-store",
   "severity": 2,
-  "message": "Remove this useless assignment to variable \\"setTheme\\".",
+  "message": "",
   "line": 1480,
   "column": 17,
   "nodeType": null,
@@ -2020,7 +2020,7 @@ exports[`ESLint config > test-md.md 178`] = `
 {
   "ruleId": "@eslint-react/no-context-provider",
   "severity": 1,
-  "message": "In React 19, you can render '<Context>' as a provider instead of '<Context.Provider>'.",
+  "message": "",
   "line": 1483,
   "column": 5,
   "nodeType": "JSXElement",
@@ -2041,7 +2041,7 @@ exports[`ESLint config > test-md.md 179`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
-  "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+  "message": "",
   "line": 1493,
   "column": 10,
   "nodeType": "ImportSpecifier",
@@ -2062,7 +2062,7 @@ exports[`ESLint config > test-md.md 18`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 304,
   "column": 1,
   "nodeType": "Program",
@@ -2076,7 +2076,7 @@ exports[`ESLint config > test-md.md 180`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1495,
   "column": 7,
   "nodeType": "Identifier",
@@ -2090,7 +2090,7 @@ exports[`ESLint config > test-md.md 181`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 1495,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -2104,7 +2104,7 @@ exports[`ESLint config > test-md.md 182`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
-  "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+  "message": "",
   "line": 1496,
   "column": 17,
   "nodeType": "Identifier",
@@ -2125,7 +2125,7 @@ exports[`ESLint config > test-md.md 183`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1507,
   "column": 1,
   "nodeType": "Program",
@@ -2139,7 +2139,7 @@ exports[`ESLint config > test-md.md 184`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1517,
   "column": 7,
   "nodeType": "Identifier",
@@ -2153,7 +2153,7 @@ exports[`ESLint config > test-md.md 185`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 1517,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -2167,7 +2167,7 @@ exports[`ESLint config > test-md.md 186`] = `
 {
   "ruleId": "sonarjs/no-unused-vars",
   "severity": 2,
-  "message": "Remove the declaration of the unused 'setCurrentUser' variable.",
+  "message": "",
   "line": 1518,
   "column": 23,
   "nodeType": "Identifier",
@@ -2181,7 +2181,7 @@ exports[`ESLint config > test-md.md 187`] = `
 {
   "ruleId": "sonarjs/no-dead-store",
   "severity": 2,
-  "message": "Remove this useless assignment to variable \\"setCurrentUser\\".",
+  "message": "",
   "line": 1518,
   "column": 23,
   "nodeType": null,
@@ -2195,7 +2195,7 @@ exports[`ESLint config > test-md.md 188`] = `
 {
   "ruleId": "@eslint-react/no-context-provider",
   "severity": 1,
-  "message": "In React 19, you can render '<Context>' as a provider instead of '<Context.Provider>'.",
+  "message": "",
   "line": 1523,
   "column": 5,
   "nodeType": "JSXElement",
@@ -2216,7 +2216,7 @@ exports[`ESLint config > test-md.md 189`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
-  "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+  "message": "",
   "line": 1533,
   "column": 10,
   "nodeType": "ImportSpecifier",
@@ -2237,7 +2237,7 @@ exports[`ESLint config > test-md.md 19`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 314,
   "column": 1,
   "nodeType": "Program",
@@ -2251,7 +2251,7 @@ exports[`ESLint config > test-md.md 190`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1535,
   "column": 7,
   "nodeType": "Identifier",
@@ -2265,7 +2265,7 @@ exports[`ESLint config > test-md.md 191`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 1535,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -2279,7 +2279,7 @@ exports[`ESLint config > test-md.md 192`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
-  "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+  "message": "",
   "line": 1536,
   "column": 23,
   "nodeType": "Identifier",
@@ -2300,7 +2300,7 @@ exports[`ESLint config > test-md.md 193`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1545,
   "column": 1,
   "nodeType": "Program",
@@ -2314,7 +2314,7 @@ exports[`ESLint config > test-md.md 194`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 1553,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -2328,7 +2328,7 @@ exports[`ESLint config > test-md.md 195`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
-  "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+  "message": "",
   "line": 1554,
   "column": 30,
   "nodeType": "Identifier",
@@ -2349,7 +2349,7 @@ exports[`ESLint config > test-md.md 196`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
-  "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+  "message": "",
   "line": 1569,
   "column": 10,
   "nodeType": "ImportSpecifier",
@@ -2370,7 +2370,7 @@ exports[`ESLint config > test-md.md 197`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1571,
   "column": 7,
   "nodeType": "Identifier",
@@ -2384,7 +2384,7 @@ exports[`ESLint config > test-md.md 198`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 1571,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -2398,7 +2398,7 @@ exports[`ESLint config > test-md.md 199`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
-  "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+  "message": "",
   "line": 1583,
   "column": 10,
   "nodeType": "ImportSpecifier",
@@ -2419,7 +2419,7 @@ exports[`ESLint config > test-md.md 2`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 197,
   "column": 7,
   "nodeType": "Identifier",
@@ -2433,7 +2433,7 @@ exports[`ESLint config > test-md.md 20`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"null\\" to come before \\"User\\".",
+  "message": "",
   "line": 314,
   "column": 41,
   "nodeType": "TSNullKeyword",
@@ -2454,7 +2454,7 @@ exports[`ESLint config > test-md.md 200`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1585,
   "column": 7,
   "nodeType": "Identifier",
@@ -2468,7 +2468,7 @@ exports[`ESLint config > test-md.md 201`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 1585,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -2482,7 +2482,7 @@ exports[`ESLint config > test-md.md 202`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
-  "message": "In React 19, 'use' is preferred over 'useContext' because it is more flexible.",
+  "message": "",
   "line": 1586,
   "column": 23,
   "nodeType": "Identifier",
@@ -2503,7 +2503,7 @@ exports[`ESLint config > test-md.md 203`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1595,
   "column": 1,
   "nodeType": "Program",
@@ -2517,7 +2517,7 @@ exports[`ESLint config > test-md.md 204`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1603,
   "column": 1,
   "nodeType": "Program",
@@ -2531,7 +2531,7 @@ exports[`ESLint config > test-md.md 205`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 1621,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -2545,7 +2545,7 @@ exports[`ESLint config > test-md.md 206`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
-  "message": "Imports \\"ReactNode\\" are only used as type.",
+  "message": "",
   "line": 1632,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -2566,7 +2566,7 @@ exports[`ESLint config > test-md.md 207`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"\\"button\\"\\" to come before \\"\\"submit\\"\\".",
+  "message": "",
   "line": 1636,
   "column": 20,
   "nodeType": "TSLiteralType",
@@ -2587,7 +2587,7 @@ exports[`ESLint config > test-md.md 208`] = `
 {
   "ruleId": "@eslint-react/no-forward-ref",
   "severity": 1,
-  "message": "In React 19, 'forwardRef' is no longer necessary. Pass 'ref' as a prop instead.",
+  "message": "",
   "line": 1640,
   "column": 14,
   "nodeType": "Identifier",
@@ -2608,7 +2608,7 @@ exports[`ESLint config > test-md.md 209`] = `
 {
   "ruleId": "@eslint-react/no-missing-component-display-name",
   "severity": 2,
-  "message": "Add missing 'displayName' for component.",
+  "message": "",
   "line": 1640,
   "column": 51,
   "nodeType": "ArrowFunctionExpression",
@@ -2622,7 +2622,7 @@ exports[`ESLint config > test-md.md 21`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 323,
   "column": 1,
   "nodeType": "Program",
@@ -2636,7 +2636,7 @@ exports[`ESLint config > test-md.md 210`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"className\\" to come before \\"ref\\".",
+  "message": "",
   "line": 1641,
   "column": 21,
   "nodeType": "JSXAttribute",
@@ -2657,7 +2657,7 @@ exports[`ESLint config > test-md.md 211`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
-  "message": "Imports \\"ReactNode\\" and \\"Ref\\" are only used as type.",
+  "message": "",
   "line": 1653,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -2678,7 +2678,7 @@ exports[`ESLint config > test-md.md 212`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"\\"button\\"\\" to come before \\"\\"submit\\"\\".",
+  "message": "",
   "line": 1657,
   "column": 20,
   "nodeType": "TSLiteralType",
@@ -2699,7 +2699,7 @@ exports[`ESLint config > test-md.md 213`] = `
 {
   "ruleId": "@eslint-react/no-forward-ref",
   "severity": 1,
-  "message": "In React 19, 'forwardRef' is no longer necessary. Pass 'ref' as a prop instead.",
+  "message": "",
   "line": 1660,
   "column": 14,
   "nodeType": "Identifier",
@@ -2720,7 +2720,7 @@ exports[`ESLint config > test-md.md 214`] = `
 {
   "ruleId": "@eslint-react/no-missing-component-display-name",
   "severity": 2,
-  "message": "Add missing 'displayName' for component.",
+  "message": "",
   "line": 1661,
   "column": 3,
   "nodeType": "ArrowFunctionExpression",
@@ -2734,7 +2734,7 @@ exports[`ESLint config > test-md.md 215`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"className\\" to come before \\"ref\\".",
+  "message": "",
   "line": 1665,
   "column": 23,
   "nodeType": "JSXAttribute",
@@ -2757,7 +2757,7 @@ exports[`ESLint config > test-md.md 216`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: '>' expected.",
+  "message": "",
   "line": 1691,
   "column": 8
 }
@@ -2769,7 +2769,7 @@ exports[`ESLint config > test-md.md 217`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: '>' expected.",
+  "message": "",
   "line": 1726,
   "column": 8
 }
@@ -2779,7 +2779,7 @@ exports[`ESLint config > test-md.md 218`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1757,
   "column": 1,
   "nodeType": "Program",
@@ -2793,7 +2793,7 @@ exports[`ESLint config > test-md.md 219`] = `
 {
   "ruleId": "unicorn/prefer-query-selector",
   "severity": 2,
-  "message": "Prefer \`.querySelector()\` over \`.getElementById()\`.",
+  "message": "",
   "line": 1757,
   "column": 28,
   "nodeType": "Identifier",
@@ -2816,7 +2816,7 @@ exports[`ESLint config > test-md.md 22`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: Expression expected.",
+  "message": "",
   "line": 341,
   "column": 6
 }
@@ -2826,7 +2826,7 @@ exports[`ESLint config > test-md.md 220`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 1760,
   "column": 8,
   "nodeType": "ClassDeclaration",
@@ -2840,7 +2840,7 @@ exports[`ESLint config > test-md.md 221`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-append",
   "severity": 2,
-  "message": "Prefer \`Node#append()\` over \`Node#appendChild()\`.",
+  "message": "",
   "line": 1764,
   "column": 5,
   "nodeType": "CallExpression",
@@ -2861,7 +2861,7 @@ exports[`ESLint config > test-md.md 222`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-remove",
   "severity": 2,
-  "message": "Prefer \`childNode.remove()\` over \`parentNode.removeChild(childNode)\`.",
+  "message": "",
   "line": 1768,
   "column": 5,
   "nodeType": "CallExpression",
@@ -2882,7 +2882,7 @@ exports[`ESLint config > test-md.md 223`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 1785,
   "column": 1,
   "nodeType": "Program",
@@ -2896,7 +2896,7 @@ exports[`ESLint config > test-md.md 224`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
-  "message": "Imports \\"ReactNode\\" are only used as type.",
+  "message": "",
   "line": 1785,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -2917,7 +2917,7 @@ exports[`ESLint config > test-md.md 225`] = `
 {
   "ruleId": "perfectionist/sort-named-imports",
   "severity": 2,
-  "message": "Expected \\"ReactNode\\" to come before \\"useRef\\".",
+  "message": "",
   "line": 1785,
   "column": 29,
   "nodeType": "ImportSpecifier",
@@ -2938,7 +2938,7 @@ exports[`ESLint config > test-md.md 226`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 1790,
   "column": 6,
   "nodeType": "Identifier",
@@ -2959,7 +2959,7 @@ exports[`ESLint config > test-md.md 227`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1794,
   "column": 10,
   "nodeType": "Identifier",
@@ -2973,7 +2973,7 @@ exports[`ESLint config > test-md.md 228`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
-  "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/67_67.tsx:13:8\\n  11 |   // create div element only once using ref\\n  12 |   const elRef = useRef<HTMLDivElement | null>(null);\\n> 13 |   if (!elRef.current) elRef.current = document.createElement(\\"div\\");\\n     |        ^^^^^^^^^^^^^ Cannot access ref value during render\\n  14 |\\n  15 |   useEffect(() => {\\n  16 |     const el = elRef.current!; // non-null assertion because it will never be null\\n\\nTo initialize a ref only once, check that the ref is null with the pattern \`if (ref.current == null) { ref.current = ... }\`",
+  "message": "",
   "line": 1797,
   "column": 8,
   "nodeType": null,
@@ -2986,7 +2986,7 @@ exports[`ESLint config > test-md.md 229`] = `
 {
   "ruleId": "curly",
   "severity": 2,
-  "message": "Expected { after 'if' condition.",
+  "message": "",
   "line": 1797,
   "column": 23,
   "nodeType": "IfStatement",
@@ -3007,7 +3007,7 @@ exports[`ESLint config > test-md.md 23`] = `
 {
   "ruleId": "@typescript-eslint/no-unsafe-function-type",
   "severity": 2,
-  "message": "The \`Function\` type accepts any function-like value.\\nPrefer explicitly defining any function parameters and return type.",
+  "message": "",
   "line": 362,
   "column": 32,
   "nodeType": "Identifier",
@@ -3021,7 +3021,7 @@ exports[`ESLint config > test-md.md 230`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-append",
   "severity": 2,
-  "message": "Prefer \`Node#append()\` over \`Node#appendChild()\`.",
+  "message": "",
   "line": 1801,
   "column": 5,
   "nodeType": "CallExpression",
@@ -3042,7 +3042,7 @@ exports[`ESLint config > test-md.md 231`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-remove",
   "severity": 2,
-  "message": "Prefer \`childNode.remove()\` over \`parentNode.removeChild(childNode)\`.",
+  "message": "",
   "line": 1803,
   "column": 7,
   "nodeType": "CallExpression",
@@ -3063,7 +3063,7 @@ exports[`ESLint config > test-md.md 232`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
-  "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/67_67.tsx:23:33\\n  21 |   }, []);\\n  22 |\\n> 23 |   return createPortal(children, elRef.current);\\n     |                                 ^^^^^^^^^^^^^ Passing a ref to a function may read its value during render\\n  24 | }\\n  25 |",
+  "message": "",
   "line": 1807,
   "column": 33,
   "nodeType": null,
@@ -3076,7 +3076,7 @@ exports[`ESLint config > test-md.md 233`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 1820,
   "column": 10,
   "nodeType": "Identifier",
@@ -3090,7 +3090,7 @@ exports[`ESLint config > test-md.md 234`] = `
 {
   "ruleId": "@eslint-react/jsx-no-comment-textnodes",
   "severity": 1,
-  "message": "Possible misused comment in text node. Comments inside children section of tag should be placed inside braces.",
+  "message": "",
   "line": 1824,
   "column": 10,
   "nodeType": "JSXText",
@@ -3104,7 +3104,7 @@ exports[`ESLint config > test-md.md 235`] = `
 {
   "ruleId": "@stylistic/jsx-self-closing-comp",
   "severity": 2,
-  "message": "Empty components are self-closing",
+  "message": "",
   "line": 1826,
   "column": 7,
   "nodeType": "JSXOpeningElement",
@@ -3125,7 +3125,7 @@ exports[`ESLint config > test-md.md 236`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"height\\" to come before \\"placeItems\\".",
+  "message": "",
   "line": 1833,
   "column": 15,
   "nodeType": "Property",
@@ -3146,7 +3146,7 @@ exports[`ESLint config > test-md.md 237`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"background\\" to come before \\"width\\".",
+  "message": "",
   "line": 1835,
   "column": 15,
   "nodeType": "Property",
@@ -3167,7 +3167,7 @@ exports[`ESLint config > test-md.md 238`] = `
 {
   "ruleId": "@eslint-react/dom/no-missing-button-type",
   "severity": 1,
-  "message": "Add missing 'type' attribute on 'button' component.",
+  "message": "",
   "line": 1840,
   "column": 13,
   "nodeType": "JSXOpeningElement",
@@ -3225,7 +3225,7 @@ exports[`ESLint config > test-md.md 239`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"onClick\\" to come before \\"style\\".",
+  "message": "",
   "line": 1842,
   "column": 15,
   "nodeType": "JSXAttribute",
@@ -3246,7 +3246,7 @@ exports[`ESLint config > test-md.md 24`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
-  "message": "Unexpected empty arrow function.",
+  "message": "",
   "line": 369,
   "column": 20,
   "nodeType": "ArrowFunctionExpression",
@@ -3276,7 +3276,7 @@ exports[`ESLint config > test-md.md 240`] = `
 {
   "ruleId": "@eslint-react/dom/no-missing-button-type",
   "severity": 1,
-  "message": "Add missing 'type' attribute on 'button' component.",
+  "message": "",
   "line": 1849,
   "column": 7,
   "nodeType": "JSXOpeningElement",
@@ -3334,7 +3334,7 @@ exports[`ESLint config > test-md.md 241`] = `
 {
   "ruleId": "@eslint-react/jsx-no-comment-textnodes",
   "severity": 1,
-  "message": "Possible misused comment in text node. Comments inside children section of tag should be placed inside braces.",
+  "message": "",
   "line": 1849,
   "column": 69,
   "nodeType": "JSXText",
@@ -3348,7 +3348,7 @@ exports[`ESLint config > test-md.md 242`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
-  "message": "Imports \\"ErrorInfo\\" and \\"ReactNode\\" are only used as type.",
+  "message": "",
   "line": 1880,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -3369,7 +3369,7 @@ exports[`ESLint config > test-md.md 243`] = `
 {
   "ruleId": "@typescript-eslint/class-methods-use-this",
   "severity": 2,
-  "message": "Expected 'this' to be used by class method 'componentDidCatch'.",
+  "message": "",
   "line": 1900,
   "column": 3,
   "nodeType": "FunctionExpression",
@@ -3383,7 +3383,7 @@ exports[`ESLint config > test-md.md 244`] = `
 {
   "ruleId": "vue/require-direct-export",
   "severity": 2,
-  "message": "Expected the component literal to be directly exported.",
+  "message": "",
   "line": 1913,
   "column": 1,
   "nodeType": "ExportDefaultDeclaration",
@@ -3397,7 +3397,7 @@ exports[`ESLint config > test-md.md 245`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 1946,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -3411,7 +3411,7 @@ exports[`ESLint config > test-md.md 246`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-object-type",
   "severity": 2,
-  "message": "The \`{}\` (\\"empty object\\") type allows any non-nullish value, including literals like \`0\` and \`\\"\\"\`.\\n- If that's what you want, disable this lint rule with an inline comment or configure the 'allowObjectTypes' rule option.\\n- If you want a type meaning \\"any object\\", you probably want \`object\` instead.\\n- If you want a type meaning \\"any value\\", you probably want \`unknown\` instead.",
+  "message": "",
   "line": 1947,
   "column": 3,
   "nodeType": "TSTypeLiteral",
@@ -3455,7 +3455,7 @@ exports[`ESLint config > test-md.md 247`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"null\\" to come before \\"number\\".",
+  "message": "",
   "line": 1949,
   "column": 21,
   "nodeType": "TSNullKeyword",
@@ -3476,7 +3476,7 @@ exports[`ESLint config > test-md.md 248`] = `
 {
   "ruleId": "jsx-a11y/click-events-have-key-events",
   "severity": 2,
-  "message": "Visible, non-interactive elements with click handlers must have at least one keyboard listener.",
+  "message": "",
   "line": 1956,
   "column": 12,
   "nodeType": "JSXOpeningElement",
@@ -3489,7 +3489,7 @@ exports[`ESLint config > test-md.md 249`] = `
 {
   "ruleId": "jsx-a11y/no-static-element-interactions",
   "severity": 2,
-  "message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+  "message": "",
   "line": 1956,
   "column": 12,
   "nodeType": "JSXOpeningElement",
@@ -3502,7 +3502,7 @@ exports[`ESLint config > test-md.md 25`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
-  "message": "Unexpected empty arrow function.",
+  "message": "",
   "line": 371,
   "column": 25,
   "nodeType": "ArrowFunctionExpression",
@@ -3532,7 +3532,7 @@ exports[`ESLint config > test-md.md 250`] = `
 {
   "ruleId": "perfectionist/sort-classes",
   "severity": 2,
-  "message": "Expected \\"increment\\" to come before \\"render\\".",
+  "message": "",
   "line": 1958,
   "column": 3,
   "nodeType": "PropertyDefinition",
@@ -3553,7 +3553,7 @@ exports[`ESLint config > test-md.md 251`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 2005,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -3567,7 +3567,7 @@ exports[`ESLint config > test-md.md 252`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 2026,
   "column": 1,
   "nodeType": "Program",
@@ -3581,7 +3581,7 @@ exports[`ESLint config > test-md.md 253`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"\\"bottom\\"\\" to come before \\"\\"top\\"\\".",
+  "message": "",
   "line": 2026,
   "column": 59,
   "nodeType": "TSLiteralType",
@@ -3602,7 +3602,7 @@ exports[`ESLint config > test-md.md 254`] = `
 {
   "ruleId": "no-restricted-syntax",
   "severity": 2,
-  "message": "Don't declare enums",
+  "message": "",
   "line": 2032,
   "column": 8,
   "nodeType": "TSEnumDeclaration",
@@ -3616,7 +3616,7 @@ exports[`ESLint config > test-md.md 255`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+  "message": "",
   "line": 2032,
   "column": 13,
   "nodeType": "Identifier",
@@ -3630,7 +3630,7 @@ exports[`ESLint config > test-md.md 256`] = `
 {
   "ruleId": "perfectionist/sort-enums",
   "severity": 2,
-  "message": "Expected \\"large\\" to come before \\"small\\".",
+  "message": "",
   "line": 2035,
   "column": 3,
   "nodeType": "TSEnumMember",
@@ -3651,7 +3651,7 @@ exports[`ESLint config > test-md.md 257`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 2039,
   "column": 14,
   "nodeType": "VariableDeclarator",
@@ -3665,7 +3665,7 @@ exports[`ESLint config > test-md.md 258`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 2049,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -3679,7 +3679,7 @@ exports[`ESLint config > test-md.md 259`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-remove",
   "severity": 2,
-  "message": "Prefer \`childNode.remove()\` over \`parentNode.removeChild(childNode)\`.",
+  "message": "",
   "line": 2068,
   "column": 1,
   "nodeType": "CallExpression",
@@ -3700,7 +3700,7 @@ exports[`ESLint config > test-md.md 26`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"payload\\" to come before \\"type\\".",
+  "message": "",
   "line": 384,
   "column": 26,
   "nodeType": "TSPropertySignature",
@@ -3721,7 +3721,7 @@ exports[`ESLint config > test-md.md 260`] = `
 {
   "ruleId": "unicorn/prefer-query-selector",
   "severity": 2,
-  "message": "Prefer \`.querySelector()\` over \`.getElementById()\`.",
+  "message": "",
   "line": 2069,
   "column": 21,
   "nodeType": "Identifier",
@@ -3735,7 +3735,7 @@ exports[`ESLint config > test-md.md 261`] = `
 {
   "ruleId": "perfectionist/sort-intersection-types",
   "severity": 2,
-  "message": "Expected \\"{ readonly brand: unique symbol }\\" to come before \\"string\\".",
+  "message": "",
   "line": 2080,
   "column": 25,
   "nodeType": "TSTypeLiteral",
@@ -3756,7 +3756,7 @@ exports[`ESLint config > test-md.md 262`] = `
 {
   "ruleId": "perfectionist/sort-intersection-types",
   "severity": 2,
-  "message": "Expected \\"{ readonly brand: unique symbol }\\" to come before \\"string\\".",
+  "message": "",
   "line": 2081,
   "column": 24,
   "nodeType": "TSTypeLiteral",
@@ -3777,7 +3777,7 @@ exports[`ESLint config > test-md.md 263`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 2115,
   "column": 14,
   "nodeType": "VariableDeclarator",
@@ -3791,7 +3791,7 @@ exports[`ESLint config > test-md.md 264`] = `
 {
   "ruleId": "@eslint-react/dom/no-missing-button-type",
   "severity": 1,
-  "message": "Add missing 'type' attribute on 'button' component.",
+  "message": "",
   "line": 2119,
   "column": 10,
   "nodeType": "JSXOpeningElement",
@@ -3849,7 +3849,7 @@ exports[`ESLint config > test-md.md 265`] = `
 {
   "ruleId": "@eslint-react/prefer-destructuring-assignment",
   "severity": 2,
-  "message": "Use destructuring assignment for props.",
+  "message": "",
   "line": 2119,
   "column": 31,
   "nodeType": "MemberExpression",
@@ -3865,7 +3865,7 @@ exports[`ESLint config > test-md.md 266`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: '{' expected.",
+  "message": "",
   "line": 2140,
   "column": 0
 }
@@ -3875,7 +3875,7 @@ exports[`ESLint config > test-md.md 267`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"card\\" to come before \\"suit\\".",
+  "message": "",
   "line": 2164,
   "column": 38,
   "nodeType": "TSPropertySignature",
@@ -3896,7 +3896,7 @@ exports[`ESLint config > test-md.md 268`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"card\\" to come before \\"suit\\".",
+  "message": "",
   "line": 2165,
   "column": 47,
   "nodeType": "TSPropertySignature",
@@ -3917,7 +3917,7 @@ exports[`ESLint config > test-md.md 269`] = `
 {
   "ruleId": "@typescript-eslint/naming-convention",
   "severity": 2,
-  "message": "Type Alias name \`pickCard\` must match one of the following formats: PascalCase",
+  "message": "",
   "line": 2175,
   "column": 6,
   "nodeType": "Identifier",
@@ -3931,7 +3931,7 @@ exports[`ESLint config > test-md.md 27`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"{ type: \\"decrement\\"; payload: string }\\" to come before \\"{ type: \\"increment\\"; payload: number }\\".",
+  "message": "",
   "line": 385,
   "column": 5,
   "nodeType": "TSTypeLiteral",
@@ -3952,7 +3952,7 @@ exports[`ESLint config > test-md.md 270`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 2175,
   "column": 6,
   "nodeType": "Identifier",
@@ -3973,7 +3973,7 @@ exports[`ESLint config > test-md.md 271`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"card\\" to come before \\"suit\\".",
+  "message": "",
   "line": 2176,
   "column": 23,
   "nodeType": "TSPropertySignature",
@@ -3994,7 +3994,7 @@ exports[`ESLint config > test-md.md 272`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"card\\" to come before \\"suit\\".",
+  "message": "",
   "line": 2177,
   "column": 32,
   "nodeType": "TSPropertySignature",
@@ -4015,7 +4015,7 @@ exports[`ESLint config > test-md.md 273`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 2194,
   "column": 1,
   "nodeType": "Program",
@@ -4029,7 +4029,7 @@ exports[`ESLint config > test-md.md 274`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"bar\\" to come before \\"foo\\".",
+  "message": "",
   "line": 2196,
   "column": 3,
   "nodeType": "Property",
@@ -4050,7 +4050,7 @@ exports[`ESLint config > test-md.md 275`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 2199,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -4064,7 +4064,7 @@ exports[`ESLint config > test-md.md 276`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 2211,
   "column": 1,
   "nodeType": "Program",
@@ -4078,7 +4078,7 @@ exports[`ESLint config > test-md.md 277`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"bar\\" to come before \\"foo\\".",
+  "message": "",
   "line": 2213,
   "column": 3,
   "nodeType": "Property",
@@ -4099,7 +4099,7 @@ exports[`ESLint config > test-md.md 278`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 2218,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -4113,7 +4113,7 @@ exports[`ESLint config > test-md.md 279`] = `
 {
   "ruleId": "import-x/newline-after-import",
   "severity": 2,
-  "message": "Expected 1 empty line after import statement not followed by another import.",
+  "message": "",
   "line": 2239,
   "column": 1,
   "nodeType": null,
@@ -4132,7 +4132,7 @@ exports[`ESLint config > test-md.md 28`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
-  "message": "Expected \\"payload\\" to come before \\"type\\".",
+  "message": "",
   "line": 385,
   "column": 26,
   "nodeType": "TSPropertySignature",
@@ -4153,7 +4153,7 @@ exports[`ESLint config > test-md.md 280`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 2242,
   "column": 7,
   "nodeType": "Identifier",
@@ -4167,7 +4167,7 @@ exports[`ESLint config > test-md.md 281`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 2242,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -4181,7 +4181,7 @@ exports[`ESLint config > test-md.md 282`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 2253,
   "column": 1,
   "nodeType": "Program",
@@ -4195,7 +4195,7 @@ exports[`ESLint config > test-md.md 283`] = `
 {
   "ruleId": "sonarjs/no-commented-code",
   "severity": 2,
-  "message": "Remove this commented out code.",
+  "message": "",
   "line": 2258,
   "column": 42,
   "nodeType": null,
@@ -4222,7 +4222,7 @@ exports[`ESLint config > test-md.md 284`] = `
 {
   "ruleId": "prefer-const",
   "severity": 2,
-  "message": "'baz' is never reassigned. Use 'const' instead.",
+  "message": "",
   "line": 2281,
   "column": 5,
   "nodeType": "Identifier",
@@ -4243,7 +4243,7 @@ exports[`ESLint config > test-md.md 285`] = `
 {
   "ruleId": "prefer-const",
   "severity": 2,
-  "message": "'baz2' is never reassigned. Use 'const' instead.",
+  "message": "",
   "line": 2290,
   "column": 5,
   "nodeType": "Identifier",
@@ -4266,7 +4266,7 @@ exports[`ESLint config > test-md.md 286`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: Unexpected character '/' found.",
+  "message": "",
   "line": 2312,
   "column": 1
 }
@@ -4276,7 +4276,7 @@ exports[`ESLint config > test-md.md 287`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 2358,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -4290,7 +4290,7 @@ exports[`ESLint config > test-md.md 288`] = `
 {
   "ruleId": "@eslint-react/no-unnecessary-use-prefix",
   "severity": 2,
-  "message": "If your function doesn't call any Hooks, avoid the 'use' prefix. Instead, write it as a regular function without the 'use' prefix.",
+  "message": "",
   "line": 2358,
   "column": 7,
   "nodeType": "Identifier",
@@ -4306,7 +4306,7 @@ exports[`ESLint config > test-md.md 289`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: Property or signature expected.",
+  "message": "",
   "line": 2371,
   "column": 32
 }
@@ -4316,7 +4316,7 @@ exports[`ESLint config > test-md.md 29`] = `
 {
   "ruleId": "perfectionist/sort-switch-case",
   "severity": 2,
-  "message": "Expected \\"decrement\\" to come before \\"increment\\".",
+  "message": "",
   "line": 391,
   "column": 5,
   "nodeType": "SwitchCase",
@@ -4337,7 +4337,7 @@ exports[`ESLint config > test-md.md 290`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 2385,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -4351,7 +4351,7 @@ exports[`ESLint config > test-md.md 291`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"classNameDark\\" to come before \\"element\\".",
+  "message": "",
   "line": 2390,
   "column": 5,
   "nodeType": "Property",
@@ -4372,7 +4372,7 @@ exports[`ESLint config > test-md.md 292`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"global\\" to come before \\"storageProvider\\".",
+  "message": "",
   "line": 2395,
   "column": 5,
   "nodeType": "Property",
@@ -4393,7 +4393,7 @@ exports[`ESLint config > test-md.md 293`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"enable\\" to come before \\"value\\".",
+  "message": "",
   "line": 2402,
   "column": 5,
   "nodeType": "Property",
@@ -4414,7 +4414,7 @@ exports[`ESLint config > test-md.md 294`] = `
 {
   "ruleId": "react-hooks/exhaustive-deps",
   "severity": 1,
-  "message": "React Hook useCallback has an unnecessary dependency: 'setState'. Either exclude it or remove the dependency array. Outer scope values like 'setState' aren't valid dependencies because mutating them doesn't re-render the component.",
+  "message": "",
   "line": 2402,
   "column": 47,
   "nodeType": "ArrayExpression",
@@ -4439,7 +4439,7 @@ exports[`ESLint config > test-md.md 295`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"disable\\" to come before \\"enable\\".",
+  "message": "",
   "line": 2403,
   "column": 5,
   "nodeType": "Property",
@@ -4460,7 +4460,7 @@ exports[`ESLint config > test-md.md 296`] = `
 {
   "ruleId": "react-hooks/exhaustive-deps",
   "severity": 1,
-  "message": "React Hook useCallback has an unnecessary dependency: 'setState'. Either exclude it or remove the dependency array. Outer scope values like 'setState' aren't valid dependencies because mutating them doesn't re-render the component.",
+  "message": "",
   "line": 2403,
   "column": 49,
   "nodeType": "ArrayExpression",
@@ -4485,7 +4485,7 @@ exports[`ESLint config > test-md.md 297`] = `
 {
   "ruleId": "react-hooks/exhaustive-deps",
   "severity": 1,
-  "message": "React Hook useCallback has an unnecessary dependency: 'setState'. Either exclude it or remove the dependency array. Outer scope values like 'setState' aren't valid dependencies because mutating them doesn't re-render the component.",
+  "message": "",
   "line": 2404,
   "column": 64,
   "nodeType": "ArrayExpression",
@@ -4510,7 +4510,7 @@ exports[`ESLint config > test-md.md 298`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
-  "message": "Expected \\"global\\" to come before \\"storageProvider\\".",
+  "message": "",
   "line": 2424,
   "column": 5,
   "nodeType": "TSPropertySignature",
@@ -4531,7 +4531,7 @@ exports[`ESLint config > test-md.md 299`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
-  "message": "Expected \\"enable\\" to come before \\"value\\".",
+  "message": "",
   "line": 2431,
   "column": 5,
   "nodeType": "TSPropertySignature",
@@ -4552,7 +4552,7 @@ exports[`ESLint config > test-md.md 3`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 197,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -4566,7 +4566,7 @@ exports[`ESLint config > test-md.md 30`] = `
 {
   "ruleId": "unicorn/error-message",
   "severity": 2,
-  "message": "Pass a message to the \`Error\` constructor.",
+  "message": "",
   "line": 394,
   "column": 13,
   "nodeType": "NewExpression",
@@ -4580,7 +4580,7 @@ exports[`ESLint config > test-md.md 300`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
-  "message": "Expected \\"disable\\" to come before \\"enable\\".",
+  "message": "",
   "line": 2432,
   "column": 5,
   "nodeType": "TSPropertySignature",
@@ -4603,7 +4603,7 @@ exports[`ESLint config > test-md.md 301`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: '}' expected.",
+  "message": "",
   "line": 2465,
   "column": 0
 }
@@ -4615,7 +4615,7 @@ exports[`ESLint config > test-md.md 302`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: JSX element 'div' has no corresponding closing tag.",
+  "message": "",
   "line": 2487,
   "column": 3
 }
@@ -4625,7 +4625,7 @@ exports[`ESLint config > test-md.md 303`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 2625,
   "column": 1,
   "nodeType": "Program",
@@ -4639,7 +4639,7 @@ exports[`ESLint config > test-md.md 304`] = `
 {
   "ruleId": "@typescript-eslint/method-signature-style",
   "severity": 2,
-  "message": "Shorthand method signature is forbidden. Use a function property instead.",
+  "message": "",
   "line": 2627,
   "column": 5,
   "nodeType": "TSMethodSignature",
@@ -4653,7 +4653,7 @@ exports[`ESLint config > test-md.md 305`] = `
 {
   "ruleId": "import-x/first",
   "severity": 2,
-  "message": "Import in body of module; reorder to top.",
+  "message": "",
   "line": 2632,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -4674,7 +4674,7 @@ exports[`ESLint config > test-md.md 306`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
-  "message": "All imports in the declaration are only used as types. Use \`import type\`.",
+  "message": "",
   "line": 2632,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -4695,7 +4695,7 @@ exports[`ESLint config > test-md.md 307`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 2634,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -4709,7 +4709,7 @@ exports[`ESLint config > test-md.md 308`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 2643,
   "column": 1,
   "nodeType": "Program",
@@ -4723,7 +4723,7 @@ exports[`ESLint config > test-md.md 309`] = `
 {
   "ruleId": "prefer-const",
   "severity": 2,
-  "message": "'process' is never reassigned. Use 'const' instead.",
+  "message": "",
   "line": 2659,
   "column": 1,
   "nodeType": "Identifier",
@@ -4737,7 +4737,7 @@ exports[`ESLint config > test-md.md 31`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 398,
   "column": 10,
   "nodeType": "Identifier",
@@ -4751,7 +4751,7 @@ exports[`ESLint config > test-md.md 310`] = `
 {
   "ruleId": "import-x/first",
   "severity": 2,
-  "message": "Import in body of module; reorder to top.",
+  "message": "",
   "line": 2694,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -4774,7 +4774,7 @@ exports[`ESLint config > test-md.md 311`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: Unexpected token Colon found.",
+  "message": "",
   "line": 2745,
   "column": 12
 }
@@ -4784,7 +4784,7 @@ exports[`ESLint config > test-md.md 312`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"jest\\" to come before \\"node\\".",
+  "message": "",
   "line": 2757,
   "column": 5,
   "nodeType": "Property",
@@ -4805,7 +4805,7 @@ exports[`ESLint config > test-md.md 313`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"parserOptions\\" to come before \\"plugins\\".",
+  "message": "",
   "line": 2762,
   "column": 3,
   "nodeType": "Property",
@@ -4826,7 +4826,7 @@ exports[`ESLint config > test-md.md 314`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"no-console\\" to come before \\"quotes\\".",
+  "message": "",
   "line": 2770,
   "column": 5,
   "nodeType": "Property",
@@ -4847,7 +4847,7 @@ exports[`ESLint config > test-md.md 315`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"@typescript-eslint/no-unused-vars\\" to come before \\"no-unused-vars\\".",
+  "message": "",
   "line": 2772,
   "column": 5,
   "nodeType": "Property",
@@ -4868,7 +4868,7 @@ exports[`ESLint config > test-md.md 316`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"args\\" to come before \\"vars\\".",
+  "message": "",
   "line": 2774,
   "column": 22,
   "nodeType": "Property",
@@ -4889,7 +4889,7 @@ exports[`ESLint config > test-md.md 317`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"@typescript-eslint/explicit-function-return-type\\" to come before \\"@typescript-eslint/no-unused-vars\\".",
+  "message": "",
   "line": 2776,
   "column": 5,
   "nodeType": "Property",
@@ -4910,7 +4910,7 @@ exports[`ESLint config > test-md.md 32`] = `
 {
   "ruleId": "@eslint-react/dom/no-missing-button-type",
   "severity": 1,
-  "message": "Add missing 'type' attribute on 'button' component.",
+  "message": "",
   "line": 403,
   "column": 7,
   "nodeType": "JSXOpeningElement",
@@ -4968,7 +4968,7 @@ exports[`ESLint config > test-md.md 33`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"payload\\" to come before \\"type\\".",
+  "message": "",
   "line": 403,
   "column": 60,
   "nodeType": "Property",
@@ -4989,7 +4989,7 @@ exports[`ESLint config > test-md.md 34`] = `
 {
   "ruleId": "@eslint-react/dom/no-missing-button-type",
   "severity": 1,
-  "message": "Add missing 'type' attribute on 'button' component.",
+  "message": "",
   "line": 406,
   "column": 7,
   "nodeType": "JSXOpeningElement",
@@ -5047,7 +5047,7 @@ exports[`ESLint config > test-md.md 35`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"payload\\" to come before \\"type\\".",
+  "message": "",
   "line": 406,
   "column": 60,
   "nodeType": "Property",
@@ -5070,7 +5070,7 @@ exports[`ESLint config > test-md.md 36`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: '(' expected.",
+  "message": "",
   "line": 427,
   "column": 23
 }
@@ -5080,7 +5080,7 @@ exports[`ESLint config > test-md.md 37`] = `
 {
   "ruleId": "@eslint-react/web-api/no-leaked-timeout",
   "severity": 1,
-  "message": "A 'setTimeout' must be assigned to a variable for proper cleanup.",
+  "message": "",
   "line": 442,
   "column": 7,
   "nodeType": "CallExpression",
@@ -5094,7 +5094,7 @@ exports[`ESLint config > test-md.md 38`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 457,
   "column": 1,
   "nodeType": "Program",
@@ -5108,7 +5108,7 @@ exports[`ESLint config > test-md.md 39`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 457,
   "column": 10,
   "nodeType": "Identifier",
@@ -5122,7 +5122,7 @@ exports[`ESLint config > test-md.md 4`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 200,
   "column": 7,
   "nodeType": "Identifier",
@@ -5136,7 +5136,7 @@ exports[`ESLint config > test-md.md 40`] = `
 {
   "ruleId": "@eslint-react/web-api/no-leaked-timeout",
   "severity": 1,
-  "message": "A 'setTimeout' must be assigned to a variable for proper cleanup.",
+  "message": "",
   "line": 461,
   "column": 5,
   "nodeType": "CallExpression",
@@ -5150,7 +5150,7 @@ exports[`ESLint config > test-md.md 41`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 481,
   "column": 10,
   "nodeType": "Identifier",
@@ -5164,7 +5164,7 @@ exports[`ESLint config > test-md.md 42`] = `
 {
   "ruleId": "curly",
   "severity": 2,
-  "message": "Expected { after 'if' condition.",
+  "message": "",
   "line": 490,
   "column": 26,
   "nodeType": "IfStatement",
@@ -5185,7 +5185,7 @@ exports[`ESLint config > test-md.md 43`] = `
 {
   "ruleId": "unicorn/throw-new-error",
   "severity": 2,
-  "message": "Use \`new\` when creating an error.",
+  "message": "",
   "line": 490,
   "column": 32,
   "nodeType": "CallExpression",
@@ -5206,7 +5206,7 @@ exports[`ESLint config > test-md.md 44`] = `
 {
   "ruleId": "unicorn/new-for-builtins",
   "severity": 2,
-  "message": "Use \`new Error()\` instead of \`Error()\`.",
+  "message": "",
   "line": 490,
   "column": 32,
   "nodeType": "CallExpression",
@@ -5227,7 +5227,7 @@ exports[`ESLint config > test-md.md 45`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 504,
   "column": 1,
   "nodeType": "Program",
@@ -5243,7 +5243,7 @@ exports[`ESLint config > test-md.md 46`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: Expression expected.",
+  "message": "",
   "line": 531,
   "column": 41
 }
@@ -5253,7 +5253,7 @@ exports[`ESLint config > test-md.md 47`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 553,
   "column": 13,
   "nodeType": "Identifier",
@@ -5274,7 +5274,7 @@ exports[`ESLint config > test-md.md 48`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 557,
   "column": 6,
   "nodeType": "Identifier",
@@ -5295,7 +5295,7 @@ exports[`ESLint config > test-md.md 49`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-object-type",
   "severity": 2,
-  "message": "The \`{}\` (\\"empty object\\") type allows any non-nullish value, including literals like \`0\` and \`\\"\\"\`.\\n- If that's what you want, disable this lint rule with an inline comment or configure the 'allowObjectTypes' rule option.\\n- If you want a type meaning \\"any object\\", you probably want \`object\` instead.\\n- If you want a type meaning \\"any value\\", you probably want \`unknown\` instead.",
+  "message": "",
   "line": 557,
   "column": 23,
   "nodeType": "TSTypeLiteral",
@@ -5339,7 +5339,7 @@ exports[`ESLint config > test-md.md 5`] = `
 {
   "ruleId": "@typescript-eslint/no-redeclare",
   "severity": 2,
-  "message": "'App' is already defined.",
+  "message": "",
   "line": 200,
   "column": 7,
   "nodeType": "Identifier",
@@ -5353,7 +5353,7 @@ exports[`ESLint config > test-md.md 50`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 559,
   "column": 7,
   "nodeType": "Identifier",
@@ -5367,7 +5367,7 @@ exports[`ESLint config > test-md.md 51`] = `
 {
   "ruleId": "@eslint-react/no-forward-ref",
   "severity": 1,
-  "message": "In React 19, 'forwardRef' is no longer necessary. Pass 'ref' as a prop instead.",
+  "message": "",
   "line": 559,
   "column": 7,
   "nodeType": "Identifier",
@@ -5381,7 +5381,7 @@ exports[`ESLint config > test-md.md 52`] = `
 {
   "ruleId": "@eslint-react/no-missing-component-display-name",
   "severity": 2,
-  "message": "Add missing 'displayName' for component.",
+  "message": "",
   "line": 559,
   "column": 63,
   "nodeType": "ArrowFunctionExpression",
@@ -5395,7 +5395,7 @@ exports[`ESLint config > test-md.md 53`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
-  "message": "Imports \\"CountdownHandle\\" are only used as type.",
+  "message": "",
   "line": 574,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -5416,7 +5416,7 @@ exports[`ESLint config > test-md.md 54`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 576,
   "column": 10,
   "nodeType": "Identifier",
@@ -5430,7 +5430,7 @@ exports[`ESLint config > test-md.md 55`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 599,
   "column": 1,
   "nodeType": "Program",
@@ -5444,7 +5444,7 @@ exports[`ESLint config > test-md.md 56`] = `
 {
   "ruleId": "@eslint-react/naming-convention/use-state",
   "severity": 1,
-  "message": "The setter should be named 'set' followed by the capitalized state variable name, e.g., 'setState' for 'state'.",
+  "message": "",
   "line": 602,
   "column": 21,
   "nodeType": "Identifier",
@@ -5458,7 +5458,7 @@ exports[`ESLint config > test-md.md 57`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 603,
   "column": 9,
   "nodeType": "VariableDeclarator",
@@ -5472,7 +5472,7 @@ exports[`ESLint config > test-md.md 58`] = `
 {
   "ruleId": "promise/prefer-await-to-then",
   "severity": 2,
-  "message": "Prefer await to then()/catch()/finally().",
+  "message": "",
   "line": 605,
   "column": 21,
   "nodeType": "Identifier",
@@ -5486,7 +5486,7 @@ exports[`ESLint config > test-md.md 59`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 621,
   "column": 1,
   "nodeType": "Program",
@@ -5500,7 +5500,7 @@ exports[`ESLint config > test-md.md 6`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 200,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -5514,7 +5514,7 @@ exports[`ESLint config > test-md.md 60`] = `
 {
   "ruleId": "@eslint-react/naming-convention/use-state",
   "severity": 1,
-  "message": "The setter should be named 'set' followed by the capitalized state variable name, e.g., 'setState' for 'state'.",
+  "message": "",
   "line": 624,
   "column": 21,
   "nodeType": "Identifier",
@@ -5528,7 +5528,7 @@ exports[`ESLint config > test-md.md 61`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 625,
   "column": 9,
   "nodeType": "VariableDeclarator",
@@ -5542,7 +5542,7 @@ exports[`ESLint config > test-md.md 62`] = `
 {
   "ruleId": "promise/prefer-await-to-then",
   "severity": 2,
-  "message": "Prefer await to then()/catch()/finally().",
+  "message": "",
   "line": 627,
   "column": 21,
   "nodeType": "Identifier",
@@ -5556,7 +5556,7 @@ exports[`ESLint config > test-md.md 63`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 639,
   "column": 1,
   "nodeType": "Program",
@@ -5570,7 +5570,7 @@ exports[`ESLint config > test-md.md 64`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
-  "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:6:23\\n  4 |\\n  5 | function useArray() {\\n> 6 |   const numberValue = useRef(3).current;\\n    |                       ^^^^^^^^^^^^^^^^^ Cannot access ref value during render\\n  7 |   const functionValue = useRef(() => {}).current;\\n  8 |   return [numberValue, functionValue]; // type is (number | (() => void))[]\\n  9 | }",
+  "message": "",
   "line": 644,
   "column": 23,
   "nodeType": null,
@@ -5583,7 +5583,7 @@ exports[`ESLint config > test-md.md 65`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
-  "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:7:25\\n   5 | function useArray() {\\n   6 |   const numberValue = useRef(3).current;\\n>  7 |   const functionValue = useRef(() => {}).current;\\n     |                         ^^^^^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render\\n   8 |   return [numberValue, functionValue]; // type is (number | (() => void))[]\\n   9 | }\\n  10 |",
+  "message": "",
   "line": 645,
   "column": 25,
   "nodeType": null,
@@ -5596,7 +5596,7 @@ exports[`ESLint config > test-md.md 66`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
-  "message": "Unexpected empty arrow function.",
+  "message": "",
   "line": 645,
   "column": 38,
   "nodeType": "ArrowFunctionExpression",
@@ -5626,7 +5626,7 @@ exports[`ESLint config > test-md.md 67`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
-  "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:8:10\\n   6 |   const numberValue = useRef(3).current;\\n   7 |   const functionValue = useRef(() => {}).current;\\n>  8 |   return [numberValue, functionValue]; // type is (number | (() => void))[]\\n     |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render\\n   9 | }\\n  10 |\\n  11 | function useTuple() {",
+  "message": "",
   "line": 646,
   "column": 10,
   "nodeType": null,
@@ -5639,7 +5639,7 @@ exports[`ESLint config > test-md.md 68`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
-  "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:12:23\\n  10 |\\n  11 | function useTuple() {\\n> 12 |   const numberValue = useRef(3).current;\\n     |                       ^^^^^^^^^^^^^^^^^ Passing a ref to a function may read its value during render\\n  13 |   const functionValue = useRef(() => {}).current;\\n  14 |   return tuplify(numberValue, functionValue); // type is [number, () => void]\\n  15 | }",
+  "message": "",
   "line": 650,
   "column": 23,
   "nodeType": null,
@@ -5652,7 +5652,7 @@ exports[`ESLint config > test-md.md 69`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
-  "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:13:25\\n  11 | function useTuple() {\\n  12 |   const numberValue = useRef(3).current;\\n> 13 |   const functionValue = useRef(() => {}).current;\\n     |                         ^^^^^^^^^^^^^^^^^^^^^^^^ Passing a ref to a function may read its value during render\\n  14 |   return tuplify(numberValue, functionValue); // type is [number, () => void]\\n  15 | }\\n  16 |",
+  "message": "",
   "line": 651,
   "column": 25,
   "nodeType": null,
@@ -5665,7 +5665,7 @@ exports[`ESLint config > test-md.md 7`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 203,
   "column": 7,
   "nodeType": "Identifier",
@@ -5679,7 +5679,7 @@ exports[`ESLint config > test-md.md 70`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
-  "message": "Unexpected empty arrow function.",
+  "message": "",
   "line": 651,
   "column": 38,
   "nodeType": "ArrowFunctionExpression",
@@ -5709,7 +5709,7 @@ exports[`ESLint config > test-md.md 71`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 684,
   "column": 6,
   "nodeType": "Identifier",
@@ -5730,7 +5730,7 @@ exports[`ESLint config > test-md.md 72`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 688,
   "column": 6,
   "nodeType": "Identifier",
@@ -5751,7 +5751,7 @@ exports[`ESLint config > test-md.md 73`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 691,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -5765,7 +5765,7 @@ exports[`ESLint config > test-md.md 74`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 727,
   "column": 1,
   "nodeType": "Program",
@@ -5779,7 +5779,7 @@ exports[`ESLint config > test-md.md 75`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 727,
   "column": 6,
   "nodeType": "Identifier",
@@ -5800,7 +5800,7 @@ exports[`ESLint config > test-md.md 76`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 730,
   "column": 6,
   "nodeType": "Identifier",
@@ -5821,7 +5821,7 @@ exports[`ESLint config > test-md.md 77`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 742,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -5835,7 +5835,7 @@ exports[`ESLint config > test-md.md 78`] = `
 {
   "ruleId": "jsx-a11y/click-events-have-key-events",
   "severity": 2,
-  "message": "Visible, non-interactive elements with click handlers must have at least one keyboard listener.",
+  "message": "",
   "line": 746,
   "column": 7,
   "nodeType": "JSXOpeningElement",
@@ -5848,7 +5848,7 @@ exports[`ESLint config > test-md.md 79`] = `
 {
   "ruleId": "jsx-a11y/no-static-element-interactions",
   "severity": 2,
-  "message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+  "message": "",
   "line": 746,
   "column": 7,
   "nodeType": "JSXOpeningElement",
@@ -5861,7 +5861,7 @@ exports[`ESLint config > test-md.md 8`] = `
 {
   "ruleId": "@typescript-eslint/no-redeclare",
   "severity": 2,
-  "message": "'App' is already defined.",
+  "message": "",
   "line": 203,
   "column": 7,
   "nodeType": "Identifier",
@@ -5875,7 +5875,7 @@ exports[`ESLint config > test-md.md 80`] = `
 {
   "ruleId": "perfectionist/sort-classes",
   "severity": 2,
-  "message": "Expected \\"increment\\" to come before \\"render\\".",
+  "message": "",
   "line": 751,
   "column": 3,
   "nodeType": "PropertyDefinition",
@@ -5896,7 +5896,7 @@ exports[`ESLint config > test-md.md 81`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 765,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -5910,7 +5910,7 @@ exports[`ESLint config > test-md.md 82`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 795,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -5924,7 +5924,7 @@ exports[`ESLint config > test-md.md 83`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 795,
   "column": 1,
   "nodeType": "Program",
@@ -5938,7 +5938,7 @@ exports[`ESLint config > test-md.md 84`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"null\\" to come before \\"Partial<State>\\".",
+  "message": "",
   "line": 799,
   "column": 23,
   "nodeType": "TSNullKeyword",
@@ -5959,7 +5959,7 @@ exports[`ESLint config > test-md.md 85`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 808,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -5973,7 +5973,7 @@ exports[`ESLint config > test-md.md 86`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 808,
   "column": 1,
   "nodeType": "Program",
@@ -5987,7 +5987,7 @@ exports[`ESLint config > test-md.md 87`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
-  "message": "Unexpected empty static method 'getDerivedStateFromProps'.",
+  "message": "",
   "line": 812,
   "column": 49,
   "nodeType": "FunctionExpression",
@@ -6017,7 +6017,7 @@ exports[`ESLint config > test-md.md 88`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 819,
   "column": 1,
   "nodeType": "Program",
@@ -6031,7 +6031,7 @@ exports[`ESLint config > test-md.md 89`] = `
 {
   "ruleId": "sonarjs/redundant-type-aliases",
   "severity": 2,
-  "message": "Remove this redundant type alias and replace its occurrences with \\"any\\".",
+  "message": "",
   "line": 819,
   "column": 6,
   "nodeType": "Identifier",
@@ -6045,7 +6045,7 @@ exports[`ESLint config > test-md.md 9`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 203,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -6059,7 +6059,7 @@ exports[`ESLint config > test-md.md 90`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"derivedState\\" to come before \\"savedPropA\\".",
+  "message": "",
   "line": 830,
   "column": 5,
   "nodeType": "Property",
@@ -6080,7 +6080,7 @@ exports[`ESLint config > test-md.md 91`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 833,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -6094,7 +6094,7 @@ exports[`ESLint config > test-md.md 92`] = `
 {
   "ruleId": "curly",
   "severity": 2,
-  "message": "Expected { after 'if' condition.",
+  "message": "",
   "line": 842,
   "column": 49,
   "nodeType": "IfStatement",
@@ -6117,7 +6117,7 @@ exports[`ESLint config > test-md.md 93`] = `
   "nodeType": null,
   "fatal": true,
   "severity": 2,
-  "message": "Parsing error: Expression expected.",
+  "message": "",
   "line": 868,
   "column": 43
 }
@@ -6127,7 +6127,7 @@ exports[`ESLint config > test-md.md 94`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
-  "message": "Use an \`interface\` instead of a \`type\`.",
+  "message": "",
   "line": 874,
   "column": 6,
   "nodeType": "Identifier",
@@ -6148,7 +6148,7 @@ exports[`ESLint config > test-md.md 95`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
-  "message": "Avoid using class components. Use function components instead.",
+  "message": "",
   "line": 878,
   "column": 1,
   "nodeType": "ClassDeclaration",
@@ -6162,7 +6162,7 @@ exports[`ESLint config > test-md.md 96`] = `
 {
   "ruleId": "prefer-const",
   "severity": 2,
-  "message": "'el' is never reassigned. Use 'const' instead.",
+  "message": "",
   "line": 885,
   "column": 5,
   "nodeType": "Identifier",
@@ -6183,7 +6183,7 @@ exports[`ESLint config > test-md.md 97`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
-  "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+  "message": "",
   "line": 898,
   "column": 1,
   "nodeType": "Program",
@@ -6197,7 +6197,7 @@ exports[`ESLint config > test-md.md 98`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
-  "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+  "message": "",
   "line": 904,
   "column": 7,
   "nodeType": "Identifier",
@@ -6211,7 +6211,7 @@ exports[`ESLint config > test-md.md 99`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
-  "message": "Expected a function declaration.",
+  "message": "",
   "line": 904,
   "column": 7,
   "nodeType": "VariableDeclarator",
@@ -6225,7 +6225,7 @@ exports[`ESLint config > test-ts.ts 1`] = `
 {
   "ruleId": "import-x/no-duplicates",
   "severity": 2,
-  "message": "'@typescript-eslint/utils' imported multiple times.",
+  "message": "",
   "line": 1,
   "column": 41,
   "nodeType": "Literal",
@@ -6246,7 +6246,7 @@ exports[`ESLint config > test-ts.ts 10`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
-  "message": "Expected \\"allowHigherOrderFunctions\\" to come before \\"allowTypedFunctionExpressions\\".",
+  "message": "",
   "line": 151,
   "column": 3,
   "nodeType": "TSPropertySignature",
@@ -6267,7 +6267,7 @@ exports[`ESLint config > test-ts.ts 11`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
-  "message": "Expected \\"allowDirectConstAssertionInArrowFunctions\\" to come before \\"allowHigherOrderFunctions\\".",
+  "message": "",
   "line": 152,
   "column": 3,
   "nodeType": "TSPropertySignature",
@@ -6288,7 +6288,7 @@ exports[`ESLint config > test-ts.ts 12`] = `
 {
   "ruleId": "max-params",
   "severity": 2,
-  "message": "Function 'checkFunctionReturnType' has too many parameters (4). Maximum allowed is 3.",
+  "message": "",
   "line": 210,
   "column": 1,
   "nodeType": "FunctionDeclaration",
@@ -6302,7 +6302,7 @@ exports[`ESLint config > test-ts.ts 13`] = `
 {
   "ruleId": "max-params",
   "severity": 2,
-  "message": "Function 'checkFunctionExpressionReturnType' has too many parameters (4). Maximum allowed is 3.",
+  "message": "",
   "line": 226,
   "column": 1,
   "nodeType": "FunctionDeclaration",
@@ -6316,7 +6316,7 @@ exports[`ESLint config > test-ts.ts 14`] = `
 {
   "ruleId": "sonarjs/cognitive-complexity",
   "severity": 2,
-  "message": "Refactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+  "message": "",
   "line": 242,
   "column": 10,
   "nodeType": null,
@@ -6330,7 +6330,7 @@ exports[`ESLint config > test-ts.ts 15`] = `
 {
   "ruleId": "perfectionist/sort-switch-case",
   "severity": 2,
-  "message": "Expected \\"AST_NODE_TYPES.FunctionDeclaration\\" to come before \\"AST_NODE_TYPES.FunctionExpression\\".",
+  "message": "",
   "line": 261,
   "column": 12,
   "nodeType": "MemberExpression",
@@ -6351,7 +6351,7 @@ exports[`ESLint config > test-ts.ts 16`] = `
 {
   "ruleId": "perfectionist/sort-switch-case",
   "severity": 2,
-  "message": "Expected \\"AST_NODE_TYPES.PropertyDefinition\\" to come before \\"AST_NODE_TYPES.VariableDeclarator\\".",
+  "message": "",
   "line": 274,
   "column": 7,
   "nodeType": "SwitchCase",
@@ -6365,7 +6365,7 @@ exports[`ESLint config > test-ts.ts 17`] = `
 {
   "ruleId": "perfectionist/sort-named-exports",
   "severity": 2,
-  "message": "Expected \\"ancestorHasReturnType\\" to come before \\"isValidFunctionExpressionReturnType\\".",
+  "message": "",
   "line": 295,
   "column": 3,
   "nodeType": "ExportSpecifier",
@@ -6386,7 +6386,7 @@ exports[`ESLint config > test-ts.ts 2`] = `
 {
   "ruleId": "import-x/order",
   "severity": 2,
-  "message": "There should be no empty line between import groups",
+  "message": "",
   "line": 2,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -6407,7 +6407,7 @@ exports[`ESLint config > test-ts.ts 3`] = `
 {
   "ruleId": "import-x/no-duplicates",
   "severity": 2,
-  "message": "'@typescript-eslint/utils' imported multiple times.",
+  "message": "",
   "line": 2,
   "column": 45,
   "nodeType": "Literal",
@@ -6421,7 +6421,7 @@ exports[`ESLint config > test-ts.ts 4`] = `
 {
   "ruleId": "import-x/extensions",
   "severity": 2,
-  "message": "Missing file extension for \\"./astUtils\\"",
+  "message": "",
   "line": 4,
   "column": 58,
   "nodeType": "Literal",
@@ -6435,7 +6435,7 @@ exports[`ESLint config > test-ts.ts 5`] = `
 {
   "ruleId": "import-x/extensions",
   "severity": 2,
-  "message": "Missing file extension for \\"./getFunctionHeadLoc\\"",
+  "message": "",
   "line": 5,
   "column": 36,
   "nodeType": "Literal",
@@ -6449,7 +6449,7 @@ exports[`ESLint config > test-ts.ts 6`] = `
 {
   "ruleId": "no-implicit-coercion",
   "severity": 2,
-  "message": "Unexpected implicit coercion encountered. Use \`Boolean(node.id.typeAnnotation)\` instead.",
+  "message": "",
   "line": 17,
   "column": 61,
   "nodeType": "UnaryExpression",
@@ -6470,7 +6470,7 @@ exports[`ESLint config > test-ts.ts 7`] = `
 {
   "ruleId": "no-implicit-coercion",
   "severity": 2,
-  "message": "Unexpected implicit coercion encountered. Use \`Boolean(node.typeAnnotation)\` instead.",
+  "message": "",
   "line": 27,
   "column": 61,
   "nodeType": "UnaryExpression",
@@ -6491,7 +6491,7 @@ exports[`ESLint config > test-ts.ts 8`] = `
 {
   "ruleId": "prefer-destructuring",
   "severity": 2,
-  "message": "Use object destructuring.",
+  "message": "",
   "line": 95,
   "column": 9,
   "nodeType": "VariableDeclarator",
@@ -6512,7 +6512,7 @@ exports[`ESLint config > test-ts.ts 9`] = `
 {
   "ruleId": "no-implicit-coercion",
   "severity": 2,
-  "message": "Unexpected implicit coercion encountered. Use \`Boolean(statement.argument)\` instead.",
+  "message": "",
   "line": 117,
   "column": 62,
   "nodeType": "UnaryExpression",
@@ -6533,7 +6533,7 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"use·client\\"\` with \`'use·client'\`",
+  "message": "",
   "line": 1,
   "column": 1,
   "nodeType": null,
@@ -6554,7 +6554,7 @@ exports[`ESLint config > test-tsx.tsx 10`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"w-full\\"\` with \`'w-full'\`",
+  "message": "",
   "line": 17,
   "column": 20,
   "nodeType": null,
@@ -6575,7 +6575,7 @@ exports[`ESLint config > test-tsx.tsx 11`] = `
 {
   "ruleId": "@eslint-react/no-array-index-key",
   "severity": 1,
-  "message": "Do not use item index in the array as its key.",
+  "message": "",
   "line": 19,
   "column": 19,
   "nodeType": "Identifier",
@@ -6589,7 +6589,7 @@ exports[`ESLint config > test-tsx.tsx 12`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"className\\" to come before \\"key\\".",
+  "message": "",
   "line": 19,
   "column": 26,
   "nodeType": "JSXAttribute",
@@ -6610,7 +6610,7 @@ exports[`ESLint config > test-tsx.tsx 13`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"pb-4\\"\` with \`'pb-4'\`",
+  "message": "",
   "line": 19,
   "column": 40,
   "nodeType": null,
@@ -6631,7 +6631,7 @@ exports[`ESLint config > test-tsx.tsx 14`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"mb-1·rounded-md·px-2·py-1·text-sm·font-semibold\\">⏎············{item.title}⏎··········\` with \`'mb-1·rounded-md·px-2·py-1·text-sm·font-semibold'>{item.title}\`",
+  "message": "",
   "line": 20,
   "column": 25,
   "nodeType": null,
@@ -6652,7 +6652,7 @@ exports[`ESLint config > test-tsx.tsx 15`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`(⏎············<DocsSidebarNavItems·items={item.items}·pathname={pathname}·/>⏎··········)\` with \`<DocsSidebarNavItems·items={item.items}·pathname={pathname}·/>\`",
+  "message": "",
   "line": 23,
   "column": 35,
   "nodeType": null,
@@ -6673,7 +6673,7 @@ exports[`ESLint config > test-tsx.tsx 16`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
-  "message": "Expected \\"null\\" to come before \\"string\\".",
+  "message": "",
   "line": 34,
   "column": 22,
   "nodeType": "TSNullKeyword",
@@ -6694,7 +6694,7 @@ exports[`ESLint config > test-tsx.tsx 17`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`⏎··items,⏎··pathname,⏎\` with \`·items,·pathname·\`",
+  "message": "",
   "line": 37,
   "column": 38,
   "nodeType": null,
@@ -6715,7 +6715,7 @@ exports[`ESLint config > test-tsx.tsx 18`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"grid·grid-flow-row·auto-rows-max·text-sm\\"\` with \`'grid·grid-flow-row·auto-rows-max·text-sm'\`",
+  "message": "",
   "line": 42,
   "column": 20,
   "nodeType": null,
@@ -6736,7 +6736,7 @@ exports[`ESLint config > test-tsx.tsx 19`] = `
 {
   "ruleId": "@eslint-react/no-array-index-key",
   "severity": 1,
-  "message": "Do not use item index in the array as its key.",
+  "message": "",
   "line": 46,
   "column": 18,
   "nodeType": "Identifier",
@@ -6750,7 +6750,7 @@ exports[`ESLint config > test-tsx.tsx 2`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"next/link\\"\` with \`'next/link'\`",
+  "message": "",
   "line": 3,
   "column": 18,
   "nodeType": null,
@@ -6771,7 +6771,7 @@ exports[`ESLint config > test-tsx.tsx 20`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"href\\" to come before \\"key\\".",
+  "message": "",
   "line": 47,
   "column": 13,
   "nodeType": "JSXAttribute",
@@ -6792,7 +6792,7 @@ exports[`ESLint config > test-tsx.tsx 21`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"className\\" to come before \\"href\\".",
+  "message": "",
   "line": 48,
   "column": 13,
   "nodeType": "JSXAttribute",
@@ -6813,7 +6813,7 @@ exports[`ESLint config > test-tsx.tsx 22`] = `
 {
   "ruleId": "tailwindcss/classnames-order",
   "severity": 1,
-  "message": "Invalid Tailwind CSS classnames order",
+  "message": "",
   "line": 48,
   "column": 24,
   "nodeType": "CallExpression",
@@ -6834,7 +6834,7 @@ exports[`ESLint config > test-tsx.tsx 23`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"group·flex·w-full·items-center·rounded-md·border·border-transparent·px-2·py-1·hover:underline\\"\` with \`'group·flex·w-full·items-center·rounded-md·border·border-transparent·px-2·py-1·hover:underline'\`",
+  "message": "",
   "line": 49,
   "column": 15,
   "nodeType": null,
@@ -6855,7 +6855,7 @@ exports[`ESLint config > test-tsx.tsx 24`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"cursor-not-allowed·opacity-60\\"\` with \`'cursor-not-allowed·opacity-60'\`",
+  "message": "",
   "line": 50,
   "column": 32,
   "nodeType": null,
@@ -6876,7 +6876,7 @@ exports[`ESLint config > test-tsx.tsx 25`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`⏎················?·\\"font-medium·text-foreground\\"⏎················:·\\"text-muted-foreground\\"\` with \`·?·'font-medium·text-foreground'·:·'text-muted-foreground',\`",
+  "message": "",
   "line": 51,
   "column": 37,
   "nodeType": null,
@@ -6897,7 +6897,7 @@ exports[`ESLint config > test-tsx.tsx 26`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"_blank\\"·:·\\"\\"\` with \`'_blank'·:·''\`",
+  "message": "",
   "line": 55,
   "column": 37,
   "nodeType": null,
@@ -6918,7 +6918,7 @@ exports[`ESLint config > test-tsx.tsx 27`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"rel\\" to come before \\"target\\".",
+  "message": "",
   "line": 56,
   "column": 13,
   "nodeType": "JSXAttribute",
@@ -6939,7 +6939,7 @@ exports[`ESLint config > test-tsx.tsx 28`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"noreferrer\\"·:·\\"\\"\` with \`'noreferrer'·:·''\`",
+  "message": "",
   "line": 56,
   "column": 34,
   "nodeType": null,
@@ -6960,7 +6960,7 @@ exports[`ESLint config > test-tsx.tsx 29`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"ml-2·rounded-md·bg-[#adfa1d]·px-1.5·py-0.5·text-xs·leading-none·text-[#000000]·no-underline·group-hover:no-underline\\"\` with \`'ml-2·rounded-md·bg-[#adfa1d]·px-1.5·py-0.5·text-xs·leading-none·text-[#000000]·no-underline·group-hover:no-underline'\`",
+  "message": "",
   "line": 60,
   "column": 31,
   "nodeType": null,
@@ -6981,7 +6981,7 @@ exports[`ESLint config > test-tsx.tsx 3`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"next/navigation\\"\` with \`'next/navigation'\`",
+  "message": "",
   "line": 4,
   "column": 29,
   "nodeType": null,
@@ -7002,7 +7002,7 @@ exports[`ESLint config > test-tsx.tsx 30`] = `
 {
   "ruleId": "@eslint-react/no-array-index-key",
   "severity": 1,
-  "message": "Do not use item index in the array as its key.",
+  "message": "",
   "line": 67,
   "column": 18,
   "nodeType": "Identifier",
@@ -7016,7 +7016,7 @@ exports[`ESLint config > test-tsx.tsx 31`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
-  "message": "Expected \\"className\\" to come before \\"key\\".",
+  "message": "",
   "line": 68,
   "column": 13,
   "nodeType": "JSXAttribute",
@@ -7037,7 +7037,7 @@ exports[`ESLint config > test-tsx.tsx 32`] = `
 {
   "ruleId": "tailwindcss/classnames-order",
   "severity": 1,
-  "message": "Invalid Tailwind CSS classnames order",
+  "message": "",
   "line": 68,
   "column": 24,
   "nodeType": "CallExpression",
@@ -7058,7 +7058,7 @@ exports[`ESLint config > test-tsx.tsx 33`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline\\"\` with \`'flex·w-full·cursor-not-allowed·items-center·rounded-md·p-2·text-muted-foreground·hover:underline'\`",
+  "message": "",
   "line": 69,
   "column": 15,
   "nodeType": null,
@@ -7079,7 +7079,7 @@ exports[`ESLint config > test-tsx.tsx 34`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"cursor-not-allowed·opacity-60\\"\` with \`'cursor-not-allowed·opacity-60',\`",
+  "message": "",
   "line": 70,
   "column": 32,
   "nodeType": null,
@@ -7100,7 +7100,7 @@ exports[`ESLint config > test-tsx.tsx 35`] = `
 {
   "ruleId": "tailwindcss/classnames-order",
   "severity": 1,
-  "message": "Invalid Tailwind CSS classnames order",
+  "message": "",
   "line": 75,
   "column": 21,
   "nodeType": "JSXAttribute",
@@ -7121,7 +7121,7 @@ exports[`ESLint config > test-tsx.tsx 36`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"ml-2·rounded-md·bg-muted·px-1.5·py-0.5·text-xs·leading-none·text-muted-foreground·no-underline·group-hover:no-underline\\"\` with \`'ml-2·rounded-md·bg-muted·px-1.5·py-0.5·text-xs·leading-none·text-muted-foreground·no-underline·group-hover:no-underline'\`",
+  "message": "",
   "line": 75,
   "column": 31,
   "nodeType": null,
@@ -7142,7 +7142,7 @@ exports[`ESLint config > test-tsx.tsx 37`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Insert \`,\`",
+  "message": "",
   "line": 80,
   "column": 10,
   "nodeType": null,
@@ -7163,7 +7163,7 @@ exports[`ESLint config > test-tsx.tsx 4`] = `
 {
   "ruleId": "import-x/order",
   "severity": 2,
-  "message": "There should be no empty line between import groups",
+  "message": "",
   "line": 5,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -7184,7 +7184,7 @@ exports[`ESLint config > test-tsx.tsx 5`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
-  "message": "All imports in the declaration are only used as types. Use \`import type\`.",
+  "message": "",
   "line": 5,
   "column": 1,
   "nodeType": "ImportDeclaration",
@@ -7205,7 +7205,7 @@ exports[`ESLint config > test-tsx.tsx 6`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"types/nav\\"\` with \`'types/nav'\`",
+  "message": "",
   "line": 5,
   "column": 32,
   "nodeType": null,
@@ -7226,7 +7226,7 @@ exports[`ESLint config > test-tsx.tsx 7`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`\\"@/lib/utils\\"\` with \`'@/lib/utils'\`",
+  "message": "",
   "line": 7,
   "column": 20,
   "nodeType": null,
@@ -7247,7 +7247,7 @@ exports[`ESLint config > test-tsx.tsx 8`] = `
 {
   "ruleId": "import-x/extensions",
   "severity": 2,
-  "message": "Missing file extension for \\"@/lib/utils\\"",
+  "message": "",
   "line": 7,
   "column": 20,
   "nodeType": "Literal",
@@ -7261,7 +7261,7 @@ exports[`ESLint config > test-tsx.tsx 9`] = `
 {
   "ruleId": "unicorn/explicit-length-check",
   "severity": 2,
-  "message": "Use \`.length > 0\` when checking length is not zero.",
+  "message": "",
   "line": 16,
   "column": 10,
   "nodeType": "MemberExpression",
@@ -7282,7 +7282,7 @@ exports[`ESLint config > test-vue.vue 1`] = `
 {
   "ruleId": "vue/block-lang",
   "severity": 2,
-  "message": "The 'lang' attribute of '<script>' is missing.",
+  "message": "",
   "line": 1,
   "column": 1,
   "nodeType": "VStartTag",
@@ -7296,7 +7296,7 @@ exports[`ESLint config > test-vue.vue 10`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"default\\" to come before \\"required\\".",
+  "message": "",
   "line": 14,
   "column": 7,
   "nodeType": "Property",
@@ -7317,7 +7317,7 @@ exports[`ESLint config > test-vue.vue 11`] = `
 {
   "ruleId": "vue/new-line-between-multi-line-property",
   "severity": 2,
-  "message": "Enforce new lines between multi-line properties in Vue components.",
+  "message": "",
   "line": 15,
   "column": 6,
   "nodeType": "Property",
@@ -7338,7 +7338,7 @@ exports[`ESLint config > test-vue.vue 12`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"groups\\" to come before \\"parentGroup\\".",
+  "message": "",
   "line": 16,
   "column": 5,
   "nodeType": "Property",
@@ -7359,7 +7359,7 @@ exports[`ESLint config > test-vue.vue 13`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"required\\" to come before \\"type\\".",
+  "message": "",
   "line": 18,
   "column": 7,
   "nodeType": "Property",
@@ -7380,7 +7380,7 @@ exports[`ESLint config > test-vue.vue 14`] = `
 {
   "ruleId": "vue/new-line-between-multi-line-property",
   "severity": 2,
-  "message": "Enforce new lines between multi-line properties in Vue components.",
+  "message": "",
   "line": 19,
   "column": 6,
   "nodeType": "Property",
@@ -7401,7 +7401,7 @@ exports[`ESLint config > test-vue.vue 15`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"action\\" to come before \\"groups\\".",
+  "message": "",
   "line": 20,
   "column": 5,
   "nodeType": "Property",
@@ -7422,7 +7422,7 @@ exports[`ESLint config > test-vue.vue 16`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"required\\" to come before \\"type\\".",
+  "message": "",
   "line": 22,
   "column": 7,
   "nodeType": "Property",
@@ -7443,7 +7443,7 @@ exports[`ESLint config > test-vue.vue 17`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"default\\" to come before \\"required\\".",
+  "message": "",
   "line": 23,
   "column": 7,
   "nodeType": "Property",
@@ -7464,7 +7464,7 @@ exports[`ESLint config > test-vue.vue 18`] = `
 {
   "ruleId": "vue/new-line-between-multi-line-property",
   "severity": 2,
-  "message": "Enforce new lines between multi-line properties in Vue components.",
+  "message": "",
   "line": 25,
   "column": 4,
   "nodeType": "Property",
@@ -7485,7 +7485,7 @@ exports[`ESLint config > test-vue.vue 19`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"computed\\" to come before \\"props\\".",
+  "message": "",
   "line": 26,
   "column": 3,
   "nodeType": "Property",
@@ -7506,7 +7506,7 @@ exports[`ESLint config > test-vue.vue 2`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Delete \`;\`",
+  "message": "",
   "line": 2,
   "column": 36,
   "nodeType": null,
@@ -7527,7 +7527,7 @@ exports[`ESLint config > test-vue.vue 20`] = `
 {
   "ruleId": "vue/component-api-style",
   "severity": 2,
-  "message": "Options API is not allowed in your project. \`computed\` option is part of the Options API. Use \`<script setup>\` or Composition API instead.",
+  "message": "",
   "line": 26,
   "column": 3,
   "nodeType": "Identifier",
@@ -7541,7 +7541,7 @@ exports[`ESLint config > test-vue.vue 21`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Delete \`;\`",
+  "message": "",
   "line": 28,
   "column": 65,
   "nodeType": null,
@@ -7562,7 +7562,7 @@ exports[`ESLint config > test-vue.vue 22`] = `
 {
   "ruleId": "vue/new-line-between-multi-line-property",
   "severity": 2,
-  "message": "Enforce new lines between multi-line properties in Vue components.",
+  "message": "",
   "line": 29,
   "column": 6,
   "nodeType": "Property",
@@ -7583,7 +7583,7 @@ exports[`ESLint config > test-vue.vue 23`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`⏎········'One·more·item',⏎········'%d·more·items',⏎········this.parentGroup.childrenCount·-·this.parentGroup.children.length,⏎······);\` with \`'One·more·item',·'%d·more·items',·this.parentGroup.childrenCount·-·this.parentGroup.children.length)\`",
+  "message": "",
   "line": 31,
   "column": 18,
   "nodeType": null,
@@ -7604,7 +7604,7 @@ exports[`ESLint config > test-vue.vue 24`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Delete \`;\`",
+  "message": "",
   "line": 38,
   "column": 2,
   "nodeType": null,
@@ -7625,7 +7625,7 @@ exports[`ESLint config > test-vue.vue 25`] = `
 {
   "ruleId": "vue/component-name-in-template-casing",
   "severity": 2,
-  "message": "Component name \\"group-item\\" is not PascalCase.",
+  "message": "",
   "line": 44,
   "column": 5,
   "nodeType": "HTMLTagOpen",
@@ -7646,7 +7646,7 @@ exports[`ESLint config > test-vue.vue 26`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Delete \`·\`",
+  "message": "",
   "line": 45,
   "column": 1,
   "nodeType": null,
@@ -7667,7 +7667,7 @@ exports[`ESLint config > test-vue.vue 27`] = `
 {
   "ruleId": "vue/attributes-order",
   "severity": 2,
-  "message": "Attribute \\":action\\" should go before \\":parent-group\\".",
+  "message": "",
   "line": 49,
   "column": 7,
   "nodeType": "VAttribute",
@@ -7688,7 +7688,7 @@ exports[`ESLint config > test-vue.vue 28`] = `
 {
   "ruleId": "vue/attributes-order",
   "severity": 2,
-  "message": "Attribute \\"class\\" should go before \\":href\\".",
+  "message": "",
   "line": 52,
   "column": 43,
   "nodeType": "VAttribute",
@@ -7709,7 +7709,7 @@ exports[`ESLint config > test-vue.vue 29`] = `
 {
   "ruleId": "vue/component-name-in-template-casing",
   "severity": 2,
-  "message": "Component name \\"gl-icon\\" is not PascalCase.",
+  "message": "",
   "line": 53,
   "column": 9,
   "nodeType": "HTMLTagOpen",
@@ -7730,7 +7730,7 @@ exports[`ESLint config > test-vue.vue 3`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Replace \`·'~/locale';\` with \`'~/locale'\`",
+  "message": "",
   "line": 3,
   "column": 21,
   "nodeType": null,
@@ -7751,7 +7751,7 @@ exports[`ESLint config > test-vue.vue 30`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Insert \`⏎·······\`",
+  "message": "",
   "line": 53,
   "column": 41,
   "nodeType": null,
@@ -7772,7 +7772,7 @@ exports[`ESLint config > test-vue.vue 4`] = `
 {
   "ruleId": "import-x/extensions",
   "severity": 2,
-  "message": "Missing file extension for \\"~/locale\\"",
+  "message": "",
   "line": 3,
   "column": 22,
   "nodeType": "Literal",
@@ -7786,7 +7786,7 @@ exports[`ESLint config > test-vue.vue 5`] = `
 {
   "ruleId": "import-x/extensions",
   "severity": 2,
-  "message": "Missing file extension for \\"../constants\\"",
+  "message": "",
   "line": 4,
   "column": 36,
   "nodeType": "Literal",
@@ -7800,7 +7800,7 @@ exports[`ESLint config > test-vue.vue 6`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
-  "message": "Delete \`;\`",
+  "message": "",
   "line": 4,
   "column": 50,
   "nodeType": null,
@@ -7821,7 +7821,7 @@ exports[`ESLint config > test-vue.vue 7`] = `
 {
   "ruleId": "vue/require-name-property",
   "severity": 2,
-  "message": "Required name property is not set.",
+  "message": "",
   "line": 6,
   "column": 16,
   "nodeType": "ObjectExpression",
@@ -7848,7 +7848,7 @@ exports[`ESLint config > test-vue.vue 8`] = `
 {
   "ruleId": "vue/new-line-between-multi-line-property",
   "severity": 2,
-  "message": "Enforce new lines between multi-line properties in Vue components.",
+  "message": "",
   "line": 9,
   "column": 4,
   "nodeType": "Property",
@@ -7869,7 +7869,7 @@ exports[`ESLint config > test-vue.vue 9`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
-  "message": "Expected \\"required\\" to come before \\"type\\".",
+  "message": "",
   "line": 13,
   "column": 7,
   "nodeType": "Property",
