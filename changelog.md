@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.23.0] - 2025-10-10
+### Added
+- Update eslint-plugin-react-hooks to latest
+
 ## [0.22.0] - 2025-09-28
 ### Added
 - Update react plugin, enable prettier by default, etc
@@ -355,7 +359,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - First release!
 
 [Unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.17.2...HEAD
-[0.17.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.22.0...v0.17.2
+[0.17.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.23.0...v0.17.2
+[0.23.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.22.0...v0.23.0
 [0.22.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.21.0...v0.22.0
 [0.21.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.20.0...v0.21.0
 [0.20.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.19.0...v0.20.0
