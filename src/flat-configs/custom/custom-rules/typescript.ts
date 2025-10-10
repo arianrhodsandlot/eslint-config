@@ -46,7 +46,14 @@ export const typescriptRules: Linter.RulesRecord = {
   ],
   '@typescript-eslint/no-unused-vars': [
     'error',
-    { args: 'none', caughtErrors: 'none', destructuredArrayIgnorePattern: '^_', ignoreRestSiblings: true, vars: 'all' },
+    {
+      args: 'all',
+      argsIgnorePattern: '^_',
+      caughtErrors: 'none',
+      destructuredArrayIgnorePattern: '^_',
+      ignoreRestSiblings: true,
+      vars: 'all',
+    },
   ],
   '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
   '@typescript-eslint/no-useless-constructor': 'error',

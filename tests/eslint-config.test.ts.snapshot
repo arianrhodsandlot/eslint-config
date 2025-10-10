@@ -1215,6 +1215,17 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 1
   },
   {
+    "ruleId": "@eslint-react/naming-convention/use-state",
+    "severity": 1,
+    "message": "The setter should be named 'set' followed by the capitalized state variable name, e.g., 'setState' for 'state'.",
+    "line": 602,
+    "column": 21,
+    "nodeType": "Identifier",
+    "messageId": "invalidSetterName",
+    "endLine": 602,
+    "endColumn": 29
+  },
+  {
     "ruleId": "func-style",
     "severity": 2,
     "message": "Expected a function declaration.",
@@ -1246,6 +1257,17 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "unnecessaryJSXExtension",
     "endLine": 634,
     "endColumn": 1
+  },
+  {
+    "ruleId": "@eslint-react/naming-convention/use-state",
+    "severity": 1,
+    "message": "The setter should be named 'set' followed by the capitalized state variable name, e.g., 'setState' for 'state'.",
+    "line": 624,
+    "column": 21,
+    "nodeType": "Identifier",
+    "messageId": "invalidSetterName",
+    "endLine": 624,
+    "endColumn": 29
   },
   {
     "ruleId": "func-style",
@@ -1281,6 +1303,26 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 1
   },
   {
+    "ruleId": "react-hooks/refs",
+    "severity": 2,
+    "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:6:23\\n  4 |\\n  5 | function useArray() {\\n> 6 |   const numberValue = useRef(3).current;\\n    |                       ^^^^^^^^^^^^^^^^^ Cannot access ref value during render\\n  7 |   const functionValue = useRef(() => {}).current;\\n  8 |   return [numberValue, functionValue]; // type is (number | (() => void))[]\\n  9 | }",
+    "line": 644,
+    "column": 23,
+    "nodeType": null,
+    "endLine": 644,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "react-hooks/refs",
+    "severity": 2,
+    "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:7:25\\n   5 | function useArray() {\\n   6 |   const numberValue = useRef(3).current;\\n>  7 |   const functionValue = useRef(() => {}).current;\\n     |                         ^^^^^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render\\n   8 |   return [numberValue, functionValue]; // type is (number | (() => void))[]\\n   9 | }\\n  10 |",
+    "line": 645,
+    "column": 25,
+    "nodeType": null,
+    "endLine": 645,
+    "endColumn": 49
+  },
+  {
     "ruleId": "@typescript-eslint/no-empty-function",
     "severity": 2,
     "message": "Unexpected empty arrow function.",
@@ -1306,6 +1348,36 @@ exports[`ESLint config > test-md.md 1`] = `
         "desc": "Add comment inside empty arrow function."
       }
     ]
+  },
+  {
+    "ruleId": "react-hooks/refs",
+    "severity": 2,
+    "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:8:10\\n   6 |   const numberValue = useRef(3).current;\\n   7 |   const functionValue = useRef(() => {}).current;\\n>  8 |   return [numberValue, functionValue]; // type is (number | (() => void))[]\\n     |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Cannot access ref value during render\\n   9 | }\\n  10 |\\n  11 | function useTuple() {",
+    "line": 646,
+    "column": 10,
+    "nodeType": null,
+    "endLine": 646,
+    "endColumn": 38
+  },
+  {
+    "ruleId": "react-hooks/refs",
+    "severity": 2,
+    "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:12:23\\n  10 |\\n  11 | function useTuple() {\\n> 12 |   const numberValue = useRef(3).current;\\n     |                       ^^^^^^^^^^^^^^^^^ Passing a ref to a function may read its value during render\\n  13 |   const functionValue = useRef(() => {}).current;\\n  14 |   return tuplify(numberValue, functionValue); // type is [number, () => void]\\n  15 | }",
+    "line": 650,
+    "column": 23,
+    "nodeType": null,
+    "endLine": 650,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "react-hooks/refs",
+    "severity": 2,
+    "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/22_22.tsx:13:25\\n  11 | function useTuple() {\\n  12 |   const numberValue = useRef(3).current;\\n> 13 |   const functionValue = useRef(() => {}).current;\\n     |                         ^^^^^^^^^^^^^^^^^^^^^^^^ Passing a ref to a function may read its value during render\\n  14 |   return tuplify(numberValue, functionValue); // type is [number, () => void]\\n  15 | }\\n  16 |",
+    "line": 651,
+    "column": 25,
+    "nodeType": null,
+    "endLine": 651,
+    "endColumn": 49
   },
   {
     "ruleId": "@typescript-eslint/no-empty-function",
@@ -1489,17 +1561,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 2
   },
   {
-    "ruleId": "@eslint-react/naming-convention/filename-extension",
-    "severity": 2,
-    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
-    "line": 795,
-    "column": 1,
-    "nodeType": "Program",
-    "messageId": "unnecessaryJSXExtension",
-    "endLine": 803,
-    "endColumn": 1
-  },
-  {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
     "message": "Avoid using class components. Use function components instead.",
@@ -1509,6 +1570,17 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "noClassComponent",
     "endLine": 802,
     "endColumn": 2
+  },
+  {
+    "ruleId": "@eslint-react/naming-convention/filename-extension",
+    "severity": 2,
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+    "line": 795,
+    "column": 1,
+    "nodeType": "Program",
+    "messageId": "unnecessaryJSXExtension",
+    "endLine": 803,
+    "endColumn": 1
   },
   {
     "ruleId": "perfectionist/sort-union-types",
@@ -1529,17 +1601,6 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
-    "ruleId": "@eslint-react/naming-convention/filename-extension",
-    "severity": 2,
-    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
-    "line": 808,
-    "column": 1,
-    "nodeType": "Program",
-    "messageId": "unnecessaryJSXExtension",
-    "endLine": 814,
-    "endColumn": 1
-  },
-  {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
     "message": "Avoid using class components. Use function components instead.",
@@ -1549,6 +1610,17 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "noClassComponent",
     "endLine": 813,
     "endColumn": 2
+  },
+  {
+    "ruleId": "@eslint-react/naming-convention/filename-extension",
+    "severity": 2,
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+    "line": 808,
+    "column": 1,
+    "nodeType": "Program",
+    "messageId": "unnecessaryJSXExtension",
+    "endLine": 814,
+    "endColumn": 1
   },
   {
     "ruleId": "@typescript-eslint/no-empty-function",
@@ -2438,17 +2510,6 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 13
   },
   {
-    "ruleId": "@eslint-react/naming-convention/filename-extension",
-    "severity": 2,
-    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
-    "line": 1265,
-    "column": 1,
-    "nodeType": "Program",
-    "messageId": "unnecessaryJSXExtension",
-    "endLine": 1273,
-    "endColumn": 1
-  },
-  {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
     "message": "Avoid using class components. Use function components instead.",
@@ -2458,6 +2519,17 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "noClassComponent",
     "endLine": 1272,
     "endColumn": 2
+  },
+  {
+    "ruleId": "@eslint-react/naming-convention/filename-extension",
+    "severity": 2,
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+    "line": 1265,
+    "column": 1,
+    "nodeType": "Program",
+    "messageId": "unnecessaryJSXExtension",
+    "endLine": 1273,
+    "endColumn": 1
   },
   {
     "ruleId": "perfectionist/sort-union-types",
@@ -2478,17 +2550,6 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
-    "ruleId": "@eslint-react/naming-convention/filename-extension",
-    "severity": 2,
-    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
-    "line": 1278,
-    "column": 1,
-    "nodeType": "Program",
-    "messageId": "unnecessaryJSXExtension",
-    "endLine": 1284,
-    "endColumn": 1
-  },
-  {
     "ruleId": "@eslint-react/no-class-component",
     "severity": 2,
     "message": "Avoid using class components. Use function components instead.",
@@ -2498,6 +2559,17 @@ exports[`ESLint config > test-md.md 1`] = `
     "messageId": "noClassComponent",
     "endLine": 1283,
     "endColumn": 2
+  },
+  {
+    "ruleId": "@eslint-react/naming-convention/filename-extension",
+    "severity": 2,
+    "message": "Do not use '.jsx', '.tsx' file extension for files without JSX.",
+    "line": 1278,
+    "column": 1,
+    "nodeType": "Program",
+    "messageId": "unnecessaryJSXExtension",
+    "endLine": 1284,
+    "endColumn": 1
   },
   {
     "ruleId": "@typescript-eslint/no-empty-function",
@@ -3421,61 +3493,6 @@ exports[`ESLint config > test-md.md 1`] = `
     }
   },
   {
-    "ruleId": "@eslint-react/dom/no-missing-button-type",
-    "severity": 1,
-    "message": "Add missing 'type' attribute on 'button' component.",
-    "line": 1641,
-    "column": 45,
-    "nodeType": "JSXAttribute",
-    "messageId": "noMissingButtonType",
-    "endLine": 1641,
-    "endColumn": 62,
-    "suggestions": [
-      {
-        "messageId": "addButtonType",
-        "data": {
-          "type": "button"
-        },
-        "fix": {
-          "range": [
-            71584,
-            71601
-          ],
-          "text": "type=\\"button\\""
-        },
-        "desc": "Add 'type' attribute with value 'button'."
-      },
-      {
-        "messageId": "addButtonType",
-        "data": {
-          "type": "submit"
-        },
-        "fix": {
-          "range": [
-            71584,
-            71601
-          ],
-          "text": "type=\\"submit\\""
-        },
-        "desc": "Add 'type' attribute with value 'submit'."
-      },
-      {
-        "messageId": "addButtonType",
-        "data": {
-          "type": "reset"
-        },
-        "fix": {
-          "range": [
-            71584,
-            71601
-          ],
-          "text": "type=\\"reset\\""
-        },
-        "desc": "Add 'type' attribute with value 'reset'."
-      }
-    ]
-  },
-  {
     "ruleId": "@typescript-eslint/consistent-type-imports",
     "severity": 2,
     "message": "Imports \\"ReactNode\\" and \\"Ref\\" are only used as type.",
@@ -3557,61 +3574,6 @@ exports[`ESLint config > test-md.md 1`] = `
       ],
       "text": "className=\\"MyClassName\\" ref={ref}"
     }
-  },
-  {
-    "ruleId": "@eslint-react/dom/no-missing-button-type",
-    "severity": 1,
-    "message": "Add missing 'type' attribute on 'button' component.",
-    "line": 1665,
-    "column": 47,
-    "nodeType": "JSXAttribute",
-    "messageId": "noMissingButtonType",
-    "endLine": 1665,
-    "endColumn": 64,
-    "suggestions": [
-      {
-        "messageId": "addButtonType",
-        "data": {
-          "type": "button"
-        },
-        "fix": {
-          "range": [
-            72290,
-            72307
-          ],
-          "text": "type=\\"button\\""
-        },
-        "desc": "Add 'type' attribute with value 'button'."
-      },
-      {
-        "messageId": "addButtonType",
-        "data": {
-          "type": "submit"
-        },
-        "fix": {
-          "range": [
-            72290,
-            72307
-          ],
-          "text": "type=\\"submit\\""
-        },
-        "desc": "Add 'type' attribute with value 'submit'."
-      },
-      {
-        "messageId": "addButtonType",
-        "data": {
-          "type": "reset"
-        },
-        "fix": {
-          "range": [
-            72290,
-            72307
-          ],
-          "text": "type=\\"reset\\""
-        },
-        "desc": "Add 'type' attribute with value 'reset'."
-      }
-    ]
   },
   {
     "ruleId": null,
@@ -3784,6 +3746,16 @@ exports[`ESLint config > test-md.md 1`] = `
     "endColumn": 15
   },
   {
+    "ruleId": "react-hooks/refs",
+    "severity": 2,
+    "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/67_67.tsx:13:8\\n  11 |   // create div element only once using ref\\n  12 |   const elRef = useRef<HTMLDivElement | null>(null);\\n> 13 |   if (!elRef.current) elRef.current = document.createElement(\\"div\\");\\n     |        ^^^^^^^^^^^^^ Cannot access ref value during render\\n  14 |\\n  15 |   useEffect(() => {\\n  16 |     const el = elRef.current!; // non-null assertion because it will never be null\\n\\nTo initialize a ref only once, check that the ref is null with the pattern \`if (ref.current == null) { ref.current = ... }\`",
+    "line": 1797,
+    "column": 8,
+    "nodeType": null,
+    "endLine": 1797,
+    "endColumn": 21
+  },
+  {
     "ruleId": "curly",
     "severity": 2,
     "message": "Expected { after 'if' condition.",
@@ -3836,6 +3808,16 @@ exports[`ESLint config > test-md.md 1`] = `
       ],
       "text": "el.remove()"
     }
+  },
+  {
+    "ruleId": "react-hooks/refs",
+    "severity": 2,
+    "message": "Error: Cannot access refs during render\\n\\nReact refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the \`current\` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).\\n\\n/Users/weidan/Documents/projects/github/eslint-config/tests/inputs/test-md.md/67_67.tsx:23:33\\n  21 |   }, []);\\n  22 |\\n> 23 |   return createPortal(children, elRef.current);\\n     |                                 ^^^^^^^^^^^^^ Passing a ref to a function may read its value during render\\n  24 | }\\n  25 |",
+    "line": 1807,
+    "column": 33,
+    "nodeType": null,
+    "endLine": 1807,
+    "endColumn": 46
   },
   {
     "ruleId": "react-refresh/only-export-components",
