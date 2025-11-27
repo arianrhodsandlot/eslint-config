@@ -23,15 +23,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "conc pnpm:build:* -c auto",
-    "build:cjs": "esbuild src/index.ts  --bundle --platform=node --packages=external --outfile=dist/eslint-config.cjs  --format=cjs",
-    "build:esm": "esbuild src/index.ts  --bundle --platform=node --packages=external --outfile=dist/eslint-config.mjs  --format=esm",
-    "build:types": "tsc",
+    "build": "tsdown --no-fixed-extension",
     "dev": "eslint-config-inspector",
     "eslint": "eslint --no-warn-ignored",
     "lint": "node --run=eslint -- src",
     "prepare": "simple-git-hooks",
-    "test": "node --test tests/*.test.ts",
+    "test": "node --test tests/*.test.ts && tsc",
     "test:update": "node --test-update-snapshots tests/*.test.ts"
   },
   "simple-git-hooks": {
@@ -89,8 +86,6 @@
   "devDependencies": {
     "@arianrhodsandlot/release-kit": "0.1.11",
     "@eslint/config-inspector": "1.4.2",
-    "@swc/cli": "0.7.9",
-    "@swc/core": "1.15.3",
     "@types/eslint": "9.6.1",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/lodash": "4.17.21",
@@ -100,12 +95,11 @@
     "esbuild": "0.27.0",
     "eslint": "9.39.1",
     "jiti": "2.6.1",
-    "keep-a-changelog": "2.7.1",
     "lint-staged": "16.2.7",
-    "package-up": "5.0.0",
     "react": "19.2.0",
     "semver": "7.7.3",
     "simple-git-hooks": "2.13.1",
+    "tsdown": "0.16.7",
     "vue": "3.5.25",
     "vue-i18n": "11.2.2",
     "zx": "8.8.5"
