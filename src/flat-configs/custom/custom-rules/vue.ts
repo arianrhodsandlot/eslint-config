@@ -140,7 +140,7 @@ const vueCommonRules: FlatConfigRules = {
   'vue-scoped-css/no-unused-selector': 'off',
 }
 
-export function getVueRules() {
+export function getVueRules(): FlatConfigRules {
   const { options } = getContext()
 
   interface BlockLangOption {

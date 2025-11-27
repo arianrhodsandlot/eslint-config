@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import { getCJSConfigs } from './cjs.js'
 import { getConflictConfigs } from './conflicts.js'
 import { getCustomRulesConfigs } from './custom-rules/index.js'
@@ -11,7 +12,7 @@ import { getTailwindConfigs } from './tailwind.js'
 import { getTestConfigs } from './test.js'
 import { getTypeScriptConfigs } from './typescript.js'
 
-export function getCustomFlatConfigs() {
+export function getCustomFlatConfigs(): Linter.Config[] {
   return [
     ...getCustomRulesConfigs(),
 

@@ -464,41 +464,6 @@ exports[`ESLint config > test-md.md 10`] = `
 
 exports[`ESLint config > test-md.md 100`] = `
 {
-  "ruleId": "@eslint-react/no-default-props",
-  "severity": 2,
-  "message": "",
-  "line": 907,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noDefaultProps",
-  "endLine": 907,
-  "endColumn": 19
-}
-`;
-
-exports[`ESLint config > test-md.md 101`] = `
-{
-  "ruleId": "perfectionist/sort-intersection-types",
-  "severity": 2,
-  "message": "",
-  "line": 915,
-  "column": 47,
-  "nodeType": "TSTypeLiteral",
-  "messageId": "unexpectedIntersectionTypesOrder",
-  "endLine": 917,
-  "endColumn": 2,
-  "fix": {
-    "range": [
-      40523,
-      40569
-    ],
-    "text": "{\\n  age: number;\\n} & typeof Greet.defaultProps"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 102`] = `
-{
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
   "message": "",
@@ -511,7 +476,7 @@ exports[`ESLint config > test-md.md 102`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 103`] = `
+exports[`ESLint config > test-md.md 101`] = `
 {
   "ruleId": "sonarjs/public-static-readonly",
   "severity": 2,
@@ -538,7 +503,7 @@ exports[`ESLint config > test-md.md 103`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 104`] = `
+exports[`ESLint config > test-md.md 102`] = `
 {
   "ruleId": "prefer-const",
   "severity": 2,
@@ -559,7 +524,7 @@ exports[`ESLint config > test-md.md 104`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 105`] = `
+exports[`ESLint config > test-md.md 103`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -573,7 +538,7 @@ exports[`ESLint config > test-md.md 105`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 106`] = `
+exports[`ESLint config > test-md.md 104`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -594,7 +559,7 @@ exports[`ESLint config > test-md.md 106`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 107`] = `
+exports[`ESLint config > test-md.md 105`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -608,7 +573,7 @@ exports[`ESLint config > test-md.md 107`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 108`] = `
+exports[`ESLint config > test-md.md 106`] = `
 {
   "ruleId": "sonarjs/public-static-readonly",
   "severity": 2,
@@ -635,7 +600,7 @@ exports[`ESLint config > test-md.md 108`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 109`] = `
+exports[`ESLint config > test-md.md 107`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -649,21 +614,7 @@ exports[`ESLint config > test-md.md 109`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 11`] = `
-{
-  "ruleId": "@typescript-eslint/no-redeclare",
-  "severity": 2,
-  "message": "",
-  "line": 207,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "redeclared",
-  "endLine": 207,
-  "endColumn": 56
-}
-`;
-
-exports[`ESLint config > test-md.md 110`] = `
+exports[`ESLint config > test-md.md 108`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -677,7 +628,7 @@ exports[`ESLint config > test-md.md 110`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 111`] = `
+exports[`ESLint config > test-md.md 109`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -698,7 +649,21 @@ exports[`ESLint config > test-md.md 111`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 112`] = `
+exports[`ESLint config > test-md.md 11`] = `
+{
+  "ruleId": "@typescript-eslint/no-redeclare",
+  "severity": 2,
+  "message": "",
+  "line": 207,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "redeclared",
+  "endLine": 207,
+  "endColumn": 56
+}
+`;
+
+exports[`ESLint config > test-md.md 110`] = `
 {
   "ruleId": "@eslint-react/no-default-props",
   "severity": 2,
@@ -712,7 +677,7 @@ exports[`ESLint config > test-md.md 112`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 113`] = `
+exports[`ESLint config > test-md.md 111`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -726,7 +691,7 @@ exports[`ESLint config > test-md.md 113`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 114`] = `
+exports[`ESLint config > test-md.md 112`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -740,7 +705,7 @@ exports[`ESLint config > test-md.md 114`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 115`] = `
+exports[`ESLint config > test-md.md 113`] = `
 {
   "ruleId": "jsx-a11y/heading-has-content",
   "severity": 2,
@@ -753,7 +718,7 @@ exports[`ESLint config > test-md.md 115`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 116`] = `
+exports[`ESLint config > test-md.md 114`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
@@ -774,7 +739,7 @@ exports[`ESLint config > test-md.md 116`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 117`] = `
+exports[`ESLint config > test-md.md 115`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -788,7 +753,7 @@ exports[`ESLint config > test-md.md 117`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 118`] = `
+exports[`ESLint config > test-md.md 116`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -802,7 +767,7 @@ exports[`ESLint config > test-md.md 118`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 119`] = `
+exports[`ESLint config > test-md.md 117`] = `
 {
   "ruleId": "jsx-a11y/heading-has-content",
   "severity": 2,
@@ -815,21 +780,7 @@ exports[`ESLint config > test-md.md 119`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 12`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 207,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 209,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 120`] = `
+exports[`ESLint config > test-md.md 118`] = `
 {
   "ruleId": "perfectionist/sort-intersection-types",
   "severity": 2,
@@ -850,7 +801,7 @@ exports[`ESLint config > test-md.md 120`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 121`] = `
+exports[`ESLint config > test-md.md 119`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -864,7 +815,21 @@ exports[`ESLint config > test-md.md 121`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 122`] = `
+exports[`ESLint config > test-md.md 12`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 207,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 209,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 120`] = `
 {
   "ruleId": "sonarjs/public-static-readonly",
   "severity": 2,
@@ -891,7 +856,7 @@ exports[`ESLint config > test-md.md 122`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 123`] = `
+exports[`ESLint config > test-md.md 121`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -905,7 +870,7 @@ exports[`ESLint config > test-md.md 123`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 124`] = `
+exports[`ESLint config > test-md.md 122`] = `
 {
   "ruleId": "sonarjs/public-static-readonly",
   "severity": 2,
@@ -932,7 +897,7 @@ exports[`ESLint config > test-md.md 124`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 125`] = `
+exports[`ESLint config > test-md.md 123`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -946,7 +911,7 @@ exports[`ESLint config > test-md.md 125`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 126`] = `
+exports[`ESLint config > test-md.md 124`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -967,7 +932,7 @@ exports[`ESLint config > test-md.md 126`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 127`] = `
+exports[`ESLint config > test-md.md 125`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
@@ -988,7 +953,7 @@ exports[`ESLint config > test-md.md 127`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 128`] = `
+exports[`ESLint config > test-md.md 126`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
@@ -1009,7 +974,7 @@ exports[`ESLint config > test-md.md 128`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 129`] = `
+exports[`ESLint config > test-md.md 127`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
@@ -1030,21 +995,7 @@ exports[`ESLint config > test-md.md 129`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 13`] = `
-{
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 221,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 221,
-  "endColumn": 56
-}
-`;
-
-exports[`ESLint config > test-md.md 130`] = `
+exports[`ESLint config > test-md.md 128`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
@@ -1065,7 +1016,7 @@ exports[`ESLint config > test-md.md 130`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 131`] = `
+exports[`ESLint config > test-md.md 129`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-object-type",
   "severity": 2,
@@ -1109,7 +1060,21 @@ exports[`ESLint config > test-md.md 131`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 132`] = `
+exports[`ESLint config > test-md.md 13`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 221,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 221,
+  "endColumn": 56
+}
+`;
+
+exports[`ESLint config > test-md.md 130`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
@@ -1130,7 +1095,7 @@ exports[`ESLint config > test-md.md 132`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 133`] = `
+exports[`ESLint config > test-md.md 131`] = `
 {
   "ruleId": "@typescript-eslint/consistent-indexed-object-style",
   "severity": 2,
@@ -1151,7 +1116,7 @@ exports[`ESLint config > test-md.md 133`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 134`] = `
+exports[`ESLint config > test-md.md 132`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
@@ -1172,7 +1137,7 @@ exports[`ESLint config > test-md.md 134`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 135`] = `
+exports[`ESLint config > test-md.md 133`] = `
 {
   "ruleId": "@typescript-eslint/method-signature-style",
   "severity": 2,
@@ -1193,7 +1158,7 @@ exports[`ESLint config > test-md.md 135`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 136`] = `
+exports[`ESLint config > test-md.md 134`] = `
 {
   "ruleId": "@typescript-eslint/no-unsafe-function-type",
   "severity": 2,
@@ -1207,7 +1172,7 @@ exports[`ESLint config > test-md.md 136`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 137`] = `
+exports[`ESLint config > test-md.md 135`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-object-type",
   "severity": 2,
@@ -1251,7 +1216,7 @@ exports[`ESLint config > test-md.md 137`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 138`] = `
+exports[`ESLint config > test-md.md 136`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -1265,7 +1230,7 @@ exports[`ESLint config > test-md.md 138`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 139`] = `
+exports[`ESLint config > test-md.md 137`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
@@ -1286,21 +1251,7 @@ exports[`ESLint config > test-md.md 139`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 14`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 221,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 223,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 140`] = `
+exports[`ESLint config > test-md.md 138`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -1321,7 +1272,7 @@ exports[`ESLint config > test-md.md 140`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 141`] = `
+exports[`ESLint config > test-md.md 139`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -1335,7 +1286,21 @@ exports[`ESLint config > test-md.md 141`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 142`] = `
+exports[`ESLint config > test-md.md 14`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 221,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 223,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 140`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -1349,21 +1314,7 @@ exports[`ESLint config > test-md.md 142`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 143`] = `
-{
-  "ruleId": "@eslint-react/no-class-component",
-  "severity": 2,
-  "message": "",
-  "line": 1265,
-  "column": 1,
-  "nodeType": "ClassDeclaration",
-  "messageId": "noClassComponent",
-  "endLine": 1272,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 144`] = `
+exports[`ESLint config > test-md.md 141`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -1377,7 +1328,21 @@ exports[`ESLint config > test-md.md 144`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 145`] = `
+exports[`ESLint config > test-md.md 142`] = `
+{
+  "ruleId": "@eslint-react/no-class-component",
+  "severity": 2,
+  "message": "",
+  "line": 1265,
+  "column": 1,
+  "nodeType": "ClassDeclaration",
+  "messageId": "noClassComponent",
+  "endLine": 1272,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 143`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
@@ -1398,21 +1363,7 @@ exports[`ESLint config > test-md.md 145`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 146`] = `
-{
-  "ruleId": "@eslint-react/no-class-component",
-  "severity": 2,
-  "message": "",
-  "line": 1278,
-  "column": 1,
-  "nodeType": "ClassDeclaration",
-  "messageId": "noClassComponent",
-  "endLine": 1283,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 147`] = `
+exports[`ESLint config > test-md.md 144`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -1426,7 +1377,21 @@ exports[`ESLint config > test-md.md 147`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 148`] = `
+exports[`ESLint config > test-md.md 145`] = `
+{
+  "ruleId": "@eslint-react/no-class-component",
+  "severity": 2,
+  "message": "",
+  "line": 1278,
+  "column": 1,
+  "nodeType": "ClassDeclaration",
+  "messageId": "noClassComponent",
+  "endLine": 1283,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 146`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
@@ -1456,7 +1421,7 @@ exports[`ESLint config > test-md.md 148`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 149`] = `
+exports[`ESLint config > test-md.md 147`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -1470,21 +1435,7 @@ exports[`ESLint config > test-md.md 149`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 15`] = `
-{
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 240,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 240,
-  "endColumn": 56
-}
-`;
-
-exports[`ESLint config > test-md.md 150`] = `
+exports[`ESLint config > test-md.md 148`] = `
 {
   "ruleId": "sonarjs/redundant-type-aliases",
   "severity": 2,
@@ -1498,7 +1449,7 @@ exports[`ESLint config > test-md.md 150`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 151`] = `
+exports[`ESLint config > test-md.md 149`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -1519,7 +1470,21 @@ exports[`ESLint config > test-md.md 151`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 152`] = `
+exports[`ESLint config > test-md.md 15`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 240,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 240,
+  "endColumn": 56
+}
+`;
+
+exports[`ESLint config > test-md.md 150`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -1533,7 +1498,7 @@ exports[`ESLint config > test-md.md 152`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 153`] = `
+exports[`ESLint config > test-md.md 151`] = `
 {
   "ruleId": "curly",
   "severity": 2,
@@ -1554,65 +1519,7 @@ exports[`ESLint config > test-md.md 153`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 154`] = `
-{
-  "ruleId": "@eslint-react/dom/no-missing-button-type",
-  "severity": 1,
-  "message": "",
-  "line": 1330,
-  "column": 3,
-  "nodeType": "JSXOpeningElement",
-  "messageId": "noMissingButtonType",
-  "endLine": 1334,
-  "endColumn": 5,
-  "suggestions": [
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "button"
-      },
-      "fix": {
-        "range": [
-          57307,
-          57307
-        ],
-        "text": " type=\\"button\\""
-      },
-      "desc": "Add 'type' attribute with value 'button'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "submit"
-      },
-      "fix": {
-        "range": [
-          57307,
-          57307
-        ],
-        "text": " type=\\"submit\\""
-      },
-      "desc": "Add 'type' attribute with value 'submit'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "reset"
-      },
-      "fix": {
-        "range": [
-          57307,
-          57307
-        ],
-        "text": " type=\\"reset\\""
-      },
-      "desc": "Add 'type' attribute with value 'reset'."
-    }
-  ]
-}
-`;
-
-exports[`ESLint config > test-md.md 155`] = `
+exports[`ESLint config > test-md.md 152`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -1633,7 +1540,7 @@ exports[`ESLint config > test-md.md 155`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 156`] = `
+exports[`ESLint config > test-md.md 153`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -1647,7 +1554,7 @@ exports[`ESLint config > test-md.md 156`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 157`] = `
+exports[`ESLint config > test-md.md 154`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -1668,7 +1575,7 @@ exports[`ESLint config > test-md.md 157`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 158`] = `
+exports[`ESLint config > test-md.md 155`] = `
 {
   "ruleId": "sonarjs/no-labels",
   "severity": 2,
@@ -1682,7 +1589,7 @@ exports[`ESLint config > test-md.md 158`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 159`] = `
+exports[`ESLint config > test-md.md 156`] = `
 {
   "ruleId": "sonarjs/label-position",
   "severity": 2,
@@ -1696,21 +1603,7 @@ exports[`ESLint config > test-md.md 159`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 16`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 240,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 243,
-  "endColumn": 42
-}
-`;
-
-exports[`ESLint config > test-md.md 160`] = `
+exports[`ESLint config > test-md.md 157`] = `
 {
   "ruleId": "no-unused-labels",
   "severity": 2,
@@ -1731,7 +1624,7 @@ exports[`ESLint config > test-md.md 160`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 161`] = `
+exports[`ESLint config > test-md.md 158`] = `
 {
   "ruleId": "no-labels",
   "severity": 2,
@@ -1745,7 +1638,7 @@ exports[`ESLint config > test-md.md 161`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 162`] = `
+exports[`ESLint config > test-md.md 159`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -1759,7 +1652,21 @@ exports[`ESLint config > test-md.md 162`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 163`] = `
+exports[`ESLint config > test-md.md 16`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 240,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 243,
+  "endColumn": 42
+}
+`;
+
+exports[`ESLint config > test-md.md 160`] = `
 {
   "ruleId": "no-invalid-this",
   "severity": 2,
@@ -1773,7 +1680,7 @@ exports[`ESLint config > test-md.md 163`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 164`] = `
+exports[`ESLint config > test-md.md 161`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -1794,7 +1701,7 @@ exports[`ESLint config > test-md.md 164`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 165`] = `
+exports[`ESLint config > test-md.md 162`] = `
 {
   "ruleId": "perfectionist/sort-intersection-types",
   "severity": 2,
@@ -1815,7 +1722,7 @@ exports[`ESLint config > test-md.md 165`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 166`] = `
+exports[`ESLint config > test-md.md 163`] = `
 {
   "ruleId": "sonarjs/no-unused-vars",
   "severity": 2,
@@ -1826,64 +1733,52 @@ exports[`ESLint config > test-md.md 166`] = `
   "messageId": "unusedVariable",
   "endLine": 1395,
   "endColumn": 16
+}
+`;
+
+exports[`ESLint config > test-md.md 164`] = `
+{
+  "ruleId": "sonarjs/no-dead-store",
+  "severity": 2,
+  "message": "",
+  "line": 1395,
+  "column": 11,
+  "nodeType": null,
+  "messageId": "removeAssignment",
+  "endLine": 1395,
+  "endColumn": 16
+}
+`;
+
+exports[`ESLint config > test-md.md 165`] = `
+{
+  "ruleId": "sonarjs/no-unused-vars",
+  "severity": 2,
+  "message": "",
+  "line": 1396,
+  "column": 11,
+  "nodeType": "Identifier",
+  "messageId": "unusedVariable",
+  "endLine": 1396,
+  "endColumn": 19
+}
+`;
+
+exports[`ESLint config > test-md.md 166`] = `
+{
+  "ruleId": "sonarjs/no-dead-store",
+  "severity": 2,
+  "message": "",
+  "line": 1396,
+  "column": 11,
+  "nodeType": null,
+  "messageId": "removeAssignment",
+  "endLine": 1396,
+  "endColumn": 19
 }
 `;
 
 exports[`ESLint config > test-md.md 167`] = `
-{
-  "ruleId": "sonarjs/no-dead-store",
-  "severity": 2,
-  "message": "",
-  "line": 1395,
-  "column": 11,
-  "nodeType": null,
-  "messageId": "removeAssignment",
-  "endLine": 1395,
-  "endColumn": 16
-}
-`;
-
-exports[`ESLint config > test-md.md 168`] = `
-{
-  "ruleId": "sonarjs/no-unused-vars",
-  "severity": 2,
-  "message": "",
-  "line": 1396,
-  "column": 11,
-  "nodeType": "Identifier",
-  "messageId": "unusedVariable",
-  "endLine": 1396,
-  "endColumn": 19
-}
-`;
-
-exports[`ESLint config > test-md.md 169`] = `
-{
-  "ruleId": "sonarjs/no-dead-store",
-  "severity": 2,
-  "message": "",
-  "line": 1396,
-  "column": 11,
-  "nodeType": null,
-  "messageId": "removeAssignment",
-  "endLine": 1396,
-  "endColumn": 19
-}
-`;
-
-exports[`ESLint config > test-md.md 17`] = `
-{
-  "ruleId": null,
-  "nodeType": null,
-  "fatal": true,
-  "severity": 2,
-  "message": "",
-  "line": 264,
-  "column": 12
-}
-`;
-
-exports[`ESLint config > test-md.md 170`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -1904,7 +1799,7 @@ exports[`ESLint config > test-md.md 170`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 171`] = `
+exports[`ESLint config > test-md.md 168`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -1925,7 +1820,7 @@ exports[`ESLint config > test-md.md 171`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 172`] = `
+exports[`ESLint config > test-md.md 169`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -1939,7 +1834,19 @@ exports[`ESLint config > test-md.md 172`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 173`] = `
+exports[`ESLint config > test-md.md 17`] = `
+{
+  "ruleId": null,
+  "nodeType": null,
+  "fatal": true,
+  "severity": 2,
+  "message": "",
+  "line": 264,
+  "column": 12
+}
+`;
+
+exports[`ESLint config > test-md.md 170`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
@@ -1960,7 +1867,7 @@ exports[`ESLint config > test-md.md 173`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 174`] = `
+exports[`ESLint config > test-md.md 171`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -1974,7 +1881,7 @@ exports[`ESLint config > test-md.md 174`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 175`] = `
+exports[`ESLint config > test-md.md 172`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -1988,7 +1895,7 @@ exports[`ESLint config > test-md.md 175`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 176`] = `
+exports[`ESLint config > test-md.md 173`] = `
 {
   "ruleId": "sonarjs/no-unused-vars",
   "severity": 2,
@@ -2002,7 +1909,7 @@ exports[`ESLint config > test-md.md 176`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 177`] = `
+exports[`ESLint config > test-md.md 174`] = `
 {
   "ruleId": "sonarjs/no-dead-store",
   "severity": 2,
@@ -2016,7 +1923,7 @@ exports[`ESLint config > test-md.md 177`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 178`] = `
+exports[`ESLint config > test-md.md 175`] = `
 {
   "ruleId": "@eslint-react/no-context-provider",
   "severity": 1,
@@ -2037,7 +1944,7 @@ exports[`ESLint config > test-md.md 178`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 179`] = `
+exports[`ESLint config > test-md.md 176`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
@@ -2052,6 +1959,55 @@ exports[`ESLint config > test-md.md 179`] = `
     "range": [
       67757,
       67767
+    ],
+    "text": "use"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 177`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 1495,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 1495,
+  "endColumn": 18
+}
+`;
+
+exports[`ESLint config > test-md.md 178`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 1495,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 1499,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 179`] = `
+{
+  "ruleId": "@eslint-react/no-use-context",
+  "severity": 1,
+  "message": "",
+  "line": 1496,
+  "column": 17,
+  "nodeType": "Identifier",
+  "messageId": "noUseContext",
+  "endLine": 1496,
+  "endColumn": 27,
+  "fix": {
+    "range": [
+      67829,
+      67839
     ],
     "text": "use"
   }
@@ -2074,55 +2030,6 @@ exports[`ESLint config > test-md.md 18`] = `
 
 exports[`ESLint config > test-md.md 180`] = `
 {
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 1495,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 1495,
-  "endColumn": 18
-}
-`;
-
-exports[`ESLint config > test-md.md 181`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 1495,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 1499,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 182`] = `
-{
-  "ruleId": "@eslint-react/no-use-context",
-  "severity": 1,
-  "message": "",
-  "line": 1496,
-  "column": 17,
-  "nodeType": "Identifier",
-  "messageId": "noUseContext",
-  "endLine": 1496,
-  "endColumn": 27,
-  "fix": {
-    "range": [
-      67829,
-      67839
-    ],
-    "text": "use"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 183`] = `
-{
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
   "message": "",
@@ -2135,7 +2042,7 @@ exports[`ESLint config > test-md.md 183`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 184`] = `
+exports[`ESLint config > test-md.md 181`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -2149,7 +2056,7 @@ exports[`ESLint config > test-md.md 184`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 185`] = `
+exports[`ESLint config > test-md.md 182`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -2163,7 +2070,7 @@ exports[`ESLint config > test-md.md 185`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 186`] = `
+exports[`ESLint config > test-md.md 183`] = `
 {
   "ruleId": "sonarjs/no-unused-vars",
   "severity": 2,
@@ -2177,7 +2084,7 @@ exports[`ESLint config > test-md.md 186`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 187`] = `
+exports[`ESLint config > test-md.md 184`] = `
 {
   "ruleId": "sonarjs/no-dead-store",
   "severity": 2,
@@ -2191,7 +2098,7 @@ exports[`ESLint config > test-md.md 187`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 188`] = `
+exports[`ESLint config > test-md.md 185`] = `
 {
   "ruleId": "@eslint-react/no-context-provider",
   "severity": 1,
@@ -2212,7 +2119,7 @@ exports[`ESLint config > test-md.md 188`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 189`] = `
+exports[`ESLint config > test-md.md 186`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
@@ -2227,6 +2134,55 @@ exports[`ESLint config > test-md.md 189`] = `
     "range": [
       68725,
       68735
+    ],
+    "text": "use"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 187`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 1535,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 1535,
+  "endColumn": 18
+}
+`;
+
+exports[`ESLint config > test-md.md 188`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 1535,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 1539,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 189`] = `
+{
+  "ruleId": "@eslint-react/no-use-context",
+  "severity": 1,
+  "message": "",
+  "line": 1536,
+  "column": 23,
+  "nodeType": "Identifier",
+  "messageId": "noUseContext",
+  "endLine": 1536,
+  "endColumn": 33,
+  "fix": {
+    "range": [
+      68803,
+      68813
     ],
     "text": "use"
   }
@@ -2249,55 +2205,6 @@ exports[`ESLint config > test-md.md 19`] = `
 
 exports[`ESLint config > test-md.md 190`] = `
 {
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 1535,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 1535,
-  "endColumn": 18
-}
-`;
-
-exports[`ESLint config > test-md.md 191`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 1535,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 1539,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 192`] = `
-{
-  "ruleId": "@eslint-react/no-use-context",
-  "severity": 1,
-  "message": "",
-  "line": 1536,
-  "column": 23,
-  "nodeType": "Identifier",
-  "messageId": "noUseContext",
-  "endLine": 1536,
-  "endColumn": 33,
-  "fix": {
-    "range": [
-      68803,
-      68813
-    ],
-    "text": "use"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 193`] = `
-{
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
   "message": "",
@@ -2310,7 +2217,7 @@ exports[`ESLint config > test-md.md 193`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 194`] = `
+exports[`ESLint config > test-md.md 191`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -2324,7 +2231,7 @@ exports[`ESLint config > test-md.md 194`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 195`] = `
+exports[`ESLint config > test-md.md 192`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
@@ -2345,7 +2252,7 @@ exports[`ESLint config > test-md.md 195`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 196`] = `
+exports[`ESLint config > test-md.md 193`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
@@ -2366,7 +2273,7 @@ exports[`ESLint config > test-md.md 196`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 197`] = `
+exports[`ESLint config > test-md.md 194`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -2380,7 +2287,7 @@ exports[`ESLint config > test-md.md 197`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 198`] = `
+exports[`ESLint config > test-md.md 195`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -2394,7 +2301,7 @@ exports[`ESLint config > test-md.md 198`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 199`] = `
+exports[`ESLint config > test-md.md 196`] = `
 {
   "ruleId": "@eslint-react/no-use-context",
   "severity": 1,
@@ -2409,6 +2316,55 @@ exports[`ESLint config > test-md.md 199`] = `
     "range": [
       70182,
       70192
+    ],
+    "text": "use"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 197`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 1585,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 1585,
+  "endColumn": 18
+}
+`;
+
+exports[`ESLint config > test-md.md 198`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 1585,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 1589,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 199`] = `
+{
+  "ruleId": "@eslint-react/no-use-context",
+  "severity": 1,
+  "message": "",
+  "line": 1586,
+  "column": 23,
+  "nodeType": "Identifier",
+  "messageId": "noUseContext",
+  "endLine": 1586,
+  "endColumn": 33,
+  "fix": {
+    "range": [
+      70260,
+      70270
     ],
     "text": "use"
   }
@@ -2452,55 +2408,6 @@ exports[`ESLint config > test-md.md 20`] = `
 
 exports[`ESLint config > test-md.md 200`] = `
 {
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 1585,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 1585,
-  "endColumn": 18
-}
-`;
-
-exports[`ESLint config > test-md.md 201`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 1585,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 1589,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 202`] = `
-{
-  "ruleId": "@eslint-react/no-use-context",
-  "severity": 1,
-  "message": "",
-  "line": 1586,
-  "column": 23,
-  "nodeType": "Identifier",
-  "messageId": "noUseContext",
-  "endLine": 1586,
-  "endColumn": 33,
-  "fix": {
-    "range": [
-      70260,
-      70270
-    ],
-    "text": "use"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 203`] = `
-{
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
   "message": "",
@@ -2513,7 +2420,7 @@ exports[`ESLint config > test-md.md 203`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 204`] = `
+exports[`ESLint config > test-md.md 201`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -2527,7 +2434,7 @@ exports[`ESLint config > test-md.md 204`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 205`] = `
+exports[`ESLint config > test-md.md 202`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -2541,7 +2448,7 @@ exports[`ESLint config > test-md.md 205`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 206`] = `
+exports[`ESLint config > test-md.md 203`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
@@ -2562,7 +2469,7 @@ exports[`ESLint config > test-md.md 206`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 207`] = `
+exports[`ESLint config > test-md.md 204`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
@@ -2583,7 +2490,7 @@ exports[`ESLint config > test-md.md 207`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 208`] = `
+exports[`ESLint config > test-md.md 205`] = `
 {
   "ruleId": "@eslint-react/no-forward-ref",
   "severity": 1,
@@ -2604,7 +2511,7 @@ exports[`ESLint config > test-md.md 208`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 209`] = `
+exports[`ESLint config > test-md.md 206`] = `
 {
   "ruleId": "@eslint-react/no-missing-component-display-name",
   "severity": 2,
@@ -2618,21 +2525,7 @@ exports[`ESLint config > test-md.md 209`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 21`] = `
-{
-  "ruleId": "@eslint-react/naming-convention/filename-extension",
-  "severity": 2,
-  "message": "",
-  "line": 323,
-  "column": 1,
-  "nodeType": "Program",
-  "messageId": "unnecessaryJSXExtension",
-  "endLine": 327,
-  "endColumn": 1
-}
-`;
-
-exports[`ESLint config > test-md.md 210`] = `
+exports[`ESLint config > test-md.md 207`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -2653,7 +2546,7 @@ exports[`ESLint config > test-md.md 210`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 211`] = `
+exports[`ESLint config > test-md.md 208`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
@@ -2674,7 +2567,7 @@ exports[`ESLint config > test-md.md 211`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 212`] = `
+exports[`ESLint config > test-md.md 209`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
@@ -2695,7 +2588,21 @@ exports[`ESLint config > test-md.md 212`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 213`] = `
+exports[`ESLint config > test-md.md 21`] = `
+{
+  "ruleId": "@eslint-react/naming-convention/filename-extension",
+  "severity": 2,
+  "message": "",
+  "line": 323,
+  "column": 1,
+  "nodeType": "Program",
+  "messageId": "unnecessaryJSXExtension",
+  "endLine": 327,
+  "endColumn": 1
+}
+`;
+
+exports[`ESLint config > test-md.md 210`] = `
 {
   "ruleId": "@eslint-react/no-forward-ref",
   "severity": 1,
@@ -2716,7 +2623,7 @@ exports[`ESLint config > test-md.md 213`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 214`] = `
+exports[`ESLint config > test-md.md 211`] = `
 {
   "ruleId": "@eslint-react/no-missing-component-display-name",
   "severity": 2,
@@ -2730,7 +2637,7 @@ exports[`ESLint config > test-md.md 214`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 215`] = `
+exports[`ESLint config > test-md.md 212`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -2751,7 +2658,7 @@ exports[`ESLint config > test-md.md 215`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 216`] = `
+exports[`ESLint config > test-md.md 213`] = `
 {
   "ruleId": null,
   "nodeType": null,
@@ -2763,7 +2670,7 @@ exports[`ESLint config > test-md.md 216`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 217`] = `
+exports[`ESLint config > test-md.md 214`] = `
 {
   "ruleId": null,
   "nodeType": null,
@@ -2775,7 +2682,7 @@ exports[`ESLint config > test-md.md 217`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 218`] = `
+exports[`ESLint config > test-md.md 215`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -2789,7 +2696,7 @@ exports[`ESLint config > test-md.md 218`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 219`] = `
+exports[`ESLint config > test-md.md 216`] = `
 {
   "ruleId": "unicorn/prefer-query-selector",
   "severity": 2,
@@ -2810,19 +2717,7 @@ exports[`ESLint config > test-md.md 219`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 22`] = `
-{
-  "ruleId": null,
-  "nodeType": null,
-  "fatal": true,
-  "severity": 2,
-  "message": "",
-  "line": 341,
-  "column": 6
-}
-`;
-
-exports[`ESLint config > test-md.md 220`] = `
+exports[`ESLint config > test-md.md 217`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -2836,7 +2731,7 @@ exports[`ESLint config > test-md.md 220`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 221`] = `
+exports[`ESLint config > test-md.md 218`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-append",
   "severity": 2,
@@ -2857,7 +2752,7 @@ exports[`ESLint config > test-md.md 221`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 222`] = `
+exports[`ESLint config > test-md.md 219`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-remove",
   "severity": 2,
@@ -2878,7 +2773,19 @@ exports[`ESLint config > test-md.md 222`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 223`] = `
+exports[`ESLint config > test-md.md 22`] = `
+{
+  "ruleId": null,
+  "nodeType": null,
+  "fatal": true,
+  "severity": 2,
+  "message": "",
+  "line": 341,
+  "column": 6
+}
+`;
+
+exports[`ESLint config > test-md.md 220`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -2892,7 +2799,7 @@ exports[`ESLint config > test-md.md 223`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 224`] = `
+exports[`ESLint config > test-md.md 221`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
@@ -2913,7 +2820,7 @@ exports[`ESLint config > test-md.md 224`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 225`] = `
+exports[`ESLint config > test-md.md 222`] = `
 {
   "ruleId": "perfectionist/sort-named-imports",
   "severity": 2,
@@ -2934,7 +2841,7 @@ exports[`ESLint config > test-md.md 225`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 226`] = `
+exports[`ESLint config > test-md.md 223`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -2955,7 +2862,7 @@ exports[`ESLint config > test-md.md 226`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 227`] = `
+exports[`ESLint config > test-md.md 224`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -2969,7 +2876,7 @@ exports[`ESLint config > test-md.md 227`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 228`] = `
+exports[`ESLint config > test-md.md 225`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
@@ -2982,7 +2889,7 @@ exports[`ESLint config > test-md.md 228`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 229`] = `
+exports[`ESLint config > test-md.md 226`] = `
 {
   "ruleId": "curly",
   "severity": 2,
@@ -3003,21 +2910,7 @@ exports[`ESLint config > test-md.md 229`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 23`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-function-type",
-  "severity": 2,
-  "message": "",
-  "line": 362,
-  "column": 32,
-  "nodeType": "Identifier",
-  "messageId": "bannedFunctionType",
-  "endLine": 362,
-  "endColumn": 40
-}
-`;
-
-exports[`ESLint config > test-md.md 230`] = `
+exports[`ESLint config > test-md.md 227`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-append",
   "severity": 2,
@@ -3038,7 +2931,7 @@ exports[`ESLint config > test-md.md 230`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 231`] = `
+exports[`ESLint config > test-md.md 228`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-remove",
   "severity": 2,
@@ -3059,7 +2952,7 @@ exports[`ESLint config > test-md.md 231`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 232`] = `
+exports[`ESLint config > test-md.md 229`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
@@ -3072,7 +2965,21 @@ exports[`ESLint config > test-md.md 232`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 233`] = `
+exports[`ESLint config > test-md.md 23`] = `
+{
+  "ruleId": "@typescript-eslint/no-unsafe-function-type",
+  "severity": 2,
+  "message": "",
+  "line": 362,
+  "column": 32,
+  "nodeType": "Identifier",
+  "messageId": "bannedFunctionType",
+  "endLine": 362,
+  "endColumn": 40
+}
+`;
+
+exports[`ESLint config > test-md.md 230`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -3086,7 +2993,7 @@ exports[`ESLint config > test-md.md 233`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 234`] = `
+exports[`ESLint config > test-md.md 231`] = `
 {
   "ruleId": "@eslint-react/jsx-no-comment-textnodes",
   "severity": 1,
@@ -3100,7 +3007,7 @@ exports[`ESLint config > test-md.md 234`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 235`] = `
+exports[`ESLint config > test-md.md 232`] = `
 {
   "ruleId": "@stylistic/jsx-self-closing-comp",
   "severity": 2,
@@ -3121,7 +3028,7 @@ exports[`ESLint config > test-md.md 235`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 236`] = `
+exports[`ESLint config > test-md.md 233`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -3142,7 +3049,7 @@ exports[`ESLint config > test-md.md 236`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 237`] = `
+exports[`ESLint config > test-md.md 234`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -3163,65 +3070,7 @@ exports[`ESLint config > test-md.md 237`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 238`] = `
-{
-  "ruleId": "@eslint-react/dom/no-missing-button-type",
-  "severity": 1,
-  "message": "",
-  "line": 1840,
-  "column": 13,
-  "nodeType": "JSXOpeningElement",
-  "messageId": "noMissingButtonType",
-  "endLine": 1843,
-  "endColumn": 14,
-  "suggestions": [
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "button"
-      },
-      "fix": {
-        "range": [
-          78281,
-          78281
-        ],
-        "text": " type=\\"button\\""
-      },
-      "desc": "Add 'type' attribute with value 'button'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "submit"
-      },
-      "fix": {
-        "range": [
-          78281,
-          78281
-        ],
-        "text": " type=\\"submit\\""
-      },
-      "desc": "Add 'type' attribute with value 'submit'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "reset"
-      },
-      "fix": {
-        "range": [
-          78281,
-          78281
-        ],
-        "text": " type=\\"reset\\""
-      },
-      "desc": "Add 'type' attribute with value 'reset'."
-    }
-  ]
-}
-`;
-
-exports[`ESLint config > test-md.md 239`] = `
+exports[`ESLint config > test-md.md 235`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -3239,6 +3088,69 @@ exports[`ESLint config > test-md.md 239`] = `
     ],
     "text": "onClick={() => setShowModal(false)}\\n              style={{ background: \\"papyawhip\\" }}"
   }
+}
+`;
+
+exports[`ESLint config > test-md.md 236`] = `
+{
+  "ruleId": "@eslint-react/jsx-no-comment-textnodes",
+  "severity": 1,
+  "message": "",
+  "line": 1849,
+  "column": 69,
+  "nodeType": "JSXText",
+  "messageId": "jsxNoCommentTextnodes",
+  "endLine": 1851,
+  "endColumn": 5
+}
+`;
+
+exports[`ESLint config > test-md.md 237`] = `
+{
+  "ruleId": "@typescript-eslint/consistent-type-imports",
+  "severity": 2,
+  "message": "",
+  "line": 1880,
+  "column": 1,
+  "nodeType": "ImportDeclaration",
+  "messageId": "someImportsAreOnlyTypes",
+  "endLine": 1880,
+  "endColumn": 64,
+  "fix": {
+    "range": [
+      79405,
+      79425
+    ],
+    "text": "type ErrorInfo, type ReactNode"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 238`] = `
+{
+  "ruleId": "@typescript-eslint/class-methods-use-this",
+  "severity": 2,
+  "message": "",
+  "line": 1900,
+  "column": 3,
+  "nodeType": "FunctionExpression",
+  "messageId": "missingThis",
+  "endLine": 1900,
+  "endColumn": 27
+}
+`;
+
+exports[`ESLint config > test-md.md 239`] = `
+{
+  "ruleId": "vue/require-direct-export",
+  "severity": 2,
+  "message": "",
+  "line": 1913,
+  "column": 1,
+  "nodeType": "ExportDefaultDeclaration",
+  "messageId": "expectedDirectExport",
+  "endLine": 1913,
+  "endColumn": 30
 }
 `;
 
@@ -3274,127 +3186,6 @@ exports[`ESLint config > test-md.md 24`] = `
 
 exports[`ESLint config > test-md.md 240`] = `
 {
-  "ruleId": "@eslint-react/dom/no-missing-button-type",
-  "severity": 1,
-  "message": "",
-  "line": 1849,
-  "column": 7,
-  "nodeType": "JSXOpeningElement",
-  "messageId": "noMissingButtonType",
-  "endLine": 1849,
-  "endColumn": 50,
-  "suggestions": [
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "button"
-      },
-      "fix": {
-        "range": [
-          78494,
-          78494
-        ],
-        "text": " type=\\"button\\""
-      },
-      "desc": "Add 'type' attribute with value 'button'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "submit"
-      },
-      "fix": {
-        "range": [
-          78494,
-          78494
-        ],
-        "text": " type=\\"submit\\""
-      },
-      "desc": "Add 'type' attribute with value 'submit'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "reset"
-      },
-      "fix": {
-        "range": [
-          78494,
-          78494
-        ],
-        "text": " type=\\"reset\\""
-      },
-      "desc": "Add 'type' attribute with value 'reset'."
-    }
-  ]
-}
-`;
-
-exports[`ESLint config > test-md.md 241`] = `
-{
-  "ruleId": "@eslint-react/jsx-no-comment-textnodes",
-  "severity": 1,
-  "message": "",
-  "line": 1849,
-  "column": 69,
-  "nodeType": "JSXText",
-  "messageId": "jsxNoCommentTextnodes",
-  "endLine": 1851,
-  "endColumn": 5
-}
-`;
-
-exports[`ESLint config > test-md.md 242`] = `
-{
-  "ruleId": "@typescript-eslint/consistent-type-imports",
-  "severity": 2,
-  "message": "",
-  "line": 1880,
-  "column": 1,
-  "nodeType": "ImportDeclaration",
-  "messageId": "someImportsAreOnlyTypes",
-  "endLine": 1880,
-  "endColumn": 64,
-  "fix": {
-    "range": [
-      79405,
-      79425
-    ],
-    "text": "type ErrorInfo, type ReactNode"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 243`] = `
-{
-  "ruleId": "@typescript-eslint/class-methods-use-this",
-  "severity": 2,
-  "message": "",
-  "line": 1900,
-  "column": 3,
-  "nodeType": "FunctionExpression",
-  "messageId": "missingThis",
-  "endLine": 1900,
-  "endColumn": 27
-}
-`;
-
-exports[`ESLint config > test-md.md 244`] = `
-{
-  "ruleId": "vue/require-direct-export",
-  "severity": 2,
-  "message": "",
-  "line": 1913,
-  "column": 1,
-  "nodeType": "ExportDefaultDeclaration",
-  "messageId": "expectedDirectExport",
-  "endLine": 1913,
-  "endColumn": 30
-}
-`;
-
-exports[`ESLint config > test-md.md 245`] = `
-{
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
   "message": "",
@@ -3407,7 +3198,7 @@ exports[`ESLint config > test-md.md 245`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 246`] = `
+exports[`ESLint config > test-md.md 241`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-object-type",
   "severity": 2,
@@ -3451,7 +3242,7 @@ exports[`ESLint config > test-md.md 246`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 247`] = `
+exports[`ESLint config > test-md.md 242`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
@@ -3472,7 +3263,7 @@ exports[`ESLint config > test-md.md 247`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 248`] = `
+exports[`ESLint config > test-md.md 243`] = `
 {
   "ruleId": "jsx-a11y/click-events-have-key-events",
   "severity": 2,
@@ -3485,7 +3276,7 @@ exports[`ESLint config > test-md.md 248`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 249`] = `
+exports[`ESLint config > test-md.md 244`] = `
 {
   "ruleId": "jsx-a11y/no-static-element-interactions",
   "severity": 2,
@@ -3495,6 +3286,90 @@ exports[`ESLint config > test-md.md 249`] = `
   "nodeType": "JSXOpeningElement",
   "endLine": 1956,
   "endColumn": 51
+}
+`;
+
+exports[`ESLint config > test-md.md 245`] = `
+{
+  "ruleId": "perfectionist/sort-classes",
+  "severity": 2,
+  "message": "",
+  "line": 1958,
+  "column": 3,
+  "nodeType": "PropertyDefinition",
+  "messageId": "unexpectedClassesOrder",
+  "endLine": 1962,
+  "endColumn": 5,
+  "fix": {
+    "range": [
+      81473,
+      81681
+    ],
+    "text": "increment = (amt: number) => {\\n    this.setState((state) => ({\\n      count: (state.count || 0) + amt,\\n    }));\\n  };\\n  render() {\\n    return <div onClick={() => this.increment(1)}>{this.state.count}</div>;\\n  }"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 246`] = `
+{
+  "ruleId": "@eslint-react/no-class-component",
+  "severity": 2,
+  "message": "",
+  "line": 2005,
+  "column": 1,
+  "nodeType": "ClassDeclaration",
+  "messageId": "noClassComponent",
+  "endLine": 2012,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 247`] = `
+{
+  "ruleId": "@eslint-react/naming-convention/filename-extension",
+  "severity": 2,
+  "message": "",
+  "line": 2026,
+  "column": 1,
+  "nodeType": "Program",
+  "messageId": "unnecessaryJSXExtension",
+  "endLine": 2027,
+  "endColumn": 1
+}
+`;
+
+exports[`ESLint config > test-md.md 248`] = `
+{
+  "ruleId": "perfectionist/sort-union-types",
+  "severity": 2,
+  "message": "",
+  "line": 2026,
+  "column": 59,
+  "nodeType": "TSLiteralType",
+  "messageId": "unexpectedUnionTypesOrder",
+  "endLine": 2026,
+  "endColumn": 67,
+  "fix": {
+    "range": [
+      85352,
+      85387
+    ],
+    "text": "\\"bottom\\" | \\"left\\" | \\"right\\" | \\"top\\""
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 249`] = `
+{
+  "ruleId": "no-restricted-syntax",
+  "severity": 2,
+  "message": "",
+  "line": 2032,
+  "column": 8,
+  "nodeType": "TSEnumDeclaration",
+  "messageId": "restrictedSyntax",
+  "endLine": 2036,
+  "endColumn": 2
 }
 `;
 
@@ -3530,90 +3405,6 @@ exports[`ESLint config > test-md.md 25`] = `
 
 exports[`ESLint config > test-md.md 250`] = `
 {
-  "ruleId": "perfectionist/sort-classes",
-  "severity": 2,
-  "message": "",
-  "line": 1958,
-  "column": 3,
-  "nodeType": "PropertyDefinition",
-  "messageId": "unexpectedClassesOrder",
-  "endLine": 1962,
-  "endColumn": 5,
-  "fix": {
-    "range": [
-      81473,
-      81681
-    ],
-    "text": "increment = (amt: number) => {\\n    this.setState((state) => ({\\n      count: (state.count || 0) + amt,\\n    }));\\n  };\\n  render() {\\n    return <div onClick={() => this.increment(1)}>{this.state.count}</div>;\\n  }"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 251`] = `
-{
-  "ruleId": "@eslint-react/no-class-component",
-  "severity": 2,
-  "message": "",
-  "line": 2005,
-  "column": 1,
-  "nodeType": "ClassDeclaration",
-  "messageId": "noClassComponent",
-  "endLine": 2012,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 252`] = `
-{
-  "ruleId": "@eslint-react/naming-convention/filename-extension",
-  "severity": 2,
-  "message": "",
-  "line": 2026,
-  "column": 1,
-  "nodeType": "Program",
-  "messageId": "unnecessaryJSXExtension",
-  "endLine": 2027,
-  "endColumn": 1
-}
-`;
-
-exports[`ESLint config > test-md.md 253`] = `
-{
-  "ruleId": "perfectionist/sort-union-types",
-  "severity": 2,
-  "message": "",
-  "line": 2026,
-  "column": 59,
-  "nodeType": "TSLiteralType",
-  "messageId": "unexpectedUnionTypesOrder",
-  "endLine": 2026,
-  "endColumn": 67,
-  "fix": {
-    "range": [
-      85352,
-      85387
-    ],
-    "text": "\\"bottom\\" | \\"left\\" | \\"right\\" | \\"top\\""
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 254`] = `
-{
-  "ruleId": "no-restricted-syntax",
-  "severity": 2,
-  "message": "",
-  "line": 2032,
-  "column": 8,
-  "nodeType": "TSEnumDeclaration",
-  "messageId": "restrictedSyntax",
-  "endLine": 2036,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 255`] = `
-{
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
   "message": "",
@@ -3626,7 +3417,7 @@ exports[`ESLint config > test-md.md 255`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 256`] = `
+exports[`ESLint config > test-md.md 251`] = `
 {
   "ruleId": "perfectionist/sort-enums",
   "severity": 2,
@@ -3647,7 +3438,7 @@ exports[`ESLint config > test-md.md 256`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 257`] = `
+exports[`ESLint config > test-md.md 252`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -3661,7 +3452,7 @@ exports[`ESLint config > test-md.md 257`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 258`] = `
+exports[`ESLint config > test-md.md 253`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -3675,7 +3466,7 @@ exports[`ESLint config > test-md.md 258`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 259`] = `
+exports[`ESLint config > test-md.md 254`] = `
 {
   "ruleId": "unicorn/prefer-dom-node-remove",
   "severity": 2,
@@ -3693,6 +3484,90 @@ exports[`ESLint config > test-md.md 259`] = `
     ],
     "text": "element.remove()"
   }
+}
+`;
+
+exports[`ESLint config > test-md.md 255`] = `
+{
+  "ruleId": "unicorn/prefer-query-selector",
+  "severity": 2,
+  "message": "",
+  "line": 2069,
+  "column": 21,
+  "nodeType": "Identifier",
+  "messageId": "prefer-query-selector",
+  "endLine": 2069,
+  "endColumn": 35
+}
+`;
+
+exports[`ESLint config > test-md.md 256`] = `
+{
+  "ruleId": "perfectionist/sort-intersection-types",
+  "severity": 2,
+  "message": "",
+  "line": 2080,
+  "column": 25,
+  "nodeType": "TSTypeLiteral",
+  "messageId": "unexpectedIntersectionTypesOrder",
+  "endLine": 2080,
+  "endColumn": 58,
+  "fix": {
+    "range": [
+      87549,
+      87591
+    ],
+    "text": "{ readonly brand: unique symbol } & string"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 257`] = `
+{
+  "ruleId": "perfectionist/sort-intersection-types",
+  "severity": 2,
+  "message": "",
+  "line": 2081,
+  "column": 24,
+  "nodeType": "TSTypeLiteral",
+  "messageId": "unexpectedIntersectionTypesOrder",
+  "endLine": 2081,
+  "endColumn": 57,
+  "fix": {
+    "range": [
+      87607,
+      87649
+    ],
+    "text": "{ readonly brand: unique symbol } & string"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 258`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 2115,
+  "column": 14,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 2120,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 259`] = `
+{
+  "ruleId": "@eslint-react/prefer-destructuring-assignment",
+  "severity": 2,
+  "message": "",
+  "line": 2119,
+  "column": 31,
+  "nodeType": "MemberExpression",
+  "messageId": "preferDestructuringAssignment",
+  "endLine": 2119,
+  "endColumn": 42
 }
 `;
 
@@ -3719,148 +3594,6 @@ exports[`ESLint config > test-md.md 26`] = `
 
 exports[`ESLint config > test-md.md 260`] = `
 {
-  "ruleId": "unicorn/prefer-query-selector",
-  "severity": 2,
-  "message": "",
-  "line": 2069,
-  "column": 21,
-  "nodeType": "Identifier",
-  "messageId": "prefer-query-selector",
-  "endLine": 2069,
-  "endColumn": 35
-}
-`;
-
-exports[`ESLint config > test-md.md 261`] = `
-{
-  "ruleId": "perfectionist/sort-intersection-types",
-  "severity": 2,
-  "message": "",
-  "line": 2080,
-  "column": 25,
-  "nodeType": "TSTypeLiteral",
-  "messageId": "unexpectedIntersectionTypesOrder",
-  "endLine": 2080,
-  "endColumn": 58,
-  "fix": {
-    "range": [
-      87549,
-      87591
-    ],
-    "text": "{ readonly brand: unique symbol } & string"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 262`] = `
-{
-  "ruleId": "perfectionist/sort-intersection-types",
-  "severity": 2,
-  "message": "",
-  "line": 2081,
-  "column": 24,
-  "nodeType": "TSTypeLiteral",
-  "messageId": "unexpectedIntersectionTypesOrder",
-  "endLine": 2081,
-  "endColumn": 57,
-  "fix": {
-    "range": [
-      87607,
-      87649
-    ],
-    "text": "{ readonly brand: unique symbol } & string"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 263`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 2115,
-  "column": 14,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 2120,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 264`] = `
-{
-  "ruleId": "@eslint-react/dom/no-missing-button-type",
-  "severity": 1,
-  "message": "",
-  "line": 2119,
-  "column": 10,
-  "nodeType": "JSXOpeningElement",
-  "messageId": "noMissingButtonType",
-  "endLine": 2119,
-  "endColumn": 29,
-  "suggestions": [
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "button"
-      },
-      "fix": {
-        "range": [
-          88637,
-          88637
-        ],
-        "text": " type=\\"button\\""
-      },
-      "desc": "Add 'type' attribute with value 'button'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "submit"
-      },
-      "fix": {
-        "range": [
-          88637,
-          88637
-        ],
-        "text": " type=\\"submit\\""
-      },
-      "desc": "Add 'type' attribute with value 'submit'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "reset"
-      },
-      "fix": {
-        "range": [
-          88637,
-          88637
-        ],
-        "text": " type=\\"reset\\""
-      },
-      "desc": "Add 'type' attribute with value 'reset'."
-    }
-  ]
-}
-`;
-
-exports[`ESLint config > test-md.md 265`] = `
-{
-  "ruleId": "@eslint-react/prefer-destructuring-assignment",
-  "severity": 2,
-  "message": "",
-  "line": 2119,
-  "column": 31,
-  "nodeType": "MemberExpression",
-  "messageId": "preferDestructuringAssignment",
-  "endLine": 2119,
-  "endColumn": 42
-}
-`;
-
-exports[`ESLint config > test-md.md 266`] = `
-{
   "ruleId": null,
   "nodeType": null,
   "fatal": true,
@@ -3871,7 +3604,7 @@ exports[`ESLint config > test-md.md 266`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 267`] = `
+exports[`ESLint config > test-md.md 261`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
@@ -3892,7 +3625,7 @@ exports[`ESLint config > test-md.md 267`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 268`] = `
+exports[`ESLint config > test-md.md 262`] = `
 {
   "ruleId": "perfectionist/sort-object-types",
   "severity": 2,
@@ -3913,7 +3646,7 @@ exports[`ESLint config > test-md.md 268`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 269`] = `
+exports[`ESLint config > test-md.md 263`] = `
 {
   "ruleId": "@typescript-eslint/naming-convention",
   "severity": 2,
@@ -3924,6 +3657,118 @@ exports[`ESLint config > test-md.md 269`] = `
   "messageId": "doesNotMatchFormat",
   "endLine": 2175,
   "endColumn": 14
+}
+`;
+
+exports[`ESLint config > test-md.md 264`] = `
+{
+  "ruleId": "@typescript-eslint/consistent-type-definitions",
+  "severity": 2,
+  "message": "",
+  "line": 2175,
+  "column": 6,
+  "nodeType": "Identifier",
+  "messageId": "interfaceOverType",
+  "endLine": 2175,
+  "endColumn": 14,
+  "fix": {
+    "range": [
+      91404,
+      91652
+    ],
+    "text": "interface pickCard {\\n  (x: { suit: string; card: number }[]): number;\\n  (x: number): { suit: string; card: number };\\n  // no need for combined signature in this form\\n  // you can also type static properties of functions here eg \`pickCard.wasCalled\`\\n}"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 265`] = `
+{
+  "ruleId": "perfectionist/sort-object-types",
+  "severity": 2,
+  "message": "",
+  "line": 2176,
+  "column": 23,
+  "nodeType": "TSPropertySignature",
+  "messageId": "unexpectedObjectTypesOrder",
+  "endLine": 2176,
+  "endColumn": 35,
+  "fix": {
+    "range": [
+      91430,
+      91456
+    ],
+    "text": "card: number; suit: string;"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 266`] = `
+{
+  "ruleId": "perfectionist/sort-object-types",
+  "severity": 2,
+  "message": "",
+  "line": 2177,
+  "column": 32,
+  "nodeType": "TSPropertySignature",
+  "messageId": "unexpectedObjectTypesOrder",
+  "endLine": 2177,
+  "endColumn": 44,
+  "fix": {
+    "range": [
+      91488,
+      91514
+    ],
+    "text": "card: number; suit: string;"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 267`] = `
+{
+  "ruleId": "@eslint-react/naming-convention/filename-extension",
+  "severity": 2,
+  "message": "",
+  "line": 2194,
+  "column": 1,
+  "nodeType": "Program",
+  "messageId": "unnecessaryJSXExtension",
+  "endLine": 2204,
+  "endColumn": 1
+}
+`;
+
+exports[`ESLint config > test-md.md 268`] = `
+{
+  "ruleId": "perfectionist/sort-objects",
+  "severity": 2,
+  "message": "",
+  "line": 2196,
+  "column": 3,
+  "nodeType": "Property",
+  "messageId": "unexpectedObjectsOrder",
+  "endLine": 2196,
+  "endColumn": 9,
+  "fix": {
+    "range": [
+      92393,
+      92409
+    ],
+    "text": "bar: 2,\\n  foo: 1"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 269`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 2199,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 2203,
+  "endColumn": 2
 }
 `;
 
@@ -3950,118 +3795,6 @@ exports[`ESLint config > test-md.md 27`] = `
 
 exports[`ESLint config > test-md.md 270`] = `
 {
-  "ruleId": "@typescript-eslint/consistent-type-definitions",
-  "severity": 2,
-  "message": "",
-  "line": 2175,
-  "column": 6,
-  "nodeType": "Identifier",
-  "messageId": "interfaceOverType",
-  "endLine": 2175,
-  "endColumn": 14,
-  "fix": {
-    "range": [
-      91404,
-      91652
-    ],
-    "text": "interface pickCard {\\n  (x: { suit: string; card: number }[]): number;\\n  (x: number): { suit: string; card: number };\\n  // no need for combined signature in this form\\n  // you can also type static properties of functions here eg \`pickCard.wasCalled\`\\n}"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 271`] = `
-{
-  "ruleId": "perfectionist/sort-object-types",
-  "severity": 2,
-  "message": "",
-  "line": 2176,
-  "column": 23,
-  "nodeType": "TSPropertySignature",
-  "messageId": "unexpectedObjectTypesOrder",
-  "endLine": 2176,
-  "endColumn": 35,
-  "fix": {
-    "range": [
-      91430,
-      91456
-    ],
-    "text": "card: number; suit: string;"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 272`] = `
-{
-  "ruleId": "perfectionist/sort-object-types",
-  "severity": 2,
-  "message": "",
-  "line": 2177,
-  "column": 32,
-  "nodeType": "TSPropertySignature",
-  "messageId": "unexpectedObjectTypesOrder",
-  "endLine": 2177,
-  "endColumn": 44,
-  "fix": {
-    "range": [
-      91488,
-      91514
-    ],
-    "text": "card: number; suit: string;"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 273`] = `
-{
-  "ruleId": "@eslint-react/naming-convention/filename-extension",
-  "severity": 2,
-  "message": "",
-  "line": 2194,
-  "column": 1,
-  "nodeType": "Program",
-  "messageId": "unnecessaryJSXExtension",
-  "endLine": 2204,
-  "endColumn": 1
-}
-`;
-
-exports[`ESLint config > test-md.md 274`] = `
-{
-  "ruleId": "perfectionist/sort-objects",
-  "severity": 2,
-  "message": "",
-  "line": 2196,
-  "column": 3,
-  "nodeType": "Property",
-  "messageId": "unexpectedObjectsOrder",
-  "endLine": 2196,
-  "endColumn": 9,
-  "fix": {
-    "range": [
-      92393,
-      92409
-    ],
-    "text": "bar: 2,\\n  foo: 1"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 275`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 2199,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 2203,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 276`] = `
-{
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
   "message": "",
@@ -4074,7 +3807,7 @@ exports[`ESLint config > test-md.md 276`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 277`] = `
+exports[`ESLint config > test-md.md 271`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -4095,7 +3828,7 @@ exports[`ESLint config > test-md.md 277`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 278`] = `
+exports[`ESLint config > test-md.md 272`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -4109,7 +3842,7 @@ exports[`ESLint config > test-md.md 278`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 279`] = `
+exports[`ESLint config > test-md.md 273`] = `
 {
   "ruleId": "import-x/newline-after-import",
   "severity": 2,
@@ -4124,6 +3857,117 @@ exports[`ESLint config > test-md.md 279`] = `
       93955
     ],
     "text": "\\n"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 274`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 2242,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 2242,
+  "endColumn": 18
+}
+`;
+
+exports[`ESLint config > test-md.md 275`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 2242,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 2244,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 276`] = `
+{
+  "ruleId": "@eslint-react/naming-convention/filename-extension",
+  "severity": 2,
+  "message": "",
+  "line": 2253,
+  "column": 1,
+  "nodeType": "Program",
+  "messageId": "unnecessaryJSXExtension",
+  "endLine": 2259,
+  "endColumn": 1
+}
+`;
+
+exports[`ESLint config > test-md.md 277`] = `
+{
+  "ruleId": "sonarjs/no-commented-code",
+  "severity": 2,
+  "message": "",
+  "line": 2258,
+  "column": 42,
+  "nodeType": null,
+  "messageId": "commentedCode",
+  "endLine": 2258,
+  "endColumn": 60,
+  "suggestions": [
+    {
+      "messageId": "commentedCodeFix",
+      "fix": {
+        "range": [
+          94958,
+          94976
+        ],
+        "text": ""
+      },
+      "desc": "Remove this commented out code"
+    }
+  ]
+}
+`;
+
+exports[`ESLint config > test-md.md 278`] = `
+{
+  "ruleId": "prefer-const",
+  "severity": 2,
+  "message": "",
+  "line": 2281,
+  "column": 5,
+  "nodeType": "Identifier",
+  "messageId": "useConst",
+  "endLine": 2281,
+  "endColumn": 21,
+  "fix": {
+    "range": [
+      95425,
+      95487
+    ],
+    "text": "const baz: SubInstType = {\\n  c: 5,\\n  d: 6, // type checks ok!\\n};"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 279`] = `
+{
+  "ruleId": "prefer-const",
+  "severity": 2,
+  "message": "",
+  "line": 2290,
+  "column": 5,
+  "nodeType": "Identifier",
+  "messageId": "useConst",
+  "endLine": 2290,
+  "endColumn": 23,
+  "fix": {
+    "range": [
+      95704,
+      95768
+    ],
+    "text": "const baz2: SubInstType2 = {\\n  c: 5,\\n  d: 6, // type checks ok!\\n};"
   }
 }
 `;
@@ -4151,117 +3995,6 @@ exports[`ESLint config > test-md.md 28`] = `
 
 exports[`ESLint config > test-md.md 280`] = `
 {
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 2242,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 2242,
-  "endColumn": 18
-}
-`;
-
-exports[`ESLint config > test-md.md 281`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 2242,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 2244,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 282`] = `
-{
-  "ruleId": "@eslint-react/naming-convention/filename-extension",
-  "severity": 2,
-  "message": "",
-  "line": 2253,
-  "column": 1,
-  "nodeType": "Program",
-  "messageId": "unnecessaryJSXExtension",
-  "endLine": 2259,
-  "endColumn": 1
-}
-`;
-
-exports[`ESLint config > test-md.md 283`] = `
-{
-  "ruleId": "sonarjs/no-commented-code",
-  "severity": 2,
-  "message": "",
-  "line": 2258,
-  "column": 42,
-  "nodeType": null,
-  "messageId": "commentedCode",
-  "endLine": 2258,
-  "endColumn": 60,
-  "suggestions": [
-    {
-      "messageId": "commentedCodeFix",
-      "fix": {
-        "range": [
-          94958,
-          94976
-        ],
-        "text": ""
-      },
-      "desc": "Remove this commented out code"
-    }
-  ]
-}
-`;
-
-exports[`ESLint config > test-md.md 284`] = `
-{
-  "ruleId": "prefer-const",
-  "severity": 2,
-  "message": "",
-  "line": 2281,
-  "column": 5,
-  "nodeType": "Identifier",
-  "messageId": "useConst",
-  "endLine": 2281,
-  "endColumn": 21,
-  "fix": {
-    "range": [
-      95425,
-      95487
-    ],
-    "text": "const baz: SubInstType = {\\n  c: 5,\\n  d: 6, // type checks ok!\\n};"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 285`] = `
-{
-  "ruleId": "prefer-const",
-  "severity": 2,
-  "message": "",
-  "line": 2290,
-  "column": 5,
-  "nodeType": "Identifier",
-  "messageId": "useConst",
-  "endLine": 2290,
-  "endColumn": 23,
-  "fix": {
-    "range": [
-      95704,
-      95768
-    ],
-    "text": "const baz2: SubInstType2 = {\\n  c: 5,\\n  d: 6, // type checks ok!\\n};"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 286`] = `
-{
   "ruleId": null,
   "nodeType": null,
   "fatal": true,
@@ -4272,7 +4005,7 @@ exports[`ESLint config > test-md.md 286`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 287`] = `
+exports[`ESLint config > test-md.md 281`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -4286,7 +4019,7 @@ exports[`ESLint config > test-md.md 287`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 288`] = `
+exports[`ESLint config > test-md.md 282`] = `
 {
   "ruleId": "@eslint-react/no-unnecessary-use-prefix",
   "severity": 2,
@@ -4300,7 +4033,7 @@ exports[`ESLint config > test-md.md 288`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 289`] = `
+exports[`ESLint config > test-md.md 283`] = `
 {
   "ruleId": null,
   "nodeType": null,
@@ -4309,6 +4042,129 @@ exports[`ESLint config > test-md.md 289`] = `
   "message": "",
   "line": 2371,
   "column": 32
+}
+`;
+
+exports[`ESLint config > test-md.md 284`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 2385,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 2406,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 285`] = `
+{
+  "ruleId": "perfectionist/sort-objects",
+  "severity": 2,
+  "message": "",
+  "line": 2390,
+  "column": 5,
+  "nodeType": "Property",
+  "messageId": "unexpectedObjectsOrder",
+  "endLine": 2390,
+  "endColumn": 18,
+  "fix": {
+    "range": [
+      100008,
+      100182
+    ],
+    "text": "classNameDark,\\n    classNameLight,\\n    // -> input props / config props to be exported\\n    element,\\n    global,\\n    onChange,\\n    storageKey = \\"darkMode\\",\\n    storageProvider"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 286`] = `
+{
+  "ruleId": "perfectionist/sort-objects",
+  "severity": 2,
+  "message": "",
+  "line": 2395,
+  "column": 5,
+  "nodeType": "Property",
+  "messageId": "unexpectedObjectsOrder",
+  "endLine": 2395,
+  "endColumn": 11,
+  "fix": {
+    "range": [
+      100008,
+      100182
+    ],
+    "text": "classNameDark,\\n    classNameLight,\\n    // -> input props / config props to be exported\\n    element,\\n    global,\\n    onChange,\\n    storageKey = \\"darkMode\\",\\n    storageProvider"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 287`] = `
+{
+  "ruleId": "perfectionist/sort-objects",
+  "severity": 2,
+  "message": "",
+  "line": 2402,
+  "column": 5,
+  "nodeType": "Property",
+  "messageId": "unexpectedObjectsOrder",
+  "endLine": 2402,
+  "endColumn": 58,
+  "fix": {
+    "range": [
+      100224,
+      100470
+    ],
+    "text": "disable: useCallback(() => setState(false), [setState]),\\n    enable: useCallback(() => setState(true), [setState]),\\n    toggle: useCallback(() => setState((current) => !current), [setState]),\\n    // -> return props to be exported\\n    value: state"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 288`] = `
+{
+  "ruleId": "react-hooks/exhaustive-deps",
+  "severity": 1,
+  "message": "",
+  "line": 2402,
+  "column": 47,
+  "nodeType": "ArrayExpression",
+  "endLine": 2402,
+  "endColumn": 57,
+  "suggestions": [
+    {
+      "desc": "Update the dependencies array to be: []",
+      "fix": {
+        "range": [
+          100322,
+          100332
+        ],
+        "text": "[]"
+      }
+    }
+  ]
+}
+`;
+
+exports[`ESLint config > test-md.md 289`] = `
+{
+  "ruleId": "perfectionist/sort-objects",
+  "severity": 2,
+  "message": "",
+  "line": 2403,
+  "column": 5,
+  "nodeType": "Property",
+  "messageId": "unexpectedObjectsOrder",
+  "endLine": 2403,
+  "endColumn": 60,
+  "fix": {
+    "range": [
+      100224,
+      100470
+    ],
+    "text": "disable: useCallback(() => setState(false), [setState]),\\n    enable: useCallback(() => setState(true), [setState]),\\n    toggle: useCallback(() => setState((current) => !current), [setState]),\\n    // -> return props to be exported\\n    value: state"
+  }
 }
 `;
 
@@ -4335,129 +4191,6 @@ exports[`ESLint config > test-md.md 29`] = `
 
 exports[`ESLint config > test-md.md 290`] = `
 {
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 2385,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 2406,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 291`] = `
-{
-  "ruleId": "perfectionist/sort-objects",
-  "severity": 2,
-  "message": "",
-  "line": 2390,
-  "column": 5,
-  "nodeType": "Property",
-  "messageId": "unexpectedObjectsOrder",
-  "endLine": 2390,
-  "endColumn": 18,
-  "fix": {
-    "range": [
-      100008,
-      100182
-    ],
-    "text": "classNameDark,\\n    classNameLight,\\n    // -> input props / config props to be exported\\n    element,\\n    global,\\n    onChange,\\n    storageKey = \\"darkMode\\",\\n    storageProvider"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 292`] = `
-{
-  "ruleId": "perfectionist/sort-objects",
-  "severity": 2,
-  "message": "",
-  "line": 2395,
-  "column": 5,
-  "nodeType": "Property",
-  "messageId": "unexpectedObjectsOrder",
-  "endLine": 2395,
-  "endColumn": 11,
-  "fix": {
-    "range": [
-      100008,
-      100182
-    ],
-    "text": "classNameDark,\\n    classNameLight,\\n    // -> input props / config props to be exported\\n    element,\\n    global,\\n    onChange,\\n    storageKey = \\"darkMode\\",\\n    storageProvider"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 293`] = `
-{
-  "ruleId": "perfectionist/sort-objects",
-  "severity": 2,
-  "message": "",
-  "line": 2402,
-  "column": 5,
-  "nodeType": "Property",
-  "messageId": "unexpectedObjectsOrder",
-  "endLine": 2402,
-  "endColumn": 58,
-  "fix": {
-    "range": [
-      100224,
-      100470
-    ],
-    "text": "disable: useCallback(() => setState(false), [setState]),\\n    enable: useCallback(() => setState(true), [setState]),\\n    toggle: useCallback(() => setState((current) => !current), [setState]),\\n    // -> return props to be exported\\n    value: state"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 294`] = `
-{
-  "ruleId": "react-hooks/exhaustive-deps",
-  "severity": 1,
-  "message": "",
-  "line": 2402,
-  "column": 47,
-  "nodeType": "ArrayExpression",
-  "endLine": 2402,
-  "endColumn": 57,
-  "suggestions": [
-    {
-      "desc": "Update the dependencies array to be: []",
-      "fix": {
-        "range": [
-          100322,
-          100332
-        ],
-        "text": "[]"
-      }
-    }
-  ]
-}
-`;
-
-exports[`ESLint config > test-md.md 295`] = `
-{
-  "ruleId": "perfectionist/sort-objects",
-  "severity": 2,
-  "message": "",
-  "line": 2403,
-  "column": 5,
-  "nodeType": "Property",
-  "messageId": "unexpectedObjectsOrder",
-  "endLine": 2403,
-  "endColumn": 60,
-  "fix": {
-    "range": [
-      100224,
-      100470
-    ],
-    "text": "disable: useCallback(() => setState(false), [setState]),\\n    enable: useCallback(() => setState(true), [setState]),\\n    toggle: useCallback(() => setState((current) => !current), [setState]),\\n    // -> return props to be exported\\n    value: state"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 296`] = `
-{
   "ruleId": "react-hooks/exhaustive-deps",
   "severity": 1,
   "message": "",
@@ -4481,7 +4214,7 @@ exports[`ESLint config > test-md.md 296`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 297`] = `
+exports[`ESLint config > test-md.md 291`] = `
 {
   "ruleId": "react-hooks/exhaustive-deps",
   "severity": 1,
@@ -4506,7 +4239,7 @@ exports[`ESLint config > test-md.md 297`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 298`] = `
+exports[`ESLint config > test-md.md 292`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
@@ -4527,7 +4260,7 @@ exports[`ESLint config > test-md.md 298`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 299`] = `
+exports[`ESLint config > test-md.md 293`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
@@ -4544,6 +4277,100 @@ exports[`ESLint config > test-md.md 299`] = `
       101686
     ],
     "text": "disable: () => void;\\n    enable: () => void;\\n    toggle: () => void;\\n    readonly value: boolean;"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 294`] = `
+{
+  "ruleId": "perfectionist/sort-interfaces",
+  "severity": 2,
+  "message": "",
+  "line": 2432,
+  "column": 5,
+  "nodeType": "TSPropertySignature",
+  "messageId": "unexpectedInterfacePropertiesOrder",
+  "endLine": 2432,
+  "endColumn": 25,
+  "fix": {
+    "range": [
+      101589,
+      101686
+    ],
+    "text": "disable: () => void;\\n    enable: () => void;\\n    toggle: () => void;\\n    readonly value: boolean;"
+  }
+}
+`;
+
+exports[`ESLint config > test-md.md 295`] = `
+{
+  "ruleId": null,
+  "nodeType": null,
+  "fatal": true,
+  "severity": 2,
+  "message": "",
+  "line": 2465,
+  "column": 0
+}
+`;
+
+exports[`ESLint config > test-md.md 296`] = `
+{
+  "ruleId": null,
+  "nodeType": null,
+  "fatal": true,
+  "severity": 2,
+  "message": "",
+  "line": 2487,
+  "column": 3
+}
+`;
+
+exports[`ESLint config > test-md.md 297`] = `
+{
+  "ruleId": "@eslint-react/naming-convention/filename-extension",
+  "severity": 2,
+  "message": "",
+  "line": 2625,
+  "column": 1,
+  "nodeType": "Program",
+  "messageId": "unnecessaryJSXExtension",
+  "endLine": 2637,
+  "endColumn": 1
+}
+`;
+
+exports[`ESLint config > test-md.md 298`] = `
+{
+  "ruleId": "@typescript-eslint/method-signature-style",
+  "severity": 2,
+  "message": "",
+  "line": 2627,
+  "column": 5,
+  "nodeType": "TSMethodSignature",
+  "messageId": "errorMethod",
+  "endLine": 2627,
+  "endColumn": 32
+}
+`;
+
+exports[`ESLint config > test-md.md 299`] = `
+{
+  "ruleId": "import-x/first",
+  "severity": 2,
+  "message": "",
+  "line": 2632,
+  "column": 1,
+  "nodeType": "ImportDeclaration",
+  "messageId": "order",
+  "endLine": 2632,
+  "endColumn": 47,
+  "fix": {
+    "range": [
+      109983,
+      110165
+    ],
+    "text": "// my-typings.ts\\n// MyComponent.tsx\\nimport { PlotlyHTMLElement } from \\"plotly.js\\";\\n\\ndeclare module \\"plotly.js\\" {\\n  interface PlotlyHTMLElement {\\n    removeAllListeners(): void;\\n  }\\n}"
   }
 }
 `;
@@ -4578,100 +4405,6 @@ exports[`ESLint config > test-md.md 30`] = `
 
 exports[`ESLint config > test-md.md 300`] = `
 {
-  "ruleId": "perfectionist/sort-interfaces",
-  "severity": 2,
-  "message": "",
-  "line": 2432,
-  "column": 5,
-  "nodeType": "TSPropertySignature",
-  "messageId": "unexpectedInterfacePropertiesOrder",
-  "endLine": 2432,
-  "endColumn": 25,
-  "fix": {
-    "range": [
-      101589,
-      101686
-    ],
-    "text": "disable: () => void;\\n    enable: () => void;\\n    toggle: () => void;\\n    readonly value: boolean;"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 301`] = `
-{
-  "ruleId": null,
-  "nodeType": null,
-  "fatal": true,
-  "severity": 2,
-  "message": "",
-  "line": 2465,
-  "column": 0
-}
-`;
-
-exports[`ESLint config > test-md.md 302`] = `
-{
-  "ruleId": null,
-  "nodeType": null,
-  "fatal": true,
-  "severity": 2,
-  "message": "",
-  "line": 2487,
-  "column": 3
-}
-`;
-
-exports[`ESLint config > test-md.md 303`] = `
-{
-  "ruleId": "@eslint-react/naming-convention/filename-extension",
-  "severity": 2,
-  "message": "",
-  "line": 2625,
-  "column": 1,
-  "nodeType": "Program",
-  "messageId": "unnecessaryJSXExtension",
-  "endLine": 2637,
-  "endColumn": 1
-}
-`;
-
-exports[`ESLint config > test-md.md 304`] = `
-{
-  "ruleId": "@typescript-eslint/method-signature-style",
-  "severity": 2,
-  "message": "",
-  "line": 2627,
-  "column": 5,
-  "nodeType": "TSMethodSignature",
-  "messageId": "errorMethod",
-  "endLine": 2627,
-  "endColumn": 32
-}
-`;
-
-exports[`ESLint config > test-md.md 305`] = `
-{
-  "ruleId": "import-x/first",
-  "severity": 2,
-  "message": "",
-  "line": 2632,
-  "column": 1,
-  "nodeType": "ImportDeclaration",
-  "messageId": "order",
-  "endLine": 2632,
-  "endColumn": 47,
-  "fix": {
-    "range": [
-      109983,
-      110165
-    ],
-    "text": "// my-typings.ts\\n// MyComponent.tsx\\nimport { PlotlyHTMLElement } from \\"plotly.js\\";\\n\\ndeclare module \\"plotly.js\\" {\\n  interface PlotlyHTMLElement {\\n    removeAllListeners(): void;\\n  }\\n}"
-  }
-}
-`;
-
-exports[`ESLint config > test-md.md 306`] = `
-{
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
   "message": "",
@@ -4691,7 +4424,7 @@ exports[`ESLint config > test-md.md 306`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 307`] = `
+exports[`ESLint config > test-md.md 301`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -4705,7 +4438,7 @@ exports[`ESLint config > test-md.md 307`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 308`] = `
+exports[`ESLint config > test-md.md 302`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -4719,7 +4452,7 @@ exports[`ESLint config > test-md.md 308`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 309`] = `
+exports[`ESLint config > test-md.md 303`] = `
 {
   "ruleId": "prefer-const",
   "severity": 2,
@@ -4733,21 +4466,7 @@ exports[`ESLint config > test-md.md 309`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 31`] = `
-{
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 398,
-  "column": 10,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 398,
-  "endColumn": 17
-}
-`;
-
-exports[`ESLint config > test-md.md 310`] = `
+exports[`ESLint config > test-md.md 304`] = `
 {
   "ruleId": "import-x/first",
   "severity": 2,
@@ -4768,7 +4487,7 @@ exports[`ESLint config > test-md.md 310`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 311`] = `
+exports[`ESLint config > test-md.md 305`] = `
 {
   "ruleId": null,
   "nodeType": null,
@@ -4780,7 +4499,7 @@ exports[`ESLint config > test-md.md 311`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 312`] = `
+exports[`ESLint config > test-md.md 306`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -4801,7 +4520,7 @@ exports[`ESLint config > test-md.md 312`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 313`] = `
+exports[`ESLint config > test-md.md 307`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -4822,7 +4541,7 @@ exports[`ESLint config > test-md.md 313`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 314`] = `
+exports[`ESLint config > test-md.md 308`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -4843,7 +4562,7 @@ exports[`ESLint config > test-md.md 314`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 315`] = `
+exports[`ESLint config > test-md.md 309`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -4864,7 +4583,21 @@ exports[`ESLint config > test-md.md 315`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 316`] = `
+exports[`ESLint config > test-md.md 31`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 398,
+  "column": 10,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 398,
+  "endColumn": 17
+}
+`;
+
+exports[`ESLint config > test-md.md 310`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -4885,7 +4618,7 @@ exports[`ESLint config > test-md.md 316`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 317`] = `
+exports[`ESLint config > test-md.md 311`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -4908,64 +4641,6 @@ exports[`ESLint config > test-md.md 317`] = `
 
 exports[`ESLint config > test-md.md 32`] = `
 {
-  "ruleId": "@eslint-react/dom/no-missing-button-type",
-  "severity": 1,
-  "message": "",
-  "line": 403,
-  "column": 7,
-  "nodeType": "JSXOpeningElement",
-  "messageId": "noMissingButtonType",
-  "endLine": 403,
-  "endColumn": 77,
-  "suggestions": [
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "button"
-      },
-      "fix": {
-        "range": [
-          19385,
-          19385
-        ],
-        "text": " type=\\"button\\""
-      },
-      "desc": "Add 'type' attribute with value 'button'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "submit"
-      },
-      "fix": {
-        "range": [
-          19385,
-          19385
-        ],
-        "text": " type=\\"submit\\""
-      },
-      "desc": "Add 'type' attribute with value 'submit'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "reset"
-      },
-      "fix": {
-        "range": [
-          19385,
-          19385
-        ],
-        "text": " type=\\"reset\\""
-      },
-      "desc": "Add 'type' attribute with value 'reset'."
-    }
-  ]
-}
-`;
-
-exports[`ESLint config > test-md.md 33`] = `
-{
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
   "message": "",
@@ -4985,65 +4660,7 @@ exports[`ESLint config > test-md.md 33`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 34`] = `
-{
-  "ruleId": "@eslint-react/dom/no-missing-button-type",
-  "severity": 1,
-  "message": "",
-  "line": 406,
-  "column": 7,
-  "nodeType": "JSXOpeningElement",
-  "messageId": "noMissingButtonType",
-  "endLine": 406,
-  "endColumn": 75,
-  "suggestions": [
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "button"
-      },
-      "fix": {
-        "range": [
-          19488,
-          19488
-        ],
-        "text": " type=\\"button\\""
-      },
-      "desc": "Add 'type' attribute with value 'button'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "submit"
-      },
-      "fix": {
-        "range": [
-          19488,
-          19488
-        ],
-        "text": " type=\\"submit\\""
-      },
-      "desc": "Add 'type' attribute with value 'submit'."
-    },
-    {
-      "messageId": "addButtonType",
-      "data": {
-        "type": "reset"
-      },
-      "fix": {
-        "range": [
-          19488,
-          19488
-        ],
-        "text": " type=\\"reset\\""
-      },
-      "desc": "Add 'type' attribute with value 'reset'."
-    }
-  ]
-}
-`;
-
-exports[`ESLint config > test-md.md 35`] = `
+exports[`ESLint config > test-md.md 33`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -5064,7 +4681,7 @@ exports[`ESLint config > test-md.md 35`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 36`] = `
+exports[`ESLint config > test-md.md 34`] = `
 {
   "ruleId": null,
   "nodeType": null,
@@ -5076,7 +4693,7 @@ exports[`ESLint config > test-md.md 36`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 37`] = `
+exports[`ESLint config > test-md.md 35`] = `
 {
   "ruleId": "@eslint-react/web-api/no-leaked-timeout",
   "severity": 1,
@@ -5090,7 +4707,7 @@ exports[`ESLint config > test-md.md 37`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 38`] = `
+exports[`ESLint config > test-md.md 36`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -5104,7 +4721,7 @@ exports[`ESLint config > test-md.md 38`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 39`] = `
+exports[`ESLint config > test-md.md 37`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -5115,6 +4732,34 @@ exports[`ESLint config > test-md.md 39`] = `
   "messageId": "noExport",
   "endLine": 457,
   "endColumn": 23
+}
+`;
+
+exports[`ESLint config > test-md.md 38`] = `
+{
+  "ruleId": "@eslint-react/web-api/no-leaked-timeout",
+  "severity": 1,
+  "message": "",
+  "line": 461,
+  "column": 5,
+  "nodeType": "CallExpression",
+  "messageId": "expectedTimeoutId",
+  "endLine": 463,
+  "endColumn": 16
+}
+`;
+
+exports[`ESLint config > test-md.md 39`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 481,
+  "column": 10,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 481,
+  "endColumn": 13
 }
 `;
 
@@ -5133,34 +4778,6 @@ exports[`ESLint config > test-md.md 4`] = `
 `;
 
 exports[`ESLint config > test-md.md 40`] = `
-{
-  "ruleId": "@eslint-react/web-api/no-leaked-timeout",
-  "severity": 1,
-  "message": "",
-  "line": 461,
-  "column": 5,
-  "nodeType": "CallExpression",
-  "messageId": "expectedTimeoutId",
-  "endLine": 463,
-  "endColumn": 16
-}
-`;
-
-exports[`ESLint config > test-md.md 41`] = `
-{
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 481,
-  "column": 10,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 481,
-  "endColumn": 13
-}
-`;
-
-exports[`ESLint config > test-md.md 42`] = `
 {
   "ruleId": "curly",
   "severity": 2,
@@ -5181,7 +4798,7 @@ exports[`ESLint config > test-md.md 42`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 43`] = `
+exports[`ESLint config > test-md.md 41`] = `
 {
   "ruleId": "unicorn/throw-new-error",
   "severity": 2,
@@ -5202,7 +4819,7 @@ exports[`ESLint config > test-md.md 43`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 44`] = `
+exports[`ESLint config > test-md.md 42`] = `
 {
   "ruleId": "unicorn/new-for-builtins",
   "severity": 2,
@@ -5223,7 +4840,7 @@ exports[`ESLint config > test-md.md 44`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 45`] = `
+exports[`ESLint config > test-md.md 43`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -5237,7 +4854,7 @@ exports[`ESLint config > test-md.md 45`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 46`] = `
+exports[`ESLint config > test-md.md 44`] = `
 {
   "ruleId": null,
   "nodeType": null,
@@ -5249,7 +4866,7 @@ exports[`ESLint config > test-md.md 46`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 47`] = `
+exports[`ESLint config > test-md.md 45`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -5270,7 +4887,7 @@ exports[`ESLint config > test-md.md 47`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 48`] = `
+exports[`ESLint config > test-md.md 46`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -5291,7 +4908,7 @@ exports[`ESLint config > test-md.md 48`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 49`] = `
+exports[`ESLint config > test-md.md 47`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-object-type",
   "severity": 2,
@@ -5335,6 +4952,34 @@ exports[`ESLint config > test-md.md 49`] = `
 }
 `;
 
+exports[`ESLint config > test-md.md 48`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 559,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 559,
+  "endColumn": 16
+}
+`;
+
+exports[`ESLint config > test-md.md 49`] = `
+{
+  "ruleId": "@eslint-react/no-forward-ref",
+  "severity": 1,
+  "message": "",
+  "line": 559,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noForwardRef",
+  "endLine": 559,
+  "endColumn": 16
+}
+`;
+
 exports[`ESLint config > test-md.md 5`] = `
 {
   "ruleId": "@typescript-eslint/no-redeclare",
@@ -5351,34 +4996,6 @@ exports[`ESLint config > test-md.md 5`] = `
 
 exports[`ESLint config > test-md.md 50`] = `
 {
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 559,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 559,
-  "endColumn": 16
-}
-`;
-
-exports[`ESLint config > test-md.md 51`] = `
-{
-  "ruleId": "@eslint-react/no-forward-ref",
-  "severity": 1,
-  "message": "",
-  "line": 559,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noForwardRef",
-  "endLine": 559,
-  "endColumn": 16
-}
-`;
-
-exports[`ESLint config > test-md.md 52`] = `
-{
   "ruleId": "@eslint-react/no-missing-component-display-name",
   "severity": 2,
   "message": "",
@@ -5391,7 +5008,7 @@ exports[`ESLint config > test-md.md 52`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 53`] = `
+exports[`ESLint config > test-md.md 51`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-imports",
   "severity": 2,
@@ -5412,7 +5029,7 @@ exports[`ESLint config > test-md.md 53`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 54`] = `
+exports[`ESLint config > test-md.md 52`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -5426,7 +5043,7 @@ exports[`ESLint config > test-md.md 54`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 55`] = `
+exports[`ESLint config > test-md.md 53`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -5440,7 +5057,7 @@ exports[`ESLint config > test-md.md 55`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 56`] = `
+exports[`ESLint config > test-md.md 54`] = `
 {
   "ruleId": "@eslint-react/naming-convention/use-state",
   "severity": 1,
@@ -5454,7 +5071,7 @@ exports[`ESLint config > test-md.md 56`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 57`] = `
+exports[`ESLint config > test-md.md 55`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -5468,7 +5085,7 @@ exports[`ESLint config > test-md.md 57`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 58`] = `
+exports[`ESLint config > test-md.md 56`] = `
 {
   "ruleId": "promise/prefer-await-to-then",
   "severity": 2,
@@ -5482,7 +5099,7 @@ exports[`ESLint config > test-md.md 58`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 59`] = `
+exports[`ESLint config > test-md.md 57`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -5493,6 +5110,34 @@ exports[`ESLint config > test-md.md 59`] = `
   "messageId": "unnecessaryJSXExtension",
   "endLine": 634,
   "endColumn": 1
+}
+`;
+
+exports[`ESLint config > test-md.md 58`] = `
+{
+  "ruleId": "@eslint-react/naming-convention/use-state",
+  "severity": 1,
+  "message": "",
+  "line": 624,
+  "column": 21,
+  "nodeType": "Identifier",
+  "messageId": "invalidSetterName",
+  "endLine": 624,
+  "endColumn": 29
+}
+`;
+
+exports[`ESLint config > test-md.md 59`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 625,
+  "column": 9,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 628,
+  "endColumn": 4
 }
 `;
 
@@ -5512,34 +5157,6 @@ exports[`ESLint config > test-md.md 6`] = `
 
 exports[`ESLint config > test-md.md 60`] = `
 {
-  "ruleId": "@eslint-react/naming-convention/use-state",
-  "severity": 1,
-  "message": "",
-  "line": 624,
-  "column": 21,
-  "nodeType": "Identifier",
-  "messageId": "invalidSetterName",
-  "endLine": 624,
-  "endColumn": 29
-}
-`;
-
-exports[`ESLint config > test-md.md 61`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 625,
-  "column": 9,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 628,
-  "endColumn": 4
-}
-`;
-
-exports[`ESLint config > test-md.md 62`] = `
-{
   "ruleId": "promise/prefer-await-to-then",
   "severity": 2,
   "message": "",
@@ -5552,7 +5169,7 @@ exports[`ESLint config > test-md.md 62`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 63`] = `
+exports[`ESLint config > test-md.md 61`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -5566,7 +5183,7 @@ exports[`ESLint config > test-md.md 63`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 64`] = `
+exports[`ESLint config > test-md.md 62`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
@@ -5579,7 +5196,7 @@ exports[`ESLint config > test-md.md 64`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 65`] = `
+exports[`ESLint config > test-md.md 63`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
@@ -5592,7 +5209,7 @@ exports[`ESLint config > test-md.md 65`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 66`] = `
+exports[`ESLint config > test-md.md 64`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
@@ -5622,7 +5239,7 @@ exports[`ESLint config > test-md.md 66`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 67`] = `
+exports[`ESLint config > test-md.md 65`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
@@ -5635,7 +5252,7 @@ exports[`ESLint config > test-md.md 67`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 68`] = `
+exports[`ESLint config > test-md.md 66`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
@@ -5648,7 +5265,7 @@ exports[`ESLint config > test-md.md 68`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 69`] = `
+exports[`ESLint config > test-md.md 67`] = `
 {
   "ruleId": "react-hooks/refs",
   "severity": 2,
@@ -5661,21 +5278,7 @@ exports[`ESLint config > test-md.md 69`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 7`] = `
-{
-  "ruleId": "react-refresh/only-export-components",
-  "severity": 2,
-  "message": "",
-  "line": 203,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "noExport",
-  "endLine": 203,
-  "endColumn": 10
-}
-`;
-
-exports[`ESLint config > test-md.md 70`] = `
+exports[`ESLint config > test-md.md 68`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
@@ -5705,7 +5308,7 @@ exports[`ESLint config > test-md.md 70`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 71`] = `
+exports[`ESLint config > test-md.md 69`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -5726,7 +5329,21 @@ exports[`ESLint config > test-md.md 71`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 72`] = `
+exports[`ESLint config > test-md.md 7`] = `
+{
+  "ruleId": "react-refresh/only-export-components",
+  "severity": 2,
+  "message": "",
+  "line": 203,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noExport",
+  "endLine": 203,
+  "endColumn": 10
+}
+`;
+
+exports[`ESLint config > test-md.md 70`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -5747,7 +5364,7 @@ exports[`ESLint config > test-md.md 72`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 73`] = `
+exports[`ESLint config > test-md.md 71`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -5761,7 +5378,7 @@ exports[`ESLint config > test-md.md 73`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 74`] = `
+exports[`ESLint config > test-md.md 72`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -5775,7 +5392,7 @@ exports[`ESLint config > test-md.md 74`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 75`] = `
+exports[`ESLint config > test-md.md 73`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -5796,7 +5413,7 @@ exports[`ESLint config > test-md.md 75`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 76`] = `
+exports[`ESLint config > test-md.md 74`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -5817,7 +5434,7 @@ exports[`ESLint config > test-md.md 76`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 77`] = `
+exports[`ESLint config > test-md.md 75`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -5831,7 +5448,7 @@ exports[`ESLint config > test-md.md 77`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 78`] = `
+exports[`ESLint config > test-md.md 76`] = `
 {
   "ruleId": "jsx-a11y/click-events-have-key-events",
   "severity": 2,
@@ -5844,7 +5461,7 @@ exports[`ESLint config > test-md.md 78`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 79`] = `
+exports[`ESLint config > test-md.md 77`] = `
 {
   "ruleId": "jsx-a11y/no-static-element-interactions",
   "severity": 2,
@@ -5857,21 +5474,7 @@ exports[`ESLint config > test-md.md 79`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 8`] = `
-{
-  "ruleId": "@typescript-eslint/no-redeclare",
-  "severity": 2,
-  "message": "",
-  "line": 203,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "redeclared",
-  "endLine": 203,
-  "endColumn": 10
-}
-`;
-
-exports[`ESLint config > test-md.md 80`] = `
+exports[`ESLint config > test-md.md 78`] = `
 {
   "ruleId": "perfectionist/sort-classes",
   "severity": 2,
@@ -5892,7 +5495,7 @@ exports[`ESLint config > test-md.md 80`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 81`] = `
+exports[`ESLint config > test-md.md 79`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -5906,21 +5509,21 @@ exports[`ESLint config > test-md.md 81`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 82`] = `
+exports[`ESLint config > test-md.md 8`] = `
 {
-  "ruleId": "@eslint-react/no-class-component",
+  "ruleId": "@typescript-eslint/no-redeclare",
   "severity": 2,
   "message": "",
-  "line": 795,
-  "column": 1,
-  "nodeType": "ClassDeclaration",
-  "messageId": "noClassComponent",
-  "endLine": 802,
-  "endColumn": 2
+  "line": 203,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "redeclared",
+  "endLine": 203,
+  "endColumn": 10
 }
 `;
 
-exports[`ESLint config > test-md.md 83`] = `
+exports[`ESLint config > test-md.md 80`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -5934,7 +5537,21 @@ exports[`ESLint config > test-md.md 83`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 84`] = `
+exports[`ESLint config > test-md.md 81`] = `
+{
+  "ruleId": "@eslint-react/no-class-component",
+  "severity": 2,
+  "message": "",
+  "line": 795,
+  "column": 1,
+  "nodeType": "ClassDeclaration",
+  "messageId": "noClassComponent",
+  "endLine": 802,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 82`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
@@ -5955,21 +5572,7 @@ exports[`ESLint config > test-md.md 84`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 85`] = `
-{
-  "ruleId": "@eslint-react/no-class-component",
-  "severity": 2,
-  "message": "",
-  "line": 808,
-  "column": 1,
-  "nodeType": "ClassDeclaration",
-  "messageId": "noClassComponent",
-  "endLine": 813,
-  "endColumn": 2
-}
-`;
-
-exports[`ESLint config > test-md.md 86`] = `
+exports[`ESLint config > test-md.md 83`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -5983,7 +5586,21 @@ exports[`ESLint config > test-md.md 86`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 87`] = `
+exports[`ESLint config > test-md.md 84`] = `
+{
+  "ruleId": "@eslint-react/no-class-component",
+  "severity": 2,
+  "message": "",
+  "line": 808,
+  "column": 1,
+  "nodeType": "ClassDeclaration",
+  "messageId": "noClassComponent",
+  "endLine": 813,
+  "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 85`] = `
 {
   "ruleId": "@typescript-eslint/no-empty-function",
   "severity": 2,
@@ -6013,7 +5630,7 @@ exports[`ESLint config > test-md.md 87`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 88`] = `
+exports[`ESLint config > test-md.md 86`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -6027,7 +5644,7 @@ exports[`ESLint config > test-md.md 88`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 89`] = `
+exports[`ESLint config > test-md.md 87`] = `
 {
   "ruleId": "sonarjs/redundant-type-aliases",
   "severity": 2,
@@ -6041,21 +5658,7 @@ exports[`ESLint config > test-md.md 89`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 9`] = `
-{
-  "ruleId": "func-style",
-  "severity": 2,
-  "message": "",
-  "line": 203,
-  "column": 7,
-  "nodeType": "VariableDeclarator",
-  "messageId": "declaration",
-  "endLine": 203,
-  "endColumn": 71
-}
-`;
-
-exports[`ESLint config > test-md.md 90`] = `
+exports[`ESLint config > test-md.md 88`] = `
 {
   "ruleId": "perfectionist/sort-objects",
   "severity": 2,
@@ -6076,7 +5679,7 @@ exports[`ESLint config > test-md.md 90`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 91`] = `
+exports[`ESLint config > test-md.md 89`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -6090,7 +5693,21 @@ exports[`ESLint config > test-md.md 91`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 92`] = `
+exports[`ESLint config > test-md.md 9`] = `
+{
+  "ruleId": "func-style",
+  "severity": 2,
+  "message": "",
+  "line": 203,
+  "column": 7,
+  "nodeType": "VariableDeclarator",
+  "messageId": "declaration",
+  "endLine": 203,
+  "endColumn": 71
+}
+`;
+
+exports[`ESLint config > test-md.md 90`] = `
 {
   "ruleId": "curly",
   "severity": 2,
@@ -6111,7 +5728,7 @@ exports[`ESLint config > test-md.md 92`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 93`] = `
+exports[`ESLint config > test-md.md 91`] = `
 {
   "ruleId": null,
   "nodeType": null,
@@ -6123,7 +5740,7 @@ exports[`ESLint config > test-md.md 93`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 94`] = `
+exports[`ESLint config > test-md.md 92`] = `
 {
   "ruleId": "@typescript-eslint/consistent-type-definitions",
   "severity": 2,
@@ -6144,7 +5761,7 @@ exports[`ESLint config > test-md.md 94`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 95`] = `
+exports[`ESLint config > test-md.md 93`] = `
 {
   "ruleId": "@eslint-react/no-class-component",
   "severity": 2,
@@ -6158,7 +5775,7 @@ exports[`ESLint config > test-md.md 95`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 96`] = `
+exports[`ESLint config > test-md.md 94`] = `
 {
   "ruleId": "prefer-const",
   "severity": 2,
@@ -6179,7 +5796,7 @@ exports[`ESLint config > test-md.md 96`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 97`] = `
+exports[`ESLint config > test-md.md 95`] = `
 {
   "ruleId": "@eslint-react/naming-convention/filename-extension",
   "severity": 2,
@@ -6193,7 +5810,7 @@ exports[`ESLint config > test-md.md 97`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 98`] = `
+exports[`ESLint config > test-md.md 96`] = `
 {
   "ruleId": "react-refresh/only-export-components",
   "severity": 2,
@@ -6207,7 +5824,7 @@ exports[`ESLint config > test-md.md 98`] = `
 }
 `;
 
-exports[`ESLint config > test-md.md 99`] = `
+exports[`ESLint config > test-md.md 97`] = `
 {
   "ruleId": "func-style",
   "severity": 2,
@@ -6218,6 +5835,41 @@ exports[`ESLint config > test-md.md 99`] = `
   "messageId": "declaration",
   "endLine": 906,
   "endColumn": 2
+}
+`;
+
+exports[`ESLint config > test-md.md 98`] = `
+{
+  "ruleId": "@eslint-react/no-default-props",
+  "severity": 2,
+  "message": "",
+  "line": 907,
+  "column": 7,
+  "nodeType": "Identifier",
+  "messageId": "noDefaultProps",
+  "endLine": 907,
+  "endColumn": 19
+}
+`;
+
+exports[`ESLint config > test-md.md 99`] = `
+{
+  "ruleId": "perfectionist/sort-intersection-types",
+  "severity": 2,
+  "message": "",
+  "line": 915,
+  "column": 47,
+  "nodeType": "TSTypeLiteral",
+  "messageId": "unexpectedIntersectionTypesOrder",
+  "endLine": 917,
+  "endColumn": 2,
+  "fix": {
+    "range": [
+      40523,
+      40569
+    ],
+    "text": "{\\n  age: number;\\n} & typeof Greet.defaultProps"
+  }
 }
 `;
 

@@ -24,6 +24,7 @@ const vueConfigs: FlatConfigs = [
 const [, { languageOptions }] = vueConfigs
 if (languageOptions) {
   languageOptions.parserOptions = {
+    // @ts-expect-error parserOptions is unknown here
     ...languageOptions.parserOptions,
     parser: tseslint.parser,
   }

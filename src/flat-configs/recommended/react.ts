@@ -1,4 +1,5 @@
 import eslintPluginReact from '@eslint-react/eslint-plugin'
+import type { ESLint } from 'eslint'
 import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y'
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
 import eslintPluginReactRefresh from 'eslint-plugin-react-refresh'
@@ -14,7 +15,7 @@ export const reactConfigs: FlatConfigs = [
   eslintPluginReact.configs.recommended,
   {
     name: 'react-hooks/recommended',
-    plugins: { 'react-hooks': eslintPluginReactHooks },
+    plugins: { 'react-hooks': eslintPluginReactHooks as unknown as ESLint.Plugin },
     rules: eslintPluginReactHooks.configs.recommended.rules,
   },
   {
