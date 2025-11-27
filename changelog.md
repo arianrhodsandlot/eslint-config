@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.24.0] - 2025-11-27
+### Added
+- Esm only
+
 ## [0.23.0] - 2025-10-10
 ### Added
 - Update eslint-plugin-react-hooks to latest
@@ -359,7 +363,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - First release!
 
 [Unreleased]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.17.2...HEAD
-[0.17.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.23.0...v0.17.2
+[0.17.2]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.24.0...v0.17.2
+[0.24.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.23.0...v0.24.0
 [0.23.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.22.0...v0.23.0
 [0.22.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.21.0...v0.22.0
 [0.21.0]: https://github.com/arianrhodsandlot/eslint-config/compare/v0.20.0...v0.21.0
