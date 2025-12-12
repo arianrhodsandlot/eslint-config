@@ -42,6 +42,7 @@ const defaultOptions: Required<CreateConfigOptions> = {
   stylistic: true,
   tailwindcss: true,
   tsdoc: isPackageInstalled('typescript'),
+  typeaware: Boolean(lookupFiles('tsconfig.json')),
   typescript: isPackageInstalled('typescript'),
   unicorn: true,
   vue: isPackageInstalled('vue'),

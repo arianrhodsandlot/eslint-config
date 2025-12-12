@@ -43,7 +43,7 @@ function lookupFile(fileName: string) {
   while (true) {
     const filepath = path.join(directory, fileName)
     try {
-      return readFileSync(filepath, 'utf8')
+      return { content: readFileSync(filepath, 'utf8'), path: filepath }
     } catch {}
 
     directory = path.resolve(directory, '..')
@@ -55,9 +55,9 @@ function lookupFile(fileName: string) {
 
 export function lookupFiles(...fileNames: string[]) {
   for (const fileName of fileNames) {
-    const content = lookupFile(fileName)
-    if (content) {
-      return content
+    const file = lookupFile(fileName)
+    if (file?.content) {
+      return file
     }
   }
 }
@@ -129,12 +129,13 @@ export const isLegacyVue = vueVersion === 2
 
 interface Context {
   options: CreateConfigOptions
+  tsconfigPath?: string
 }
 
 const context: Context = { options: {} }
 
-export function setContext({ options }: Context) {
-  context.options = options
+export function setContext(newContext: Context) {
+  Object.assign(context, newContext)
 }
 
 export function getContext() {

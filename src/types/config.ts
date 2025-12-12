@@ -115,6 +115,9 @@ export interface CreateConfigOptions {
   /** Should eslint-plugin-tsdoc be enabled */
   tsdoc?: boolean
 
+  /** Should type-aware linting be enabled */
+  typeaware?: boolean
+
   /** Should \@typescript-eslint/eslint-plugin be enabled */
   typescript?: boolean
 
