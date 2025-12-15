@@ -5966,20 +5966,6 @@ exports[`ESLint config > test-ts.ts 13`] = `
 
 exports[`ESLint config > test-ts.ts 14`] = `
 {
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 58,
-  "column": 5,
-  "nodeType": "Identifier",
-  "messageId": "unsafeCall",
-  "endLine": 58,
-  "endColumn": 20
-}
-`;
-
-exports[`ESLint config > test-ts.ts 15`] = `
-{
   "ruleId": "@typescript-eslint/no-redundant-type-constituents",
   "severity": 2,
   "message": "",
@@ -5992,7 +5978,7 @@ exports[`ESLint config > test-ts.ts 15`] = `
 }
 `;
 
-exports[`ESLint config > test-ts.ts 16`] = `
+exports[`ESLint config > test-ts.ts 15`] = `
 {
   "ruleId": "prefer-destructuring",
   "severity": 2,
@@ -6013,7 +5999,7 @@ exports[`ESLint config > test-ts.ts 16`] = `
 }
 `;
 
-exports[`ESLint config > test-ts.ts 17`] = `
+exports[`ESLint config > test-ts.ts 16`] = `
 {
   "ruleId": "no-implicit-coercion",
   "severity": 2,
@@ -6034,21 +6020,7 @@ exports[`ESLint config > test-ts.ts 17`] = `
 }
 `;
 
-exports[`ESLint config > test-ts.ts 18`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 135,
-  "column": 7,
-  "nodeType": "Identifier",
-  "messageId": "unsafeCall",
-  "endLine": 135,
-  "endColumn": 22
-}
-`;
-
-exports[`ESLint config > test-ts.ts 19`] = `
+exports[`ESLint config > test-ts.ts 17`] = `
 {
   "ruleId": "perfectionist/sort-interfaces",
   "severity": 2,
@@ -6066,6 +6038,41 @@ exports[`ESLint config > test-ts.ts 19`] = `
     ],
     "text": "allowDirectConstAssertionInArrowFunctions?: boolean\\n  allowExpressions?: boolean\\n  allowHigherOrderFunctions?: boolean\\n  allowTypedFunctionExpressions?: boolean"
   }
+}
+`;
+
+exports[`ESLint config > test-ts.ts 18`] = `
+{
+  "ruleId": "perfectionist/sort-interfaces",
+  "severity": 2,
+  "message": "",
+  "line": 152,
+  "column": 3,
+  "nodeType": "TSPropertySignature",
+  "messageId": "unexpectedInterfacePropertiesOrder",
+  "endLine": 152,
+  "endColumn": 54,
+  "fix": {
+    "range": [
+      4420,
+      4580
+    ],
+    "text": "allowDirectConstAssertionInArrowFunctions?: boolean\\n  allowExpressions?: boolean\\n  allowHigherOrderFunctions?: boolean\\n  allowTypedFunctionExpressions?: boolean"
+  }
+}
+`;
+
+exports[`ESLint config > test-ts.ts 19`] = `
+{
+  "ruleId": "max-params",
+  "severity": 2,
+  "message": "",
+  "line": 210,
+  "column": 1,
+  "nodeType": "FunctionDeclaration",
+  "messageId": "exceed",
+  "endLine": 210,
+  "endColumn": 33
 }
 `;
 
@@ -6092,111 +6099,6 @@ exports[`ESLint config > test-ts.ts 2`] = `
 
 exports[`ESLint config > test-ts.ts 20`] = `
 {
-  "ruleId": "perfectionist/sort-interfaces",
-  "severity": 2,
-  "message": "",
-  "line": 152,
-  "column": 3,
-  "nodeType": "TSPropertySignature",
-  "messageId": "unexpectedInterfacePropertiesOrder",
-  "endLine": 152,
-  "endColumn": 54,
-  "fix": {
-    "range": [
-      4420,
-      4580
-    ],
-    "text": "allowDirectConstAssertionInArrowFunctions?: boolean\\n  allowExpressions?: boolean\\n  allowHigherOrderFunctions?: boolean\\n  allowTypedFunctionExpressions?: boolean"
-  }
-}
-`;
-
-exports[`ESLint config > test-ts.ts 21`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 159,
-  "column": 18,
-  "nodeType": "MemberExpression",
-  "messageId": "unsafeCall",
-  "endLine": 159,
-  "endColumn": 40
-}
-`;
-
-exports[`ESLint config > test-ts.ts 22`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 177,
-  "column": 18,
-  "nodeType": "MemberExpression",
-  "messageId": "unsafeCall",
-  "endLine": 177,
-  "endColumn": 40
-}
-`;
-
-exports[`ESLint config > test-ts.ts 23`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 204,
-  "column": 37,
-  "nodeType": "Identifier",
-  "messageId": "unsafeCall",
-  "endLine": 204,
-  "endColumn": 50
-}
-`;
-
-exports[`ESLint config > test-ts.ts 24`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 204,
-  "column": 67,
-  "nodeType": "Identifier",
-  "messageId": "unsafeCall",
-  "endLine": 204,
-  "endColumn": 75
-}
-`;
-
-exports[`ESLint config > test-ts.ts 25`] = `
-{
-  "ruleId": "max-params",
-  "severity": 2,
-  "message": "",
-  "line": 210,
-  "column": 1,
-  "nodeType": "FunctionDeclaration",
-  "messageId": "exceed",
-  "endLine": 210,
-  "endColumn": 33
-}
-`;
-
-exports[`ESLint config > test-ts.ts 26`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 220,
-  "column": 10,
-  "nodeType": "Identifier",
-  "messageId": "unsafeCall",
-  "endLine": 220,
-  "endColumn": 28
-}
-`;
-
-exports[`ESLint config > test-ts.ts 27`] = `
-{
   "ruleId": "max-params",
   "severity": 2,
   "message": "",
@@ -6209,7 +6111,7 @@ exports[`ESLint config > test-ts.ts 27`] = `
 }
 `;
 
-exports[`ESLint config > test-ts.ts 28`] = `
+exports[`ESLint config > test-ts.ts 21`] = `
 {
   "ruleId": "sonarjs/cognitive-complexity",
   "severity": 2,
@@ -6223,7 +6125,7 @@ exports[`ESLint config > test-ts.ts 28`] = `
 }
 `;
 
-exports[`ESLint config > test-ts.ts 29`] = `
+exports[`ESLint config > test-ts.ts 22`] = `
 {
   "ruleId": "@typescript-eslint/no-redundant-type-constituents",
   "severity": 2,
@@ -6237,21 +6139,7 @@ exports[`ESLint config > test-ts.ts 29`] = `
 }
 `;
 
-exports[`ESLint config > test-ts.ts 3`] = `
-{
-  "ruleId": "import-x/no-duplicates",
-  "severity": 2,
-  "message": "",
-  "line": 2,
-  "column": 45,
-  "nodeType": "Literal",
-  "messageId": "duplicate",
-  "endLine": 2,
-  "endColumn": 71
-}
-`;
-
-exports[`ESLint config > test-ts.ts 30`] = `
+exports[`ESLint config > test-ts.ts 23`] = `
 {
   "ruleId": "perfectionist/sort-switch-case",
   "severity": 2,
@@ -6272,7 +6160,7 @@ exports[`ESLint config > test-ts.ts 30`] = `
 }
 `;
 
-exports[`ESLint config > test-ts.ts 31`] = `
+exports[`ESLint config > test-ts.ts 24`] = `
 {
   "ruleId": "perfectionist/sort-switch-case",
   "severity": 2,
@@ -6286,7 +6174,7 @@ exports[`ESLint config > test-ts.ts 31`] = `
 }
 `;
 
-exports[`ESLint config > test-ts.ts 32`] = `
+exports[`ESLint config > test-ts.ts 25`] = `
 {
   "ruleId": "perfectionist/sort-named-exports",
   "severity": 2,
@@ -6304,6 +6192,20 @@ exports[`ESLint config > test-ts.ts 32`] = `
     ],
     "text": "ancestorHasReturnType,\\n  checkFunctionExpressionReturnType,\\n  checkFunctionReturnType,\\n  doesImmediatelyReturnFunctionExpression,\\n  FunctionExpression,\\n  FunctionNode,\\n  isTypedFunctionExpression,\\n  isValidFunctionExpressionReturnType"
   }
+}
+`;
+
+exports[`ESLint config > test-ts.ts 3`] = `
+{
+  "ruleId": "import-x/no-duplicates",
+  "severity": 2,
+  "message": "",
+  "line": 2,
+  "column": 45,
+  "nodeType": "Literal",
+  "messageId": "duplicate",
+  "endLine": 2,
+  "endColumn": 71
 }
 `;
 
@@ -6414,27 +6316,6 @@ exports[`ESLint config > test-tsx.tsx 1`] = `
 
 exports[`ESLint config > test-tsx.tsx 10`] = `
 {
-  "ruleId": "unicorn/explicit-length-check",
-  "severity": 2,
-  "message": "",
-  "line": 16,
-  "column": 10,
-  "nodeType": "MemberExpression",
-  "messageId": "non-zero",
-  "endLine": 16,
-  "endColumn": 22,
-  "fix": {
-    "range": [
-      343,
-      355
-    ],
-    "text": "items.length > 0"
-  }
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 11`] = `
-{
   "ruleId": "prettier/prettier",
   "severity": 2,
   "message": "",
@@ -6454,7 +6335,7 @@ exports[`ESLint config > test-tsx.tsx 11`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 12`] = `
+exports[`ESLint config > test-tsx.tsx 11`] = `
 {
   "ruleId": "@eslint-react/no-array-index-key",
   "severity": 1,
@@ -6468,7 +6349,7 @@ exports[`ESLint config > test-tsx.tsx 12`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 13`] = `
+exports[`ESLint config > test-tsx.tsx 12`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -6489,21 +6370,7 @@ exports[`ESLint config > test-tsx.tsx 13`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 14`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 19,
-  "column": 37,
-  "nodeType": "Identifier",
-  "messageId": "unsafeCall",
-  "endLine": 19,
-  "endColumn": 39
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 15`] = `
+exports[`ESLint config > test-tsx.tsx 13`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -6524,7 +6391,7 @@ exports[`ESLint config > test-tsx.tsx 15`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 16`] = `
+exports[`ESLint config > test-tsx.tsx 14`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -6545,7 +6412,7 @@ exports[`ESLint config > test-tsx.tsx 16`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 17`] = `
+exports[`ESLint config > test-tsx.tsx 15`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -6566,7 +6433,7 @@ exports[`ESLint config > test-tsx.tsx 17`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 18`] = `
+exports[`ESLint config > test-tsx.tsx 16`] = `
 {
   "ruleId": "perfectionist/sort-union-types",
   "severity": 2,
@@ -6587,7 +6454,7 @@ exports[`ESLint config > test-tsx.tsx 18`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 19`] = `
+exports[`ESLint config > test-tsx.tsx 17`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -6605,6 +6472,41 @@ exports[`ESLint config > test-tsx.tsx 19`] = `
     ],
     "text": " items, pathname "
   }
+}
+`;
+
+exports[`ESLint config > test-tsx.tsx 18`] = `
+{
+  "ruleId": "prettier/prettier",
+  "severity": 2,
+  "message": "",
+  "line": 42,
+  "column": 20,
+  "nodeType": null,
+  "messageId": "replace",
+  "endLine": 42,
+  "endColumn": 62,
+  "fix": {
+    "range": [
+      992,
+      1034
+    ],
+    "text": "'grid grid-flow-row auto-rows-max text-sm'"
+  }
+}
+`;
+
+exports[`ESLint config > test-tsx.tsx 19`] = `
+{
+  "ruleId": "@eslint-react/no-array-index-key",
+  "severity": 1,
+  "message": "",
+  "line": 46,
+  "column": 18,
+  "nodeType": "Identifier",
+  "messageId": "noArrayIndexKey",
+  "endLine": 46,
+  "endColumn": 23
 }
 `;
 
@@ -6631,41 +6533,6 @@ exports[`ESLint config > test-tsx.tsx 2`] = `
 
 exports[`ESLint config > test-tsx.tsx 20`] = `
 {
-  "ruleId": "prettier/prettier",
-  "severity": 2,
-  "message": "",
-  "line": 42,
-  "column": 20,
-  "nodeType": null,
-  "messageId": "replace",
-  "endLine": 42,
-  "endColumn": 62,
-  "fix": {
-    "range": [
-      992,
-      1034
-    ],
-    "text": "'grid grid-flow-row auto-rows-max text-sm'"
-  }
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 21`] = `
-{
-  "ruleId": "@eslint-react/no-array-index-key",
-  "severity": 1,
-  "message": "",
-  "line": 46,
-  "column": 18,
-  "nodeType": "Identifier",
-  "messageId": "noArrayIndexKey",
-  "endLine": 46,
-  "endColumn": 23
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 22`] = `
-{
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
   "message": "",
@@ -6685,7 +6552,7 @@ exports[`ESLint config > test-tsx.tsx 22`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 23`] = `
+exports[`ESLint config > test-tsx.tsx 21`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -6706,7 +6573,7 @@ exports[`ESLint config > test-tsx.tsx 23`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 24`] = `
+exports[`ESLint config > test-tsx.tsx 22`] = `
 {
   "ruleId": "tailwindcss/classnames-order",
   "severity": 1,
@@ -6727,21 +6594,7 @@ exports[`ESLint config > test-tsx.tsx 24`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 25`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 48,
-  "column": 24,
-  "nodeType": "Identifier",
-  "messageId": "unsafeCall",
-  "endLine": 48,
-  "endColumn": 26
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 26`] = `
+exports[`ESLint config > test-tsx.tsx 23`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -6762,7 +6615,7 @@ exports[`ESLint config > test-tsx.tsx 26`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 27`] = `
+exports[`ESLint config > test-tsx.tsx 24`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -6783,7 +6636,7 @@ exports[`ESLint config > test-tsx.tsx 27`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 28`] = `
+exports[`ESLint config > test-tsx.tsx 25`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -6804,7 +6657,7 @@ exports[`ESLint config > test-tsx.tsx 28`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 29`] = `
+exports[`ESLint config > test-tsx.tsx 26`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -6821,6 +6674,69 @@ exports[`ESLint config > test-tsx.tsx 29`] = `
       1572
     ],
     "text": "'_blank' : ''"
+  }
+}
+`;
+
+exports[`ESLint config > test-tsx.tsx 27`] = `
+{
+  "ruleId": "perfectionist/sort-jsx-props",
+  "severity": 2,
+  "message": "",
+  "line": 56,
+  "column": 13,
+  "nodeType": "JSXAttribute",
+  "messageId": "unexpectedJSXPropsOrder",
+  "endLine": 56,
+  "endColumn": 52,
+  "fix": {
+    "range": [
+      1138,
+      1625
+    ],
+    "text": "className={cn(\\n              \\"group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline\\",\\n              item.disabled && \\"cursor-not-allowed opacity-60\\",\\n              pathname === item.href\\n                ? \\"font-medium text-foreground\\"\\n                : \\"text-muted-foreground\\"\\n            )}\\n            href={item.href}\\n            key={index}\\n            rel={item.external ? \\"noreferrer\\" : \\"\\"}\\n            target={item.external ? \\"_blank\\" : \\"\\"}"
+  }
+}
+`;
+
+exports[`ESLint config > test-tsx.tsx 28`] = `
+{
+  "ruleId": "prettier/prettier",
+  "severity": 2,
+  "message": "",
+  "line": 56,
+  "column": 34,
+  "nodeType": null,
+  "messageId": "replace",
+  "endLine": 56,
+  "endColumn": 51,
+  "fix": {
+    "range": [
+      1607,
+      1624
+    ],
+    "text": "'noreferrer' : ''"
+  }
+}
+`;
+
+exports[`ESLint config > test-tsx.tsx 29`] = `
+{
+  "ruleId": "prettier/prettier",
+  "severity": 2,
+  "message": "",
+  "line": 60,
+  "column": 31,
+  "nodeType": null,
+  "messageId": "replace",
+  "endLine": 60,
+  "endColumn": 149,
+  "fix": {
+    "range": [
+      1722,
+      1840
+    ],
+    "text": "'ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline'"
   }
 }
 `;
@@ -6848,69 +6764,6 @@ exports[`ESLint config > test-tsx.tsx 3`] = `
 
 exports[`ESLint config > test-tsx.tsx 30`] = `
 {
-  "ruleId": "perfectionist/sort-jsx-props",
-  "severity": 2,
-  "message": "",
-  "line": 56,
-  "column": 13,
-  "nodeType": "JSXAttribute",
-  "messageId": "unexpectedJSXPropsOrder",
-  "endLine": 56,
-  "endColumn": 52,
-  "fix": {
-    "range": [
-      1138,
-      1625
-    ],
-    "text": "className={cn(\\n              \\"group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline\\",\\n              item.disabled && \\"cursor-not-allowed opacity-60\\",\\n              pathname === item.href\\n                ? \\"font-medium text-foreground\\"\\n                : \\"text-muted-foreground\\"\\n            )}\\n            href={item.href}\\n            key={index}\\n            rel={item.external ? \\"noreferrer\\" : \\"\\"}\\n            target={item.external ? \\"_blank\\" : \\"\\"}"
-  }
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 31`] = `
-{
-  "ruleId": "prettier/prettier",
-  "severity": 2,
-  "message": "",
-  "line": 56,
-  "column": 34,
-  "nodeType": null,
-  "messageId": "replace",
-  "endLine": 56,
-  "endColumn": 51,
-  "fix": {
-    "range": [
-      1607,
-      1624
-    ],
-    "text": "'noreferrer' : ''"
-  }
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 32`] = `
-{
-  "ruleId": "prettier/prettier",
-  "severity": 2,
-  "message": "",
-  "line": 60,
-  "column": 31,
-  "nodeType": null,
-  "messageId": "replace",
-  "endLine": 60,
-  "endColumn": 149,
-  "fix": {
-    "range": [
-      1722,
-      1840
-    ],
-    "text": "'ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline'"
-  }
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 33`] = `
-{
   "ruleId": "@eslint-react/no-array-index-key",
   "severity": 1,
   "message": "",
@@ -6923,7 +6776,7 @@ exports[`ESLint config > test-tsx.tsx 33`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 34`] = `
+exports[`ESLint config > test-tsx.tsx 31`] = `
 {
   "ruleId": "perfectionist/sort-jsx-props",
   "severity": 2,
@@ -6944,7 +6797,7 @@ exports[`ESLint config > test-tsx.tsx 34`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 35`] = `
+exports[`ESLint config > test-tsx.tsx 32`] = `
 {
   "ruleId": "tailwindcss/classnames-order",
   "severity": 1,
@@ -6965,21 +6818,7 @@ exports[`ESLint config > test-tsx.tsx 35`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 36`] = `
-{
-  "ruleId": "@typescript-eslint/no-unsafe-call",
-  "severity": 2,
-  "message": "",
-  "line": 68,
-  "column": 24,
-  "nodeType": "Identifier",
-  "messageId": "unsafeCall",
-  "endLine": 68,
-  "endColumn": 26
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 37`] = `
+exports[`ESLint config > test-tsx.tsx 33`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -7000,7 +6839,7 @@ exports[`ESLint config > test-tsx.tsx 37`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 38`] = `
+exports[`ESLint config > test-tsx.tsx 34`] = `
 {
   "ruleId": "prettier/prettier",
   "severity": 2,
@@ -7021,7 +6860,7 @@ exports[`ESLint config > test-tsx.tsx 38`] = `
 }
 `;
 
-exports[`ESLint config > test-tsx.tsx 39`] = `
+exports[`ESLint config > test-tsx.tsx 35`] = `
 {
   "ruleId": "tailwindcss/classnames-order",
   "severity": 1,
@@ -7038,6 +6877,48 @@ exports[`ESLint config > test-tsx.tsx 39`] = `
       2415
     ],
     "text": "bg-muted text-muted-foreground ml-2 rounded-md px-1.5 py-0.5 text-xs leading-none no-underline group-hover:no-underline"
+  }
+}
+`;
+
+exports[`ESLint config > test-tsx.tsx 36`] = `
+{
+  "ruleId": "prettier/prettier",
+  "severity": 2,
+  "message": "",
+  "line": 75,
+  "column": 31,
+  "nodeType": null,
+  "messageId": "replace",
+  "endLine": 75,
+  "endColumn": 152,
+  "fix": {
+    "range": [
+      2295,
+      2416
+    ],
+    "text": "'ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline'"
+  }
+}
+`;
+
+exports[`ESLint config > test-tsx.tsx 37`] = `
+{
+  "ruleId": "prettier/prettier",
+  "severity": 2,
+  "message": "",
+  "line": 80,
+  "column": 10,
+  "nodeType": null,
+  "messageId": "insert",
+  "endLine": 80,
+  "endColumn": 10,
+  "fix": {
+    "range": [
+      2511,
+      2511
+    ],
+    "text": ","
   }
 }
 `;
@@ -7059,48 +6940,6 @@ exports[`ESLint config > test-tsx.tsx 4`] = `
       133
     ],
     "text": ""
-  }
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 40`] = `
-{
-  "ruleId": "prettier/prettier",
-  "severity": 2,
-  "message": "",
-  "line": 75,
-  "column": 31,
-  "nodeType": null,
-  "messageId": "replace",
-  "endLine": 75,
-  "endColumn": 152,
-  "fix": {
-    "range": [
-      2295,
-      2416
-    ],
-    "text": "'ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline'"
-  }
-}
-`;
-
-exports[`ESLint config > test-tsx.tsx 41`] = `
-{
-  "ruleId": "prettier/prettier",
-  "severity": 2,
-  "message": "",
-  "line": 80,
-  "column": 10,
-  "nodeType": null,
-  "messageId": "insert",
-  "endLine": 80,
-  "endColumn": 10,
-  "fix": {
-    "range": [
-      2511,
-      2511
-    ],
-    "text": ","
   }
 }
 `;
@@ -7184,15 +7023,22 @@ exports[`ESLint config > test-tsx.tsx 8`] = `
 
 exports[`ESLint config > test-tsx.tsx 9`] = `
 {
-  "ruleId": "@typescript-eslint/no-unsafe-call",
+  "ruleId": "unicorn/explicit-length-check",
   "severity": 2,
   "message": "",
-  "line": 14,
-  "column": 20,
-  "nodeType": "Identifier",
-  "messageId": "unsafeCall",
-  "endLine": 14,
-  "endColumn": 31
+  "line": 16,
+  "column": 10,
+  "nodeType": "MemberExpression",
+  "messageId": "non-zero",
+  "endLine": 16,
+  "endColumn": 22,
+  "fix": {
+    "range": [
+      343,
+      355
+    ],
+    "text": "items.length > 0"
+  }
 }
 `;
 
