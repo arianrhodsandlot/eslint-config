@@ -1,9 +1,7 @@
+import { mapValues } from 'es-toolkit/compat'
 import eslintPluginN from 'eslint-plugin-n'
-import _ from 'lodash'
 import { jsxOrTsxGlob } from '../../lib/constants.js'
 import type { FlatConfigs } from '../../types/eslint.js'
-
-const { mapValues } = _
 
 export function getNConfigs() {
   const nConfigs: FlatConfigs = [

@@ -1,13 +1,11 @@
 import { execSync } from 'node:child_process'
 import fs, { readFileSync } from 'node:fs'
 import path from 'node:path'
-import _ from 'lodash'
+import { castArray, compact, mergeWith } from 'es-toolkit/compat'
 import { findSync } from 'new-find-package-json'
 import type { CreateConfigOptions } from '../types/config.js'
 
 export const isProduction = process.env.NODE_ENV === 'production'
-
-const { castArray, compact, mergeWith } = _
 
 let gitIgnores: string[]
 export function getGitIgnores() {

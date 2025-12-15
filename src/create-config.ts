@@ -1,5 +1,5 @@
 import { defineConfig, globalIgnores } from '@eslint/config-helpers'
-import _ from 'lodash'
+import { defaultsDeep } from 'es-toolkit/compat'
 import { getCustomFlatConfigs } from './flat-configs/custom/index.js'
 import { getRecommendedFlatConfigs } from './flat-configs/recommended/index.js'
 import { sourceGlob } from './lib/constants.js'
@@ -14,8 +14,6 @@ import {
 } from './lib/utils.js'
 import type { CreateConfigOptions } from './types/config.js'
 import type { FlatConfig } from './types/eslint.ts'
-
-const { defaultsDeep } = _
 
 const defaultOptions: Required<CreateConfigOptions> = {
   append: [],
