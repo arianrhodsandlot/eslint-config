@@ -5,6 +5,7 @@
     "eslint",
     "eslint-config"
   ],
+  "repository": "arianrhodsandlot/eslint-config",
   "license": "MIT",
   "author": {
     "name": "arianrhodsandlot",
