@@ -28,4 +28,4 @@ jobs:
           body_path: ./release-note.md
 
       - run: pnpm version from-git --no-git-tag-version
-      - run: pnpm publish --no-git-checks
+      - run: pnpm publish --no-git-checks --access=public
