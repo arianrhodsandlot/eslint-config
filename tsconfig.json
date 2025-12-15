@@ -10,11 +10,11 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "noImplicitAny": false,
+    "noEmit": true,
     "outDir": "dist/types",
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022"
   },
-  "exclude": ["dist", "tests"],
-  "include": ["src", "eslint.config.ts"]
+  "exclude": ["dist"]
 }

@@ -15,7 +15,7 @@ import { nextConfigs } from './next.js'
 import { perfectionistConfigs } from './perfectionist.js'
 import { getPrettierConfigs } from './prettier.js'
 import { promiseConfigs } from './promise.js'
-import { reactConfigs } from './react.js'
+import { getReactConfigs } from './react.js'
 import { regexpConfigs } from './regexp.js'
 import { securityConfigs } from './security.js'
 import { sonarjsConfigs } from './sonarjs.js'
@@ -41,7 +41,7 @@ export function getRecommendedFlatConfigs() {
     next: nextConfigs,
     perfectionist: perfectionistConfigs,
     promise: promiseConfigs,
-    react: reactConfigs,
+    react: getReactConfigs(),
     regexp: regexpConfigs,
     security: securityConfigs,
     sonarjs: sonarjsConfigs,

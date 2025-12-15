@@ -6,7 +6,7 @@ import { loadESLint } from 'eslint'
 const testsDir = path.dirname(fileURLToPath(import.meta.url))
 const inputsDir = path.join(testsDir, 'inputs')
 
-describe('ESLint config', async () => {
+await describe('ESLint config', async () => {
   const TestESLint = await loadESLint()
   const eslint = new TestESLint({ ignore: false })
 
