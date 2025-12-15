@@ -28,7 +28,14 @@ export function getTypescriptConfigs() {
             tsconfigRootDir,
           },
         },
-        rules: config.rules,
+        rules: {
+          ...config.rules,
+          '@typescript-eslint/no-base-to-string': 'off',
+          '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true }],
+          '@typescript-eslint/no-misused-promises': 'off',
+          '@typescript-eslint/no-unsafe-call': 'off',
+          '@typescript-eslint/only-throw-error': 'off',
+        },
       })
     }
   }

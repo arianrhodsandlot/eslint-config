@@ -12,7 +12,6 @@ export const reactRules: FlatConfigRules = {
   '@eslint-react/no-class-component': 'error',
   '@eslint-react/no-implicit-key': 'error',
   '@eslint-react/no-missing-component-display-name': 'error',
-  '@eslint-react/no-unnecessary-use-callback': 'error',
   '@eslint-react/no-unnecessary-use-memo': 'error',
   '@eslint-react/no-unnecessary-use-prefix': 'error',
   '@eslint-react/no-useless-fragment': 'error',
