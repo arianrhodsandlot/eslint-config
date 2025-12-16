@@ -24,8 +24,7 @@
   "scripts": {
     "build": "tsdown --no-fixed-extension",
     "dev": "eslint-config-inspector",
-    "eslint": "eslint --no-warn-ignored",
-    "lint": "node --run=eslint -- src",
+    "lint": "eslint src",
     "prepare": "simple-git-hooks",
     "test": "node --test tests/*.test.ts && tsc -p tsconfig.test.json",
     "test:update": "node --test-update-snapshots tests/*.test.ts"
@@ -34,7 +33,7 @@
     "pre-commit": "pnpm lint-staged && node --run=build"
   },
   "lint-staged": {
-    "*.?(m|c)@(j|t)s?(x)": "node --run=eslint -- --fix",
+    "*.?(m|c)@(j|t)s?(x)": "eslint --fix",
     "package.json": "pnpx sort-package-json"
   },
   "dependencies": {
@@ -77,7 +76,7 @@
     "tailwind-csstree": "^0.1.4",
     "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.49.0",
+    "typescript-eslint": "^8.50.0",
     "vue-eslint-parser": "^10.2.0"
   },
   "devDependencies": {
@@ -90,7 +89,7 @@
     "lint-staged": "16.2.7",
     "react": "19.2.3",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.17.4",
+    "tsdown": "0.18.0",
     "vue": "3.5.25",
     "vue-i18n": "11.2.2",
     "zx": "8.8.5"
@@ -103,7 +102,7 @@
       "optional": false
     }
   },
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.26.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
