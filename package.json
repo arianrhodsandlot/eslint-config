@@ -68,7 +68,7 @@
     "new-find-package-json": "^2.0.0",
     "prettier": "^3.7.4",
     "tailwind-csstree": "^0.1.4",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.50.1",
     "vue-eslint-parser": "^10.2.0"
@@ -83,7 +83,7 @@
     "lint-staged": "16.2.7",
     "react": "19.2.3",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.18.3",
+    "tsdown": "0.18.2",
     "vue": "3.5.26",
     "vue-i18n": "11.2.7",
     "zx": "8.8.5"
