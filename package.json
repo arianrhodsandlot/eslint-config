@@ -83,7 +83,7 @@
     "lint-staged": "16.2.7",
     "react": "19.2.3",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.18.2",
+    "tsdown": "0.18.3",
     "vue": "3.5.26",
     "vue-i18n": "11.2.7",
     "zx": "8.8.5"
